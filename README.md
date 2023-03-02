@@ -1,6 +1,6 @@
 # res03-projet-final
 
-Voici le futur site officiel de football de l'US Domagné
+#Futur site officiel de football de l'US Domagné
 
 Vous pourrez y voir l'actualité, le bureau, les infrastructures, les équipes, le classement, les résultats, la boutique du club ainsi qu'un album photo.
 
