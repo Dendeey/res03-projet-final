@@ -1,0 +1,5 @@
+/users UserController:getUsers
+/user/* UserController:getUser
+/create-user UserController:createUser
+/update-user/* UserController:updateUser
+/delete-user/* UserController:deleteUser
