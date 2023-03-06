@@ -48,41 +48,41 @@ Contact = /contact
 
 *** ADMIN-SIDE : ***
 
-/players PlayerController:getPlayers
-/player/* PlayerController:getPlayer
-/create-player PlayerController:createPlayer
-/update-player/* PlayerController:updatePlayer
-/delete-player/* PlayerController:deletePlayer
+/admin/players PlayerController:getPlayers
+/admin/player PlayerController:getPlayer
+/admin/create-player PlayerController:createPlayer
+/admin/update-player PlayerController:updatePlayer
+/admin/delete-player PlayerController:deletePlayer
 
-/staffs StaffController:getStaffs
-/staff/* StaffController:getStaff
-/create-staff StaffController:createStaff
-/update-staff/* StaffController:updateStaff
-/delete-staff/* StaffController:deleteStaff
+/admin/staffs StaffController:getStaffs
+/admin/staff StaffController:getStaff
+/admin/create-staff StaffController:createStaff
+/admin/update-staff StaffController:updateStaff
+/admin/delete-staff StaffController:deleteStaff
 
-/offices OfficeController:getOffices
-/office/* OfficeController:getOffice
-/create-office OfficeController:createOffice
-/update-office/* OfficeController:updateOffice
-/delete-office/* OfficeController:deleteOffice
+/admin/offices OfficeController:getOffices
+/admin/office OfficeController:getOffice
+/admin/create-office OfficeController:createOffice
+/admin/update-office OfficeController:updateOffice
+/admin/delete-office OfficeController:deleteOffice
 
-/referees RefereeController:getReferees
-/referee/* RefereeController:getReferee
-/create-referee RefereeController:createReferee
-/update-referee/* RefereeController:updateReferee
-/delete-referee/* RefereeController:deleteReferee
+/admin/referees RefereeController:getReferees
+/admin/referee RefereeController:getReferee
+/admin/create-referee RefereeController:createReferee
+/admin/update-referee RefereeController:updateReferee
+/admin/delete-referee RefereeController:deleteReferee
 
-/posts PostController:getPosts
-/post/* PostController:getPost
-/create-post PostController:createPost
-/update-post/* PostController:updatePost
-/delete-post/* PostController:deletePost
+/admin/posts PostController:getPosts
+/admin/post PostController:getPost
+/admin/create-post PostController:createPost
+/admin/update-post PostController:updatePost
+/admin/delete-post PostController:deletePost
 
-/albums AlbumController:getAlbums
-/album/* AlbumController:getAlbum
-/create-album AlbumController:createAlbum
-/update-album/* AlbumController:updateAlbum
-/delete-album/* AlbumController:deleteAlbum
+/admin/albums AlbumController:getAlbums
+/admin/album AlbumController:getAlbum
+/admin/create-album AlbumController:createAlbum
+/admin/update-album AlbumController:updateAlbum
+/admin/delete-album AlbumController:deleteAlbum
 
 
         

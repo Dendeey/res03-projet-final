@@ -1,3 +1,5 @@
+PageController
+
 PLayerController
 
 StaffController
@@ -9,3 +11,5 @@ ReferreController
 PostController
 
 AlbumController
+
+MediaController
