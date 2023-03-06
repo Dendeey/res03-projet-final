@@ -48,14 +48,42 @@ Contact = /contact
 
 *** ADMIN-SIDE : ***
 
-/players UserController:getPlayers
-/player/* UserController:getPlayer
-/create-player UserController:createPlayer
-/update-player/* UserController:updatePlayer
-/delete-player/* UserController:deletePlayer
+/players PlayerController:getPlayers
+/player/* PlayerController:getPlayer
+/create-player PlayerController:createPlayer
+/update-player/* PlayerController:updatePlayer
+/delete-player/* PlayerController:deletePlayer
+
+/staffs StaffController:getStaffs
+/staff/* StaffController:getStaff
+/create-staff StaffController:createStaff
+/update-staff/* StaffController:updateStaff
+/delete-staff/* StaffController:deleteStaff
+
+/offices OfficeController:getOffices
+/office/* OfficeController:getOffice
+/create-office OfficeController:createOffice
+/update-office/* OfficeController:updateOffice
+/delete-office/* OfficeController:deleteOffice
+
+/referees RefereeController:getReferees
+/referee/* RefereeController:getReferee
+/create-referee RefereeController:createReferee
+/update-referee/* RefereeController:updateReferee
+/delete-referee/* RefereeController:deleteReferee
+
+/posts PostController:getPosts
+/post/* PostController:getPost
+/create-post PostController:createPost
+/update-post/* PostController:updatePost
+/delete-post/* PostController:deletePost
+
+/albums AlbumController:getAlbums
+/album/* AlbumController:getAlbum
+/create-album AlbumController:createAlbum
+/update-album/* AlbumController:updateAlbum
+/delete-album/* AlbumController:deleteAlbum
+
+
         
-/players UserController:getPlayers
-/player/* UserController:getPlayer
-/create-player UserController:createPlayer
-/update-player/* UserController:updatePlayer
-/delete-player/* UserController:deletePlayer
+
