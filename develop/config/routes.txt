@@ -1,0 +1,7 @@
+/players PlayerController:getPlayers
+/player/* PlayerController:getPlayer
+/create-player PlayerController:createPlayer
+/update-player/* PlayerController:updatePlayer
+/delete-player/* PlayerController:deletePlayer
+
+
