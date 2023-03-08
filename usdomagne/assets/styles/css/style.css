@@ -56,7 +56,7 @@ table {
   html {
     font-size: 14px;
   }
-  .header1 {
+  header {
     height: 27vh;
     width: 100vw;
     position: fixed;
@@ -69,33 +69,33 @@ table {
     display: grid;
     grid-template-rows: 0.3fr 1fr;
   }
-  .header1 .hidden {
+  header .sr-only {
     display: none;
   }
-  .header1 section {
+  header section {
     align-items: center;
     background-color: #f4f4f7;
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
   }
-  .header1 section > p {
+  header section > p {
     grid-column: 2/3;
     justify-self: end;
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  .header1 section > ul {
+  header section > ul {
     grid-column: 3/4;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 3em;
   }
-  .header1 section > ul a {
+  header section > ul a {
     text-decoration: none;
     color: black;
   }
-  .header1 nav {
+  header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -103,38 +103,38 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .header1 nav > ul:first-of-type {
+  header nav > ul:first-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  .header1 nav > ul:first-of-type a {
+  header nav > ul:first-of-type a {
     text-decoration: none;
     color: black;
   }
-  .header1 nav > ul:first-of-type li {
+  header nav > ul:first-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
-  .header1 nav figure {
+  header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  .header1 nav figure a {
+  header nav figure a {
     text-decoration: none;
     color: black;
   }
-  .header1 nav figure img {
+  header nav figure img {
     height: 15vh;
   }
-  .header1 nav figure p {
+  header nav figure p {
     align-self: center;
     justify-self: center;
     font-style: italic;
@@ -142,18 +142,126 @@ table {
     font-size: 0.9em;
     font-family: "Termina", Arial, sans-serif;
   }
-  .header1 nav > ul:last-of-type {
+  header nav > ul:last-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  .header1 nav > ul:last-of-type a {
+  header nav > ul:last-of-type a {
     text-decoration: none;
     color: black;
   }
-  .header1 nav > ul:last-of-type li {
+  header nav > ul:last-of-type li {
+    display: inline-block;
+    color: black;
+    font-size: 1.3em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+}
+@media (min-width: 1440.1px) and (max-width: 2560px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    height: 27vh;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+    z-index: 100;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+  }
+  header .sr-only {
+    display: none;
+  }
+  header section {
+    align-items: center;
+    background-color: #f4f4f7;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+  }
+  header section > p {
+    grid-column: 2/3;
+    justify-self: end;
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  header section > ul {
+    grid-column: 3/4;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3em;
+  }
+  header section > ul a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header nav > ul:first-of-type {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+  }
+  header nav > ul:first-of-type a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav > ul:first-of-type li {
+    display: inline-block;
+    color: black;
+    font-size: 1.3em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  header nav figure {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+  }
+  header nav figure a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav figure img {
+    height: 15vh;
+  }
+  header nav figure p {
+    align-self: center;
+    justify-self: center;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 0.9em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  header nav > ul:last-of-type {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+  }
+  header nav > ul:last-of-type a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav > ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
@@ -169,12 +277,17 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
   }
-  body main {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+}
+@media (min-width: 1440.1px) and (max-width: 2560px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 
