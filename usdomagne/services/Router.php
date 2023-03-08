@@ -1,8 +1,7 @@
 <?php
 
 // Requires //
-require '../controllers/PageController.php';
-require '../controllers/PlayerController.php';
+require './controllers/PageController.php';
 
 
 class Router
@@ -11,7 +10,7 @@ class Router
     // Attributs //
 
     private PageController $pageController;
-    private PlayerController $playerController;
+    
     
 
     // Constructor //
@@ -20,17 +19,30 @@ class Router
     {
         
         $this->pageController = new PageController();
-        $this->playerController = new PlayerController();
+        
              
     }
 
 
     // METHODES //
 
-    public function checkRoute(string $route) : void
+    public function checkRoute() : void
     {
-        
-        if()
+        // Route vers la page d'accueil
+        if(isset($_GET["path"]))
+        {
+            
+            $route = explode("/", $_GET["path"]);
+            
+            // Afficher les pages de PageController
+            
+            if($route[0] === "accueil")
+            {
+                $this->pageController->accueil();
+            }
+            
+            
+        }
         
     }
 

@@ -6,6 +6,4 @@ $router = new Router();
 
 $router->checkRoute();
 
-
-
 ?>
