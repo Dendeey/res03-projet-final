@@ -12,7 +12,7 @@ class PageController extends AbstractController
     public function accueil()
     {
         
-        $this->renderClient("accueil", ["page-accueil"]);
+        $this->renderClient("accueil", []);
         
     }
     
@@ -20,63 +20,63 @@ class PageController extends AbstractController
     public function arbitres() // À peut-être supprimer de la db car page peut-être finalement non dynamisée
     {
         
-        $this->renderClient("arbitres", ["page-arbitres"]);
+        $this->renderClient("arbitres", []);
         
     }
     
     public function equipes()
     {
         
-        $this->renderClient("equipes", ["page-equipes"]);
+        $this->renderClient("equipes", []);
         
     }
     
     public function boutique()
     {
         
-        $this->renderClient("boutique", ["page-boutique"]);
+        $this->renderClient("boutique", []);
         
     }
     
     public function club()
     {
         
-        $this->renderClient("club", ["page-club"]);
+        $this->renderClient("club", []);
         
     }
     
     public function histoire()
     {
         
-        $this->renderClient("histoire", ["page-histoire"]);
+        $this->renderClient("histoire", []);
         
     }
     
     public function infrastructures()
     {
         
-        $this->renderClient("infrastructures", ["page-infrastructures"]);
+        $this->renderClient("infrastructures", []);
         
     }
     
     public function partenaires()
     {
         
-        $this->renderClient("partenaires", ["page-partenaires"]);
+        $this->renderClient("partenaires", []);
         
     }
     
     public function contact()
     {
         
-        $this->renderClient("contact", ["page-contact"]);
+        $this->renderClient("contact", []);
         
     }
     
     public function erreur()
     {
         
-        $this->renderClient("erreur", ["page-erreur"]);
+        $this->renderClient("erreur", []);
         
     }
     

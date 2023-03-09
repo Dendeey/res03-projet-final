@@ -7,6 +7,7 @@ class Router
     // Attributs //
 
     private PageController $pageController;
+    private UserController $userController;
     
     
 
@@ -16,6 +17,7 @@ class Router
     {
         
         $this->pageController = new PageController();
+        $this->userController = new UserController();
         
              
     }
@@ -35,44 +37,65 @@ class Router
             $this->pageController->accueil();
         }
         
-        if($route[1] === "arbitres")
+        else if($route[1] === "arbitres")
         {
             $this->pageController->arbitres();
         }
         
-        if($route[1] === "equipes")
+        else if($route[1] === "equipes")
         {
             $this->pageController->equipes();
         }
         
-        if($route[1] === "boutique")
+        else if($route[1] === "boutique")
         {
             $this->pageController->boutique();
         }
         
-        if($route[1] === "club")
+        else if($route[1] === "club")
         {
-            $this->pageController->club();
+            if(!isset($route[2]))
+            {
+                $this->pageController->club();
+            }
+            else if($route[2] === "histoire")
+            {
+                
+                $this->pageController->histoire();
+                
+            }
+            else if($route[2] === "infrastructures")
+            {
+                
+                $this->pageController->infrastructures();
+                
+            }
+            else if($route[2] === "partenaires")
+            {
+                
+                $this->pageController->partenaires();
+                
+            }
         }
         
-        if($route[1] === "histoire")
-        {
-            $this->pageController->histoire();
-        }
-        
-        if($route[1] === "infrastructures")
-        {
-            $this->pageController->infrastructures();
-        }
-        
-        if($route[1] === "partenaires")
-        {
-            $this->pageController->partenaires();
-        }
-        
-        if($route[1] === "contact")
+        else if($route[1] === "contact")
         {
             $this->pageController->contact();
+        }
+        
+        
+    // Afficher page authentification pour admin
+    
+        if($route[1] === "authentification")
+        {
+            $this->userController->authentification();
+        }
+
+        else
+        {
+            
+            $this->pageController->erreur();
+            
         }
             
     }
