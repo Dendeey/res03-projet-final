@@ -41,21 +41,21 @@ class PageController extends AbstractController
     public function club()
     {
         
-        $this->renderClient("club", ["page-club.phtml"]);
+        $this->renderClient("club", ["page-club"]);
         
     }
     
     public function histoire()
     {
         
-        $this->renderClient("histoire", ["page-histoire.phtml"]);
+        $this->renderClient("histoire", ["page-histoire"]);
         
     }
     
     public function infrastructures()
     {
         
-        $this->renderClient("infrastructures", ["page-infrastructures.phtml"]);
+        $this->renderClient("infrastructures", ["page-infrastructures"]);
         
     }
     
@@ -76,9 +76,10 @@ class PageController extends AbstractController
     public function erreur()
     {
         
-        $this->renderClient("erreur404", ["page-erreur404"]);
+        $this->renderClient("erreur", ["page-erreur"]);
         
     }
+    
 }
 
 ?>
