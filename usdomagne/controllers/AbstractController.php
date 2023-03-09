@@ -16,8 +16,8 @@ abstract class AbstractController
     public function renderAdmin(string $view, array $values) : void
     {
         
-        $template= $view;
-        $data=$values;
+        $template = $view;
+        $data = $values;
         require 'templates/layout_admin.phtml';
         
     }

@@ -1,8 +1,5 @@
 <?php
 
-// Requires //
-require './controllers/PageController.php';
-
 
 class Router
 {
@@ -39,6 +36,13 @@ class Router
             if($route[0] === "accueil")
             {
                 $this->pageController->accueil();
+            }
+            
+            else
+            {
+                
+                $this->pageController->erreur();
+                
             }
             
             

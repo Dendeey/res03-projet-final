@@ -1,6 +1,5 @@
 <?php
 
-require 'AbstractController.php';
 
 class PageController extends AbstractController
 {
@@ -71,6 +70,13 @@ class PageController extends AbstractController
     {
         
         $this->renderClient("contact", ["page-contact"]);
+        
+    }
+    
+    public function erreur()
+    {
+        
+        $this->renderClient("erreur404", ["page-erreur404"]);
         
     }
 }
