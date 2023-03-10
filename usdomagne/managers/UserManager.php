@@ -54,12 +54,6 @@ class UserManager extends AbstractManager
         ];
         $query->execute($parameters);
 
-        /*$query = $db->prepare('SELECT LAST_INSERT_ID() FROM users');
-        $query->execute();
-        $userSelected = $query->fetch(PDO::FETCH_ASSOC);
-
-        return $this->getUserById($userSelected['id']);*/
-
         $id = $this->db->lastInsertId();
         $user->setId($id);
         echo "Veuillez à présent vous connecter";

@@ -23,12 +23,21 @@ class UserController extends AbstractController
     
 
     // METHODES
-
-    public function authentification()
+    
+    
+    public function displayLogin()
     {
-        
-        $this->renderAdmin("authentification", []);
-        
+        $this->renderAdmin("admin-login",[]);
+    }
+    
+    public function displayRegister()
+    {
+        $this->renderAdmin("admin-register",[]);
+    }
+    
+    public function adminAccueil()
+    {
+        $this->renderAdmin("admin-accueil",[]);
     }
 
     public function register(array $post) : void
@@ -49,25 +58,25 @@ class UserController extends AbstractController
                     $hashedPass = password_hash($post['admin-password'], PASSWORD_DEFAULT);
                     $userToAdd = new User($post["admin-firstname"], $post["admin-lastname"], $post["admin-email"], $hashedPass);
                     $this->manager->insertUser($userToAdd);
-                    $this->renderAdmin('authentification', []);
+                    $this->renderAdmin('register', []);
                 }
 
                 else 
                 {
-                    $this->renderAdmin('authentification', ['error' => 'Cet Utilisateur existe déjà']);
+                    $this->renderAdmin('register', ['error' => 'Cet Utilisateur existe déjà']);
                 }
 
             }
 
             else 
             {
-                $this->renderAdmin('authentification', ['error' => 'Les mots de passe ne correspondent pas ']);
+                $this->renderAdmin('register', ['error' => 'Les mots de passe ne correspondent pas ']);
             }
         }
 
         else 
         {
-            $this->renderAdmin('authentification', ['error' => 'Merci de remplir tous les champs']);
+            $this->renderAdmin('register', ['error' => 'Merci de remplir tous les champs']);
         }
 
 
@@ -114,6 +123,7 @@ class UserController extends AbstractController
         }
 
     }
+    
 
 }
 

@@ -91,16 +91,29 @@ class Router
         // Côté admin
             // Afficher le form d'enregistrement pour un admin
         
-            if($route[0] === "authentification")
+            else if($route[0] === "admin")
             {
-                $this->userController->authentification();
+                if(!isset($route[1]))
+                {
+                    $this->userController->adminAccueil();
+                }
+                
             }
         
-            if($route[0] === "register")
+            else if($route[0] === "register")
             {
                 $post = $_POST;
                 
                 $this->userController->register($post);
+            }
+            
+            else if($route[0] === "login")
+            {
+                $post = $_POST;
+                
+                var_dump($post);
+                
+                $this->userController->login($post);
             }
             
         }
