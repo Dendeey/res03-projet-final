@@ -73,12 +73,6 @@ class PageController extends AbstractController
         
     }
     
-    public function erreur()
-    {
-        
-        $this->renderClient("erreur", []);
-        
-    }
     
 }
 

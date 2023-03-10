@@ -12,7 +12,7 @@ class UserManager extends AbstractManager
         $query->execute($parameters);
         $user = $query->fetch(PDO::FETCH_ASSOC);
 
-        $userToLoad = new User($user['email'], $user['username'], $user['password']);
+        $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
         $userToLoad->setId($user['id']);
 
     }
@@ -30,25 +30,26 @@ class UserManager extends AbstractManager
         }
 
         else {
-           $userToLoad = new User($user['email'], $user['username'], $user['password']);
+           $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
            $userToLoad->setId($user['id']);
 
             return $userToLoad;
         }
 
 
-        $userToLoad = new User($user['email'], $user['username'], $user['password']);
+        $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
         $userToLoad->setId($user['id']);
 
     }
 
     public function insertUser(User $user) : User
     {
-        $query = $this->db->prepare('INSERT INTO users (`id`, `email`, `username`, `password`) VALUES(NULL, :email, :username, :password)');
+        $query = $this->db->prepare('INSERT INTO users (`id`, `first_name`, `last_name`, `email`, `password`) VALUES(NULL, :firstName, :lastName, :email, :password)');
 
         $parameters = [
+        'firstName' => $user->getFirstName(),
+        'lastName' => $user->getLastName(),
         'email' => $user->getEmail(),
-        'username' => $user->getUsername(),
         'password'=>$user->getPassword()
         ];
         $query->execute($parameters);
@@ -61,13 +62,14 @@ class UserManager extends AbstractManager
 
         $id = $this->db->lastInsertId();
         $user->setId($id);
+        echo "Veuillez à présent vous connecter";
         return $user;
 
     }
 
     public function editUser(User $user) : void
     {
-        $query = $this->db->prepare('UPDATE users SET email = :email, username = :username,  password = :password WHERE id = :id ');
+        $query = $this->db->prepare('UPDATE users SET firstName = :firstName, lastName = :lastName, email = :email, password = :password WHERE id = :id ');
         $parameters = [
             'id' => $user->getId(),
             'email' => $user->getEmail(),

@@ -25,79 +25,89 @@ class Router
 
     // METHODES //
 
-    public function checkRoute($request) : void
+    public function checkRoute() : void
     {
-    
-        $route = explode("/", $request);
-
-    // Afficher les pages de PageController
         
-        if($route[1] === "" || $route[1] === "accueil")
+        if(!isset($_GET["path"]))
         {
             $this->pageController->accueil();
         }
         
-        else if($route[1] === "arbitres")
-        {
-            $this->pageController->arbitres();
-        }
-        
-        else if($route[1] === "equipes")
-        {
-            $this->pageController->equipes();
-        }
-        
-        else if($route[1] === "boutique")
-        {
-            $this->pageController->boutique();
-        }
-        
-        else if($route[1] === "club")
-        {
-            if(!isset($route[2]))
-            {
-                $this->pageController->club();
-            }
-            else if($route[2] === "histoire")
-            {
-                
-                $this->pageController->histoire();
-                
-            }
-            else if($route[2] === "infrastructures")
-            {
-                
-                $this->pageController->infrastructures();
-                
-            }
-            else if($route[2] === "partenaires")
-            {
-                
-                $this->pageController->partenaires();
-                
-            }
-        }
-        
-        else if($route[1] === "contact")
-        {
-            $this->pageController->contact();
-        }
-        
-        
-    // Afficher page authentification pour admin
-    
-        if($route[1] === "authentification")
-        {
-            $this->userController->authentification();
-        }
-
         else
         {
+            $route = explode("/", $_GET["path"]);
             
-            $this->pageController->erreur();
+        // Côté client
+            // Afficher les pages de PageController
+            
+            if($route[0] === "arbitres")
+            {
+                $this->pageController->arbitres();
+            }
+            
+            else if($route[0] === "equipes")
+            {
+                $this->pageController->equipes();
+            }
+            
+            else if($route[0] === "boutique")
+            {
+                $this->pageController->boutique();
+            }
+            
+            else if($route[0] === "club")
+            {
+                if(!isset($route[1]))
+                {
+                    $this->pageController->club();
+                }
+                else if($route[1] === "histoire")
+                {
+                    
+                    $this->pageController->histoire();
+                    
+                }
+                else if($route[1] === "infrastructures")
+                {
+                    
+                    $this->pageController->infrastructures();
+                    
+                }
+                else if($route[1] === "partenaires")
+                {
+                    
+                    $this->pageController->partenaires();
+                    
+                }
+            }
+            
+            else if($route[0] === "contact")
+            {
+                $this->pageController->contact();
+            }
+            
+            
+            
+        // Côté admin
+            // Afficher le form d'enregistrement pour un admin
+        
+            if($route[0] === "authentification")
+            {
+                $this->userController->authentification();
+            }
+        
+            if($route[0] === "register")
+            {
+                $post = $_POST;
+                
+                $this->userController->register($post);
+            }
             
         }
-            
+        
+
+    
+        
     }
 
 }

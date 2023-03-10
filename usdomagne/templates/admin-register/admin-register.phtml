@@ -1,14 +1,14 @@
 <section id="register">
     <h1 class="sr-only">Créer un admin</h1>
-    <form method="post" action="index.php?route=register">
+    <form method="post" action="register">
         <h2>Créer un admin</h2>
         <fieldset>
             <label for="admin-firstname">Prénom</label>
-            <input type="text" name="admin-name" />
+            <input type="text" name="admin-firstname" />
         </fieldset>
         <fieldset>
             <label for="admin-lastname">Nom</label>
-            <input type="text" name="admin-firstname" />
+            <input type="text" name="admin-lastname" />
         </fieldset>
         <fieldset>
             <label for="admin-email">Email</label>
@@ -20,10 +20,10 @@
         </fieldset>
         <fieldset>
             <label for="admin-confirm-pwd">Confirmer le mot de passe</label>
-            <input type="password" name="confirm-pwd"/>
+            <input type="password" name="admin-confirm-pwd"/>
         </fieldset>
         <fieldset>
-            <input type="submit" name="submit" value="S'enregistrer" id="register-button" />
+            <input type="submit" name="submit" value="Enregistrer" id="register-button" />
         </fieldset>
         <input type="hidden" name="formRegister"/>
     </form>

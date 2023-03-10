@@ -42,27 +42,32 @@ class UserController extends AbstractController
         && !empty($post['admin-confirm-pwd'])
         ) {
 
-            if ($post['admin-password'] === $post['admin-confirm-pwd']) {
-                if($this->manager->getUserByEmail($post['admin-email']) === null) {
+            if ($post['admin-password'] === $post['admin-confirm-pwd']) 
+            {
+                if($this->manager->getUserByEmail($post['admin-email']) === null) 
+                {
                     $hashedPass = password_hash($post['admin-password'], PASSWORD_DEFAULT);
-                    $userToAdd = new User($post["admin-email"], $post["admin-firstname"], $hashedPass);
+                    $userToAdd = new User($post["admin-firstname"], $post["admin-lastname"], $post["admin-email"], $hashedPass);
                     $this->manager->insertUser($userToAdd);
-                    $this->render('authentification', []);
+                    $this->renderAdmin('authentification', []);
                 }
 
-                else {
-                    $this->render('authentification', ['error' => 'Cet Utilisateur existe déjà']);
+                else 
+                {
+                    $this->renderAdmin('authentification', ['error' => 'Cet Utilisateur existe déjà']);
                 }
 
             }
 
-            else {
-                $this->render('authentification', ['error' => 'Les mots de passe ne correspondent pas ']);
+            else 
+            {
+                $this->renderAdmin('authentification', ['error' => 'Les mots de passe ne correspondent pas ']);
             }
         }
 
-        else {
-            $this->render('authentification', ['error' => 'Merci de remplir tous les champs']);
+        else 
+        {
+            $this->renderAdmin('authentification', ['error' => 'Merci de remplir tous les champs']);
         }
 
 
@@ -71,7 +76,8 @@ class UserController extends AbstractController
     public function login(array $post) : void
     {
 
-        if (!empty($post['email']) && !empty($post['password'])) {
+        if (!empty($post['email']) && !empty($post['password'])) 
+        {
             $logEmail = $post['email'];
             $passToCheck = $post['password'];
 
@@ -82,23 +88,28 @@ class UserController extends AbstractController
             $hashedPass = $userToCheck->getPassword();
 
 
-            if ($userToCheck !== null) {
-                if (password_verify($passToCheck, $hashedPass)) {
+            if ($userToCheck !== null) 
+            {
+                if (password_verify($passToCheck, $hashedPass)) 
+                {
                     $_SESSION['authentification'] = 'ok';
                     $this->index();
                 }
 
-                else {
+                else 
+                {
                     $this->render('authentification', ['error' => 'Identifiants de connexion incorrects 1']);
                 }
             }
 
-            else {
+            else 
+            {
                 $this->render('authentification', ['error' => 'Identifiants de connexion incorrects 2']);
             }
         }
 
-        else {
+        else 
+        {
             $this->render('authentification', ['error' => 'Merci de remplir tous les champs de connexion']);
         }
 
