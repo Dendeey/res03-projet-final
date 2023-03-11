@@ -1,4 +1,4 @@
-#![image](https://s3.static-footeo.com/100/uploads/us-domagnestdidier/logo__75nixo4eg.png)
+![image](https://s3.static-footeo.com/100/uploads/us-domagnestdidier/logo__75nixo4eg.png)
 
 ## res03-projet-final
 
