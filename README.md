@@ -1,3 +1,5 @@
+![image](https://s3.static-footeo.com/100/uploads/us-domagnestdidier/logo__75nixo4eg.png)
+
 ## res03-projet-final
 
 Projet final pour la soutenance de fin de formation.
