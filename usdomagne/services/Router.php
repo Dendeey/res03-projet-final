@@ -28,10 +28,16 @@ class Router
     public function checkRoute() : void
     {
         
+        $post = $_POST;
+        
+        // Si la route n'existe pas, je veux afficher la page d'accueil
+        
         if(!isset($_GET["path"]))
         {
-            $this->pageController->accueil();
+            $this->pageController->accueil(); 
         }
+        
+        // Sinon afficher les routes demandées
         
         else
         {
@@ -90,36 +96,47 @@ class Router
             
         // Côté admin
             // Afficher le form d'enregistrement pour un admin
-        
-            else if($route[0] === "admin")
-            {
-                if(!isset($route[1]))
-                {
-                    $this->userController->adminAccueil();
-                }
-                
-            }
-        
+            
             else if($route[0] === "register")
             {
-                $post = $_POST;
+
+                var_dump($post);
                 
                 $this->userController->register($post);
             }
-            
-            else if($route[0] === "login")
+        
+            else if($route[0] === "admin") 
             {
-                $post = $_POST;
-                
-                var_dump($post);
-                
-                $this->userController->login($post);
+
+                if(isset($_SESSION['admin']) && $_SESSION['admin'] === "ok") 
+                {
+                    // Admin connecté
+
+                    if (!isset($route[1])) 
+                    {
+                       
+                        $this->renderAdmin->adminAccueil();
+                    }
+
+                    else 
+                    {
+
+               
+                    }
+                }
+
+                else 
+                {
+                    // Admin non connecté
+                    
+                    var_dump($post);
+                    
+                    $this->userController->login($post);
+
+                }
             }
             
         }
-        
-
-    
         
     }
 

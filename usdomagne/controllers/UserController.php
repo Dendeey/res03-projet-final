@@ -25,16 +25,6 @@ class UserController extends AbstractController
     // METHODES
     
     
-    public function displayLogin()
-    {
-        $this->renderAdmin("admin-login",[]);
-    }
-    
-    public function displayRegister()
-    {
-        $this->renderAdmin("admin-register",[]);
-    }
-    
     public function adminAccueil()
     {
         $this->renderAdmin("admin-accueil",[]);
@@ -58,25 +48,25 @@ class UserController extends AbstractController
                     $hashedPass = password_hash($post['admin-password'], PASSWORD_DEFAULT);
                     $userToAdd = new User($post["admin-firstname"], $post["admin-lastname"], $post["admin-email"], $hashedPass);
                     $this->manager->insertUser($userToAdd);
-                    $this->renderAdmin('register', []);
+                    $this->renderAdmin('admin-login', []);
                 }
 
                 else 
                 {
-                    $this->renderAdmin('register', ['error' => 'Cet Utilisateur existe déjà']);
+                    $this->renderAdmin('admin-register', ['error' => 'Cet Utilisateur existe déjà']);
                 }
 
             }
 
             else 
             {
-                $this->renderAdmin('register', ['error' => 'Les mots de passe ne correspondent pas ']);
+                $this->renderAdmin('admin-register', ['error' => 'Les mots de passe ne correspondent pas ']);
             }
         }
 
         else 
         {
-            $this->renderAdmin('register', ['error' => 'Merci de remplir tous les champs']);
+            $this->renderAdmin('admin-register', ['error' => 'Merci de remplir tous les champs']);
         }
 
 
@@ -101,25 +91,25 @@ class UserController extends AbstractController
             {
                 if (password_verify($passToCheck, $hashedPass)) 
                 {
-                    $_SESSION['authentification'] = 'ok';
-                    $this->index();
+                    $_SESSION['admin-login'] = 'ok';
+                    $this->adminAccueil();
                 }
 
                 else 
                 {
-                    $this->render('authentification', ['error' => 'Identifiants de connexion incorrects 1']);
+                    $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 1']);
                 }
             }
 
             else 
             {
-                $this->render('authentification', ['error' => 'Identifiants de connexion incorrects 2']);
+                $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 2']);
             }
         }
 
         else 
         {
-            $this->render('authentification', ['error' => 'Merci de remplir tous les champs de connexion']);
+            $this->renderAdmin('admin-login', ['error' => 'Merci de remplir tous les champs de connexion']);
         }
 
     }

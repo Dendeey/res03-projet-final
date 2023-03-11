@@ -30,14 +30,14 @@ class UserManager extends AbstractManager
         }
 
         else {
-           $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
+           $userToLoad = new User($user['first_name'], $user['last_name'], $user['email'], $user['password']);
            $userToLoad->setId($user['id']);
 
             return $userToLoad;
         }
 
 
-        $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
+        $userToLoad = new User($user['first_name'], $user['last_name'], $user['email'], $user['password']);
         $userToLoad->setId($user['id']);
 
     }
