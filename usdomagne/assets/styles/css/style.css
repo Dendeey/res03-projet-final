@@ -267,6 +267,10 @@ table {
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
+  #admin-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   html {

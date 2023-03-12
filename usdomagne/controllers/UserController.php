@@ -54,6 +54,7 @@ class UserController extends AbstractController
                 else 
                 {
                     $this->renderAdmin('admin-register', ['error' => 'Cet Utilisateur existe déjà']);
+                    echo 'COMPTE DEJA CREE !';
                 }
 
             }
@@ -61,12 +62,14 @@ class UserController extends AbstractController
             else 
             {
                 $this->renderAdmin('admin-register', ['error' => 'Les mots de passe ne correspondent pas ']);
+                echo 'LES MOTS DE PASSES NE SONT PAS IDENTIQUES !';
             }
         }
 
         else 
         {
             $this->renderAdmin('admin-register', ['error' => 'Merci de remplir tous les champs']);
+            echo 'REMPLIR TOUS LES CHAMPS !';
         }
 
 
@@ -98,18 +101,21 @@ class UserController extends AbstractController
                 else 
                 {
                     $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 1']);
+                    echo 'IDENTIFIANTS DE CONNEXION PAS BONS !';
                 }
             }
 
             else 
             {
                 $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 2']);
+                echo 'IDENTIFIANTS DE CONNEXION PAS BONS !';
             }
         }
 
         else 
         {
             $this->renderAdmin('admin-login', ['error' => 'Merci de remplir tous les champs de connexion']);
+            echo 'REMPLIR TOUS LES CHAMPS !';
         }
 
     }

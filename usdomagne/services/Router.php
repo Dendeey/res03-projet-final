@@ -99,9 +99,6 @@ class Router
             
             else if($route[0] === "register")
             {
-
-                var_dump($post);
-                
                 $this->userController->register($post);
             }
         
@@ -118,18 +115,11 @@ class Router
                         $this->renderAdmin->adminAccueil();
                     }
 
-                    else 
-                    {
-
-               
-                    }
                 }
 
                 else 
                 {
                     // Admin non connecté
-                    
-                    var_dump($post);
                     
                     $this->userController->login($post);
 

@@ -12,7 +12,7 @@ class UserManager extends AbstractManager
         $query->execute($parameters);
         $user = $query->fetch(PDO::FETCH_ASSOC);
 
-        $userToLoad = new User($user['firstName'], $user['lastName'], $user['email'], $user['password']);
+        $userToLoad = new User($user['first_name'], $user['last_name'], $user['email'], $user['password']);
         $userToLoad->setId($user['id']);
 
     }
@@ -63,12 +63,14 @@ class UserManager extends AbstractManager
 
     public function editUser(User $user) : void
     {
-        $query = $this->db->prepare('UPDATE users SET firstName = :firstName, lastName = :lastName, email = :email, password = :password WHERE id = :id ');
+        $query = $this->db->prepare('UPDATE users SET first_name = :firstName, last_name = :lastName, email = :email, password = :password WHERE id = :id ');
         $parameters = [
             'id' => $user->getId(),
+            'firstName' => $user->getFirstName(),
+            'lastName' => $user->getLastName(),
             'email' => $user->getEmail(),
-            'username' => $user->getUsername(),
             'password' => $user->getPassword()
+            
             ];
 
         $query->execute($parameters);
