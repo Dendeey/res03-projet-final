@@ -69,7 +69,7 @@ class UserController extends AbstractController
         else 
         {
             $this->renderAdmin('admin-register', ['error' => 'Merci de remplir tous les champs']);
-            echo 'REMPLIR TOUS LES CHAMPS !';
+            
         }
 
 
@@ -118,6 +118,15 @@ class UserController extends AbstractController
             echo 'REMPLIR TOUS LES CHAMPS !';
         }
 
+    }
+    
+    public function logout()
+    {
+        
+        session_destroy();
+        
+        header('Location: /res03-projet-final/usdomagne');
+        
     }
     
 

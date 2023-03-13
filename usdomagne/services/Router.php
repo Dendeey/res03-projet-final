@@ -126,6 +126,11 @@ class Router
                 }
             }
             
+            else if($route[0] === "logout")
+            {
+                $this->userController->logout();
+            }
+            
         }
         
     }
