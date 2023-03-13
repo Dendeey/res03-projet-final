@@ -32,7 +32,6 @@ class UserController extends AbstractController
 
     public function register(array $post) : void
     {
-        var_dump($post);
 
         if (!empty($post['admin-firstname'])
         && !empty($post['admin-lastname'])
@@ -54,7 +53,7 @@ class UserController extends AbstractController
                 else 
                 {
                     $this->renderAdmin('admin-register', ['error' => 'Cet Utilisateur existe déjà']);
-                    echo 'COMPTE DEJA CREE !';
+                    
                 }
 
             }
@@ -62,7 +61,7 @@ class UserController extends AbstractController
             else 
             {
                 $this->renderAdmin('admin-register', ['error' => 'Les mots de passe ne correspondent pas ']);
-                echo 'LES MOTS DE PASSES NE SONT PAS IDENTIQUES !';
+                
             }
         }
 
@@ -94,28 +93,29 @@ class UserController extends AbstractController
             {
                 if (password_verify($passToCheck, $hashedPass)) 
                 {
-                    $_SESSION['admin-login'] = 'ok';
+                    $_SESSION['isConnected'] = true;
+                    $_SESSION['username'] = $userToCheck->getFirstName();
                     $this->adminAccueil();
                 }
 
                 else 
                 {
                     $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 1']);
-                    echo 'IDENTIFIANTS DE CONNEXION PAS BONS !';
+                    
                 }
             }
 
             else 
             {
                 $this->renderAdmin('admin-login', ['error' => 'Identifiants de connexion incorrects 2']);
-                echo 'IDENTIFIANTS DE CONNEXION PAS BONS !';
+                
             }
         }
 
         else 
         {
             $this->renderAdmin('admin-login', ['error' => 'Merci de remplir tous les champs de connexion']);
-            echo 'REMPLIR TOUS LES CHAMPS !';
+            
         }
 
     }

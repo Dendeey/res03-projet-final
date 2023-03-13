@@ -1,0 +1,96 @@
+@media (min-width: 425px) and (max-width: 767.99px)
+{
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px)
+{
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px)
+{
+    #admin-header
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 19vh;
+        width: 100vw;
+        background-color: white;
+        box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+        
+        h1
+        {
+            padding-left: 3em;
+            padding-top: 1.5em;
+            font-size: 1.5em;
+            font-family: "Termina",Arial,sans-serif;
+        }
+        
+        ul
+        {
+            justify-self: end;
+            
+            
+            li
+            {
+                font-size: 1.5em;
+                font-family: "Termina",Arial,sans-serif;
+                padding-right: 3em;
+                padding-top: 1.5em;
+                
+                a
+                {
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2560px)
+{
+    #admin-header
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 19vh;
+        width: 100vw;
+        background-color: white;
+        box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+        
+        h1
+        {
+            padding-left: 3em;
+            padding-top: 1.5em;
+            font-size: 1.5em;
+            font-family: "Termina",Arial,sans-serif;
+        }
+        
+        ul
+        {
+            justify-self: end;
+            
+            
+            li
+            {
+                font-size: 1.5em;
+                font-family: "Termina",Arial,sans-serif;
+                padding-right: 3em;
+                padding-top: 1.5em;
+                
+                a
+                {
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                
+            }
+        }
+    }
+}

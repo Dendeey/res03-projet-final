@@ -52,50 +52,55 @@ table {
   border-spacing: 0;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439.99px) {
   html {
     font-size: 14px;
   }
-  header {
+  #client-header {
     height: 27vh;
     width: 100vw;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
-    z-index: 100;
     display: grid;
     grid-template-rows: 0.3fr 1fr;
   }
-  header .sr-only {
+  #client-header .sr-only {
     display: none;
   }
-  header section {
+  #client-header section {
     align-items: center;
     background-color: #f4f4f7;
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
   }
-  header section > p {
+  #client-header section h1 {
+    grid-column: 1/2;
+    padding-left: 3em;
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  #client-header section h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  #client-header section h2 {
     grid-column: 2/3;
     justify-self: end;
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header section > ul {
+  #client-header section ul {
     grid-column: 3/4;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 3em;
   }
-  header section > ul a {
+  #client-header section ul a {
     text-decoration: none;
     color: black;
   }
-  header nav {
+  #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -103,38 +108,38 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  header nav > ul:first-of-type {
+  #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  header nav > ul:first-of-type a {
+  #client-header nav ul:first-of-type a {
     text-decoration: none;
     color: black;
   }
-  header nav > ul:first-of-type li {
+  #client-header nav ul:first-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header nav figure {
+  #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  header nav figure a {
+  #client-header nav figure a {
     text-decoration: none;
     color: black;
   }
-  header nav figure img {
+  #client-header nav figure img {
     height: 15vh;
   }
-  header nav figure p {
+  #client-header nav figure p {
     align-self: center;
     justify-self: center;
     font-style: italic;
@@ -142,68 +147,73 @@ table {
     font-size: 0.9em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header nav > ul:last-of-type {
+  #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  header nav > ul:last-of-type a {
+  #client-header nav ul:last-of-type a {
     text-decoration: none;
     color: black;
   }
-  header nav > ul:last-of-type li {
+  #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
 }
-@media (min-width: 1440.1px) and (max-width: 2560px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
   html {
     font-size: 14px;
   }
-  header {
+  #client-header {
     height: 27vh;
     width: 100vw;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
-    z-index: 100;
     display: grid;
     grid-template-rows: 0.3fr 1fr;
   }
-  header .sr-only {
+  #client-header .sr-only {
     display: none;
   }
-  header section {
+  #client-header section {
     align-items: center;
     background-color: #f4f4f7;
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
   }
-  header section > p {
+  #client-header section h1 {
+    grid-column: 1/2;
+    padding-left: 3em;
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  #client-header section h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  #client-header section h2 {
     grid-column: 2/3;
     justify-self: end;
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header section > ul {
+  #client-header section ul {
     grid-column: 3/4;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 3em;
   }
-  header section > ul a {
+  #client-header section ul a {
     text-decoration: none;
     color: black;
   }
-  header nav {
+  #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -211,38 +221,38 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  header nav > ul:first-of-type {
+  #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  header nav > ul:first-of-type a {
+  #client-header nav ul:first-of-type a {
     text-decoration: none;
     color: black;
   }
-  header nav > ul:first-of-type li {
+  #client-header nav ul:first-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header nav figure {
+  #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  header nav figure a {
+  #client-header nav figure a {
     text-decoration: none;
     color: black;
   }
-  header nav figure img {
+  #client-header nav figure img {
     height: 15vh;
   }
-  header nav figure p {
+  #client-header nav figure p {
     align-self: center;
     justify-self: center;
     font-style: italic;
@@ -250,29 +260,83 @@ table {
     font-size: 0.9em;
     font-family: "Termina", Arial, sans-serif;
   }
-  header nav > ul:last-of-type {
+  #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
     column-gap: 4em;
   }
-  header nav > ul:last-of-type a {
+  #client-header nav ul:last-of-type a {
     text-decoration: none;
     color: black;
   }
-  header nav > ul:last-of-type li {
+  #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
   #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 19vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  #admin-header h1 {
+    padding-left: 3em;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  #admin-header ul {
+    justify-self: end;
+  }
+  #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Termina", Arial, sans-serif;
+    padding-right: 3em;
+    padding-top: 1.5em;
+  }
+  #admin-header ul li a {
+    text-decoration: none;
+    color: black;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
+  #admin-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 19vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  #admin-header h1 {
+    padding-left: 3em;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  #admin-header ul {
+    justify-self: end;
+  }
+  #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Termina", Arial, sans-serif;
+    padding-right: 3em;
+    padding-top: 1.5em;
+  }
+  #admin-header ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -283,7 +347,7 @@ table {
     overflow-x: hidden;
   }
 }
-@media (min-width: 1440.1px) and (max-width: 2560px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;

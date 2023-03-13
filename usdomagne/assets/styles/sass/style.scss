@@ -1,7 +1,18 @@
 @import "reset";
-@import "nav";
+@import "navClient";
+@import "navAdmin";
 
-@media (min-width: 1024px) and (max-width: 1440px)
+@media (min-width: 425px) and (max-width: 767.99px)
+{
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px)
+{
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px)
 {
     html
     {
@@ -15,16 +26,11 @@
         width: 100vw;
         overflow-x: hidden;
         
-    
-        & > main
-        {
-            
-        }
     }
 }
 
 
-@media (min-width: 1440.1px) and (max-width: 2560px)
+@media (min-width: 1440px) and (max-width: 2560px)
 {
     
     html
@@ -39,12 +45,7 @@
         width: 100vw;
         overflow-x: hidden;
         
-        
-        
-        & > main
-        {
-            
-        }
+
     }
     
 }

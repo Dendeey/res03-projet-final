@@ -105,14 +105,14 @@ class Router
             else if($route[0] === "admin") 
             {
 
-                if(isset($_SESSION['admin']) && $_SESSION['admin'] === "ok") 
+                if(isset($_SESSION['isConnected']) && $_SESSION['isConnected'] === true) 
                 {
                     // Admin connecté
 
                     if (!isset($route[1])) 
                     {
                        
-                        $this->renderAdmin->adminAccueil();
+                        $this->userController->adminAccueil();
                     }
 
                 }
