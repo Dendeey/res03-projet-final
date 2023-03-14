@@ -29,6 +29,11 @@ class PlayerController extends AbstractController
         $this->renderAdmin("admin-convocations", []);
     }
     
+    public function players()
+    {
+        $this->renderAdmin("admin-joueurs", []);
+    }
+    
 }
 
 ?>

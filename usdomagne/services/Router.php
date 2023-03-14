@@ -121,6 +121,12 @@ class Router
                     {
                         $this->playerController->convocations();
                     }
+                    
+                    else if($route[1] === "joueurs")
+                    {
+                        $this->playerController->players();
+                    }
+                    
 
                 }
 

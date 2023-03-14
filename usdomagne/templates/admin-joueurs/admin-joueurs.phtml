@@ -1,1 +1,26 @@
-<h1>Joueurs Administrateur</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Technologie principale</th>
+            <th>Technologie secondaire</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a class="btn btn-warning" href="{{ path('app_project_show', {'id': project.id}) }}" role="button">Montrer</a>
+                <a class="btn btn-success" href="{{ path('app_project_edit', {'id': project.id}) }}" role="button">Modifier</a>
+                <a class="btn btn-success" href="{{ path('app_project_edit', {'id': project.id}) }}" role="button">Supprimer</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

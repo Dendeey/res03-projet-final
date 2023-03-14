@@ -2,14 +2,14 @@
     <h1>Administrateur</h1>
     <ul>
         <?php 
-        /* var_dump($_SESSION);*/
+        /*var_dump($_SESSION);*/
         
         if(isset($_SESSION) && isset( $_SESSION['isConnected'])  && $_SESSION['isConnected'] === true)
         { 
             
             echo "<li>".$_SESSION['username']."</li>"; 
             
-            echo "<li><a href='logout'>Se déconnecter</a></li>";
+            echo "<li><a href='/res03-projet-final/usdomagne/logout'>Se déconnecter</a></li>";
         }; 
         
         ?>
