@@ -8,6 +8,7 @@ class Router
 
     private PageController $pageController;
     private UserController $userController;
+    private PlayerController $playerController;
     
     
 
@@ -18,6 +19,7 @@ class Router
         
         $this->pageController = new PageController();
         $this->userController = new UserController();
+        $this->playerController = new PlayerController();
         
              
     }
@@ -113,6 +115,11 @@ class Router
                     {
                        
                         $this->userController->adminAccueil();
+                    }
+                    
+                    else if($route[1] === "convocations")
+                    {
+                        $this->playerController->convocations();
                     }
 
                 }
