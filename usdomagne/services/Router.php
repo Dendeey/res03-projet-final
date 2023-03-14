@@ -124,7 +124,25 @@ class Router
                     
                     else if($route[1] === "joueurs")
                     {
-                        $this->playerController->players();
+                        if(!isset($route[2]))
+                        {
+                            $this->playerController->players();
+                        }
+                        
+                        else if($route[2] === "voir")
+                        {
+                            $this->playerController->showPlayer();
+                        }
+                        
+                        else if($route[2] === "modifier")
+                        {
+                            $this->playerController->editPlayer();
+                        }
+                        
+                        else if($route[2] === "creer-un-joueur")
+                        {
+                            $this->playerController->addPlayer($post);
+                        }
                     }
                     
 

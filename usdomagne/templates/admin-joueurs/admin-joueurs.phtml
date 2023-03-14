@@ -2,10 +2,8 @@
     <thead>
         <tr>
             <th>Id</th>
+            <th>Prénom</th>
             <th>Nom</th>
-            <th>Technologie principale</th>
-            <th>Technologie secondaire</th>
-            <th>Description</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -14,13 +12,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
             <td>
-                <a class="btn btn-warning" href="{{ path('app_project_show', {'id': project.id}) }}" role="button">Montrer</a>
-                <a class="btn btn-success" href="{{ path('app_project_edit', {'id': project.id}) }}" role="button">Modifier</a>
-                <a class="btn btn-success" href="{{ path('app_project_edit', {'id': project.id}) }}" role="button">Supprimer</a>
+                <a href="/res03-projet-final/usdomagne/admin/joueurs/voir">Montrer</a>
+                <a href="/res03-projet-final/usdomagne/admin/joueurs/modifier">Modifier</a>
+                <a href="/res03-projet-final/usdomagne/admin/joueurs/supprimer">Supprimer</a>
             </td>
         </tr>
     </tbody>
 </table>
+<button><a href="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur">Créer un joueur</a></button>

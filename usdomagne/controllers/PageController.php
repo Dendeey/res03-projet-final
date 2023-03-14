@@ -12,7 +12,7 @@ class PageController extends AbstractController
     public function accueil()
     {
         
-        $this->renderClient("accueil", []);
+        $this->renderClient("accueil/accueil", []);
         
     }
     
@@ -20,56 +20,56 @@ class PageController extends AbstractController
     public function arbitres() // À peut-être supprimer de la db car page peut-être finalement non dynamisée
     {
         
-        $this->renderClient("arbitres", []);
+        $this->renderClient("arbitres/arbitres", []);
         
     }
     
     public function equipes()
     {
         
-        $this->renderClient("equipes", []);
+        $this->renderClient("equipes/equipes", []);
         
     }
     
     public function boutique()
     {
         
-        $this->renderClient("boutique", []);
+        $this->renderClient("boutique/boutique", []);
         
     }
     
     public function club()
     {
         
-        $this->renderClient("club", []);
+        $this->renderClient("club/club", []);
         
     }
     
     public function histoire()
     {
         
-        $this->renderClient("histoire", []);
+        $this->renderClient("histoire/histoire", []);
         
     }
     
     public function infrastructures()
     {
         
-        $this->renderClient("infrastructures", []);
+        $this->renderClient("infrastructures/infrastructures", []);
         
     }
     
     public function partenaires()
     {
         
-        $this->renderClient("partenaires", []);
+        $this->renderClient("partenaires/partenaires", []);
         
     }
     
     public function contact()
     {
         
-        $this->renderClient("contact", []);
+        $this->renderClient("contact/contact", []);
         
     }
     

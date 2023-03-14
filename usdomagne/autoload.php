@@ -9,6 +9,7 @@ require './models/Player.php';
 
 require './managers/AbstractManager.php';
 require './managers/UserManager.php';
+require './managers/PlayerManager.php';
 
 // Appeler les controllers
 

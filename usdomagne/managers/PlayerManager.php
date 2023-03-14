@@ -27,6 +27,7 @@ class PlayerManager extends AbstractManager
         'lastName' => $player->getLastName()
         
         ];
+        
         $query->execute($parameters);
 
         $id = $this->db->lastInsertId();

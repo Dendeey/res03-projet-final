@@ -5,13 +5,13 @@ class PlayerController extends AbstractController
     
     // Attributs
 
-    private UserManager $manager;
+    private PlayerManager $manager;
 
     // Constructor
 
     public  function __construct()
     {
-	    $this->manager = new UserManager
+	    $this->manager = new PlayerManager
 	    (
 	        "davidsim_ProjetFinal",
 	        "3306",
@@ -26,12 +26,42 @@ class PlayerController extends AbstractController
     
     public function convocations()
     {
-        $this->renderAdmin("admin-convocations", []);
+        $this->renderAdmin("admin-convocations/admin-convocations", []);
     }
     
     public function players()
     {
-        $this->renderAdmin("admin-joueurs", []);
+        $this->renderAdmin("admin-joueurs/admin-joueurs", []);
+    }
+    
+    public function showPlayer()
+    {
+        $this->renderAdmin("admin-joueurs/show-player", []);
+    }
+    
+    public function editPlayer()
+    {
+        $this->renderAdmin("admin-joueurs/edit-player", []);
+    }
+    
+    public function addPlayer(array $post) : void
+    {
+        
+        if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
+        {
+            
+            $playerToAdd = new Player($post["add-firstname"], $post["add-lastname"]);
+            $this->manager->insertPlayer($playerToAdd);
+            $this->renderAdmin("admin-joueurs/add-player", []);
+            
+        }
+
+        else 
+        {
+            $this->renderAdmin('admin-joueurs/add-player', ['error' => 'Merci de remplir tous les champs']);
+            
+        }
+        
     }
     
 }
