@@ -32,6 +32,8 @@ class Router
         
         $post = $_POST;
         
+        
+        
         // Si la route n'existe pas, je veux afficher la page d'accueil
         
         if(!isset($_GET["path"]))
@@ -119,14 +121,14 @@ class Router
                     
                     else if($route[1] === "convocations")
                     {
-                        $this->playerController->convocations();
+                        $this->playerController->displayConvocations();
                     }
                     
                     else if($route[1] === "joueurs")
                     {
                         if(!isset($route[2]))
                         {
-                            $this->playerController->players();
+                            $this->playerController->displayPlayers();
                         }
                         
                         else if($route[2] === "voir")
@@ -136,7 +138,13 @@ class Router
                         
                         else if($route[2] === "modifier")
                         {
-                            $this->playerController->editPlayer();
+                            $this->playerController->displayEditPlayer();
+                        }
+                        
+                        else if($route[2] === "supprimer")
+                        {
+                            
+                            $this->playerController->displayDeletePlayer();
                         }
                         
                         else if($route[2] === "creer-un-joueur")

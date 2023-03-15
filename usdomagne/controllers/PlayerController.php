@@ -24,14 +24,14 @@ class PlayerController extends AbstractController
 
     // METHODES
     
-    public function convocations()
+    public function displayConvocations()
     {
         $this->renderAdmin("admin-convocations/admin-convocations", []);
     }
     
-    public function players()
+    public function displayPlayers()
     {
-        $this->renderAdmin("admin-joueurs/admin-joueurs", []);
+        $this->renderAdmin("admin-joueurs/admin-joueurs", ["players"=>$this->manager->getAllPlayers()]);
     }
     
     public function showPlayer()
@@ -39,13 +39,31 @@ class PlayerController extends AbstractController
         $this->renderAdmin("admin-joueurs/show-player", []);
     }
     
-    public function editPlayer()
+    public function displayEditPlayer()
     {
         $this->renderAdmin("admin-joueurs/edit-player", []);
     }
     
+    public function displayDeletePlayer(int $id)
+    {
+        // delete the player in the manager
+        $players = $this->manager->deletePlayer($id);
+
+        $list = [];
+        
+        foreach($players as $player)
+        {
+            $list[] = $player->toArray();
+        }
+
+        // render the list of all users
+        $this->renderAdmin("admin-joueurs/admin-joueurs", ["players"=>$this->manager->getAllPlayers()]);
+    }
+    
     public function addPlayer(array $post) : void
     {
+        
+        /*var_dump($post);*/
         
         if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
         {

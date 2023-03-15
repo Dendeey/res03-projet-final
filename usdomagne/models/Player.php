@@ -10,9 +10,9 @@ class Player {
     
     // Constructor
     
-    public function __construct(?int $id, string $firstName, string $lastName)
+    public function __construct(string $firstName, string $lastName)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
     }

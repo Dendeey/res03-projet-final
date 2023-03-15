@@ -2,6 +2,29 @@
 
 class PlayerManager extends AbstractManager
 {
+    
+    public function getAllPlayers() : array
+    {
+        
+        // get all the players from the database
+        $query = $this->db->prepare('SELECT * FROM players');
+        $query->execute();
+        $items = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+        $players = [];
+        
+        foreach($items as $item)
+        {
+            $player = new Player($item["first_name"], $item["last_name"]);
+            $player->setId($item["id"]);
+            $players[] = $player;
+            
+        }
+        /*var_dump($players);*/
+        return $players;
+        
+        
+    }
 
     public function getPlayerById(int $id) : Player
     {
@@ -20,6 +43,7 @@ class PlayerManager extends AbstractManager
 
     public function insertPlayer(Player $player) : Player
     {
+        
         $query = $this->db->prepare('INSERT INTO players (`id`, `first_name`, `last_name`) VALUES(NULL, :firstName, :lastName)');
 
         $parameters = [
@@ -32,7 +56,7 @@ class PlayerManager extends AbstractManager
 
         $id = $this->db->lastInsertId();
         $player->setId($id);
-        echo "Un joueur vient d'être ajouté";
+        echo "Un joueur vient d'être ajouté !";
         return $player;
 
     }
@@ -48,6 +72,19 @@ class PlayerManager extends AbstractManager
             ];
 
         $query->execute($parameters);
+    }
+    
+    public function deletePlayer(int $id) : array
+    {
+        // delete the player from the database
+        $query = $this->db->prepare('DELETE FROM players WHERE players.id = :id');
+        $parameters = [
+            'id' => $id
+        ];
+        $query->execute($parameters);
+
+        // return the full list of users
+        return $this->getAllPlayers();
     }
 }
 

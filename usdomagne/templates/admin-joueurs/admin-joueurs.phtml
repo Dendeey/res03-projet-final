@@ -8,16 +8,18 @@
         </tr>
     </thead>
     <tbody>
+        <?php foreach($data['players'] as $player){ ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?php echo $player->getId(); ?></td>
+            <td><?php echo $player->getFirstName(); ?></td>
+            <td><?php echo $player->getLastName(); ?></td>
             <td>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/voir">Montrer</a>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/modifier">Modifier</a>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/supprimer">Supprimer</a>
             </td>
         </tr>
+        <?php } ?>
     </tbody>
 </table>
-<button><a href="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur">Créer un joueur</a></button>
+<button><a href="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur">Ajouter un joueur</a></button>
