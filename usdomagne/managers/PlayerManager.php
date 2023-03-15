@@ -74,17 +74,15 @@ class PlayerManager extends AbstractManager
         $query->execute($parameters);
     }
     
-    public function deletePlayer(int $id) : array
+    public function deletePlayer(int $id) : void
     {
         // delete the player from the database
-        $query = $this->db->prepare('DELETE FROM players WHERE players.id = :id');
+        $query = $this->db->prepare('DELETE FROM players WHERE id = :id');
         $parameters = [
             'id' => $id
         ];
         $query->execute($parameters);
-
-        // return the full list of users
-        return $this->getAllPlayers();
+        
     }
 }
 

@@ -34,30 +34,25 @@ class PlayerController extends AbstractController
         $this->renderAdmin("admin-joueurs/admin-joueurs", ["players"=>$this->manager->getAllPlayers()]);
     }
     
-    public function showPlayer()
+    public function displayPlayer()
     {
         $this->renderAdmin("admin-joueurs/show-player", []);
     }
     
-    public function displayEditPlayer()
+    public function displayEditPlayer() // PASSER EN PARAMETRE UN NEW PLAYER
     {
-        $this->renderAdmin("admin-joueurs/edit-player", []);
+        $this->manager->editPlayer();
+        
+        header("Location: /res03-projet-final/usdomagne/admin/joueurs");
     }
     
     public function displayDeletePlayer(int $id)
     {
         // delete the player in the manager
-        $players = $this->manager->deletePlayer($id);
-
-        $list = [];
-        
-        foreach($players as $player)
-        {
-            $list[] = $player->toArray();
-        }
+        $this->manager->deletePlayer($id);
 
         // render the list of all users
-        $this->renderAdmin("admin-joueurs/admin-joueurs", ["players"=>$this->manager->getAllPlayers()]);
+        header("Location: /res03-projet-final/usdomagne/admin/joueurs");
     }
     
     public function addPlayer(array $post) : void
