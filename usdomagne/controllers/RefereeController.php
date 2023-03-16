@@ -1,0 +1,90 @@
+<?php 
+
+class RefereeController extends AbstractController
+{
+    
+    // Attributs
+
+    private RefereeManager $manager;
+
+    // Constructor
+
+    public  function __construct()
+    {
+	    $this->manager = new PlayerManager
+	    (
+	        "davidsim_ProjetFinal",
+	        "3306",
+	        "db.3wa.io",
+	        "davidsim",
+	        "83c8b946aee433563583381d62aa9c15"
+	    );
+    }
+    
+
+    // METHODES
+    
+    
+    public function displayReferees()
+    {
+        $this->renderAdmin("admin-joueurs/admin-referees", ["referees"=>$this->manager->getAllReferees()]);
+    }
+    
+    
+    public function displayFormEditPlayer(array $post, int $id)
+    {
+        $displayPlayerToUpdate = $this->manager->getPlayerById($id);
+        
+        $tab = [];
+        
+        $tab["players"] = $displayPlayerToUpdate;
+        
+        $this->renderAdmin("admin-joueurs/edit-player", $tab);
+        
+        if(isset($post["formEditPlayer"]))
+        {
+            if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']))
+            {
+                $playerToUpdate = $this->manager->getPlayerById($id);
+                $playerToUpdate->setFirstName($post['edit-firstname']);
+                $playerToUpdate->setLastName($post['edit-lastname']);
+                $this->manager->editPlayer($playerToUpdate);
+                header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+            }
+        }
+    }
+    
+    public function displayDeletePlayer(int $id)
+    {
+        // delete the player in the manager
+        $this->manager->deletePlayer($id);
+
+        // render the list of all users
+        header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+    }
+    
+    public function displayFormAddPlayer(array $post) : void
+    {
+        
+        /*var_dump($post);*/
+        
+        if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
+        {
+            
+            $playerToAdd = new Player($post["add-firstname"], $post["add-lastname"]);
+            $this->manager->insertPlayer($playerToAdd);
+            header('Location: /res03-projet-final/usdomagne/admin/joueurs');
+            
+        }
+
+        else 
+        {
+            $this->renderAdmin('admin-joueurs/add-player', ['error' => 'Merci de remplir tous les champs']);
+            
+        }
+        
+    }
+    
+}
+
+?>

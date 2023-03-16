@@ -39,7 +39,10 @@ class Referee {
         return $this->lastName;
     }
 
-    
+    public function getImage() : Media
+    {
+        return $this->image;
+    }
     
     // Setters
 
@@ -56,6 +59,11 @@ class Referee {
     public function setLastName(string $lastName) : void
     {
         $this->lastName = $lastName;
+    }
+    
+    public function setImage(Media $image) : void
+    {
+        $this->image = $image;
     }
 
     
