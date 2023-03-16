@@ -15,7 +15,6 @@
             <td><?php echo $player->getFirstName(); ?></td>
             <td><?php echo $player->getLastName(); ?></td>
             <td>
-                <a href="/res03-projet-final/usdomagne/admin/joueurs/voir/<?= $player->getId(); ?>">Montrer</a>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?= $player->getId(); ?>">Modifier</a>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/supprimer/<?= $player->getId(); ?>">Supprimer</a>
             </td>
@@ -24,3 +23,4 @@
     </tbody>
 </table>
 <button><a href="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur">Ajouter un joueur</a></button>
+<button><a href="/res03-projet-final/usdomagne/admin">Retour au menu</a></button>

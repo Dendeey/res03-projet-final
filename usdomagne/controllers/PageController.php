@@ -16,14 +16,6 @@ class PageController extends AbstractController
         
     }
     
-    
-    public function arbitres() // À peut-être supprimer de la db car page peut-être finalement non dynamisée
-    {
-        
-        $this->renderClient("arbitres/arbitres", []);
-        
-    }
-    
     public function equipes()
     {
         

@@ -7,15 +7,17 @@ class Referee {
     private ?int $id;
     private string $firstName;
     private string $lastName;
+    private Media $image;
 
     
     // Constructor
     
-    public function __construct(?int $id, string $firstName, string $lastName)
+    public function __construct(string $firstName, string $lastName, media $image)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+        $this->image = $image;
 
     }
 

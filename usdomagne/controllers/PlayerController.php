@@ -34,18 +34,28 @@ class PlayerController extends AbstractController
         $this->renderAdmin("admin-joueurs/admin-joueurs", ["players"=>$this->manager->getAllPlayers()]);
     }
     
-    public function displayPlayer()
-    {
-        $this->renderAdmin("admin-joueurs/show-player", []);
-    }
     
-    public function displayEditPlayer(Player $player, int $id)
+    public function displayFormEditPlayer(array $post, int $id)
     {
-        $this->renderAdmin("admin-joueurs/edit-player", ["edit-player"=>$this->manager->getPlayerById($id)]);
+        $displayPlayerToUpdate = $this->manager->getPlayerById($id);
         
-        $this->manager->editPlayer($player);
+        $tab = [];
         
-        header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+        $tab["players"] = $displayPlayerToUpdate;
+        
+        $this->renderAdmin("admin-joueurs/edit-player", $tab);
+        
+        if(isset($post["formEditPlayer"]))
+        {
+            if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']))
+            {
+                $playerToUpdate = $this->manager->getPlayerById($id);
+                $playerToUpdate->setFirstName($post['edit-firstname']);
+                $playerToUpdate->setLastName($post['edit-lastname']);
+                $this->manager->editPlayer($playerToUpdate);
+                header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+            }
+        }
     }
     
     public function displayDeletePlayer(int $id)
@@ -57,7 +67,7 @@ class PlayerController extends AbstractController
         header("Location: /res03-projet-final/usdomagne/admin/joueurs");
     }
     
-    public function addPlayer(array $post) : void
+    public function displayFormAddPlayer(array $post) : void
     {
         
         /*var_dump($post);*/

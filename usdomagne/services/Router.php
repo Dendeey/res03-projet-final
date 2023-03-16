@@ -131,21 +131,14 @@ class Router
                             $this->playerController->displayPlayers();
                         }
                         
-                        else if($route[2] === "voir")
-                        {
-                            if(isset($route[3]))
-                            {
-                                $this->playerController->displayPlayer($route[3]);
-                            }
-                            
-                        }
-                        
                         else if($route[2] === "modifier")
                         {
                             
                             if(isset($route[3]))
                             {
-                                $this->playerController->displayEditPlayer($route[3]);
+                                $this->playerController->displayFormEditPlayer($post, $route[3]);
+                    
+                                
                             }
                             
                         }
@@ -161,7 +154,7 @@ class Router
                         
                         else if($route[2] === "creer-un-joueur")
                         {
-                            $this->playerController->addPlayer($post);
+                            $this->playerController->displayFormAddPlayer($post);
                         }
                     }
                     
