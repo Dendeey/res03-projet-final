@@ -36,7 +36,9 @@ class PlayerManager extends AbstractManager
         $player = $query->fetch(PDO::FETCH_ASSOC);
 
         $playerToLoad = new Player($player['first_name'], $player['last_name']);
-        $playerToLoad->setId($player['id']);
+        $playerToLoad->setId($player["id"]);
+        
+        return $playerToLoad;
 
     }
 

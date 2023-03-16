@@ -9,13 +9,14 @@
     </thead>
     <tbody>
         <?php foreach($data['players'] as $player){ ?>
+        
         <tr>
             <td><?php echo $player->getId(); ?></td>
             <td><?php echo $player->getFirstName(); ?></td>
             <td><?php echo $player->getLastName(); ?></td>
             <td>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/voir/<?= $player->getId(); ?>">Montrer</a>
-                <a href="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?= $player->getFirstName(); ?>">Modifier</a>
+                <a href="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?= $player->getId(); ?>">Modifier</a>
                 <a href="/res03-projet-final/usdomagne/admin/joueurs/supprimer/<?= $player->getId(); ?>">Supprimer</a>
             </td>
         </tr>

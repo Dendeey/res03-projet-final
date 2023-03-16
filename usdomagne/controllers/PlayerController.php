@@ -39,9 +39,11 @@ class PlayerController extends AbstractController
         $this->renderAdmin("admin-joueurs/show-player", []);
     }
     
-    public function displayEditPlayer() // PASSER EN PARAMETRE UN NEW PLAYER
+    public function displayEditPlayer(Player $player, int $id)
     {
-        $this->manager->editPlayer();
+        $this->renderAdmin("admin-joueurs/edit-player", ["edit-player"=>$this->manager->getPlayerById($id)]);
+        
+        $this->manager->editPlayer($player);
         
         header("Location: /res03-projet-final/usdomagne/admin/joueurs");
     }
@@ -65,7 +67,7 @@ class PlayerController extends AbstractController
             
             $playerToAdd = new Player($post["add-firstname"], $post["add-lastname"]);
             $this->manager->insertPlayer($playerToAdd);
-            $this->renderAdmin("admin-joueurs/add-player", []);
+            header('Location: /res03-projet-final/usdomagne/admin/joueurs');
             
         }
 

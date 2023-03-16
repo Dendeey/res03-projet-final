@@ -142,6 +142,7 @@ class Router
                         
                         else if($route[2] === "modifier")
                         {
+                            
                             if(isset($route[3]))
                             {
                                 $this->playerController->displayEditPlayer($route[3]);
