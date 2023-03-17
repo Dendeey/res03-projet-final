@@ -26,6 +26,7 @@ Au cours de la prochaine itération, je vais travailler sur les tâches suivante
   - Terminer les arbitres côté admin.
   - Faire les convocations. 
   - Faire les posts.
+  - Terminer l'espace administrateur.
   
 ##Remarques:
 
