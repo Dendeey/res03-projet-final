@@ -68,7 +68,7 @@ class RefereeController extends AbstractController
         
         /*var_dump($post);*/
         
-        if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
+        if (!empty($post['add-firstname']) && !empty($post['add-lastname']) && !empty($post['add-image']))
         {
             
             $refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"], $post["add-image"]);

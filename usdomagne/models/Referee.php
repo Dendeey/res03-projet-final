@@ -7,18 +7,16 @@ class Referee {
     private ?int $id;
     private string $firstName;
     private string $lastName;
-    private Media $image;
-
+    
     
     // Constructor
     
-    public function __construct(string $firstName, string $lastName, media $image)
+    public function __construct(string $firstName, string $lastName)
     {
         $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->image = $image;
-
+        
     }
 
 
@@ -39,10 +37,7 @@ class Referee {
         return $this->lastName;
     }
 
-    public function getImage() : Media
-    {
-        return $this->image;
-    }
+    
     
     // Setters
 
@@ -61,14 +56,8 @@ class Referee {
         $this->lastName = $lastName;
     }
     
-    public function setImage(Media $image) : void
-    {
-        $this->image = $image;
-    }
 
     
-    // Functions
-
 }
 
 ?>
