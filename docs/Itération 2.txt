@@ -1,0 +1,32 @@
+#Compte rendu d'itération
+
+Nom du projet : RESO3-Projet-Final
+
+Période de l'itération : du 13/03/2023 au 17/03/2023
+
+##Résumé de l'itération :
+
+Au cours de cette itération, j'ai accompli les tâches suivantes:
+
+Créer le controller et manager pour récupérer les joueurs(#11) : Coder des fonctions qui permettent de récupérer des infos de la base de données, de pouvoir les afficher et les manipuler (Modifier/Supprimer). 
+
+J'ai rencontré des difficultés avec les tâches suivantes :
+
+Pour la fonction qui permet de modifier un joueur par l'administrateur.
+
+##Actions prises:
+
+Demander de l'aide et checker d'autres codes pour comprendre.
+
+##Prochaines étapes:
+
+Au cours de la prochaine itération, je vais travailler sur les tâches suivantes:
+ 
+  - Mettre à jour le router.
+  - Terminer les arbitres côté admin.
+  - Faire les convocations. 
+  - Faire les posts.
+  
+##Remarques:
+
+Faire fonctionner correctement un espace administrateur pour qu'il soit accessible et facile de prise en main pour le client, ça prend du temps.
