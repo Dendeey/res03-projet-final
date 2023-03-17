@@ -9,6 +9,7 @@ class Router
     private PageController $pageController;
     private UserController $userController;
     private PlayerController $playerController;
+    private RefereeController $refereeController;
     
     
 
@@ -20,6 +21,7 @@ class Router
         $this->pageController = new PageController();
         $this->userController = new UserController();
         $this->playerController = new PlayerController();
+        $this->refereeController = new RefereeController();
         
              
     }
@@ -155,6 +157,40 @@ class Router
                         else if($route[2] === "creer-un-joueur")
                         {
                             $this->playerController->displayFormAddPlayer($post);
+                        }
+                    }
+                    
+                    else if($route[1] === "arbitres")
+                    {
+                        if(!isset($route[2]))
+                        {
+                            $this->refereeController->displayReferees();
+                        }
+                        
+                        else if($route[2] === "modifier")
+                        {
+                            
+                            if(isset($route[3]))
+                            {
+                                $this->refereeController->displayFormEditReferee($post, $route[3]);
+                    
+                                
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "supprimer")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->refereeController->displayDeleteReferee($route[3]);
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "creer-un-arbitre")
+                        {
+                            $this->refereeController->displayFormAddReferee($post);
                         }
                     }
                     

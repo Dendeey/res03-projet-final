@@ -1,15 +1,15 @@
-<form action="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?php echo($data["players"]->getId()); ?>" method="post">
+<form action="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?php echo($data['referees']->getId()); ?>" method="post">
     <fieldset>
         <label for="edit-firstname">Prénom</label>
-        <input type="text" name="edit-firstname" value="<?= $data['players']->getFirstName(); ?>">
+        <input type="text" name="edit-firstname" value="<?= $data['referees']->getFirstName(); ?>">
     </fieldset>
     <fieldset>
         <label for="edit-lastname">Nom</label>
-        <input type="text" name="edit-lastname" value="<?= $data['players']->getLastName(); ?>">
+        <input type="text" name="edit-lastname" value="<?= $data['referees']->getLastName(); ?>">
     </fieldset>
     <fieldset>
         <input type="submit" name="submit" value="Enregistrer"/>
     </fieldset>
-    <input type="hidden" name="formEditPlayer"/>
+    <input type="hidden" name="formEditReferee"/>
 </form>
-<button><a href="/res03-projet-final/usdomagne/admin/joueurs">Retour aux joueurs</a></button>
+<button><a href="/res03-projet-final/usdomagne/admin/arbitres">Retour aux joueurs</a></button>

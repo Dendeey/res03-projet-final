@@ -1,4 +1,4 @@
-<form action="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur" method="post">
+<form action="/res03-projet-final/usdomagne/admin/arbitres/creer-un-arbitre" method="post">
     <fieldset>
         <label for="add-firstname">Prénom</label>
         <input type="text" name="add-firstname"/>
@@ -7,8 +7,12 @@
         <label for="add-lastname">Nom</label>
         <input type="text" name="add-lastname"/>
     <fieldset>
+    <fieldset>
+        <label for="add-image">Image</label>
+        <input type="text" name="add-image"/>
+    <fieldset>
         <input type="submit" name="submit" value="Enregistrer" id="addPlayer-button" />
     </fieldset>
-    <input type="hidden" name="formAddPlayer"/>
+    <input type="hidden" name="formAddReferee"/>
 </form>
-<button><a href="/res03-projet-final/usdomagne/admin/joueurs">Retour aux joueurs</a></button>
+<button><a href="/res03-projet-final/usdomagne/admin/arbitres">Retour aux arbitres</a></button>

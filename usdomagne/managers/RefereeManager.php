@@ -1,6 +1,6 @@
 <?php
 
-class PlayerManager extends AbstractManager
+class RefereeManager extends AbstractManager
 {
     
     public function getAllReferees() : array
@@ -43,43 +43,43 @@ class PlayerManager extends AbstractManager
     }
 
 
-    public function insertPlayer(Player $player) : Player
+    public function insertReferee(Referee $referee) : Referee
     {
         
-        $query = $this->db->prepare('INSERT INTO players (`id`, `first_name`, `last_name`) VALUES(NULL, :firstName, :lastName)');
+        $query = $this->db->prepare('INSERT INTO referees (`id`, `first_name`, `last_name`) VALUES(NULL, :firstName, :lastName)');
 
         $parameters = [
-        'firstName' => $player->getFirstName(),
-        'lastName' => $player->getLastName()
+        'firstName' => $referee->getFirstName(),
+        'lastName' => $referee->getLastName()
         
         ];
         
         $query->execute($parameters);
 
         $id = $this->db->lastInsertId();
-        $player->setId($id);
-        echo "Un joueur vient d'être ajouté !";
-        return $player;
+        $referee->setId($id);
+        echo "Un arbitre vient d'être ajouté !";
+        return $referee;
 
     }
 
-    public function editPlayer(Player $player) : void
+    public function editReferee(Referee $referee) : void
     {
-        $query = $this->db->prepare('UPDATE players SET first_name = :firstName, last_name = :lastName WHERE id = :id ');
+        $query = $this->db->prepare('UPDATE referees SET first_name = :firstName, last_name = :lastName WHERE id = :id ');
         $parameters = [
-            'id' => $player->getId(),
-            'firstName' => $player->getFirstName(),
-            'lastName' => $player->getLastName()
+            'id' => $referee->getId(),
+            'firstName' => $referee->getFirstName(),
+            'lastName' => $referee->getLastName()
             
             ];
 
         $query->execute($parameters);
     }
     
-    public function deletePlayer(int $id) : void
+    public function deleteReferee(int $id) : void
     {
-        // delete the player from the database
-        $query = $this->db->prepare('DELETE FROM players WHERE id = :id');
+        // delete the referee from the database
+        $query = $this->db->prepare('DELETE FROM referees WHERE id = :id');
         $parameters = [
             'id' => $id
         ];
