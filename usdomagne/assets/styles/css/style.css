@@ -56,90 +56,100 @@ table {
   html {
     font-size: 14px;
   }
-  #client-header {
-    height: 27vh;
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #client-header {
+    height: 16vh;
     width: 100vw;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
     display: grid;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.25fr 0.75fr;
   }
-  #client-header .sr-only {
+  body #client-header .sr-only {
     display: none;
   }
-  #client-header section {
+  body #client-header section {
     align-items: center;
     background-color: #f4f4f7;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
   }
-  #client-header section h1 {
-    grid-column: 1/2;
+  body #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header section h1 a {
+  body #client-header section h1 a {
     text-decoration: none;
     color: black;
+    display: flex;
+    column-gap: 1em;
   }
-  #client-header section h2 {
-    grid-column: 2/3;
-    justify-self: end;
+  body #client-header section ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+    justify-content: right;
+    padding-right: 5em;
+  }
+  body #client-header section ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header section ul {
-    grid-column: 3/4;
-    justify-self: center;
-    display: flex;
-    flex-direction: row;
-    column-gap: 3em;
+  body #client-header section ul li .icon-facebook {
+    color: #4267B2;
   }
-  #client-header section ul a {
+  body #client-header section ul li .icon-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  }
+  body #client-header section ul li a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav {
+  body #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
   }
-  #client-header nav ul:first-of-type {
+  body #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
-    column-gap: 4em;
+    column-gap: 12em;
   }
-  #client-header nav ul:first-of-type a {
+  body #client-header nav ul:first-of-type a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav ul:first-of-type li {
+  body #client-header nav ul:first-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header nav figure {
+  body #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  #client-header nav figure a {
+  body #client-header nav figure a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav figure img {
-    height: 15vh;
+  body #client-header nav figure img {
+    height: 10vh;
   }
-  #client-header nav figure p {
+  body #client-header nav figure p {
     align-self: center;
     justify-self: center;
     font-style: italic;
@@ -147,18 +157,18 @@ table {
     font-size: 0.9em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header nav ul:last-of-type {
+  body #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
-    column-gap: 4em;
+    column-gap: 12em;
   }
-  #client-header nav ul:last-of-type a {
+  body #client-header nav ul:last-of-type a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav ul:last-of-type li {
+  body #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
@@ -169,90 +179,106 @@ table {
   html {
     font-size: 14px;
   }
-  #client-header {
-    height: 27vh;
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #client-header {
+    height: 16vh;
     width: 100vw;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
     display: grid;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.25fr 0.75fr;
   }
-  #client-header .sr-only {
+  body #client-header .sr-only {
     display: none;
   }
-  #client-header section {
+  body #client-header section {
     align-items: center;
     background-color: #f4f4f7;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
   }
-  #client-header section h1 {
-    grid-column: 1/2;
+  body #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header section h1 a {
+  body #client-header section h1 a {
     text-decoration: none;
     color: black;
+    display: flex;
+    column-gap: 1em;
   }
-  #client-header section h2 {
-    grid-column: 2/3;
-    justify-self: end;
+  body #client-header section ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+    justify-content: right;
+    padding-right: 5em;
+  }
+  body #client-header section ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header section ul {
-    grid-column: 3/4;
-    justify-self: center;
-    display: flex;
-    flex-direction: row;
-    column-gap: 3em;
+  body #client-header section ul li .icon-facebook {
+    color: #4267B2;
   }
-  #client-header section ul a {
+  body #client-header section ul li .icon-instagram {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4em;
+    padding: 0.225em;
+  }
+  body #client-header section ul li .icon-twitter {
+    color: #00acee;
+  }
+  body #client-header section ul li a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav {
+  body #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
   }
-  #client-header nav ul:first-of-type {
+  body #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
-    column-gap: 4em;
+    column-gap: 12em;
   }
-  #client-header nav ul:first-of-type a {
+  body #client-header nav ul:first-of-type a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav ul:first-of-type li {
+  body #client-header nav ul:first-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header nav figure {
+  body #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  #client-header nav figure a {
+  body #client-header nav figure a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav figure img {
-    height: 15vh;
+  body #client-header nav figure img {
+    height: 10vh;
   }
-  #client-header nav figure p {
+  body #client-header nav figure p {
     align-self: center;
     justify-self: center;
     font-style: italic;
@@ -260,18 +286,18 @@ table {
     font-size: 0.9em;
     font-family: "Termina", Arial, sans-serif;
   }
-  #client-header nav ul:last-of-type {
+  body #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
-    column-gap: 4em;
+    column-gap: 12em;
   }
-  #client-header nav ul:last-of-type a {
+  body #client-header nav ul:last-of-type a {
     text-decoration: none;
     color: black;
   }
-  #client-header nav ul:last-of-type li {
+  body #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
@@ -334,6 +360,28 @@ table {
   #admin-header ul li a {
     text-decoration: none;
     color: black;
+  }
+}
+@media (min-width: 425px) and (max-width: 767.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
