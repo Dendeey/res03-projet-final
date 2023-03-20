@@ -7,7 +7,6 @@ class Media {
     private string $url;
     private string $caption;
     
-
     
     // Constructor
     
