@@ -10,6 +10,7 @@ class Router
     private UserController $userController;
     private PlayerController $playerController;
     private RefereeController $refereeController;
+    private MediaController $mediaController;
     
     
 
@@ -22,6 +23,7 @@ class Router
         $this->userController = new UserController();
         $this->playerController = new PlayerController();
         $this->refereeController = new RefereeController();
+        $this->mediaController = new MediaController();
         
              
     }
@@ -192,6 +194,11 @@ class Router
                         {
                             $this->refereeController->displayFormAddReferee($post);
                         }
+                    }
+                    
+                    else if($route[1] === "media")
+                    {
+                        $this->mediaController->displayMedia();
                     }
                     
 

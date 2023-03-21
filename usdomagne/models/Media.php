@@ -6,6 +6,11 @@ class Media {
     
     private string $url;
     private string $caption;
+    private Referee $refereeId;
+    /*private Post $postId;
+    private Office $officeId;
+    private Staff $staffId;
+    private Album $albumId;*/
     
     
     // Constructor
@@ -14,14 +19,12 @@ class Media {
     {
         $this->url = $url;
         $this->caption = $caption;
-        
+        $this->refereeId = $refereeId;
 
     }
 
 
     // Getters
-
-    
     
     public function getUrl() : string
     {
@@ -33,13 +36,13 @@ class Media {
         return $this->caption;
     }
     
-    
-
-    
+    public function getRefereeId() : Referee
+    {
+        return $this->refereeId;
+    }
     
     // Setters
 
-    
     public function setUrl(string $url) : void
     {
         $this->url = $url;
@@ -50,7 +53,10 @@ class Media {
         $this->caption = $caption;
     }
 
-    
+    public function setRefereeId(Referee $refereeId) : void
+    {
+        $this->refereeId = $refereeId;
+    }
 
     
 
