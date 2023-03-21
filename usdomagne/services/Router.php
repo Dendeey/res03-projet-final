@@ -198,7 +198,14 @@ class Router
                     
                     else if($route[1] === "media")
                     {
-                        $this->mediaController->displayMedia();
+                        if(!isset($route[2]))
+                        {
+                            $this->mediaController->displayMedia();
+                        }
+                        else if($route[2] === "creer-un-media")
+                        {
+                            $this->mediaController->displayFormInsertMedia($post);
+                        }
                     }
                     
 

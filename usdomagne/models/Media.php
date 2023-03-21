@@ -20,6 +20,11 @@ class Media {
         $this->url = $url;
         $this->caption = $caption;
         $this->refereeId = $refereeId;
+        /*$this->postId = $postId;
+        $this->officeId = $officeId;
+        $this->staffId = $staffId;
+        $this->albumId = $albumId;*/
+        
 
     }
 

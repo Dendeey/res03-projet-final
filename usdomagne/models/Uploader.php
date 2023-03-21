@@ -20,7 +20,7 @@ class Uploader {
      * @param string $uploadField the name of of the type="file" input
      *
      */
-    public function upload(array $files, string $uploadField) : ?Media
+    public function upload(array $files, string $uploadField) : ?MediaUpload
     {
         if(isset($files[$uploadField])){
             try {
