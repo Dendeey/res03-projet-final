@@ -39,7 +39,7 @@ class Uploader {
                 {
                     $url = $this->uploadFolder."/".$newFileName.".".$file_ext;
                     move_uploaded_file($file_tmp, $url);
-                    return new Media($file_name, $url);
+                    return new MediaUpload($file_name, $url);
                 }
             }
             catch(Exception $e)

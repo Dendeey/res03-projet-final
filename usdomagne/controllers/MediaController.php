@@ -35,21 +35,23 @@ class MediaController extends AbstractController
     {
         var_dump($post);
         
+        
         if (!empty($post['add-caption']) && !empty($post['add-refereeId']))
         {
             $uploader = new Uploader();
-            $media = $uploader->upload($_FILES,"image");
+            $media = $uploader->upload($_FILES, "image");
+            var_dump($media);
             $post["add-image"] = $media->getUrl();
-            $mediaToAdd = new Media($post["ad-image"], $post["add-caption"],$post["add-refereeId"]);
-            $this->manager->insertMedia($mediaToAd);
-            header('Location: /res03-projet-fina/usdomagne/admin/media');
-            
+            $mediaToAdd = new Media($post["add-image"], $post["add-caption"], $post["add-refereeId"]);
+            $this->manager->insertMedia($mediaToAdd);
+            header('Location: /res03-projet-final/usdomagne/admin/media');
+                
         }
-
+    
         else 
         {
-            $this->renderAdmin('admin-media/add-media', ['error' => 'Merci deremplir tous les champs']);
-            
+            $this->renderAdmin('admin-media/add-media', ['error' => 'Merci de remplir tous les champs']);
+                
         }
         
         

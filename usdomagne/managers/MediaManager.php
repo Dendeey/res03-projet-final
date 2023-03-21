@@ -44,9 +44,9 @@ class MediaManager extends AbstractManager
     
     
     //Créer une fonction qui ajoute une image dans la db
-    public function insertMedia(Media $image) : Media
+    public function insertMedia(Media $image)
     {
-        $query = $this->db->prepare('INSERT INTO media (`id`, `url`, `caption`,`referees_id`,`office_id`,`staff_id`,`albums_id`,`posts_id`) VALUES(NULL, :url, :caption, :referees_id, :office_id, :staff_id, :albums_id, :posts_id)');
+        $query = $this->db->prepare('INSERT INTO media (`id`, `url`, `caption`,`referees_id`,`office_id`,`staff_id`,`albums_id`,`posts_id`) VALUES (NULL, :url, :caption, :referees_id, :office_id, :staff_id, :albums_id, :posts_id)');
         $parameters = [
             'url' => $image->getUrl(),
             'caption' => $image->getCaption(),
@@ -58,10 +58,7 @@ class MediaManager extends AbstractManager
             ];
         $query->execute($parameters);
         
-        $id = $this->db->lastInsertId();
-        $image->setId($id);
-        echo "Une image vient d'être ajoutée !";
-        return $image;
+        
     }
     
     //Créer une fonction qui delete un media

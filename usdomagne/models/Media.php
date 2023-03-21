@@ -41,7 +41,7 @@ class Media {
         return $this->caption;
     }
     
-    public function getRefereeId() : Referee
+    public function getRefereeId() : int
     {
         return $this->refereeId;
     }
