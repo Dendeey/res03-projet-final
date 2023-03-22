@@ -1,4 +1,4 @@
-<form action="/res03-projet-final/usdomagne/admin/media/creer-un-media" method="post">
+<form action="/res03-projet-final/usdomagne/admin/media/creer-un-media" method="post" enctype="multipart/form-data">
     <fieldset>
         <label for="add-image">Image</label>
         <input type="file" name="add-image"/>
@@ -8,8 +8,24 @@
         <input type="text" name="add-caption"/>
     </fieldset>
     <fieldset>
+        <label for="add-staffId">Identifiant Staff</label>
+        <input type="number" name="add-staffId"/>
+    </fieldset>
+    <fieldset>
+        <label for="add-officeId">Identifiant Office</label>
+        <input type="number" name="add-officeId"/>
+    </fieldset>
+    <fieldset>
         <label for="add-refereeId">Identifiant Arbitre</label>
         <input type="number" name="add-refereeId"/>
+    </fieldset>
+    <fieldset>
+        <label for="add-albumId">Identifiant Album</label>
+        <input type="number" name="add-albumId"/>
+    </fieldset>
+    <fieldset>
+        <label for="add-postId">Identifiant Post</label>
+        <input type="number" name="add-postId"/>
     </fieldset>
     <fieldset>
         <input type="submit" name="submit" value="Enregistrer" />

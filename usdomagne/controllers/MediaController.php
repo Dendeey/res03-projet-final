@@ -38,11 +38,12 @@ class MediaController extends AbstractController
         
         if (!empty($post['add-caption']) && !empty($post['add-refereeId']))
         {
+            var_dump($_FILES);
+            
             $uploader = new Uploader();
-            $media = $uploader->upload($_FILES, "image");
-            var_dump($media);
+            $media = $uploader->upload($_FILES, "add-image");
             $post["add-image"] = $media->getUrl();
-            $mediaToAdd = new Media($post["add-image"], $post["add-caption"], $post["add-refereeId"]);
+            $mediaToAdd = new Media(null, $post["add-image"], $post["add-caption"], $post["add-staffId"], $post["add-officeId"], $post["add-refereeId"], $post["add-albumId"], $post["add-postId"]);
             $this->manager->insertMedia($mediaToAdd);
             header('Location: /res03-projet-final/usdomagne/admin/media');
                 

@@ -5,10 +5,10 @@
             <th>Image</th>
             <th>Description</th>
             <th>Referee_Id</th>
-            <!--<th>Office_Id</th>
+            <th>Office_Id</th>
             <th>Staff_Id</th>
             <th>Albums_Id</th>
-            <th>Posts_Id</th>-->
+            <th>Posts_Id</th>
         </tr>
     </thead>
     <tbody>
@@ -18,9 +18,13 @@
             <td><?php echo $media->getId(); ?></td>
             <td><?php echo $media->getUrl(); ?></td>
             <td><?php echo $media->getCaption(); ?></td>
+            <td><?php echo $media->getStaffId(); ?></td>
+            <td><?php echo $media->getOfficeId(); ?></td>
             <td><?php echo $media->getRefereeId(); ?></td>
+            <td><?php echo $media->getAlbumId(); ?></td>
+            <td><?php echo $media->getPostId(); ?></td>
             <td>
-                <a href="/res03-projet-final/usdomagne/admin/media/supprimer/<?= $referee->getId(); ?>">Supprimer</a>
+                <a href="/res03-projet-final/usdomagne/admin/media/supprimer/<?= $media->getId(); ?>">Supprimer</a>
             </td>
         </tr>
         <?php } ?>

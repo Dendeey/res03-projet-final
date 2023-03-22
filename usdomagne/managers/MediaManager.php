@@ -15,7 +15,7 @@ class MediaManager extends AbstractManager
         
         foreach($items as $item)
         {
-            $media = new Media($item["url"], $item["caption"], $item["referees_id"], $item["office_id"], $item["staff_id"], $item["albums_id"], $item["posts_id"]);
+            $media = new Media($item["id"], $item["url"], $item["caption"], $item["staff_id"], $item["office_id"], $item["referees_id"], $item["albums_id"], $item["posts_id"]);
             $media->setId($item["id"]);
             $medias[] = $media;
             
@@ -46,15 +46,15 @@ class MediaManager extends AbstractManager
     //Créer une fonction qui ajoute une image dans la db
     public function insertMedia(Media $image)
     {
-        $query = $this->db->prepare('INSERT INTO media (`id`, `url`, `caption`,`referees_id`,`office_id`,`staff_id`,`albums_id`,`posts_id`) VALUES (NULL, :url, :caption, :referees_id, :office_id, :staff_id, :albums_id, :posts_id)');
+        $query = $this->db->prepare('INSERT INTO media VALUES (null, :url, :caption,  :staff_id, :office_id, :referees_id, album_id, post_id )');
         $parameters = [
             'url' => $image->getUrl(),
             'caption' => $image->getCaption(),
-            'referees_id' => $image->getRefereeId(),
-            'office_id' => $image->getOfficeId(),
             'staff_id' => $image->getStaffId(),
-            'albums_id' => $image->getAlbumId(),
-            'posts_id' => $image->getPostId()
+            'office_id' => $image->getOfficeId(),
+            'referees_id' => $image->getRefereeId(),
+            'album_id' => $image->getAlbumId(),
+            'post_id' => $image->getPostId()
             ];
         $query->execute($parameters);
         
