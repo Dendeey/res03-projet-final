@@ -310,62 +310,212 @@ table {
     font-family: "Termina", Arial, sans-serif;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439.99px) {
-  #admin-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 19vh;
+@media (min-width: 425px) and (max-width: 767.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
     width: 100vw;
-    background-color: white;
-    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+    overflow-x: hidden;
   }
-  #admin-header h1 {
-    padding-left: 3em;
-    padding-top: 1.5em;
-    font-size: 1.5em;
-    font-family: "Termina", Arial, sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
   }
-  #admin-header ul {
-    justify-self: end;
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
-  #admin-header ul li {
-    font-size: 1.5em;
-    font-family: "Termina", Arial, sans-serif;
-    padding-right: 3em;
-    padding-top: 1.5em;
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
   }
-  #admin-header ul li a {
-    text-decoration: none;
-    color: black;
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 1440px) and (max-width: 2560px) {
-  #admin-header {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 19vh;
+    height: 10vh;
     width: 100vw;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
   }
-  #admin-header h1 {
+  body #admin-header h1 {
     padding-left: 3em;
-    padding-top: 1.5em;
     font-size: 1.5em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
   }
-  #admin-header ul {
+  body #admin-header ul {
     justify-self: end;
   }
-  #admin-header ul li {
+  body #admin-header ul li {
     font-size: 1.5em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-right: 3em;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
   }
-  #admin-header ul li a {
+  body #admin-header ul li a {
+    font-size: 0.7em;
+    font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: red;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2560px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  body #admin-header h1 {
+    padding-left: 3em;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+  }
+  body #admin-header ul {
+    justify-self: end;
+  }
+  body #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    padding-right: 3em;
+    padding-top: 0.5em;
+  }
+  body #admin-header ul li a {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+  }
+}
+@media (min-width: 425px) and (max-width: 767.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-login {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body #admin-login .sr-only {
+    display: none;
+  }
+  body #admin-login section {
+    align-self: center;
+  }
+  body #admin-login section form h2 {
+    padding-bottom: 1em;
+  }
+  body #admin-login section form #login-button {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2560px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-login {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body #admin-login .sr-only {
+    display: none;
+  }
+  body #admin-login section {
+    align-self: center;
+  }
+  body #admin-login section form h2 {
+    padding-bottom: 1em;
+  }
+  body #admin-login section form #login-button {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
@@ -410,6 +560,25 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body #admin-aside {
+    height: 80vh;
+    display: flex;
+  }
+  body #admin-aside aside {
+    margin-top: 5em;
+    padding-left: 3em;
+  }
+  body #admin-aside aside h1 {
+    margin-bottom: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  body #admin-aside aside nav ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
   }
 }
 

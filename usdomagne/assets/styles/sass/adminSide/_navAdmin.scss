@@ -1,0 +1,124 @@
+@media (min-width: 425px) and (max-width: 767.99px)
+{
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px)
+{
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px)
+{
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+    
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #admin-header
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 10vh;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+            
+            h1
+            {
+                padding-left: 3em;
+                font-size: 1.5em;
+                font-family: 'Roboto', sans-serif;
+                align-self: center;
+                
+            }
+            
+            ul
+            {
+                justify-self: end;
+                
+                
+                li
+                {
+                    font-size: 1.5em;
+                    font-family: 'Roboto', sans-serif;
+                    padding-right: 3em;
+                    padding-top: 0.5em;
+                    
+                    a
+                    {
+                        font-size: 0.7em;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2560px)
+{
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+    
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #admin-header
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 10vh;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+            
+            h1
+            {
+                padding-left: 3em;
+                font-size: 1.5em;
+                font-family: 'Roboto', sans-serif;
+                align-self: center;
+                
+            }
+            
+            ul
+            {
+                justify-self: end;
+                
+                
+                li
+                {
+                    font-size: 1.5em;
+                    font-family: 'Roboto', sans-serif;
+                    padding-right: 3em;
+                    padding-top: 0.5em;
+                    
+                    a
+                    {
+                        font-size: 0.7em;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@ class MediaManager extends AbstractManager
         return $medias;
     }
     
-    //Fonction qui récupère l'image de l'arbitre par l'Id
+    //Fonction qui récupère l'image de l'arbitre par l'id
     public function getRefereeMediaById(int $referee) : Media
     {
         $query = $this->db->prepare("SELECT * FROM media WHERE referees_id = :referees_id");

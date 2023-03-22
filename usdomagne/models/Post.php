@@ -56,8 +56,6 @@ class Post {
         $this->content = $content;
     }
 
-    
-    // Functions
 
 }
 
