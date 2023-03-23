@@ -7,6 +7,7 @@ class Referee {
     private ?int $id;
     private string $firstName;
     private string $lastName;
+    private array $medias;
     
     
     // Constructor
@@ -16,6 +17,7 @@ class Referee {
         $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+        $this->medias = [];
         
     }
 
@@ -56,7 +58,12 @@ class Referee {
         $this->lastName = $lastName;
     }
     
-
+    //Functions
+    
+    public function addMedias(Media $media) : void
+    {
+        $this->medias[] = $media;
+    }
     
 }
 

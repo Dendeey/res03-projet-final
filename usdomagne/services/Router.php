@@ -169,6 +169,14 @@ class Router
                             $this->refereeController->displayReferees();
                         }
                         
+                        else if($route[2] === "voir")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->refereeController->showReferee($route[3]);
+                            }
+                        }
+                        
                         else if($route[2] === "modifier")
                         {
                             

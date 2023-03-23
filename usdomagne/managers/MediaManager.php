@@ -54,8 +54,7 @@ class MediaManager extends AbstractManager
         $id = $this->db->lastInsertId();
         $image->setId($id);
         
-        $query->fetch(PDO::FETCH_ASSOC);
-        return $this->getMediaById($id);
+        return $image;
         
         
     }
@@ -69,6 +68,33 @@ class MediaManager extends AbstractManager
             'id'=> $id
         ];
         $query->execute($parameters);
+    }
+    
+    
+    public function findMediaByRefereeId(int $id) : array
+    {
+        $query = $this->db->prepare('SELECT media.* FROM media JOIN referees_media ON media.id = referees_media.media_id JOIN referees ON referees.id = referees_media.referees_id WHERE referees.id = :id');
+
+        $parameters = [
+
+            'id' => $id
+        ];
+
+        $query->execute($parameters);
+
+        $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        $mediasArray = [];
+        foreach($medias as $media){
+            
+            $newMedia = new Media($media['url'], $media['caption']);
+            $newMedia->setId($media['id']);
+            $mediasArray[] = $newMedia;
+            
+        }
+        
+        return $mediasArray;
+
     }
 }
 

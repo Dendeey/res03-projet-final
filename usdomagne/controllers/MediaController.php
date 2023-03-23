@@ -52,8 +52,8 @@ class MediaController extends AbstractController
                 
         }
         
-        var_dump($post);
-        var_dump($_FILES);
+        /*var_dump($post);
+        var_dump($_FILES);*/
     }
     
     
