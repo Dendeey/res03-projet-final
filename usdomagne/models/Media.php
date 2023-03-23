@@ -7,28 +7,16 @@ class Media {
     private ?int $id;
     private string $url;
     private string $caption;
-    private ?int $postId;
-    private ?int $officeId;
-    private ?int $refereeId;
-    private ?int $staffId;
-    private ?int $albumId;
     
     
     // Constructor
     
-    public function __construct(?int $id=null, string $url, string $caption, ?int $staffId, ?int $officeId, ?int $refereeId, ?int $albumId, ?int $postId)
+    public function __construct(string $url, string $caption)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->url = $url;
         $this->caption = $caption;
-        $this->staffId = $staffId;
-        $this->officeId = $officeId;
-        $this->refereeId = $refereeId;
-        $this->albumId = $albumId;
-        $this->postId = $postId;
-        
-        
-
+    
     }
 
 
@@ -46,31 +34,6 @@ class Media {
     public function getCaption() : string
     {
         return $this->caption;
-    }
-    
-    public function getStaffId() : ?int
-    {
-        return $this->staffId;
-    }
-    
-    public function getOfficeId() : ?int
-    {
-        return $this->officeId;
-    }
-    
-    public function getRefereeId() : ?int
-    {
-        return $this->refereeId;
-    }
-    
-    public function getPostId() : ?int
-    {
-        return $this->postId;
-    }
-    
-    public function getAlbumId() : ?int
-    {
-        return $this->albumId;
     }
     
     

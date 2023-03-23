@@ -54,16 +54,7 @@ class Player {
     }
 
 
-    // Functions
     
-    public function toArray() : array
-    {
-        return [
-            "id" => $this->id,
-            "firstName" => $this->firstName,
-            "lastName" => $this->lastName
-        ];
-    }
 }
 
 ?>

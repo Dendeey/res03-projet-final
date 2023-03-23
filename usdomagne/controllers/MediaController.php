@@ -27,7 +27,7 @@ class MediaController extends AbstractController
     //Créer un fonction qui permet d'afficher toutes les images
     public function displayMedia()
     {
-        $this->renderAdmin("admin-media/admin-media", ["media"=>$this->manager->getAllMedia()]);
+        $this->renderAdmin("admin-media/admin-media", ["media"=>$this->manager->getAllMedias()]);
     }
     
     //Créer un fonction qui permet d'afficher un form et d'appeler la fonction du manager insérer un media
