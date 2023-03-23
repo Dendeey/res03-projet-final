@@ -206,6 +206,13 @@ class Router
                         {
                             $this->mediaController->displayFormInsertMedia($post);
                         }
+                        else if($route[2 === "supprimer"])
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->mediaController->displayDeleteMedia($route[3]);
+                            }
+                        }
                     }
                     
 

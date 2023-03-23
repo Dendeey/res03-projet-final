@@ -24,7 +24,21 @@ class MediaManager extends AbstractManager
         return $medias;
     }
     
-    
+    //Function qui récupère une image par l'id
+    public function getMediaById(int $id) : Media
+    {
+        $query = $this->db->prepare('SELECT * FROM media WHERE id = :id');
+        $parameters = [
+        'id' => $id
+        ];
+        $query->execute($parameters);
+        $media = $query->fetch(PDO::FETCH_ASSOC);
+
+        $mediaToLoad = new Media($media['url'], $media['caption']);
+        $mediaToLoad->setId($media["id"]);
+        
+        return $mediaToLoad;
+    }
 
 
     //Créer une fonction qui ajoute une image dans la db
@@ -39,19 +53,20 @@ class MediaManager extends AbstractManager
         
         $id = $this->db->lastInsertId();
         $image->setId($id);
-        echo "Une image vient d'être ajoutée !";
-        return $image;
+        
+        $query->fetch(PDO::FETCH_ASSOC);
+        return $this->getMediaById($id);
         
         
     }
     
     //Créer une fonction qui delete un media
-    public function deleteMedia(Media $image)
+    public function deleteMedia(int $id) : void
     {
         
         $query = $this->db->prepare("DELETE FROM media WHERE id=:id");
         $parameters = [
-            'id'=>$image->getId()
+            'id'=> $id
         ];
         $query->execute($parameters);
     }

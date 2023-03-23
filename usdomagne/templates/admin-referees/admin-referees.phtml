@@ -4,7 +4,6 @@
             <th>Id</th>
             <th>Prénom</th>
             <th>Nom</th>
-            <th>Image</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -15,7 +14,6 @@
             <td><?php echo $referee->getId(); ?></td>
             <td><?php echo $referee->getFirstName(); ?></td>
             <td><?php echo $referee->getLastName(); ?></td>
-            <td></td>
             <td>
                 <a href="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?= $referee->getId(); ?>">Modifier</a>
                 <a href="/res03-projet-final/usdomagne/admin/arbitres/supprimer/<?= $referee->getId(); ?>">Supprimer</a>

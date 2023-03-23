@@ -6,6 +6,8 @@ class RefereeController extends AbstractController
     // Attributs
 
     private RefereeManager $manager;
+    private MediaManager $mediaManager;
+    private Uploader $uploader;
 
     // Constructor
 
@@ -19,6 +21,8 @@ class RefereeController extends AbstractController
 	        "davidsim",
 	        "83c8b946aee433563583381d62aa9c15"
 	    );
+	    $this->mediaManager = new MediaManager();
+	    $this->uploader = new Uploader();
     }
     
 
@@ -73,11 +77,12 @@ class RefereeController extends AbstractController
         
         /*var_dump($post);*/
         
-        if (!empty($post['add-firstname']) && !empty($post['add-lastname']) && !empty($post['add-image']))
+        if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
         {
-            
-            $refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"], $post["add-image"]);
+            $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
+            $refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"]);
             $this->manager->insertReferee($refereeToAdd);
+            $refereeMedia = $this->manager->addRefereeMedia($refereeToAdd->getId(), $media->getId());
             header('Location: /res03-projet-final/usdomagne/admin/arbitres');
             
         }

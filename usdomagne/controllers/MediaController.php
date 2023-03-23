@@ -34,7 +34,6 @@ class MediaController extends AbstractController
     public function displayFormInsertMedia(array $post)
     {
 
-        
         if (!empty($post['add-caption']))
         {
 
@@ -55,6 +54,17 @@ class MediaController extends AbstractController
         
         var_dump($post);
         var_dump($_FILES);
+    }
+    
+    
+    
+    public function displayDeleteMedia(int $id)
+    {
+        // delete the referee in the manager
+        $this->manager->deleteMedia($id);
+
+        // render the list of all referees
+        header("Location: /res03-projet-final/usdomagne/admin/media");
     }
     
 }
