@@ -24,6 +24,11 @@ class RefereeController extends AbstractController
 
     // METHODES
     
+    public function arbitres()
+    {
+        $this->renderClient("arbitres/arbitres", ["referees"=>$this->manager->getAllReferees()]);
+    }
+    
     
     public function displayReferees()
     {
@@ -84,6 +89,8 @@ class RefereeController extends AbstractController
         }
         
     }
+    
+    
     
 }
 

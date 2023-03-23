@@ -15,25 +15,32 @@ class MediaManager extends AbstractManager
         
         foreach($items as $item)
         {
-            $media = new Media($item["id"], $item["url"], $item["caption"]);
+            $media = new Media($item["url"], $item["caption"]);
             $media->setId($item["id"]);
             $medias[] = $media;
             
         }
-        var_dump($medias);
+        /*var_dump($medias);*/
         return $medias;
     }
+    
+    
 
 
     //Créer une fonction qui ajoute une image dans la db
-    public function insertMedia(Media $image)
+    public function insertMedia(Media $image) : Media
     {
-        $query = $this->db->prepare('INSERT INTO media VALUES (null, :url, :caption)');
+        $query = $this->db->prepare('INSERT INTO media (`id`, `url`, `caption`) VALUES(NULL, :url, :caption)');
         $parameters = [
             'url' => $image->getUrl(),
             'caption' => $image->getCaption()
             ];
         $query->execute($parameters);
+        
+        $id = $this->db->lastInsertId();
+        $image->setId($id);
+        echo "Une image vient d'être ajoutée !";
+        return $image;
         
         
     }

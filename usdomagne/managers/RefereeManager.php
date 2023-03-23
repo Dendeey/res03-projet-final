@@ -87,7 +87,7 @@ class RefereeManager extends AbstractManager
         
     }
     
-    public function getRefereeMedia(int $refereeId, int $mediaId) : void
+    public function addRefereeMedia(int $refereeId, int $mediaId) : void
     {
         $query = $this->db->prepare('INSERT INTO referees_media VALUES(:referees_id, :media_id)');
 

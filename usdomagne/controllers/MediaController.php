@@ -33,17 +33,15 @@ class MediaController extends AbstractController
     //Créer un fonction qui permet d'afficher un form et d'appeler la fonction du manager insérer un media
     public function displayFormInsertMedia(array $post)
     {
-        var_dump($post);
+
         
-        
-        if (!empty($post['add-caption']) && !empty($post['add-refereeId']))
+        if (!empty($post['add-caption']))
         {
-            var_dump($_FILES);
-            
+
             $uploader = new Uploader();
             $media = $uploader->upload($_FILES, "add-image");
             $post["add-image"] = $media->getUrl();
-            $mediaToAdd = new Media(null, $post["add-image"], $post["add-caption"], $post["add-staffId"], $post["add-officeId"], $post["add-refereeId"], $post["add-albumId"], $post["add-postId"]);
+            $mediaToAdd = new Media($post["add-image"], $post["add-caption"]);
             $this->manager->insertMedia($mediaToAdd);
             header('Location: /res03-projet-final/usdomagne/admin/media');
                 
@@ -55,7 +53,8 @@ class MediaController extends AbstractController
                 
         }
         
-        
+        var_dump($post);
+        var_dump($_FILES);
     }
     
 }

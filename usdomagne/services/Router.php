@@ -52,11 +52,11 @@ class Router
             $route = explode("/", $_GET["path"]);
             
         // Côté client
-            // Afficher les pages de PageController
+            // Afficher les pages visibles de l'utilisateur
             
             if($route[0] === "arbitres")
             {
-                $this->pageController->arbitres();
+                $this->refereeController->arbitres();
             }
             
             else if($route[0] === "equipes")
