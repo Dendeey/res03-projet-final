@@ -39,7 +39,10 @@ class Referee {
         return $this->lastName;
     }
 
-    
+    public function getMedias() : array
+    {
+        return $this->medias;
+    }
     
     // Setters
 

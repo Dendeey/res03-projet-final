@@ -42,6 +42,7 @@ class PlayerController extends AbstractController
         $tab = [];
         
         $tab["players"] = $displayPlayerToUpdate;
+        /*var_dump($tab);*/
         
         $this->renderAdmin("admin-joueurs/edit-player", $tab);
         

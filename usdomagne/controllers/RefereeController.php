@@ -74,15 +74,6 @@ class RefereeController extends AbstractController
         }
     }
     
-    public function displayDeleteReferee(int $id)
-    {
-        // delete the referee in the manager
-        $this->manager->deleteReferee($id);
-
-        // render the list of all referees
-        header("Location: /res03-projet-final/usdomagne/admin/arbitres");
-    }
-    
     public function displayFormAddReferee(array $post) : void
     {
         
@@ -104,6 +95,29 @@ class RefereeController extends AbstractController
         
     }
     
+    public function displayDeleteReferee(int $id)
+    {
+        // delete the referee in the manager
+        $this->manager->deleteReferee($id);
+
+        // render the list of all referees
+        header("Location: /res03-projet-final/usdomagne/admin/arbitres");
+    }
+    
+    
+    public function addMediaInRefereesMedias(array $post, int $id)
+    {
+        var_dump($_FILES);
+
+        if(isset($_FILES) && !empty($_FILES)){
+            $referee = $this->manager->getRefereeById($id);
+            
+            $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'referees_media'));
+            $newCatMedia = $this->catManager->addMediaOnCat($cat->getId(), $media->getId());
+
+            header('Location: /res03-projet-final/admin/index-des-chats-a-l-adoption/'.$id.'/voir');
+        }
+    }
     
     
 }

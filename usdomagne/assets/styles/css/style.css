@@ -367,7 +367,7 @@ table {
   body #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 10vh;
+    height: 13vh;
     width: 100vw;
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
@@ -549,6 +549,25 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body #admin-aside {
+    height: 80vh;
+    display: flex;
+  }
+  body #admin-aside aside {
+    margin-top: 5em;
+    padding-left: 3em;
+  }
+  body #admin-aside aside h1 {
+    margin-bottom: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  body #admin-aside aside nav ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
   }
 }
 @media (min-width: 1440px) and (max-width: 2560px) {

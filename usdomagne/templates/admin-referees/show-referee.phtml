@@ -1,1 +1,18 @@
-<h1>Voir arbitre</h1>
+<form>
+    <fieldset>
+        <label for="show-firstname">Prénom</label>
+        <input type="text" name="show-firstname" value="<?= $data['referees']->getFirstName(); ?>" disabled="disabled">
+    </fieldset>
+    <fieldset>
+        <label for="show-lastname">Nom</label>
+        <input type="text" name="show-lastname" value="<?= $data['referees']->getLastName(); ?>" disabled="disabled">
+    </fieldset>
+    <figure>
+        <img src="/res03-projet-final/usdomagne/<?= $data['referees']->getMedias()->getUrl(); ?>">
+    </figure>
+    <fieldset>
+        <input type="submit" name="submit" value="Enregistrer"/>
+    </fieldset>
+    <input type="hidden" name="formShowReferee"/>
+</form>
+<button><a href="/res03-projet-final/usdomagne/admin/arbitres">Retour aux arbitres</a></button>
