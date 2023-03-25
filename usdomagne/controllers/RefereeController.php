@@ -7,6 +7,7 @@ class RefereeController extends AbstractController
 
     private RefereeManager $manager;
     private MediaManager $mediaManager;
+    private Uploader $uploader;
 
     // Constructor
 
@@ -47,7 +48,7 @@ class RefereeController extends AbstractController
             $referee->addMedias($media);
             
         }
-        $this->renderAdmin("admin-referees/show-referee", ["referees"=>$referee]);
+        $this->renderAdmin("admin-referees/show-referee", ["referees" => $referee]);
     }
     
     
@@ -74,15 +75,22 @@ class RefereeController extends AbstractController
         }
     }
     
-    public function displayFormAddReferee(array $post) : void
+    public function displayFormAddReferee($post)
     {
         
-        /*var_dump($post);*/
+        var_dump($post);
         
         if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
         {
-            $refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"]);
+            /*$refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"]);
             $this->manager->insertReferee($refereeToAdd);
+            header('Location: /res03-projet-final/usdomagne/admin/arbitres');*/
+            
+            $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
+            $referee = new Referee($post["add-firstname"], $post["add-lastname"]);
+            $this->manager->insertReferee($referee);
+            $newRefereeMedia = $this->manager->addRefereeMedia($referee->getId(), $media->getId());
+
             header('Location: /res03-projet-final/usdomagne/admin/arbitres');
             
         }
@@ -112,10 +120,10 @@ class RefereeController extends AbstractController
         if(isset($_FILES) && !empty($_FILES)){
             $referee = $this->manager->getRefereeById($id);
             
-            $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'referees_media'));
-            $newCatMedia = $this->catManager->addMediaOnCat($cat->getId(), $media->getId());
+            $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
+            $newRefereeMedia = $this->manager->addRefereeMedia($referee->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/admin/index-des-chats-a-l-adoption/'.$id.'/voir');
+            header('Location: /res03-projet-final/usdomagne/admin/arbitres/voir/'.$id.'');
         }
     }
     

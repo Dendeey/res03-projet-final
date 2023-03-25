@@ -28,13 +28,15 @@ class MediaManager extends AbstractManager
     public function getMediaById(int $id) : Media
     {
         $query = $this->db->prepare('SELECT * FROM media WHERE id = :id');
+        
         $parameters = [
         'id' => $id
         ];
+        
         $query->execute($parameters);
         $media = $query->fetch(PDO::FETCH_ASSOC);
 
-        $mediaToLoad = new Media($media['url'], $media['caption']);
+        $mediaToLoad = new Media($media['name'] ,$media['url']);
         $mediaToLoad->setId($media["id"]);
         
         return $mediaToLoad;
@@ -44,18 +46,20 @@ class MediaManager extends AbstractManager
     //Créer une fonction qui ajoute une image dans la db
     public function insertMedia(Media $image) : Media
     {
-        $query = $this->db->prepare('INSERT INTO media (`id`, `url`, `caption`) VALUES(NULL, :url, :caption)');
+        $query = $this->db->prepare('INSERT INTO media VALUES(:id, :name, :url)');
         $parameters = [
-            'url' => $image->getUrl(),
-            'caption' => $image->getCaption()
+            'id' => null,
+            'name' => $image->getName(),
+            'url' => $image->getUrl()
             ];
         $query->execute($parameters);
         
         $id = $this->db->lastInsertId();
         $image->setId($id);
         
-        return $image;
-        
+        $mediaToLoad = $query->fetch(PDO::FETCH_ASSOC);
+        return $this->getMediaById($id);
+
         
     }
     
@@ -85,9 +89,10 @@ class MediaManager extends AbstractManager
         $medias = $query->fetchAll(PDO::FETCH_ASSOC);
 
         $mediasArray = [];
-        foreach($medias as $media){
+        foreach($medias as $media)
+        {
             
-            $newMedia = new Media($media['url'], $media['caption']);
+            $newMedia = new Media($media['name'], $media['url']);
             $newMedia->setId($media['id']);
             $mediasArray[] = $newMedia;
             

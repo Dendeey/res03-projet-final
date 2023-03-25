@@ -8,7 +8,9 @@
         <input type="text" name="show-lastname" value="<?= $data['referees']->getLastName(); ?>" disabled="disabled">
     </fieldset>
     <figure>
+        <?php if(count($data['referees']->getMedias()) === 0){ ?>
         <img src="/res03-projet-final/usdomagne/<?= $data['referees']->getMedias()->getUrl(); ?>">
+        <?php } ?>
     </figure>
     <fieldset>
         <input type="submit" name="submit" value="Enregistrer"/>

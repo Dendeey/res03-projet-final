@@ -4,9 +4,8 @@
 
 require './models/User.php';
 require './models/Player.php';
-require './models/Media.php';
 require './models/Referee.php';
-require './models/MediaUpload.php';
+require './models/Media.php';
 require './models/RandomStringGenerator.php';
 require './models/Uploader.php';
 
