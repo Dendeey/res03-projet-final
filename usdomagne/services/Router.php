@@ -193,7 +193,7 @@ class Router
                         {
                             if(isset($route[3]))
                             {
-                                $this->refereeController->displayDeleteReferee($route[3]);
+                                $this->refereeController->displayDeleteRefereeMedia($route[3]);
                             }
                             
                         }

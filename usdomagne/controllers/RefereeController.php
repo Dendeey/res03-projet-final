@@ -127,6 +127,20 @@ class RefereeController extends AbstractController
         }
     }
     
+    public function displayDeleteRefereeMedia($id)
+    {
+        $referee = $this->manager->getRefereeById($id);
+        $medias = $this->mediaManager->findMediaByRefereeId($id);
+        $this->manager->deleteRefereeMedia($referee);
+        $this->manager->deleteReferee($referee);
+        
+        foreach($medias as $media)
+        {
+            $this->mediaManager->deleteMedia($media);
+        }
+        
+        header('Location: /res03-projet-final/usdomagne/admin/arbitres');
+    }
     
 }
 

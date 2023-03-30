@@ -76,12 +76,12 @@ class RefereeManager extends AbstractManager
         $query->execute($parameters);
     }
     
-    public function deleteReferee(int $id) : void
+    public function deleteReferee(Referee $referee) : void
     {
         // delete the referee from the database
         $query = $this->db->prepare('DELETE FROM referees WHERE id = :id');
         $parameters = [
-            'id' => $id
+            'id' => $referee->getId()
         ];
         $query->execute($parameters);
         
@@ -96,6 +96,18 @@ class RefereeManager extends AbstractManager
         $parameters = [
             'referees_id' => $refereeId,
             'media_id' => $mediaId
+        ];
+
+        $query->execute($parameters);
+    }
+    
+    public function deleteRefereeMedia(Referee $referee) : void
+    {
+        $query = $this->db->prepare('DELETE FROM referees_media WHERE referees_id = :referees_id');
+
+        $parameters = [
+
+            'referees_id' => $referee->getId()
         ];
 
         $query->execute($parameters);
