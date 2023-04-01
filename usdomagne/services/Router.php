@@ -11,6 +11,7 @@ class Router
     private PlayerController $playerController;
     private RefereeController $refereeController;
     private MediaController $mediaController;
+    private OfficeController $officeController;
     
     
 
@@ -24,6 +25,7 @@ class Router
         $this->playerController = new PlayerController();
         $this->refereeController = new RefereeController();
         $this->mediaController = new MediaController();
+        $this->officeController = new OfficeController();
         
              
     }
@@ -123,11 +125,6 @@ class Router
                         $this->userController->adminAccueil();
                     }
                     
-                    else if($route[1] === "convocations")
-                    {
-                        $this->playerController->displayConvocations();
-                    }
-                    
                     else if($route[1] === "joueurs")
                     {
                         if(!isset($route[2]))
@@ -141,8 +138,6 @@ class Router
                             if(isset($route[3]))
                             {
                                 $this->playerController->displayFormEditPlayer($post, $route[3]);
-                    
-                                
                             }
                             
                         }
@@ -160,6 +155,12 @@ class Router
                         {
                             $this->playerController->displayFormAddPlayer($post);
                         }
+                    }
+                    
+                    
+                    else if($route[1] === "convocations")
+                    {
+                        $this->playerController->displayConvocations();
                     }
                     
                     else if($route[1] === "arbitres")
@@ -204,15 +205,53 @@ class Router
                         }
                     }
                     
+                    else if($route[1] === "bureau")
+                    {
+                        if(!isset($route[2]))
+                        {
+                            $this->officeController->displayOffices();
+                        }
+                        
+                        else if($route[2] === "voir")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->officeController->showOffice($route[3]);
+                            }
+                        }
+                        
+                        else if($route[2] === "modifier")
+                        {
+                            
+                            if(isset($route[3]))
+                            {
+                                $this->officeController->displayFormEditOffice($post, $route[3]);
+                    
+                                
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "supprimer")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->officeController->displayDeleteOfficeMedia($route[3]);
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "creer-un-bureau")
+                        {
+                            $this->officeController->displayFormAddOffice($post);
+                        }
+                    }
+                    
                     else if($route[1] === "media")
                     {
                         if(!isset($route[2]))
                         {
                             $this->mediaController->displayMedia();
-                        }
-                        else if($route[2] === "creer-un-media")
-                        {
-                            $this->mediaController->displayFormInsertMedia($post);
                         }
                         else if($route[2 === "supprimer"])
                         {

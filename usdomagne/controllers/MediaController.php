@@ -27,11 +27,12 @@ class MediaController extends AbstractController
     //Créer un fonction qui permet d'afficher toutes les images
     public function displayMedia()
     {
+        
         $this->renderAdmin("admin-media/admin-media", ["media"=>$this->manager->getAllMedias()]);
     }
     
     //Créer un fonction qui permet d'afficher un form et d'appeler la fonction du manager insérer un media
-    public function displayFormInsertMedia(array $post)
+    /*public function displayFormInsertMedia(array $post)
     {
 
         if (!empty($post['add-caption']))
@@ -52,9 +53,9 @@ class MediaController extends AbstractController
                 
         }
         
-        /*var_dump($post);
-        var_dump($_FILES);*/
-    }
+        var_dump($post);
+        var_dump($_FILES);
+    }*/
     
     
     

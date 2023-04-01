@@ -7,15 +7,17 @@ class Office {
     private ?int $id;
     private string $firstName;
     private string $lastName;
+    private string $phoneNumber;
     private string $role;
     
     // Constructor
     
-    public function __construct(?int $id, string $firstName, string $lastName, string $role)
+    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $role)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+        $this->phoneNumber = $phoneNumber;
         $this->role = $role;
     }
 
@@ -36,6 +38,12 @@ class Office {
     {
         return $this->lastName;
     }
+    
+    public function getPhoneNumber() : string
+    {
+        return $this->phoneNumber;
+    }
+    
     
     public function getRole() : string
     {
@@ -60,12 +68,17 @@ class Office {
         $this->lastName = $lastName;
     }
     
+    public function setPhoneNumber(string $phoneNumber) : void
+    {
+        $this->phoneNumber = $phoneNumber;
+    }
+    
     public function gsetRole() : void
     {
         $this->role = $role;
     }
     
-    // Functions
+
 
 }
 

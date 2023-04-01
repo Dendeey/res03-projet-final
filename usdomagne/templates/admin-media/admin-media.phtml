@@ -2,8 +2,8 @@
     <thead>
         <tr>
             <th>Id</th>
+            <th>Nom</th>
             <th>Image</th>
-            <th>Description</th>
         </tr>
     </thead>
     <tbody>
@@ -11,8 +11,8 @@
         
         <tr>
             <td><?php echo $media->getId(); ?></td>
+            <td><?php echo $media->getName(); ?></td>
             <td><?php echo $media->getUrl(); ?></td>
-            <td><?php echo $media->getCaption(); ?></td>
             <td>
                 <a href="/res03-projet-final/usdomagne/admin/media/supprimer/<?= $media->getId(); ?>">Supprimer</a>
             </td>
@@ -20,5 +20,4 @@
         <?php } ?>
     </tbody>
 </table>
-<button><a href="/res03-projet-final/usdomagne/admin/media/creer-un-media">Ajouter un media</a></button>
 <button><a href="/res03-projet-final/usdomagne/admin">Retour au menu</a></button>

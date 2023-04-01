@@ -15,7 +15,7 @@ class MediaManager extends AbstractManager
         
         foreach($items as $item)
         {
-            $media = new Media($item["url"], $item["caption"]);
+            $media = new Media($item["name"], $item["url"]);
             $media->setId($item["id"]);
             $medias[] = $media;
             
@@ -64,12 +64,12 @@ class MediaManager extends AbstractManager
     }
     
     //Créer une fonction qui delete un media
-    public function deleteMedia(int $id) : void
+    public function deleteMedia(Media $media) : void
     {
         
         $query = $this->db->prepare("DELETE FROM media WHERE id=:id");
         $parameters = [
-            'id'=> $id
+            'id'=> $media->getId()
         ];
         $query->execute($parameters);
     }
@@ -78,6 +78,33 @@ class MediaManager extends AbstractManager
     public function findMediaByRefereeId(int $id) : array
     {
         $query = $this->db->prepare('SELECT media.* FROM media JOIN referees_media ON media.id = referees_media.media_id JOIN referees ON referees.id = referees_media.referees_id WHERE referees.id = :id');
+
+        $parameters = [
+
+            'id' => $id
+        ];
+
+        $query->execute($parameters);
+
+        $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        $mediasArray = [];
+        foreach($medias as $media)
+        {
+            
+            $newMedia = new Media($media['name'], $media['url']);
+            $newMedia->setId($media['id']);
+            $mediasArray[] = $newMedia;
+            
+        }
+        
+        return $mediasArray;
+
+    }
+    
+    public function findMediaByOfficeId(int $id) : array
+    {
+        $query = $this->db->prepare('SELECT media.* FROM media JOIN office_media ON media.id = office_media.media_id JOIN office ON office.id = office_media.office_id WHERE office.id = :id');
 
         $parameters = [
 
