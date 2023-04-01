@@ -9,16 +9,18 @@ class Staff {
     private string $lastName;
     private string $phoneNumber;
     private string $role;
+    private array $medias;
     
     // Constructor
     
-    public function __construct(?int $id, string $firstName, string $lastName, string $phoneNumber, string $role)
+    public function __construct(string $firstName, string $lastName, string $phoneNumber, string $role)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->phoneNumber = $phoneNumber;
         $this->role = $role;
+        $this->medias = [];
     }
 
 
@@ -44,11 +46,16 @@ class Staff {
         return $this->phoneNumber;
     }
     
+    
     public function getRole() : string
     {
         return $this->role;
     }
     
+    public function getMedias() : array
+    {
+        return $this->medias;
+    }
     
     // Setters
 
@@ -67,17 +74,23 @@ class Staff {
         $this->lastName = $lastName;
     }
     
-    public function setPhoneNumber() : void
+    public function setPhoneNumber(string $phoneNumber) : void
     {
         $this->phoneNumber = $phoneNumber;
     }
     
-    public function gsetRole() : void
+    public function setRole(string $role) : void
     {
         $this->role = $role;
     }
     
-    // Functions
+    //Functions
+    
+    public function addMedias(Media $media) : void
+    {
+        $this->medias[] = $media;
+    }
+
 
 }
 

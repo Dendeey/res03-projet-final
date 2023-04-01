@@ -62,7 +62,7 @@ class MediaController extends AbstractController
     public function displayDeleteMedia(int $id)
     {
         // delete the referee in the manager
-        $this->manager->deleteMedia($id);
+        $this->manager->deleteMediaWithId($id);
 
         // render the list of all referees
         header("Location: /res03-projet-final/usdomagne/admin/media");

@@ -9,6 +9,7 @@ class Office {
     private string $lastName;
     private string $phoneNumber;
     private string $role;
+    private array $medias;
     
     // Constructor
     
@@ -19,6 +20,7 @@ class Office {
         $this->lastName = $lastName;
         $this->phoneNumber = $phoneNumber;
         $this->role = $role;
+        $this->medias = [];
     }
 
 
@@ -50,6 +52,10 @@ class Office {
         return $this->role;
     }
     
+    public function getMedias() : array
+    {
+        return $this->medias;
+    }
     
     // Setters
 
@@ -73,11 +79,17 @@ class Office {
         $this->phoneNumber = $phoneNumber;
     }
     
-    public function gsetRole() : void
+    public function setRole(string $role) : void
     {
         $this->role = $role;
     }
     
+    //Functions
+    
+    public function addMedias(Media $media) : void
+    {
+        $this->medias[] = $media;
+    }
 
 
 }
