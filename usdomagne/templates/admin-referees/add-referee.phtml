@@ -1,19 +1,24 @@
-<form action="/res03-projet-final/usdomagne/admin/arbitres/creer-un-arbitre" method="post" enctype="multipart/form-data">
-    <fieldset>
-        <label for="add-firstname">Prénom</label>
-        <input type="text" name="add-firstname"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-lastname">Nom</label>
-        <input type="text" name="add-lastname"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-image">Image</label>
-        <input type="file" name="add-image"/>
-    </fieldset>
-    <fieldset>
-        <input type="submit" name="submit" value="Enregistrer" />
-    </fieldset>
-    <input type="hidden" name="formAddReferee"/>
-</form>
-<button><a href="/res03-projet-final/usdomagne/admin/arbitres">Retour aux arbitres</a></button>
+<main>
+    <section>
+        <h1>Créer un arbitre :</h1>
+        <form action="/res03-projet-final/usdomagne/admin/arbitres/creer-un-arbitre" method="post" enctype="multipart/form-data" id="formAddReferee">
+            <fieldset class="mb-3">
+                <label for="add-firstname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="add-firstname"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-lastname" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="add-lastname"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-image" class="form-label">Image</label>
+                <input type="file" class="form-control" name="add-image"/>
+            </fieldset>
+            <fieldset class="submit">
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>
+            </fieldset>
+            <input type="hidden" name="formAddReferee"/>
+        </form>
+        <button><a href="/res03-projet-final/usdomagne/admin/arbitres" class="btn btn-warning">Retour aux arbitres</a></button>
+    </section>
+</main>
