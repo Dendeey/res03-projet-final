@@ -1,0 +1,16 @@
+<main id="arbitres">
+    <header>
+        <h1>Arbitres</h1>
+    </header>
+    <section>
+        <?php foreach($data["referees"] as $referee){ ?>
+        <article>
+            <figure>
+                
+            </figure>
+            <h2><?= $referee->getFirstName(); ?></h2>
+            <h3><?= $referee->getLastName(); ?></h3>
+        </article>
+        <?php } ?>
+    </section>
+</main>

@@ -1,0 +1,23 @@
+<form action="/res03-projet-final/usdomagne/admin/bureau/modifier/<?php echo($data['office']->getId()); ?>" method="post">
+    <fieldset>
+        <label for="edit-firstname">Prénom</label>
+        <input type="text" name="edit-firstname" value="<?= $data['office']->getFirstName(); ?>">
+    </fieldset>
+    <fieldset>
+        <label for="edit-lastname">Nom</label>
+        <input type="text" name="edit-lastname" value="<?= $data['office']->getLastName(); ?>">
+    </fieldset>
+    <fieldset>
+        <label for="edit-phonenumber">Télephone portable</label>
+        <input type="text" name="edit-phonenumber" value="<?= $data['office']->getPhoneNumber(); ?>">
+    </fieldset>
+    <fieldset>
+        <label for="edit-role">Fonction</label>
+        <input type="text" name="edit-role" value="<?= $data['office']->getRole(); ?>">
+    </fieldset>
+    <fieldset>
+        <input type="submit" name="submit" value="Enregistrer"/>
+    </fieldset>
+    <input type="hidden" name="formEditOffice"/>
+</form>
+<button><a href="/res03-projet-final/usdomagne/admin/bureau">Retour au bureau</a></button>

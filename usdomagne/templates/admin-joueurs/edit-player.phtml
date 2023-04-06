@@ -1,0 +1,15 @@
+<form action="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?php echo($data["players"]->getId()); ?>" method="post">
+    <fieldset>
+        <label for="edit-firstname">Prénom</label>
+        <input type="text" name="edit-firstname" value="<?= $data['players']->getFirstName(); ?>">
+    </fieldset>
+    <fieldset>
+        <label for="edit-lastname">Nom</label>
+        <input type="text" name="edit-lastname" value="<?= $data['players']->getLastName(); ?>">
+    </fieldset>
+    <fieldset>
+        <input type="submit" name="submit" value="Enregistrer"/>
+    </fieldset>
+    <input type="hidden" name="formEditPlayer"/>
+</form>
+<button><a href="/res03-projet-final/usdomagne/admin/joueurs">Retour aux joueurs</a></button>

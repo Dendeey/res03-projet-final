@@ -1,0 +1,12 @@
+// reset
+@import "reset/reset";
+
+// client pages
+@import "clientSide/navClient";
+@import "clientSide/homepage";
+
+// admin pages
+@import "adminSide/navAdmin";
+@import "adminSide/adminLogin";
+@import "adminSide/adminAside";
+@import "adminSide/adminForm";

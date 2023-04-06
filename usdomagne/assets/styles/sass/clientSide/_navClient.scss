@@ -1,0 +1,441 @@
+@media (min-width: 425px) and (max-width: 767.99px)
+{
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px)
+{
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px)
+{
+    html
+    {
+        font-size: 14px;
+    }
+    
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #client-header
+        {
+            height: 16vh;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+            display: grid;
+            grid-template-rows: 0.25fr 0.75fr;
+            
+            .sr-only
+            {
+                display: none;
+            }
+            
+            section
+            {
+                align-items: center;
+                background-color: #f4f4f7;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+                h1
+                {
+            
+                    padding-left: 3em;
+                    font-size: 1em;
+                    font-family: "Termina",Arial,sans-serif;
+                    
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                        display: flex;
+                        column-gap: 1em;
+                        
+                        span
+                        {
+                            
+                        }
+                    }
+                    
+                    
+                }
+                
+                ul
+                {
+    
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 4em;
+                    justify-content: right;
+                    padding-right: 5em;
+                        
+            
+                    li 
+                    {
+                        
+                        font-size: 1em;
+                        font-family: "Termina",Arial,sans-serif;
+                        
+                        .icon-facebook
+                        {
+                            color: #4267B2;
+                        }
+                        
+                        .icon-instagram
+                        {
+                            color: white;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                            border-radius: 0.4em;
+                            padding: 0.225em;
+                        }
+                        
+                        .icon-twitter
+                        {
+                            color: #00acee;
+                        }
+                        
+                        a
+                        {
+                            text-decoration: none;
+                            color: black;
+                            
+                            span
+                            {
+                                
+                            }
+                            
+                            
+                        }
+                            
+                        a:hover
+                        {
+                                
+                        }
+                    }
+                }
+            }
+            
+            nav 
+            {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 1fr;
+        
+                ul:first-of-type 
+                {
+                    align-self: center;
+                    justify-self: center;
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 12em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    
+                    a:hover
+                    {
+                        
+                    }
+        
+                    li 
+                    {
+                        display: inline-block;
+                        color: black;
+                        font-size: 1.3em;
+                        font-family: "Termina",Arial,sans-serif;
+                
+                    }
+                }
+                
+                figure 
+                {
+                    justify-self: center;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0.5em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+        
+                    img 
+                    {
+                        height: 10vh;
+                    }
+                    
+                    p
+                    {
+                        align-self: center;
+                        justify-self: center;
+                        font-style: italic;
+                        font-weight: 550;
+                        font-size: 0.9em;
+                        font-family: "Termina",Arial,sans-serif;
+                    }
+                }
+                
+                ul:last-of-type 
+                {
+                    align-self: center;
+                    justify-self: center;
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 12em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    
+                    a:hover
+                    {
+                        
+                    }
+        
+                    li 
+                    {
+                        display: inline-block;
+                        color: black;
+                        font-size: 1.3em;
+                        font-family: "Termina",Arial,sans-serif;
+                
+                    }
+                }
+            }
+        }
+        
+    }  
+}
+
+
+@media (min-width: 1440px) and (max-width: 2560px)
+{
+    
+    html
+    {
+        font-size: 14px;
+    }
+    
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #client-header
+        {
+            height: 16vh;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
+            display: grid;
+            grid-template-rows: 0.25fr 0.75fr;
+            
+            .sr-only
+            {
+                display: none;
+            }
+            
+            section
+            {
+                align-items: center;
+                background-color: #f4f4f7;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+                h1
+                {
+            
+                    padding-left: 3em;
+                    font-size: 1em;
+                    font-family: "Termina",Arial,sans-serif;
+                    
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                        display: flex;
+                        column-gap: 1em;
+                        
+                        span
+                        {
+                            
+                        }
+                    }
+                    
+                    
+                }
+                
+                ul
+                {
+    
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 4em;
+                    justify-content: right;
+                    padding-right: 5em;
+                        
+            
+                    li 
+                    {
+                        
+                        font-size: 1em;
+                        font-family: "Termina",Arial,sans-serif;
+                        
+                        .icon-facebook
+                        {
+                            color: #4267B2;
+                        }
+                        
+                        .icon-instagram
+                        {
+                            color: white;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                            border-radius: 0.4em;
+                            padding: 0.225em;
+                        }
+                        
+                        .icon-twitter
+                        {
+                            color: #00acee;
+                        }
+                        
+                        a
+                        {
+                            text-decoration: none;
+                            color: black;
+                            
+                            span
+                            {
+                                
+                            }
+                            
+                            
+                        }
+                            
+                        a:hover
+                        {
+                                
+                        }
+                    }
+                }
+            }
+            
+            nav 
+            {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 1fr;
+        
+                ul:first-of-type 
+                {
+                    align-self: center;
+                    justify-self: center;
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 12em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    
+                    a:hover
+                    {
+                        
+                    }
+        
+                    li 
+                    {
+                        display: inline-block;
+                        color: black;
+                        font-size: 1.3em;
+                        font-family: "Termina",Arial,sans-serif;
+                
+                    }
+                }
+                
+                figure 
+                {
+                    justify-self: center;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0.5em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+        
+                    img 
+                    {
+                        height: 10vh;
+                    }
+                    
+                    p
+                    {
+                        align-self: center;
+                        justify-self: center;
+                        font-style: italic;
+                        font-weight: 550;
+                        font-size: 0.9em;
+                        font-family: "Termina",Arial,sans-serif;
+                    }
+                }
+                
+                ul:last-of-type 
+                {
+                    align-self: center;
+                    justify-self: center;
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 12em;
+                    
+                    a
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    
+                    a:hover
+                    {
+                        
+                    }
+        
+                    li 
+                    {
+                        display: inline-block;
+                        color: black;
+                        font-size: 1.3em;
+                        font-family: "Termina",Arial,sans-serif;
+                
+                    }
+                }
+            }
+        }
+        
+    }
+}

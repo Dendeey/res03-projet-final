@@ -1,0 +1,20 @@
+<main id="admin-login">
+    <section id="login">
+        <h1 class="sr-only">Se connecter à l'espace administrateur</h1>
+        <form action="/res03-projet-final/usdomagne/admin" method="post">
+            <h2>Se connecter à l'espace administrateur</h2>
+            <fieldset class="form-floating mb-3">
+                <label for="floatingInput">Email</label>
+                <input type="email" class="form-control" id="floatingInput" name="email" />
+            </fieldset>
+            <fieldset class="form-floating">
+                <label for="floatingPassword">Mot de passe</label>
+                <input type="password" class="form-control" id="floatingPassword" name="password"/>
+            </fieldset>
+            <fieldset id="login-button">
+                <input type="submit" class="btn btn-primary" name="submit" value="Se connecter" />
+            </fieldset>
+            <input type="hidden" name="formName" value = "login" />
+        </form>
+    </section>
+</main>
