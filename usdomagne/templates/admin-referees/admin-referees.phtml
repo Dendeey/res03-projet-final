@@ -15,10 +15,10 @@
                 <td><?php echo $referee->getId(); ?></td>
                 <td><?php echo $referee->getFirstName(); ?></td>
                 <td><?php echo $referee->getLastName(); ?></td>
-                <td>
-                    <a href="/res03-projet-final/usdomagne/admin/arbitres/voir/<?= $referee->getId(); ?>">Voir</a>
-                    <a href="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?= $referee->getId(); ?>">Modifier</a>
-                    <a href="/res03-projet-final/usdomagne/admin/arbitres/supprimer/<?= $referee->getId(); ?>">Supprimer</a>
+                <td class="actions">
+                    <a href="/res03-projet-final/usdomagne/admin/arbitres/voir/<?= $referee->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?= $referee->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/arbitres/supprimer/<?= $referee->getId(); ?>"><span class="fa-solid fa-trash fa-lg"></span></a>
                 </td>
             </tr>
             <?php } ?>

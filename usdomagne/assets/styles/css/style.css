@@ -632,6 +632,63 @@ table {
     width: 100vw;
     overflow-x: hidden;
   }
+  body > main {
+    height: 60vh;
+  }
+  body > main table thead tr th {
+    text-align: center;
+  }
+  body > main table tbody tr td {
+    text-align: center;
+  }
+  body > main table tbody tr .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+  }
+  body > main section {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    align-content: center;
+  }
+  body > main section h1 {
+    margin-top: 3vh;
+    grid-column: 2/3;
+    justify-self: center;
+  }
+  body > main section form {
+    justify-self: center;
+    grid-column: 2/3;
+    margin-top: 3vh;
+    width: 20vw;
+  }
+  body > main section form fieldset {
+    border: 0;
+  }
+  body > main section form fieldset label {
+    font-size: 1.1em;
+  }
+  body > main section form #submit {
+    display: flex;
+    justify-content: center;
+  }
+  body > main section form #submit .btn-primary {
+    width: 10vw;
+  }
+  body > main section button {
+    grid-column: 1/2;
+    margin: auto;
+    padding: auto;
+    border: 0;
+    background: none;
+  }
+  body > main section button .btn-warning {
+    width: 15vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
 }
 @media (min-width: 1440px) and (max-width: 2560px) {
   html {
@@ -686,6 +743,7 @@ table {
     width: 10vw;
     height: 4vh;
     font-weight: bold;
+    font-size: 1.1em;
   }
 }
 
