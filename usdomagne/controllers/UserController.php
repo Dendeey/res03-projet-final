@@ -86,11 +86,10 @@ class UserController extends AbstractController
             $userToCheck = $this->manager->getUserByEmail($logEmail);
 
 
-            $hashedPass = $userToCheck->getPassword();
-
-
             if ($userToCheck !== null) 
             {
+                $hashedPass = $userToCheck->getPassword();
+
                 if (password_verify($passToCheck, $hashedPass)) 
                 {
                     $_SESSION['isConnected'] = true;
@@ -104,7 +103,7 @@ class UserController extends AbstractController
                     
                 }
             }
-
+            
             else 
             {
                 $this->renderAdmin('admin-login/admin-login', ['error' => 'Identifiants de connexion incorrects 2']);
