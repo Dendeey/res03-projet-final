@@ -77,7 +77,7 @@ class StaffController extends AbstractController
     public function displayFormAddStaff($post)
     {
         
-        var_dump($post);
+        // var_dump($post);
         
         if (!empty($post['add-firstname']) && !empty($post['add-lastname']) && !empty($post['add-phonenumber']) && !empty($post['add-role']))
         {

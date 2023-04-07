@@ -702,16 +702,57 @@ table {
   }
   body > main {
     height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+  }
+  body > main .section-btn {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-self: center;
+  }
+  body > main .section-btn button {
+    grid-column: 1/2;
+    margin: auto;
+    padding: auto;
+    border: 0;
+    background: none;
+  }
+  body > main .section-btn button .btn-warning {
+    width: 10vw;
+    height: 4vh;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(33, 33, 170);
+  }
+  body > main table {
+    grid-column: 2/3;
+  }
+  body > main table thead tr th {
+    text-align: center;
+    font-weight: 600;
+  }
+  body > main table tbody tr td {
+    text-align: center;
+  }
+  body > main table tbody tr .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
   }
   body > main section {
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-column: 2/3;
     align-content: center;
+    justify-self: center;
   }
   body > main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
+    text-align: center;
   }
   body > main section form {
     justify-self: center;
@@ -725,24 +766,19 @@ table {
   body > main section form fieldset label {
     font-size: 1.1em;
   }
-  body > main section form #submit {
+  body > main section form fieldset input {
+    text-align: center;
+  }
+  body > main section form fieldset figure img {
+    width: 100%;
+  }
+  body > main section form .submit {
     display: flex;
     justify-content: center;
   }
-  body > main section form #submit .btn-primary {
+  body > main section form .submit .btn-primary {
     width: 10vw;
-  }
-  body > main section button {
-    grid-column: 1/2;
-    margin: auto;
-    padding: auto;
-    border: 0;
-    background: none;
-  }
-  body > main section button .btn-warning {
-    width: 10vw;
-    height: 4vh;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.1em;
   }
 }

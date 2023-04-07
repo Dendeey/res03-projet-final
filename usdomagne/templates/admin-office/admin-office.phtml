@@ -1,30 +1,35 @@
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Prénom</th>
-            <th>Nom</th>
-            <th>Téléphone portable</th>
-            <th>Fonction</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php var_dump($data['offices']); foreach($data['offices'] as $office){ ?>
-        
-        <tr>
-            <td><?php echo $office->getId(); ?></td>
-            <td><?php echo $office->getFirstName(); ?></td>
-            <td><?php echo $office->getLastName(); ?></td>
-            <td><?php echo $office->getPhoneNumber(); ?></td>
-            <td><?php echo $office->getRole(); ?></td>
-            <td>
-                <a href="/res03-projet-final/usdomagne/admin/bureau/voir/<?= $office->getId(); ?>">Voir</a>
-                <a href="/res03-projet-final/usdomagne/admin/bureau/modifier/<?= $office->getId(); ?>">Modifier</a>
-                <a href="/res03-projet-final/usdomagne/admin/bureau/supprimer/<?= $office->getId(); ?>">Supprimer</a>
-            </td>
-        </tr>
-        <?php } ?>
-    </tbody>
-</table>
-<button><a href="/res03-projet-final/usdomagne/admin/bureau/creer-un-bureau">Ajouter un bureau</a></button>
-<button><a href="/res03-projet-final/usdomagne/admin">Retour au menu</a></button>
+<main>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Téléphone portable</th>
+                <th>Fonction</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data['offices'] as $office){ ?>
+            
+            <tr>
+                <td><?php echo $office->getId(); ?></td>
+                <td><?php echo $office->getFirstName(); ?></td>
+                <td><?php echo $office->getLastName(); ?></td>
+                <td><?php echo $office->getPhoneNumber(); ?></td>
+                <td><?php echo $office->getRole(); ?></td>
+                <td class="actions">
+                    <a href="/res03-projet-final/usdomagne/admin/bureau/voir/<?= $office->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/bureau/modifier/<?= $office->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg" style="color: green;"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/bureau/supprimer/<?= $office->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <section class="section-btn" >
+        <button><a href="/res03-projet-final/usdomagne/admin/bureau/creer-un-bureau" class="btn btn-warning">Ajouter un bureau</a></button>
+        <button><a href="/res03-projet-final/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
+    </section>
+</main>

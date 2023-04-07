@@ -1,25 +1,32 @@
-<form>
-    <fieldset>
-        <label for="show-firstname">Prénom</label>
-        <input type="text" name="show-firstname" value="<?= $data['office']->getFirstName(); ?>" disabled="disabled">
-    </fieldset>
-    <fieldset>
-        <label for="show-lastname">Nom</label>
-        <input type="text" name="show-lastname" value="<?= $data['office']->getLastName(); ?>" disabled="disabled">
-    </fieldset>
-    <fieldset>
-        <label for="show-phonenumber">Nom</label>
-        <input type="text" name="show-phonenumber" value="<?= $data['office']->getPhoneNumber(); ?>" disabled="disabled">
-    </fieldset>
-    <fieldset>
-        <label for="show-role">Nom</label>
-        <input type="text" name="show-role" value="<?= $data['office']->getRole(); ?>" disabled="disabled">
-    </fieldset>
-    <fieldset>
-        <figure>
-            <img src="/res03-projet-final/usdomagne/<?= $data['office']->getMedias()[0]->getUrl(); ?>">
-        </figure>
-    </fieldset>
-    <input type="hidden" name="formShowOffice"/>
-</form>
-<button><a href="/res03-projet-final/usdomagne/admin/bureau">Retour au bureau</a></button>
+<main>
+    <section>
+        <h1>Voir ce bureau :</h1>
+        <form>
+            <fieldset class="form-floating mb-3">
+                <label for="show-firstname">Prénom</label>
+                <input type="text" class="form-control" name="show-firstname" value="<?= $data['office']->getFirstName(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <label for="show-lastname">Nom</label>
+                <input type="text" class="form-control" name="show-lastname" value="<?= $data['office']->getLastName(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <label for="show-phonenumber">Nom</label>
+                <input type="text" class="form-control" name="show-phonenumber" value="<?= $data['office']->getPhoneNumber(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <label for="show-role">Nom</label>
+                <input type="text" class="form-control" name="show-role" value="<?= $data['office']->getRole(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <figure>
+                    <img src="/res03-projet-final/usdomagne/<?= $data['office']->getMedias()[0]->getUrl(); ?>">
+                </figure>
+            </fieldset>
+            <input type="hidden" name="formShowOffice"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/bureau" class="btn btn-warning">Retour au bureau</a></button>
+    </section>
+</main>

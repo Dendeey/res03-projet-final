@@ -10,11 +10,13 @@
                 <label for="edit-lastname" class="form-label">Nom</label>
                 <input type="text" class="form-control" name="edit-lastname" value="<?= $data['referees']->getLastName(); ?>">
             </fieldset>
-            <fieldset class="mb-3">
-                <input type="submit" name="submit" value="Enregistrer"/>
+            <fieldset class="submit">
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>
             </fieldset>
             <input type="hidden" name="formEditReferee"/>
         </form>
+    </section>
+    <section class="section-btn">
         <button><a href="/res03-projet-final/usdomagne/admin/arbitres" class="btn btn-warning">Retour aux arbitres</a></button>
     </section>
 </main>

@@ -184,18 +184,90 @@
         & > main
         {
             height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+
+            .section-btn
+            {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                align-self: center;                
+                
+                button
+                {
+                    grid-column: 1/2; 
+                    margin: auto;
+                    padding: auto;
+                    border: 0;
+                    background: none;
+                    
+                    .btn-warning 
+                    {
+                        width: 10vw;
+                        height: 4vh;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        color: rgb(33, 33, 170);
+                    }
+                }
+            }
+            
+
+            table
+            {
+                grid-column: 2/3;
+
+                thead
+                {
+                    tr
+                    {
+                        th
+                        {
+                            text-align: center;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+                tbody
+                {
+                    tr
+                    {
+                        td
+                        {
+                            text-align: center;
+                        }
+                        
+                        .actions
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+                            
+                        }
+                        
+                        
+                    }
+                }
+            }
+
             
             section
             {
-                display: grid;
-                grid-template-columns: 2fr 6fr 2fr;
+                grid-column: 2/3;
                 align-content: center;
+                justify-self: center;
                 
                 h1
                 {
                     margin-top: 3vh;
                     grid-column: 2/3;
                     justify-self: center;
+                    text-align: center;
                 }
                 
                 form
@@ -217,12 +289,22 @@
                         
                         input
                         {
+                            text-align: center;
                             
+                        }
+
+                        figure 
+                        {
+                            
+                            img 
+                            {
+                                width: 100%;
+                            }
                         }
     
                     }
                     
-                    #submit
+                    .submit
                     {
                         display: flex;
                         justify-content: center;
@@ -230,28 +312,15 @@
                         .btn-primary
                         {
                             width: 10vw;
+                            font-weight: 600;
+                            font-size: 1.1em;
                             
                         }
                     }
                     
                 }
                 
-                button
-                {
-                    grid-column: 1/2; 
-                    margin: auto;
-                    padding: auto;
-                    border: 0;
-                    background: none;
-                    
-                    .btn-warning 
-                    {
-                        width: 10vw;
-                        height: 4vh;
-                        font-weight: bold;
-                        font-size: 1.1em;
-                    }
-                }
+                
             }
  
         }

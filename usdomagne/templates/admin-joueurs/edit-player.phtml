@@ -1,15 +1,22 @@
-<form action="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?php echo($data["players"]->getId()); ?>" method="post">
-    <fieldset>
-        <label for="edit-firstname">Prénom</label>
-        <input type="text" name="edit-firstname" value="<?= $data['players']->getFirstName(); ?>">
-    </fieldset>
-    <fieldset>
-        <label for="edit-lastname">Nom</label>
-        <input type="text" name="edit-lastname" value="<?= $data['players']->getLastName(); ?>">
-    </fieldset>
-    <fieldset>
-        <input type="submit" name="submit" value="Enregistrer"/>
-    </fieldset>
-    <input type="hidden" name="formEditPlayer"/>
-</form>
-<button><a href="/res03-projet-final/usdomagne/admin/joueurs">Retour aux joueurs</a></button>
+<main>
+    <section>
+        <h1>Modifier ce joueur :</h1>
+        <form action="/res03-projet-final/usdomagne/admin/joueurs/modifier/<?php echo($data["players"]->getId()); ?>" method="post">
+            <fieldset class="mb-3">
+                <label for="edit-firstname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="edit-firstname" value="<?= $data['players']->getFirstName(); ?>">
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="edit-lastname" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="edit-lastname" value="<?= $data['players']->getLastName(); ?>">
+            </fieldset>
+            <fieldset class="submit">
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>
+            </fieldset>
+            <input type="hidden" name="formEditPlayer"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/joueurs" class="btn btn-warning">Retour aux joueurs</a></button>
+    </section>
+</main>

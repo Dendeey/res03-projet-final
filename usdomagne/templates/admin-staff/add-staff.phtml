@@ -1,27 +1,34 @@
-<form action="/res03-projet-final/usdomagne/admin/staff/creer-un-staff" method="post" enctype="multipart/form-data">
-    <fieldset>
-        <label for="add-firstname">Prénom</label>
-        <input type="text" name="add-firstname"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-lastname">Nom</label>
-        <input type="text" name="add-lastname"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-phonenumber">Téléphone portable</label>
-        <input type="text" name="add-phonenumber"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-role">Fonction</label>
-        <input type="text" name="add-role"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-image">Image</label>
-        <input type="file" name="add-image"/>
-    </fieldset>
-    <fieldset>
-        <input type="submit" name="submit" value="Enregistrer" />
-    </fieldset>
-    <input type="hidden" name="formAddStaff"/>
-</form>
-<button><a href="/res03-projet-final/usdomagne/admin/staff">Retour au staff</a></button>
+<main>
+    <section>
+        <h1>Créer un staff :</h1>
+        <form action="/res03-projet-final/usdomagne/admin/staff/creer-un-staff" method="post" enctype="multipart/form-data">
+            <fieldset class="mb-3">
+                <label for="add-firstname">Prénom</label>
+                <input type="text" class="form-control" name="add-firstname"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-lastname">Nom</label>
+                <input type="text" class="form-control" name="add-lastname"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-phonenumber">Téléphone portable</label>
+                <input type="text" class="form-control" name="add-phonenumber"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-role">Fonction</label>
+                <input type="text" class="form-control" name="add-role"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-image">Image</label>
+                <input type="file" class="form-control" name="add-image"/>
+            </fieldset>
+            <fieldset class="submit">
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary" class="form-control"/>
+            </fieldset>
+            <input type="hidden" name="formAddStaff"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/staff" class="btn btn-warning">Retour au staff</a></button>
+    </section>
+</main>

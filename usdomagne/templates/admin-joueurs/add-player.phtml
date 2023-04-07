@@ -1,15 +1,22 @@
-<form action="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur" method="post">
-    <fieldset>
-        <label for="add-firstname">Prénom</label>
-        <input type="text" name="add-firstname"/>
-    </fieldset>
-    <fieldset>
-        <label for="add-lastname">Nom</label>
-        <input type="text" name="add-lastname"/>
-    </fieldset>
-    <fieldset>
-        <input type="submit" name="submit" value="Enregistrer" id="addPlayer-button" />
-    </fieldset>
-    <input type="hidden" name="formAddPlayer"/>
-</form>
-<button><a href="/res03-projet-final/usdomagne/admin/joueurs">Retour aux joueurs</a></button>
+<main>
+    <section>
+        <h1>Créer un joueur :</h1>
+        <form action="/res03-projet-final/usdomagne/admin/joueurs/creer-un-joueur" method="post">
+            <fieldset class="mb-3">
+                <label for="add-firstname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="add-firstname"/>
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="add-lastname" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="add-lastname"/>
+            </fieldset>
+            <fieldset class="submit">
+                <input type="submit" class="btn btn-primary" name="submit" value="Enregistrer"/>
+            </fieldset>
+            <input type="hidden" name="formAddPlayer"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/joueurs" class="btn btn-warning">Retour aux joueurs</a></button>
+    </section>
+</main>

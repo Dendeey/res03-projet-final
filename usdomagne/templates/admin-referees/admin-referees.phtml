@@ -17,13 +17,15 @@
                 <td><?php echo $referee->getLastName(); ?></td>
                 <td class="actions">
                     <a href="/res03-projet-final/usdomagne/admin/arbitres/voir/<?= $referee->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
-                    <a href="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?= $referee->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg"></span></a>
-                    <a href="/res03-projet-final/usdomagne/admin/arbitres/supprimer/<?= $referee->getId(); ?>"><span class="fa-solid fa-trash fa-lg"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?= $referee->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg" style="color: green;"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/arbitres/supprimer/<?= $referee->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
                 </td>
             </tr>
             <?php } ?>
         </tbody>
     </table>
-    <button><a href="/res03-projet-final/usdomagne/admin/arbitres/creer-un-arbitre">Ajouter un arbitre</a></button>
-    <button><a href="/res03-projet-final/usdomagne/admin">Retour au menu</a></button>
+    <section class="section-btn" >
+        <button><a href="/res03-projet-final/usdomagne/admin/arbitres/creer-un-arbitre" class="btn btn-warning">Ajouter un arbitre</a></button>
+        <button><a href="/res03-projet-final/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
+    </section>
 </main>

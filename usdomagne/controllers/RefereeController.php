@@ -78,7 +78,7 @@ class RefereeController extends AbstractController
     public function displayFormAddReferee($post)
     {
         
-        var_dump($post);
+        // var_dump($post);
         
         if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
         {
