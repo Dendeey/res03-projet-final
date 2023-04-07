@@ -2,15 +2,15 @@
     <section>
         <h1>Voir cet arbitre :</h1>
         <form>
-            <fieldset>
+            <fieldset class="form-floating mb-3">
                 <label for="show-firstname">Prénom</label>
-                <input type="text" name="show-firstname" value="<?= $data['referees']->getFirstName(); ?>" disabled="disabled">
+                <input type="text" class="form-control" name="show-firstname"  value="<?= $data['referees']->getFirstName(); ?>" disabled="disabled">
             </fieldset>
-            <fieldset>
+            <fieldset class="form-floating mb-3">
                 <label for="show-lastname">Nom</label>
-                <input type="text" name="show-lastname" value="<?= $data['referees']->getLastName(); ?>" disabled="disabled">
+                <input type="text" class="form-control" name="show-lastname" value="<?= $data['referees']->getLastName(); ?>" disabled="disabled">
             </fieldset>
-            <fieldset>
+            <fieldset class="form-floating mb-3">
                 <figure>
                     <img src="/res03-projet-final/usdomagne/<?= $data['referees']->getMedias()[0]->getUrl(); ?>">
                 </figure>
