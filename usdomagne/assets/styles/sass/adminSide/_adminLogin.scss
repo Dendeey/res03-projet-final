@@ -105,40 +105,34 @@
         #admin-login
         {
             height: 80vh;
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 2fr 6fr 2fr;
             justify-content: center;
-            
-            .sr-only
+                
+            h1
             {
-                display: none;
+                grid-column: 2/3;
+                justify-self: center;
+                align-self: end;
             }
-            
-            section
+                
+            #login-form
             {
+                justify-self: center;
+                margin-top: 3vh;
+                width: 30vw;
+                grid-column: 2/3;
                 
-                align-self: center;
                 
-                h1
+                #login-button
                 {
-                    
-                }
-                
-                form
-                {
-                    
-                    
-                    #login-button
-                    {
                             
-                        padding-top: 2em;
-                        display: flex;
-                        justify-content: center;
+                    padding-top: 2em;
+                    display: flex;
+                    justify-content: center;
                             
-                    }
-                    
                 }
-                
+                    
             }
             
         }

@@ -11,6 +11,147 @@
         min-height: 100vh;
         width: 100vw;
         overflow-x: hidden;
+
+        & > main
+        {
+            height: 60vh;
+            
+
+            .section-btn
+            {
+                
+                display: flex;
+                flex-direction: row;
+                align-self: center;                
+                
+                button
+                {
+                    margin: auto;
+                    padding: auto;
+                    border: 0;
+                    background: none;
+                    
+                    .btn-warning 
+                    {
+                        width: 30vw;
+                        height: 5vh;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        color: rgb(33, 33, 170);
+                    }
+                }
+            }
+            
+
+            table
+            {
+                grid-column: 2/3;
+
+                thead
+                {
+                    tr
+                    {
+                        th
+                        {
+                            text-align: center;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+                tbody
+                {
+                    tr
+                    {
+                        td
+                        {
+                            text-align: center;
+                        }
+                        
+                        .actions
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+                            
+                        }
+                        
+                        
+                    }
+                }
+            }
+
+            
+            section
+            {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+                
+                h1
+                {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+                
+                form
+                {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    width: auto;
+                    
+                    fieldset
+                    {
+                        
+                        border: 0;
+                        
+                        label
+                        {
+                            font-size: 1.1em;
+                        }
+                        
+                        input
+                        {
+                            text-align: center;
+                            
+                        }
+
+                        figure 
+                        {
+                            
+                            img 
+                            {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+                    
+                    .submit
+                    {
+                        display: flex;
+                        justify-content: center;
+                        
+                        .btn-primary
+                        {
+                            width: auto;
+                            font-weight: 600;
+                            font-size: 1.1em;
+                            
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+ 
+        }
         
     }
 }
@@ -29,7 +170,146 @@
         width: 100vw;
         overflow-x: hidden;
         
-        
+        & > main
+        {
+            height: 60vh;
+            
+
+            .section-btn
+            {
+                
+                display: flex;
+                flex-direction: row;
+                align-self: center;                
+                
+                button
+                {
+                    margin: auto;
+                    padding: auto;
+                    border: 0;
+                    background: none;
+                    
+                    .btn-warning 
+                    {
+                        width: 15vw;
+                        height: 5vh;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        color: rgb(33, 33, 170);
+                    }
+                }
+            }
+            
+
+            table
+            {
+                grid-column: 2/3;
+
+                thead
+                {
+                    tr
+                    {
+                        th
+                        {
+                            text-align: center;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+                tbody
+                {
+                    tr
+                    {
+                        td
+                        {
+                            text-align: center;
+                        }
+                        
+                        .actions
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+                            
+                        }
+                        
+                        
+                    }
+                }
+            }
+
+            
+            section
+            {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+                
+                h1
+                {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+                
+                form
+                {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    width: auto;
+                    
+                    fieldset
+                    {
+                        
+                        border: 0;
+                        
+                        label
+                        {
+                            font-size: 1.1em;
+                        }
+                        
+                        input
+                        {
+                            text-align: center;
+                            
+                        }
+
+                        figure 
+                        {
+                            
+                            img 
+                            {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+                    
+                    .submit
+                    {
+                        display: flex;
+                        justify-content: center;
+                        
+                        .btn-primary
+                        {
+                            width: 10vw;
+                            font-weight: 600;
+                            font-size: 1.1em;
+                            
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+ 
+        }
         
     }
 }
@@ -53,7 +333,7 @@
         {
             height: 60vh;
             display: grid;
-            grid-template-columns: 1.5fr 8.5fr;
+            grid-template-columns: 1fr 9fr;
 
             .section-btn
             {
@@ -74,7 +354,7 @@
                     
                     .btn-warning 
                     {
-                        width: 10vw;
+                        width: 16vw;
                         height: 4vh;
                         font-weight: bold;
                         font-size: 1.1em;
@@ -236,7 +516,7 @@
                     
                     .btn-warning 
                     {
-                        width: 10vw;
+                        width: 12vw;
                         height: 4vh;
                         font-weight: bold;
                         font-size: 1.1em;

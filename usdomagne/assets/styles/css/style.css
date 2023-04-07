@@ -353,6 +353,102 @@ table {
     width: 100vw;
     overflow-x: hidden;
   }
+  body #homepage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  body #homepage > section:first-of-type {
+    display: flex;
+    justify-content: center;
+    background-color: #034076;
+    border: 10px solid #FDCD11;
+  }
+  body #homepage > section:first-of-type figure img {
+    height: 60vh;
+    padding: 5em;
+  }
+}
+@media (min-width: 425px) and (max-width: 767.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 13vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  body #admin-header h1 {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    justify-self: center;
+  }
+  body #admin-header ul {
+    justify-self: center;
+  }
+  body #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  body #admin-header ul li a {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #admin-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 13vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  body #admin-header h1 {
+    padding-left: 3em;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+  }
+  body #admin-header ul {
+    justify-self: end;
+  }
+  body #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    padding-right: 3em;
+    padding-top: 0.5em;
+  }
+  body #admin-header ul li a {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
   html {
@@ -501,17 +597,22 @@ table {
   }
   body #admin-login {
     height: 80vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
     justify-content: center;
   }
-  body #admin-login .sr-only {
-    display: none;
+  body #admin-login h1 {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: end;
   }
-  body #admin-login section {
-    align-self: center;
+  body #admin-login #login-form {
+    justify-self: center;
+    margin-top: 3vh;
+    width: 30vw;
+    grid-column: 2/3;
   }
-  body #admin-login section form #login-button {
+  body #admin-login #login-form #login-button {
     padding-top: 2em;
     display: flex;
     justify-content: center;
@@ -609,6 +710,82 @@ table {
     width: 100vw;
     overflow-x: hidden;
   }
+  body > main {
+    height: 60vh;
+  }
+  body > main .section-btn {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  body > main .section-btn button {
+    margin: auto;
+    padding: auto;
+    border: 0;
+    background: none;
+  }
+  body > main .section-btn button .btn-warning {
+    width: 30vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(33, 33, 170);
+  }
+  body > main table {
+    grid-column: 2/3;
+  }
+  body > main table thead tr th {
+    text-align: center;
+    font-weight: 600;
+  }
+  body > main table tbody tr td {
+    text-align: center;
+  }
+  body > main table tbody tr .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+  }
+  body > main section {
+    grid-column: 2/3;
+    align-content: center;
+    justify-self: center;
+  }
+  body > main section h1 {
+    margin-top: 3vh;
+    grid-column: 2/3;
+    justify-self: center;
+    text-align: center;
+  }
+  body > main section form {
+    justify-self: center;
+    grid-column: 2/3;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: auto;
+  }
+  body > main section form fieldset {
+    border: 0;
+  }
+  body > main section form fieldset label {
+    font-size: 1.1em;
+  }
+  body > main section form fieldset input {
+    text-align: center;
+  }
+  body > main section form fieldset figure img {
+    width: 100%;
+  }
+  body > main section form .submit {
+    display: flex;
+    justify-content: center;
+  }
+  body > main section form .submit .btn-primary {
+    width: auto;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
   html {
@@ -619,6 +796,82 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body > main {
+    height: 60vh;
+  }
+  body > main .section-btn {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  body > main .section-btn button {
+    margin: auto;
+    padding: auto;
+    border: 0;
+    background: none;
+  }
+  body > main .section-btn button .btn-warning {
+    width: 15vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(33, 33, 170);
+  }
+  body > main table {
+    grid-column: 2/3;
+  }
+  body > main table thead tr th {
+    text-align: center;
+    font-weight: 600;
+  }
+  body > main table tbody tr td {
+    text-align: center;
+  }
+  body > main table tbody tr .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+  }
+  body > main section {
+    grid-column: 2/3;
+    align-content: center;
+    justify-self: center;
+  }
+  body > main section h1 {
+    margin-top: 3vh;
+    grid-column: 2/3;
+    justify-self: center;
+    text-align: center;
+  }
+  body > main section form {
+    justify-self: center;
+    grid-column: 2/3;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: auto;
+  }
+  body > main section form fieldset {
+    border: 0;
+  }
+  body > main section form fieldset label {
+    font-size: 1.1em;
+  }
+  body > main section form fieldset input {
+    text-align: center;
+  }
+  body > main section form fieldset figure img {
+    width: 100%;
+  }
+  body > main section form .submit {
+    display: flex;
+    justify-content: center;
+  }
+  body > main section form .submit .btn-primary {
+    width: 10vw;
+    font-weight: 600;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -634,7 +887,7 @@ table {
   body > main {
     height: 60vh;
     display: grid;
-    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-columns: 1fr 9fr;
   }
   body > main .section-btn {
     grid-column: 1/2;
@@ -652,7 +905,7 @@ table {
     background: none;
   }
   body > main .section-btn button .btn-warning {
-    width: 10vw;
+    width: 16vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;
@@ -744,7 +997,7 @@ table {
     background: none;
   }
   body > main .section-btn button .btn-warning {
-    width: 10vw;
+    width: 12vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;

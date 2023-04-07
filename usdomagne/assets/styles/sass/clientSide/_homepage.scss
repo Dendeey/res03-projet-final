@@ -69,8 +69,44 @@
         
         #homepage
         {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
             
-            
+            & > section:first-of-type
+            {
+                display: flex;
+                justify-content: center;
+                background-color: #034076;
+                border: 10px solid #FDCD11;
+                
+
+                figure 
+                {
+                    
+
+                    img 
+                    {
+                        height: 60vh;
+                        padding: 5em;
+                        
+                        
+                    }
+                }
+            }
+
+            & > section:nth-of-type(2)
+            {
+                a
+                {
+
+                }
+            }
+
+            & > section:last-of-type
+            {
+
+            }
             
         }
     }
