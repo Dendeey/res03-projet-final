@@ -277,7 +277,7 @@ table {
     font-family: "Termina", Arial, sans-serif;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
   }
@@ -342,7 +342,7 @@ table {
   }
   body #client-header section ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   body #client-header nav {
     margin: 0;
@@ -351,7 +351,7 @@ table {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
-    background-color: #034076;
+    background-color: white;
   }
   body #client-header nav ul:first-of-type {
     align-self: center;
@@ -360,15 +360,20 @@ table {
     flex-direction: row;
     column-gap: 12em;
   }
-  body #client-header nav ul:first-of-type a {
-    text-decoration: none;
-    color: white;
-  }
   body #client-header nav ul:first-of-type li {
     display: inline-block;
-    color: white;
+    color: #034076;
+    text-transform: uppercase;
     font-size: 1.3em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  body #client-header nav ul:first-of-type li a {
+    text-decoration: none;
+    color: #034076;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
   }
   body #client-header nav figure {
     justify-self: center;
@@ -377,20 +382,8 @@ table {
     flex-direction: column;
     row-gap: 0.5em;
   }
-  body #client-header nav figure a {
-    text-decoration: none;
-    color: black;
-  }
   body #client-header nav figure img {
     height: 10vh;
-  }
-  body #client-header nav figure p {
-    align-self: center;
-    justify-self: center;
-    font-style: italic;
-    font-weight: 550;
-    font-size: 0.9em;
-    font-family: "Termina", Arial, sans-serif;
   }
   body #client-header nav ul:last-of-type {
     align-self: center;
@@ -399,15 +392,18 @@ table {
     flex-direction: row;
     column-gap: 12em;
   }
-  body #client-header nav ul:last-of-type a {
-    text-decoration: none;
-    color: white;
-  }
   body #client-header nav ul:last-of-type li {
     display: inline-block;
-    color: white;
+    color: black;
     font-size: 1.3em;
     font-family: "Termina", Arial, sans-serif;
+  }
+  body #client-header nav ul:last-of-type li a {
+    text-decoration: none;
+    color: #034076;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
@@ -458,7 +454,7 @@ table {
     padding: 2.5em;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -481,7 +477,7 @@ table {
   }
   body #homepage > section:first-of-type figure img {
     height: 70vh;
-    padding: 5em;
+    padding-top: 5em;
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
