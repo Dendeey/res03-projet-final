@@ -46,8 +46,48 @@
         width: 100vw;
         overflow-x: hidden;
         
-        
-        
+        #homepage
+        {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            
+            & > section:first-of-type
+            {
+                display: flex;
+                justify-content: center;
+                background-color: #034076;
+                border-top: 5px solid #FDCD11;
+                
+
+                figure 
+                {
+                    
+
+                    img 
+                    {
+
+                        width: 70vw;
+                        padding: 2.5em;
+
+                    }
+                }
+            }
+
+            & > section:nth-of-type(2)
+            {
+                a
+                {
+
+                }
+            }
+
+            & > section:last-of-type
+            {
+
+            }
+            
+        }
     }
 }
 

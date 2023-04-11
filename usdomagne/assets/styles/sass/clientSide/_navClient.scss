@@ -1,11 +1,160 @@
-@media (min-width: 425px) and (max-width: 767.99px)
+@media (max-width: 426px)
 {
+    html
+    {
+        font-size: 14px;
+    }
     
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #client-header
+        {
+            display: none;
+        }
+        
+        #client-header-mobile
+        {
+        
+            width: 100vw;
+            height: 12vh;
+            background-color: #034076;
+            display: grid;
+            grid-template-columns: 0.1fr 1fr;
+            
+            
+            .sr-only
+            {
+                display: none;
+            }
+            
+            nav
+            {
+                margin-top: 2.5em;
+                padding-left: 1.5em;
+                justify-self: center;
+                
+                section
+                {
+                
+                    grid-row: 2/3;
+                    
+                    
+                    ul
+                    {
+        
+                        display: flex;
+                        flex-direction: row;
+                        column-gap: 4em;
+                        justify-self: center;
+                        align-self: center;
+                            
+                
+                        li 
+                        {
+                            
+                            font-size: 1em;
+                            font-family: "Termina",Arial,sans-serif;
+                            
+                            .icon-facebook
+                            {
+                                color: #4267B2;
+                            }
+                            
+                            .icon-instagram
+                            {
+                                color: white;
+                                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                                border-radius: 0.4em;
+                                padding: 0.225em;
+                            }
+                            
+                            .icon-twitter
+                            {
+                                color: #00acee;
+                            }
+                            
+                            a
+                            {
+                                text-decoration: none;
+                                color: black;
+                                
+                                span
+                                {
+                                    
+                                }
+                                
+                                
+                            }
+                                
+                            a:hover
+                            {
+                                    
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+            section:first-of-type
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                margin-top: 1.5em;
+                
+                
+                figure
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-self: center;
+                    gap: 1em;
+                    
+                    
+                    a
+                    {
+                        img
+                        {
+                            width: 10vw;
+                        }
+                    }
+                    
+                    p
+                    {
+                        align-self: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023.99px)
 {
+    html
+    {
+        font-size: 14px;
+    }
     
+    body
+    {
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        #client-header
+        {
+            display: none;
+        }
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1439.99px)
@@ -20,6 +169,11 @@
         min-height: 100vh;
         width: 100vw;
         overflow-x: hidden;
+        
+        #client-header-mobile
+        {
+            display: none;
+        }
         
         #client-header
         {
@@ -129,6 +283,7 @@
                 height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 0.5fr 1fr;
+                background-color: white;
         
                 ul:first-of-type 
                 {
@@ -219,7 +374,6 @@
                 }
             }
         }
-        
     }  
 }
 
@@ -237,6 +391,11 @@
         min-height: 100vh;
         width: 100vw;
         overflow-x: hidden;
+        
+        #client-header-mobile
+        {
+            display: none;
+        }
         
         #client-header
         {

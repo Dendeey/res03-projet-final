@@ -52,6 +52,98 @@ table {
   border-spacing: 0;
 }
 
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #client-header {
+    display: none;
+  }
+  body #client-header-mobile {
+    width: 100vw;
+    height: 12vh;
+    background-color: #034076;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+  }
+  body #client-header-mobile .sr-only {
+    display: none;
+  }
+  body #client-header-mobile nav {
+    margin-top: 2.5em;
+    padding-left: 1.5em;
+    justify-self: center;
+  }
+  body #client-header-mobile nav section {
+    grid-row: 2/3;
+  }
+  body #client-header-mobile nav section ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+    justify-self: center;
+    align-self: center;
+  }
+  body #client-header-mobile nav section ul li {
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+  }
+  body #client-header-mobile nav section ul li .icon-facebook {
+    color: #4267B2;
+  }
+  body #client-header-mobile nav section ul li .icon-instagram {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4em;
+    padding: 0.225em;
+  }
+  body #client-header-mobile nav section ul li .icon-twitter {
+    color: #00acee;
+  }
+  body #client-header-mobile nav section ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  body #client-header-mobile section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+  body #client-header-mobile section:first-of-type figure {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 1em;
+  }
+  body #client-header-mobile section:first-of-type figure a img {
+    width: 10vw;
+  }
+  body #client-header-mobile section:first-of-type figure p {
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #client-header {
+    display: none;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1439.99px) {
   html {
     font-size: 14px;
@@ -60,6 +152,9 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body #client-header-mobile {
+    display: none;
   }
   body #client-header {
     height: 16vh;
@@ -123,6 +218,7 @@ table {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
+    background-color: white;
   }
   body #client-header nav ul:first-of-type {
     align-self: center;
@@ -189,6 +285,9 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body #client-header-mobile {
+    display: none;
   }
   body #client-header {
     height: 16vh;
@@ -342,6 +441,21 @@ table {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+  }
+  body #homepage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  body #homepage > section:first-of-type {
+    display: flex;
+    justify-content: center;
+    background-color: #034076;
+    border-top: 5px solid #FDCD11;
+  }
+  body #homepage > section:first-of-type figure img {
+    width: 70vw;
+    padding: 2.5em;
   }
 }
 @media (min-width: 1440px) and (max-width: 2560px) {
@@ -573,12 +687,15 @@ table {
     justify-content: center;
   }
   body #admin-login h1 {
-    margin-top: 10vh;
+    margin-top: 8vh;
+    grid-column: 2/3;
+    text-align: center;
+    align-self: center;
   }
   body #admin-login #login-form {
     justify-self: center;
-    margin-top: 3vh;
     width: auto;
+    grid-column: 2/3;
   }
   body #admin-login #login-form #login-button {
     padding-top: 2em;

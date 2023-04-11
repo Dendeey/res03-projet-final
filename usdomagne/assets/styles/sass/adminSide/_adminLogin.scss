@@ -60,14 +60,17 @@
                 
             h1
             {
-                margin-top: 10vh;
+                margin-top: 8vh;
+                grid-column: 2/3;
+                text-align: center;
+                align-self: center;
             }
                 
             #login-form
             {
                 justify-self: center;
-                margin-top: 3vh;
                 width: auto;
+                grid-column: 2/3;
                 
                 
                 #login-button
