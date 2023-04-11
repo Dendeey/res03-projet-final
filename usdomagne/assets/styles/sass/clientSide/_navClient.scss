@@ -346,6 +346,7 @@
                 height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 0.5fr 1fr;
+                background-color: #034076;
         
                 ul:first-of-type 
                 {
@@ -358,7 +359,7 @@
                     a
                     {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                     }
                     
                     a:hover
@@ -369,7 +370,7 @@
                     li 
                     {
                         display: inline-block;
-                        color: black;
+                        color: white;
                         font-size: 1.3em;
                         font-family: "Termina",Arial,sans-serif;
                 
@@ -417,7 +418,7 @@
                     a
                     {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                     }
                     
                     a:hover
@@ -428,7 +429,7 @@
                     li 
                     {
                         display: inline-block;
-                        color: black;
+                        color: white;
                         font-size: 1.3em;
                         font-family: "Termina",Arial,sans-serif;
                 
