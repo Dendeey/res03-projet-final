@@ -414,7 +414,7 @@
             section
             {
                 align-items: center;
-                background-color: #f4f4f7;
+                background-color: #F4F4F4;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 
@@ -423,7 +423,7 @@
             
                     padding-left: 3em;
                     font-size: 1em;
-                    font-family: "Termina",Arial,sans-serif;
+                    font-family: 'Open Sans', sans-serif;
                     
                     
                     a
@@ -456,7 +456,7 @@
                     {
                         
                         font-size: 1em;
-                        font-family: "Termina",Arial,sans-serif;
+                        font-family: 'Open Sans', sans-serif;
                         
                         .icon-facebook
                         {
@@ -504,10 +504,10 @@
                 ul:first-of-type 
                 {
                     align-self: center;
-                    justify-self: center;
+                    justify-self: right;
                     display: flex;
                     flex-direction: row;
-                    column-gap: 12em;
+                    column-gap: 10em;
         
                     li 
                     {
@@ -517,7 +517,6 @@
                         font-size: 1.3em;
                         font-family: 'Open Sans', sans-serif;
                         font-weight: 600;
-
 
                         a
                         {
@@ -553,10 +552,10 @@
                 ul:last-of-type 
                 {
                     align-self: center;
-                    justify-self: center;
+                    justify-self: left;
                     display: flex;
                     flex-direction: row;
-                    column-gap: 12em;
+                    column-gap: 10em;
 
                     li 
                     {

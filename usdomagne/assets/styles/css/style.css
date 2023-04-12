@@ -302,14 +302,14 @@ table {
   }
   body #client-header section {
     align-items: center;
-    background-color: #f4f4f7;
+    background-color: #F4F4F4;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   body #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   body #client-header section h1 a {
     text-decoration: none;
@@ -326,7 +326,7 @@ table {
   }
   body #client-header section ul li {
     font-size: 1em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   body #client-header section ul li .icon-facebook {
     color: #4267B2;
@@ -355,10 +355,10 @@ table {
   }
   body #client-header nav ul:first-of-type {
     align-self: center;
-    justify-self: center;
+    justify-self: right;
     display: flex;
     flex-direction: row;
-    column-gap: 12em;
+    column-gap: 10em;
   }
   body #client-header nav ul:first-of-type li {
     display: inline-block;
@@ -387,10 +387,10 @@ table {
   }
   body #client-header nav ul:last-of-type {
     align-self: center;
-    justify-self: center;
+    justify-self: left;
     display: flex;
     flex-direction: row;
-    column-gap: 12em;
+    column-gap: 10em;
   }
   body #client-header nav ul:last-of-type li {
     display: inline-block;
@@ -468,6 +468,7 @@ table {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: #F4F4F4;
   }
   body #homepage > section:first-of-type {
     display: flex;
@@ -476,8 +477,38 @@ table {
     border-top: 5px solid #FDCD11;
   }
   body #homepage > section:first-of-type figure img {
-    height: 70vh;
+    height: 75vh;
     padding-top: 5em;
+  }
+  body #homepage > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  body #homepage > section:nth-of-type(2) h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    grid-column: 2/3;
+    margin-top: 2em;
+    padding: 1em;
+    width: 40vw;
+    justify-self: center;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.5em;
+    color: #034076;
+  }
+  body #homepage > section:nth-of-type(2) iframe {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    padding-top: 2em;
+  }
+  body #homepage > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
