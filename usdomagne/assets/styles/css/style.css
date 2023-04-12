@@ -296,6 +296,11 @@ table {
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
     display: grid;
     grid-template-rows: 0.25fr 0.75fr;
+    position: fixed;
+    top: 0;
+    overflow-y: hidden;
+    transition: top 0.3s;
+    border-bottom: 5px solid #FDCD11;
   }
   body #client-header .sr-only {
     display: none;
@@ -396,7 +401,7 @@ table {
     display: inline-block;
     color: black;
     font-size: 1.3em;
-    font-family: "Termina", Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   body #client-header nav ul:last-of-type li a {
     text-decoration: none;
@@ -406,7 +411,7 @@ table {
     font-weight: 600;
   }
 }
-@media (min-width: 425px) and (max-width: 767.99px) {
+@media (max-width: 426px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -465,27 +470,28 @@ table {
     overflow-x: hidden;
   }
   body #homepage {
+    margin-top: 10vh;
     width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #F4F4F4;
   }
-  body #homepage > section:first-of-type {
+  body #homepage section:first-of-type {
     display: flex;
     justify-content: center;
     background-color: #034076;
-    border-top: 5px solid #FDCD11;
   }
-  body #homepage > section:first-of-type figure img {
+  body #homepage section:first-of-type figure img {
     height: 75vh;
-    padding-top: 5em;
+    padding-top: 8em;
   }
-  body #homepage > section:nth-of-type(2) {
+  body #homepage article {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
   }
-  body #homepage > section:nth-of-type(2) h2 {
+  body #homepage article h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
@@ -499,16 +505,59 @@ table {
     text-decoration: underline #FDCD11 0.5em;
     color: #034076;
   }
-  body #homepage > section:nth-of-type(2) iframe {
+  body #homepage article iframe {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
     padding-top: 2em;
   }
-  body #homepage > section:last-of-type {
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body #footer-client {
     display: grid;
-    grid-template-columns: 0.1fr 0.8fr 0.1fr;
-    background-color: #F4F4F4;
+    grid-template-columns: 0.1fr 0.9fr;
+    background-color: #034076;
+    position: static;
+    bottom: 0;
+    height: 20vh;
+    width: 100vw;
+  }
+  body #footer-client figure {
+    display: grid;
+  }
+  body #footer-client figure img {
+    justify-self: center;
+    align-self: center;
+    width: auto;
+  }
+  body #footer-client section {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    justify-content: center;
+    align-content: center;
+  }
+  body #footer-client section section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  body #footer-client section section h1 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  }
+  body #footer-client section section ul li a {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {

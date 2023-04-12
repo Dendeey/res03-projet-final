@@ -1,4 +1,4 @@
-@media (min-width: 425px) and (max-width: 767.99px)
+@media (max-width: 426px)
 {
     html
     {
@@ -109,17 +109,19 @@
         
         #homepage
         {
+            margin-top: 10vh;
             width: 100vw;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             background-color: #F4F4F4;
 
-            & > section:first-of-type
+            section:first-of-type
             {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
-                border-top: 5px solid #FDCD11;
+                
                 
 
                 figure 
@@ -129,18 +131,19 @@
                     img 
                     {
                         height: 75vh;
-                        padding-top: 5em;
+                        padding-top: 8em;
                         
                         
                     }
                 }
             }
 
-            & > section:nth-of-type(2)
+            article
             {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
+                
 
                 h2 
                 {
@@ -165,21 +168,9 @@
                     justify-self: center;
                     align-self: center; 
                     padding-top: 2em;
-                }
-
-                a
-                {
-
+                    
                 }
             }
-
-            & > section:last-of-type
-            {
-                display: grid;
-                grid-template-columns: 0.1fr 0.8fr 0.1fr;
-                background-color: #F4F4F4;
-            }
-            
         }
     }
     
