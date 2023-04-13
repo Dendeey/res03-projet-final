@@ -96,7 +96,7 @@
 }
 
 
-@media (min-width: 1440px) and (max-width: 2560px)
+@media (min-width: 1440px)
 {
     
     html
@@ -109,7 +109,6 @@
     {
         min-height: 100vh;
         width: 100vw;
-        overflow-x: hidden;
         
         #admin-aside
         {

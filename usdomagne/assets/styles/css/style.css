@@ -283,11 +283,11 @@ table {
 @media (min-width: 1440px) {
   html {
     font-size: 14px;
+    scroll-behavior: smooth;
   }
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body #client-header-mobile {
     display: none;
@@ -496,7 +496,7 @@ table {
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    border: red dashed 5px;
   }
   body #homepage {
     margin-top: 10vh;
@@ -515,12 +515,12 @@ table {
     height: 75vh;
     padding-top: 8em;
   }
-  body #homepage article {
+  body #homepage #hp-widget {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
   }
-  body #homepage article h2 {
+  body #homepage #hp-widget h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
@@ -534,11 +534,15 @@ table {
     text-decoration: underline #FDCD11 0.5em;
     color: #034076;
   }
-  body #homepage article iframe {
+  body #homepage #hp-widget iframe {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
     padding-top: 2em;
+  }
+  body #homepage section:last-of-type {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -596,20 +600,20 @@ table {
 @media (min-width: 1440px) {
   html {
     font-size: 14px;
+    scroll-behavior: smooth;
   }
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body #footer-client {
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
     background-color: #034076;
-    position: static;
-    bottom: 0;
     height: 20vh;
     width: 100vw;
+    position: absolute;
+    bottom: 0;
   }
   body #footer-client figure {
     display: grid;
@@ -762,7 +766,7 @@ table {
     color: red;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -770,7 +774,6 @@ table {
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body #admin-header {
     display: grid;
@@ -860,7 +863,7 @@ table {
     justify-content: center;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -868,7 +871,6 @@ table {
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body #admin-login {
     height: 80vh;
@@ -945,7 +947,7 @@ table {
     padding-bottom: 1em;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -953,7 +955,6 @@ table {
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body #admin-aside {
     height: 80vh;
@@ -1241,7 +1242,7 @@ table {
     font-size: 1.1em;
   }
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1440px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -1249,7 +1250,6 @@ table {
   body {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
   }
   body > main {
     height: 60vh;

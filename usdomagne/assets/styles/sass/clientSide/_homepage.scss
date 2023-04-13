@@ -127,8 +127,8 @@
     {
         min-height: 100vh;
         width: 100vw;
-        overflow-x: hidden;
-        
+        border: red dashed 5px;
+
         #homepage
         {
             margin-top: 10vh;
@@ -143,24 +143,21 @@
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
-                
-                
+
 
                 figure 
                 {
-                    
 
                     img 
                     {
                         height: 75vh;
                         padding-top: 8em;
-                        
-                        
+
                     }
                 }
             }
 
-            article
+            #hp-widget
             {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
@@ -191,6 +188,47 @@
                     align-self: center; 
                     padding-top: 2em;
                     
+                }
+            }
+
+            section:last-of-type
+            {
+                display: flex;
+                flex-direction: row;
+
+                article
+                {
+                    figure 
+                    {
+                        img 
+                        {
+
+                        }
+                    }
+                }
+
+                aside 
+                {
+                    header 
+                    {
+                        h2
+                        {
+
+                        }
+                    }
+
+                    article
+                    {
+                        h3 
+                        {
+
+                        }
+
+                        p 
+                        {
+
+                        }
+                    }
                 }
             }
         }
