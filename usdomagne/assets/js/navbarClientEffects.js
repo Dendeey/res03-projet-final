@@ -2,7 +2,7 @@
  *  Fonction qui permettra de montrer ou cacher le menu au moment du scroll
  */
 function hideAndShowMenuOnScroll(){
-
+    
     let prevScrollpos = window.pageYOffset;
 
     window.onscroll = function() 

@@ -183,6 +183,11 @@
             box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
             display: grid;
             grid-template-rows: 0.25fr 0.75fr;
+            position: fixed;
+            top: 0;
+            overflow-y: hidden;
+            transition: top 0.3s;
+            border-bottom: 5px solid #FDCD11;
             
             .sr-only
             {
@@ -192,7 +197,7 @@
             section
             {
                 align-items: center;
-                background-color: #f4f4f7;
+                background-color: #F4F4F4;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 
@@ -201,7 +206,7 @@
             
                     padding-left: 3em;
                     font-size: 1em;
-                    font-family: "Termina",Arial,sans-serif;
+                    font-family: 'Open Sans', sans-serif;
                     
                     
                     a
@@ -222,7 +227,8 @@
                 
                 ul
                 {
-    
+                    
+                    height: 100%;
                     display: flex;
                     flex-direction: row;
                     column-gap: 4em;
@@ -234,7 +240,8 @@
                     {
                         
                         font-size: 1em;
-                        font-family: "Termina",Arial,sans-serif;
+                        font-family: 'Open Sans', sans-serif;
+                        align-self: center;
                         
                         .icon-facebook
                         {
@@ -247,6 +254,7 @@
                             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                             border-radius: 0.4em;
                             padding: 0.225em;
+            
                         }
                         
                         .icon-twitter
@@ -257,14 +265,8 @@
                         a
                         {
                             text-decoration: none;
-                            color: black;
-                            
-                            span
-                            {
-                                
-                            }
-                            
-                            
+                            color: white;
+
                         }
                             
                         a:hover
@@ -288,29 +290,34 @@
                 ul:first-of-type 
                 {
                     align-self: center;
-                    justify-self: center;
+                    justify-self: right;
                     display: flex;
                     flex-direction: row;
-                    column-gap: 12em;
-                    
-                    a
-                    {
-                        text-decoration: none;
-                        color: black;
-                    }
-                    
-                    a:hover
-                    {
-                        
-                    }
+                    column-gap: 10em;
         
                     li 
                     {
                         display: inline-block;
-                        color: black;
+                        color: #034076;
+                        text-transform: uppercase;
                         font-size: 1.3em;
-                        font-family: "Termina",Arial,sans-serif;
-                
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 600;
+
+                        a
+                        {
+                            text-decoration: none;
+                            color: #034076;
+                            text-transform: uppercase;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: 600;
+                            
+                        }
+                        
+                        a:hover
+                        {
+                            
+                        }
                     }
                 }
                 
@@ -321,59 +328,46 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 0.5em;
-                    
-                    a
-                    {
-                        text-decoration: none;
-                        color: black;
-                    }
         
                     img 
                     {
                         height: 10vh;
-                    }
-                    
-                    p
-                    {
-                        align-self: center;
-                        justify-self: center;
-                        font-style: italic;
-                        font-weight: 550;
-                        font-size: 0.9em;
-                        font-family: "Termina",Arial,sans-serif;
                     }
                 }
                 
                 ul:last-of-type 
                 {
                     align-self: center;
-                    justify-self: center;
+                    justify-self: left;
                     display: flex;
                     flex-direction: row;
-                    column-gap: 12em;
-                    
-                    a
-                    {
-                        text-decoration: none;
-                        color: black;
-                    }
-                    
-                    a:hover
-                    {
-                        
-                    }
-        
+                    column-gap: 10em;
+
                     li 
                     {
                         display: inline-block;
                         color: black;
                         font-size: 1.3em;
-                        font-family: "Termina",Arial,sans-serif;
+                        font-family: 'Open Sans', sans-serif;
                 
+                        a
+                        {
+                            text-decoration: none;
+                            color: #034076;
+                            text-transform: uppercase;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: 600;
+                        }
+                        
+                        a:hover
+                        {
+                            
+                        }
                     }
                 }
             }
         }
+        
     }  
 }
 
