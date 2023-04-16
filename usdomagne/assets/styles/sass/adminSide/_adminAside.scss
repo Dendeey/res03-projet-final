@@ -1,162 +1,196 @@
-@media (min-width: 425px) and (max-width: 767.99px)
-{
-    html
-    {
-        font-size: 14px;
-        scroll-behavior: smooth;
-    }
-    
-    body
-    {
-        min-height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        
-    }
-}
+@media (max-width: 426px){
+    #admin-aside {
+        height: 80vh;
+        display: flex;
 
-@media (min-width: 768px) and (max-width: 1023.99px)
-{
-    html
-    {
-        font-size: 14px;
-        scroll-behavior: smooth;
-    }
-    
-    body
-    {
-        min-height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        
-    }
-}
 
-@media (min-width: 1024px) and (max-width: 1439.99px)
-{
-    html
-    {
-        font-size: 14px;
-        scroll-behavior: smooth;
-    }
-    
-    body
-    {
-        min-height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        
-        #admin-aside
-        {
-            height: 80vh;
-            display: flex;
-            
-            
-            aside
-            {
-                margin-top: 5em;
-                padding-left: 3em;
-                
-                h1
-                {
-                    margin-bottom: 1.5em;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
-                nav
-                {
-                    
-                    ul
-                    {
-                        
-                        li
-                        {
-                            font-size: 1.2em;
-                            font-weight: bold;
-                            font-family: 'Roboto', sans-serif;
-                            padding-left: 1.5em;
-                            padding-bottom: 1em;
-                            
-                            a
-                            {
-                                
-                            }
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
+        aside {
+            margin-top: 5em;
+            padding-left: 3em;
+
+            h1 {
+                margin-bottom: 1.5em;
+                font-family: 'Roboto', sans-serif;
             }
-            
+
+            nav {
+
+                ul {
+
+                    li {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1.5em;
+                        padding-bottom: 1em;
+
+                    }
+
+                }
+
+            }
+
         }
-        
+
     }
 }
 
+@media (min-width: 427px) and (max-width: 767px){
+    #admin-aside {
+        height: 80vh;
+        display: flex;
 
-@media (min-width: 1440px)
-{
-    
-    html
-    {
-        font-size: 14px;
-        scroll-behavior: smooth;
-    }
-    
-    body
-    {
-        min-height: 100vh;
-        width: 100vw;
-        
-        #admin-aside
-        {
-            height: 80vh;
-            display: flex;
-            
-            
-            
-            aside
-            {
-                margin-top: 5em;
-                padding-left: 3em;
-                
-                h1
-                {
-                    margin-bottom: 1.5em;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
-                nav
-                {
-                    
-                    ul
-                    {
-                        
-                        li
-                        {
-                            font-size: 1.2em;
-                            font-weight: bold;
-                            font-family: 'Roboto', sans-serif;
-                            padding-left: 1.5em;
-                            padding-bottom: 1em;
-                            
-                            a
-                            {
-                                
-                            }
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
+
+        aside {
+            margin-top: 5em;
+            padding-left: 3em;
+
+            h1 {
+                margin-bottom: 1.5em;
+                font-family: 'Roboto', sans-serif;
             }
-            
+
+            nav {
+
+                ul {
+
+                    li {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1.5em;
+                        padding-bottom: 1em;
+
+                    }
+
+                }
+
+            }
+
         }
-        
+
     }
-    
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    #admin-aside {
+        height: 80vh;
+        display: flex;
+
+
+        aside {
+            margin-top: 5em;
+            padding-left: 3em;
+
+            h1 {
+                margin-bottom: 1.5em;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            nav {
+
+                ul {
+
+                    li {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1.5em;
+                        padding-bottom: 1em;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+
+
+    #admin-aside {
+        height: 80vh;
+        display: flex;
+
+
+        aside {
+            margin-top: 5em;
+            padding-left: 3em;
+
+            h1 {
+                margin-bottom: 1.5em;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            nav {
+
+                ul {
+
+                    li {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1.5em;
+                        padding-bottom: 1em;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+@media (min-width: 1440px) {
+
+
+
+    #admin-aside {
+        height: 80vh;
+        display: flex;
+
+
+
+        aside {
+            margin-top: 5em;
+            padding-left: 3em;
+
+            h1 {
+                margin-bottom: 1.5em;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            nav {
+
+                ul {
+
+                    li {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1.5em;
+                        padding-bottom: 1em;
+
+                        a {}
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
 }

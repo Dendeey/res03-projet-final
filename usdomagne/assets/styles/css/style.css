@@ -53,78 +53,70 @@ table {
 }
 
 @media (max-width: 426px) {
-  html {
-    font-size: 14px;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #client-header {
+  #client-header {
     display: none;
   }
-  body #client-header-mobile {
+  #client-header-mobile {
     width: 100vw;
     height: 12vh;
     background-color: #034076;
     display: grid;
     grid-template-columns: 0.1fr 1fr;
   }
-  body #client-header-mobile .sr-only {
+  #client-header-mobile .sr-only {
     display: none;
   }
-  body #client-header-mobile nav {
+  #client-header-mobile nav {
     margin-top: 2.5em;
     padding-left: 1.5em;
     justify-self: center;
   }
-  body #client-header-mobile nav section {
+  #client-header-mobile nav section {
     grid-row: 2/3;
   }
-  body #client-header-mobile nav section ul {
+  #client-header-mobile nav section ul {
     display: flex;
     flex-direction: row;
     column-gap: 4em;
     justify-self: center;
     align-self: center;
   }
-  body #client-header-mobile nav section ul li {
+  #client-header-mobile nav section ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
   }
-  body #client-header-mobile nav section ul li .icon-facebook {
+  #client-header-mobile nav section ul li .icon-facebook {
     color: #4267B2;
   }
-  body #client-header-mobile nav section ul li .icon-instagram {
+  #client-header-mobile nav section ul li .icon-instagram {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
     padding: 0.225em;
   }
-  body #client-header-mobile nav section ul li .icon-twitter {
+  #client-header-mobile nav section ul li .icon-twitter {
     color: #00acee;
   }
-  body #client-header-mobile nav section ul li a {
+  #client-header-mobile nav section ul li a {
     text-decoration: none;
     color: black;
   }
-  body #client-header-mobile section:first-of-type {
+  #client-header-mobile section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
     margin-top: 1.5em;
   }
-  body #client-header-mobile section:first-of-type figure {
+  #client-header-mobile section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
     gap: 1em;
   }
-  body #client-header-mobile section:first-of-type figure a img {
+  #client-header-mobile section:first-of-type figure a img {
     width: 10vw;
   }
-  body #client-header-mobile section:first-of-type figure p {
+  #client-header-mobile section:first-of-type figure p {
     align-self: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -132,31 +124,15 @@ table {
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
-  html {
-    font-size: 14px;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #client-header {
+  #client-header {
     display: none;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #client-header-mobile {
+  #client-header-mobile {
     display: none;
   }
-  body #client-header {
+  #client-header {
     height: 16vh;
     width: 100vw;
     background-color: white;
@@ -169,27 +145,27 @@ table {
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
-  body #client-header .sr-only {
+  #client-header .sr-only {
     display: none;
   }
-  body #client-header section {
+  #client-header section {
     align-items: center;
     background-color: #F4F4F4;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  body #client-header section h1 {
+  #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
   }
-  body #client-header section h1 a {
+  #client-header section h1 a {
     text-decoration: none;
     color: black;
     display: flex;
     column-gap: 1em;
   }
-  body #client-header section ul {
+  #client-header section ul {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -197,28 +173,28 @@ table {
     justify-content: right;
     padding-right: 5em;
   }
-  body #client-header section ul li {
+  #client-header section ul li {
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
     align-self: center;
   }
-  body #client-header section ul li .icon-facebook {
+  #client-header section ul li .icon-facebook {
     color: #4267B2;
   }
-  body #client-header section ul li .icon-instagram {
+  #client-header section ul li .icon-instagram {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
     padding: 0.225em;
   }
-  body #client-header section ul li .icon-twitter {
+  #client-header section ul li .icon-twitter {
     color: #00acee;
   }
-  body #client-header section ul li a {
+  #client-header section ul li a {
     text-decoration: none;
     color: white;
   }
-  body #client-header nav {
+  #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -227,14 +203,14 @@ table {
     grid-template-columns: 1fr 0.5fr 1fr;
     background-color: white;
   }
-  body #client-header nav ul:first-of-type {
+  #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: right;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  body #client-header nav ul:first-of-type li {
+  #client-header nav ul:first-of-type li {
     display: inline-block;
     color: #034076;
     text-transform: uppercase;
@@ -242,37 +218,37 @@ table {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  body #client-header nav ul:first-of-type li a {
+  #client-header nav ul:first-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  body #client-header nav figure {
+  #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  body #client-header nav figure img {
+  #client-header nav figure img {
     height: 10vh;
   }
-  body #client-header nav ul:last-of-type {
+  #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: left;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  body #client-header nav ul:last-of-type li {
+  #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Open Sans", sans-serif;
   }
-  body #client-header nav ul:last-of-type li a {
+  #client-header nav ul:last-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
@@ -281,18 +257,10 @@ table {
   }
 }
 @media (min-width: 1440px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  body #client-header-mobile {
+  #client-header-mobile {
     display: none;
   }
-  body #client-header {
+  #client-header {
     height: 16vh;
     width: 100vw;
     background-color: white;
@@ -305,54 +273,54 @@ table {
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
-  body #client-header .sr-only {
+  #client-header .sr-only {
     display: none;
   }
-  body #client-header section {
+  #client-header section {
     align-items: center;
     background-color: #F4F4F4;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  body #client-header section h1 {
+  #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
   }
-  body #client-header section h1 a {
+  #client-header section h1 a {
     text-decoration: none;
     color: black;
     display: flex;
     column-gap: 1em;
   }
-  body #client-header section ul {
+  #client-header section ul {
     display: flex;
     flex-direction: row;
     column-gap: 4em;
     justify-content: right;
     padding-right: 5em;
   }
-  body #client-header section ul li {
+  #client-header section ul li {
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
   }
-  body #client-header section ul li .icon-facebook {
+  #client-header section ul li .icon-facebook {
     color: #4267B2;
   }
-  body #client-header section ul li .icon-instagram {
+  #client-header section ul li .icon-instagram {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
     padding: 0.225em;
   }
-  body #client-header section ul li .icon-twitter {
+  #client-header section ul li .icon-twitter {
     color: #00acee;
   }
-  body #client-header section ul li a {
+  #client-header section ul li a {
     text-decoration: none;
     color: white;
   }
-  body #client-header nav {
+  #client-header nav {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -361,14 +329,14 @@ table {
     grid-template-columns: 1fr 0.5fr 1fr;
     background-color: white;
   }
-  body #client-header nav ul:first-of-type {
+  #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: right;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  body #client-header nav ul:first-of-type li {
+  #client-header nav ul:first-of-type li {
     display: inline-block;
     color: #034076;
     text-transform: uppercase;
@@ -376,37 +344,37 @@ table {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  body #client-header nav ul:first-of-type li a {
+  #client-header nav ul:first-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  body #client-header nav figure {
+  #client-header nav figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  body #client-header nav figure img {
+  #client-header nav figure img {
     height: 10vh;
   }
-  body #client-header nav ul:last-of-type {
+  #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: left;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  body #client-header nav ul:last-of-type li {
+  #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
     font-size: 1.3em;
     font-family: "Open Sans", sans-serif;
   }
-  body #client-header nav ul:last-of-type li a {
+  #client-header nav ul:last-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
@@ -419,7 +387,7 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #public-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -430,7 +398,7 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #public-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -441,33 +409,33 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #public-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
   }
-  body #homepage {
+  #public-layout #homepage {
     margin-top: 10vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: #F4F4F4;
   }
-  body #homepage section:first-of-type {
+  #public-layout #homepage section:first-of-type {
     display: flex;
     justify-content: center;
     background-color: #034076;
   }
-  body #homepage section:first-of-type figure img {
+  #public-layout #homepage section:first-of-type figure img {
     height: 75vh;
     padding-top: 6em;
   }
-  body #homepage #hp-widget {
+  #public-layout #homepage #hp-widget {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
   }
-  body #homepage #hp-widget h2 {
+  #public-layout #homepage #hp-widget h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
@@ -481,7 +449,7 @@ table {
     text-decoration: underline #FDCD11 0.5em;
     color: #034076;
   }
-  body #homepage #hp-widget iframe {
+  #public-layout #homepage #hp-widget iframe {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
@@ -493,12 +461,13 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #public-layout {
     min-height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
     border: red dashed 5px;
   }
-  body #homepage {
+  #public-layout #homepage {
     margin-top: 10vh;
     width: 100vw;
     min-height: 100vh;
@@ -506,21 +475,21 @@ table {
     flex-direction: column;
     background-color: #F4F4F4;
   }
-  body #homepage section:first-of-type {
+  #public-layout #homepage section:first-of-type {
     display: flex;
     justify-content: center;
     background-color: #034076;
   }
-  body #homepage section:first-of-type figure img {
+  #public-layout #homepage section:first-of-type figure img {
     height: 75vh;
     padding-top: 8em;
   }
-  body #homepage #hp-widget {
+  #public-layout #homepage #hp-widget {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
   }
-  body #homepage #hp-widget h2 {
+  #public-layout #homepage #hp-widget h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
@@ -534,128 +503,95 @@ table {
     text-decoration: underline #FDCD11 0.5em;
     color: #034076;
   }
-  body #homepage #hp-widget iframe {
+  #public-layout #homepage #hp-widget iframe {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
     padding-top: 2em;
   }
-  body #homepage section:last-of-type {
+  #public-layout #homepage section:last-of-type {
     display: flex;
     flex-direction: row;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-  }
-  body #footer-client {
+  #footer-client {
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
     background-color: #034076;
     height: 20vh;
     width: 100vw;
-    position: absolute;
-    bottom: 0;
   }
-  body #footer-client figure {
+  #footer-client figure {
     display: grid;
   }
-  body #footer-client figure img {
+  #footer-client figure img {
     justify-self: center;
     align-self: center;
     width: auto;
   }
-  body #footer-client section {
+  #footer-client section {
     display: flex;
     flex-direction: row;
     gap: 10em;
     justify-content: center;
     align-content: center;
   }
-  body #footer-client section section {
+  #footer-client section section {
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  body #footer-client section section h1 {
+  #footer-client section section h1 {
     color: white;
     font-family: "Open Sans", sans-serif;
   }
-  body #footer-client section section ul li a {
+  #footer-client section section ul li a {
     color: white;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
   }
 }
 @media (min-width: 1440px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  body #footer-client {
+  #footer-client {
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
     background-color: #034076;
     height: 20vh;
     width: 100vw;
-    position: absolute;
-    bottom: 0;
   }
-  body #footer-client figure {
+  #footer-client figure {
     display: grid;
   }
-  body #footer-client figure img {
+  #footer-client figure img {
     justify-self: center;
     align-self: center;
     width: auto;
   }
-  body #footer-client section {
+  #footer-client section {
     display: flex;
     flex-direction: row;
     gap: 10em;
     justify-content: center;
     align-content: center;
   }
-  body #footer-client section section {
+  #footer-client section section {
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  body #footer-client section section h1 {
+  #footer-client section section h1 {
     color: white;
     font-family: "Open Sans", sans-serif;
   }
-  body #footer-client section section ul li a {
+  #footer-client section section ul li a {
     color: white;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
   }
 }
-@media (min-width: 425px) and (max-width: 767.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #admin-header {
+@media (max-width: 426px) {
+  #admin-header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 13vh;
@@ -663,22 +599,54 @@ table {
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
   }
-  body #admin-header h1 {
+  #admin-header h1 {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     align-self: center;
     justify-self: center;
   }
-  body #admin-header ul {
+  #admin-header ul {
     justify-self: center;
   }
-  body #admin-header ul li {
+  #admin-header ul li {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     padding-top: 0.5em;
     text-align: center;
   }
-  body #admin-header ul li a {
+  #admin-header ul li a {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  #admin-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 13vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  }
+  #admin-header h1 {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    justify-self: center;
+  }
+  #admin-header ul {
+    justify-self: center;
+  }
+  #admin-header ul li {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  #admin-header ul li a {
     font-size: 0.7em;
     font-weight: bold;
     text-decoration: none;
@@ -687,16 +655,7 @@ table {
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #admin-header {
+  #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 13vh;
@@ -704,22 +663,22 @@ table {
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
   }
-  body #admin-header h1 {
+  #admin-header h1 {
     padding-left: 3em;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     align-self: center;
   }
-  body #admin-header ul {
+  #admin-header ul {
     justify-self: end;
   }
-  body #admin-header ul li {
+  #admin-header ul li {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     padding-right: 3em;
     padding-top: 0.5em;
   }
-  body #admin-header ul li a {
+  #admin-header ul li a {
     font-size: 0.7em;
     font-weight: bold;
     text-decoration: none;
@@ -727,16 +686,7 @@ table {
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #admin-header {
+  #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 13vh;
@@ -744,22 +694,22 @@ table {
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
   }
-  body #admin-header h1 {
+  #admin-header h1 {
     padding-left: 3em;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     align-self: center;
   }
-  body #admin-header ul {
+  #admin-header ul {
     justify-self: end;
   }
-  body #admin-header ul li {
+  #admin-header ul li {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     padding-right: 3em;
     padding-top: 0.5em;
   }
-  body #admin-header ul li a {
+  #admin-header ul li a {
     font-size: 0.7em;
     font-weight: bold;
     text-decoration: none;
@@ -767,15 +717,7 @@ table {
   }
 }
 @media (min-width: 1440px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  body #admin-header {
+  #admin-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 10vh;
@@ -783,34 +725,34 @@ table {
     background-color: white;
     box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
   }
-  body #admin-header h1 {
+  #admin-header h1 {
     padding-left: 3em;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     align-self: center;
   }
-  body #admin-header ul {
+  #admin-header ul {
     justify-self: end;
   }
-  body #admin-header ul li {
+  #admin-header ul li {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     padding-right: 3em;
     padding-top: 0.5em;
   }
-  body #admin-header ul li a {
+  #admin-header ul li a {
     font-size: 0.7em;
     font-weight: bold;
     text-decoration: none;
     color: red;
   }
 }
-@media (min-width: 425px) and (max-width: 767.99px) {
+@media (max-width: 426px) {
   html {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #admin-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -821,7 +763,7 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #admin-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -832,32 +774,32 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #admin-layout {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
   }
-  body .sr-only {
+  #admin-layout .sr-only {
     display: none;
   }
-  body #admin-login {
+  #admin-layout #admin-login {
     height: 80vh;
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
     justify-content: center;
   }
-  body #admin-login h1 {
+  #admin-layout #admin-login h1 {
     margin-top: 8vh;
     grid-column: 2/3;
     text-align: center;
     align-self: center;
   }
-  body #admin-login #login-form {
+  #admin-layout #admin-login #login-form {
     justify-self: center;
     width: auto;
     grid-column: 2/3;
   }
-  body #admin-login #login-form #login-button {
+  #admin-layout #admin-login #login-form #login-button {
     padding-top: 2em;
     display: flex;
     justify-content: center;
@@ -868,78 +810,111 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #admin-layout {
     min-height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
   }
-  body #admin-login {
+  #admin-layout #admin-login {
     height: 80vh;
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
     justify-content: center;
   }
-  body #admin-login h1 {
+  #admin-layout #admin-login h1 {
     grid-column: 2/3;
     justify-self: center;
     align-self: end;
   }
-  body #admin-login #login-form {
+  #admin-layout #admin-login #login-form {
     justify-self: center;
     margin-top: 3vh;
     width: 30vw;
     grid-column: 2/3;
   }
-  body #admin-login #login-form #login-button {
+  #admin-layout #admin-login #login-form #login-button {
     padding-top: 2em;
     display: flex;
     justify-content: center;
   }
 }
-@media (min-width: 425px) and (max-width: 767.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body #admin-aside {
+@media (max-width: 426px) {
+  #admin-aside {
     height: 80vh;
     display: flex;
   }
-  body #admin-aside aside {
+  #admin-aside aside {
     margin-top: 5em;
     padding-left: 3em;
   }
-  body #admin-aside aside h1 {
+  #admin-aside aside h1 {
     margin-bottom: 1.5em;
     font-family: "Roboto", sans-serif;
   }
-  body #admin-aside aside nav ul li {
+  #admin-aside aside nav ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  #admin-aside {
+    height: 80vh;
+    display: flex;
+  }
+  #admin-aside aside {
+    margin-top: 5em;
+    padding-left: 3em;
+  }
+  #admin-aside aside h1 {
+    margin-bottom: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  #admin-aside aside nav ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  #admin-aside {
+    height: 80vh;
+    display: flex;
+  }
+  #admin-aside aside {
+    margin-top: 5em;
+    padding-left: 3em;
+  }
+  #admin-aside aside h1 {
+    margin-bottom: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  #admin-aside aside nav ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  #admin-aside {
+    height: 80vh;
+    display: flex;
+  }
+  #admin-aside aside {
+    margin-top: 5em;
+    padding-left: 3em;
+  }
+  #admin-aside aside h1 {
+    margin-bottom: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  #admin-aside aside nav ul li {
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -948,27 +923,19 @@ table {
   }
 }
 @media (min-width: 1440px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  body #admin-aside {
+  #admin-aside {
     height: 80vh;
     display: flex;
   }
-  body #admin-aside aside {
+  #admin-aside aside {
     margin-top: 5em;
     padding-left: 3em;
   }
-  body #admin-aside aside h1 {
+  #admin-aside aside h1 {
     margin-bottom: 1.5em;
     font-family: "Roboto", sans-serif;
   }
-  body #admin-aside aside nav ul li {
+  #admin-aside aside nav ul li {
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -977,195 +944,168 @@ table {
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body > main {
+  main {
     height: 60vh;
   }
-  body > main .section-btn {
+  main .section-btn {
     display: flex;
     flex-direction: row;
     align-self: center;
   }
-  body > main .section-btn button {
+  main .section-btn button {
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  body > main .section-btn button .btn-warning {
+  main .section-btn button .btn-warning {
     width: 30vw;
     height: 5vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  body > main table {
+  main table {
     grid-column: 2/3;
   }
-  body > main table thead tr th {
+  main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  body > main table tbody tr td {
+  main table tbody tr td {
     text-align: center;
   }
-  body > main table tbody tr .actions {
+  main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  body > main section {
+  main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  body > main section h1 {
+  main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  body > main section form {
+  main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: auto;
   }
-  body > main section form fieldset {
+  main section form fieldset {
     border: 0;
   }
-  body > main section form fieldset label {
+  main section form fieldset label {
     font-size: 1.1em;
   }
-  body > main section form fieldset input {
+  main section form fieldset input {
     text-align: center;
   }
-  body > main section form fieldset figure img {
+  main section form fieldset figure img {
     width: 100%;
   }
-  body > main section form .submit {
+  main section form .submit {
     display: flex;
     justify-content: center;
   }
-  body > main section form .submit .btn-primary {
+  main section form .submit .btn-primary {
     width: auto;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body > main {
+  main {
     height: 60vh;
   }
-  body > main .section-btn {
+  main .section-btn {
     display: flex;
     flex-direction: row;
     align-self: center;
   }
-  body > main .section-btn button {
+  main .section-btn button {
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  body > main .section-btn button .btn-warning {
+  main .section-btn button .btn-warning {
     width: 15vw;
     height: 5vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  body > main table {
+  main table {
     grid-column: 2/3;
   }
-  body > main table thead tr th {
+  main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  body > main table tbody tr td {
+  main table tbody tr td {
     text-align: center;
   }
-  body > main table tbody tr .actions {
+  main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  body > main section {
+  main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  body > main section h1 {
+  main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  body > main section form {
+  main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: auto;
   }
-  body > main section form fieldset {
+  main section form fieldset {
     border: 0;
   }
-  body > main section form fieldset label {
+  main section form fieldset label {
     font-size: 1.1em;
   }
-  body > main section form fieldset input {
+  main section form fieldset input {
     text-align: center;
   }
-  body > main section form fieldset figure img {
+  main section form fieldset figure img {
     width: 100%;
   }
-  body > main section form .submit {
+  main section form .submit {
     display: flex;
     justify-content: center;
   }
-  body > main section form .submit .btn-primary {
+  main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body > main {
+  main {
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 9fr;
   }
-  body > main .section-btn {
+  main .section-btn {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -1173,90 +1113,82 @@ table {
     gap: 1.5em;
     align-self: center;
   }
-  body > main .section-btn button {
+  main .section-btn button {
     grid-column: 1/2;
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  body > main .section-btn button .btn-warning {
+  main .section-btn button .btn-warning {
     width: 16vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  body > main table {
+  main table {
     grid-column: 2/3;
   }
-  body > main table thead tr th {
+  main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  body > main table tbody tr td {
+  main table tbody tr td {
     text-align: center;
   }
-  body > main table tbody tr .actions {
+  main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  body > main section {
+  main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  body > main section h1 {
+  main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  body > main section form {
+  main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     width: 20vw;
   }
-  body > main section form fieldset {
+  main section form fieldset {
     border: 0;
   }
-  body > main section form fieldset label {
+  main section form fieldset label {
     font-size: 1.1em;
   }
-  body > main section form fieldset input {
+  main section form fieldset input {
     text-align: center;
   }
-  body > main section form fieldset figure img {
+  main section form fieldset figure img {
     width: 100%;
   }
-  body > main section form .submit {
+  main section form .submit {
     display: flex;
     justify-content: center;
   }
-  body > main section form .submit .btn-primary {
+  main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 1440px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  body > main {
+  main {
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 9fr;
   }
-  body > main .section-btn {
+  main .section-btn {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -1264,70 +1196,70 @@ table {
     gap: 1.5em;
     align-self: center;
   }
-  body > main .section-btn button {
+  main .section-btn button {
     grid-column: 1/2;
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  body > main .section-btn button .btn-warning {
+  main .section-btn button .btn-warning {
     width: 12vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  body > main table {
+  main table {
     grid-column: 2/3;
   }
-  body > main table thead tr th {
+  main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  body > main table tbody tr td {
+  main table tbody tr td {
     text-align: center;
   }
-  body > main table tbody tr .actions {
+  main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  body > main section {
+  main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  body > main section h1 {
+  main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  body > main section form {
+  main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     width: 20vw;
   }
-  body > main section form fieldset {
+  main section form fieldset {
     border: 0;
   }
-  body > main section form fieldset label {
+  main section form fieldset label {
     font-size: 1.1em;
   }
-  body > main section form fieldset input {
+  main section form fieldset input {
     text-align: center;
   }
-  body > main section form fieldset figure img {
+  main section form fieldset figure img {
     width: 100%;
   }
-  body > main section form .submit {
+  main section form .submit {
     display: flex;
     justify-content: center;
   }
-  body > main section form .submit .btn-primary {
+  main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;

@@ -1,4 +1,4 @@
-@media (min-width: 425px) and (max-width: 767.99px)
+@media (max-width: 426px)
 {
     html
     {
@@ -6,12 +6,11 @@
         scroll-behavior: smooth;
     }
     
-    body
+    #admin-layout
     {
         min-height: 100vh;
         width: 100vw;
         overflow-x: hidden;
-        
     }
 }
 
@@ -23,12 +22,11 @@
         scroll-behavior: smooth;
     }
     
-    body
+    #admin-layout
     {
         min-height: 100vh;
         width: 100vw;
         overflow-x: hidden;
-        
     }
 }
 
@@ -40,7 +38,7 @@
         scroll-behavior: smooth;
     }
     
-    body
+    #admin-layout
     {
         min-height: 100vh;
         width: 100vw;
@@ -99,12 +97,12 @@
         scroll-behavior: smooth;
     }
     
-    body
+    #admin-layout
     {
         min-height: 100vh;
         width: 100vw;
-        
-        
+        overflow-x: hidden;
+
         #admin-login
         {
             height: 80vh;
