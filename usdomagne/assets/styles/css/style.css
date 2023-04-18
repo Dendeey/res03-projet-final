@@ -382,80 +382,6 @@ table {
     font-weight: 600;
   }
 }
-@media (max-width: 426px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  #public-layout {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  #public-layout {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1439.99px) {
-  html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-  }
-  #public-layout {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  #public-layout #homepage {
-    margin-top: 10vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    background-color: #F4F4F4;
-  }
-  #public-layout #homepage section:first-of-type {
-    display: flex;
-    justify-content: center;
-    background-color: #034076;
-  }
-  #public-layout #homepage section:first-of-type figure img {
-    height: 75vh;
-    padding-top: 6em;
-  }
-  #public-layout #homepage #hp-widget {
-    display: grid;
-    grid-template-columns: 0.1fr 0.8fr 0.1fr;
-    background-color: #F4F4F4;
-  }
-  #public-layout #homepage #hp-widget h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    grid-column: 2/3;
-    margin-top: 2em;
-    padding: 1em;
-    width: 40vw;
-    justify-self: center;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: underline #FDCD11 0.5em;
-    color: #034076;
-  }
-  #public-layout #homepage #hp-widget iframe {
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-    padding-top: 2em;
-  }
-}
 @media (min-width: 1440px) {
   html {
     font-size: 14px;
@@ -464,32 +390,35 @@ table {
   #public-layout {
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
     border: red dashed 5px;
   }
-  #public-layout #homepage {
+  #public-layout > #homepage {
+    background-color: #F4F4F4;
+    overflow: hidden;
     margin-top: 10vh;
     width: 100vw;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F4;
   }
-  #public-layout #homepage section:first-of-type {
+  #public-layout > #homepage > header {
     display: flex;
     justify-content: center;
     background-color: #034076;
   }
-  #public-layout #homepage section:first-of-type figure img {
-    height: 75vh;
+  #public-layout > #homepage > header figure {
+    display: flex;
+    justify-content: center;
+  }
+  #public-layout > #homepage > header figure img {
+    width: 60%;
     padding-top: 8em;
   }
-  #public-layout #homepage #hp-widget {
+  #public-layout > #homepage > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
   }
-  #public-layout #homepage #hp-widget h2 {
+  #public-layout > #homepage > section:first-of-type h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
@@ -503,15 +432,36 @@ table {
     text-decoration: underline #FDCD11 0.5em;
     color: #034076;
   }
-  #public-layout #homepage #hp-widget iframe {
+  #public-layout > #homepage > section:first-of-type article {
     grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
     padding-top: 2em;
   }
-  #public-layout #homepage section:last-of-type {
+  #public-layout > #homepage > section:nth-of-type(2) {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
+    grid-column: 2/3;
     display: flex;
     flex-direction: row;
+    gap: 5em;
+  }
+  #public-layout > #homepage > section:last-of-type {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #homepage > section:last-of-type #homepage-actualites {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+  }
+  #public-layout > #homepage > section:last-of-type #homepage-actualites aside {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -555,10 +505,11 @@ table {
 @media (min-width: 1440px) {
   #footer-client {
     display: grid;
-    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-columns: 0.3fr 0.7fr;
     background-color: #034076;
     height: 20vh;
     width: 100vw;
+    bottom: 0;
   }
   #footer-client figure {
     display: grid;
@@ -572,13 +523,13 @@ table {
     display: flex;
     flex-direction: row;
     gap: 10em;
-    justify-content: center;
-    align-content: center;
+    padding-left: 5em;
   }
   #footer-client section section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-self: center;
   }
   #footer-client section section h1 {
     color: white;
@@ -587,6 +538,7 @@ table {
   #footer-client section section ul li a {
     color: white;
     font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
     text-decoration: none;
   }
 }
@@ -944,168 +896,168 @@ table {
   }
 }
 @media (min-width: 425px) and (max-width: 767.99px) {
-  main {
+  #admin-layout main {
     height: 60vh;
   }
-  main .section-btn {
+  #admin-layout main .section-btn {
     display: flex;
     flex-direction: row;
     align-self: center;
   }
-  main .section-btn button {
+  #admin-layout main .section-btn button {
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  main .section-btn button .btn-warning {
+  #admin-layout main .section-btn button .btn-warning {
     width: 30vw;
     height: 5vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  main table {
+  #admin-layout main table {
     grid-column: 2/3;
   }
-  main table thead tr th {
+  #admin-layout main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  main table tbody tr td {
+  #admin-layout main table tbody tr td {
     text-align: center;
   }
-  main table tbody tr .actions {
+  #admin-layout main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  main section {
+  #admin-layout main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  main section h1 {
+  #admin-layout main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  main section form {
+  #admin-layout main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: auto;
   }
-  main section form fieldset {
+  #admin-layout main section form fieldset {
     border: 0;
   }
-  main section form fieldset label {
+  #admin-layout main section form fieldset label {
     font-size: 1.1em;
   }
-  main section form fieldset input {
+  #admin-layout main section form fieldset input {
     text-align: center;
   }
-  main section form fieldset figure img {
+  #admin-layout main section form fieldset figure img {
     width: 100%;
   }
-  main section form .submit {
+  #admin-layout main section form .submit {
     display: flex;
     justify-content: center;
   }
-  main section form .submit .btn-primary {
+  #admin-layout main section form .submit .btn-primary {
     width: auto;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
-  main {
+  #admin-layout main {
     height: 60vh;
   }
-  main .section-btn {
+  #admin-layout main .section-btn {
     display: flex;
     flex-direction: row;
     align-self: center;
   }
-  main .section-btn button {
+  #admin-layout main .section-btn button {
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  main .section-btn button .btn-warning {
+  #admin-layout main .section-btn button .btn-warning {
     width: 15vw;
     height: 5vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  main table {
+  #admin-layout main table {
     grid-column: 2/3;
   }
-  main table thead tr th {
+  #admin-layout main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  main table tbody tr td {
+  #admin-layout main table tbody tr td {
     text-align: center;
   }
-  main table tbody tr .actions {
+  #admin-layout main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  main section {
+  #admin-layout main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  main section h1 {
+  #admin-layout main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  main section form {
+  #admin-layout main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: auto;
   }
-  main section form fieldset {
+  #admin-layout main section form fieldset {
     border: 0;
   }
-  main section form fieldset label {
+  #admin-layout main section form fieldset label {
     font-size: 1.1em;
   }
-  main section form fieldset input {
+  #admin-layout main section form fieldset input {
     text-align: center;
   }
-  main section form fieldset figure img {
+  #admin-layout main section form fieldset figure img {
     width: 100%;
   }
-  main section form .submit {
+  #admin-layout main section form .submit {
     display: flex;
     justify-content: center;
   }
-  main section form .submit .btn-primary {
+  #admin-layout main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
-  main {
+  #admin-layout main {
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 9fr;
   }
-  main .section-btn {
+  #admin-layout main .section-btn {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -1113,82 +1065,82 @@ table {
     gap: 1.5em;
     align-self: center;
   }
-  main .section-btn button {
+  #admin-layout main .section-btn button {
     grid-column: 1/2;
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  main .section-btn button .btn-warning {
+  #admin-layout main .section-btn button .btn-warning {
     width: 16vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  main table {
+  #admin-layout main table {
     grid-column: 2/3;
   }
-  main table thead tr th {
+  #admin-layout main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  main table tbody tr td {
+  #admin-layout main table tbody tr td {
     text-align: center;
   }
-  main table tbody tr .actions {
+  #admin-layout main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  main section {
+  #admin-layout main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  main section h1 {
+  #admin-layout main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  main section form {
+  #admin-layout main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     width: 20vw;
   }
-  main section form fieldset {
+  #admin-layout main section form fieldset {
     border: 0;
   }
-  main section form fieldset label {
+  #admin-layout main section form fieldset label {
     font-size: 1.1em;
   }
-  main section form fieldset input {
+  #admin-layout main section form fieldset input {
     text-align: center;
   }
-  main section form fieldset figure img {
+  #admin-layout main section form fieldset figure img {
     width: 100%;
   }
-  main section form .submit {
+  #admin-layout main section form .submit {
     display: flex;
     justify-content: center;
   }
-  main section form .submit .btn-primary {
+  #admin-layout main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;
   }
 }
 @media (min-width: 1440px) {
-  main {
+  #admin-layout main {
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 9fr;
   }
-  main .section-btn {
+  #admin-layout main .section-btn {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -1196,70 +1148,70 @@ table {
     gap: 1.5em;
     align-self: center;
   }
-  main .section-btn button {
+  #admin-layout main .section-btn button {
     grid-column: 1/2;
     margin: auto;
     padding: auto;
     border: 0;
     background: none;
   }
-  main .section-btn button .btn-warning {
+  #admin-layout main .section-btn button .btn-warning {
     width: 12vw;
     height: 4vh;
     font-weight: bold;
     font-size: 1.1em;
     color: rgb(33, 33, 170);
   }
-  main table {
+  #admin-layout main table {
     grid-column: 2/3;
   }
-  main table thead tr th {
+  #admin-layout main table thead tr th {
     text-align: center;
     font-weight: 600;
   }
-  main table tbody tr td {
+  #admin-layout main table tbody tr td {
     text-align: center;
   }
-  main table tbody tr .actions {
+  #admin-layout main table tbody tr .actions {
     display: flex;
     flex-direction: row;
     gap: 1.5em;
     justify-content: center;
   }
-  main section {
+  #admin-layout main section {
     grid-column: 2/3;
     align-content: center;
     justify-self: center;
   }
-  main section h1 {
+  #admin-layout main section h1 {
     margin-top: 3vh;
     grid-column: 2/3;
     justify-self: center;
     text-align: center;
   }
-  main section form {
+  #admin-layout main section form {
     justify-self: center;
     grid-column: 2/3;
     margin-top: 3vh;
     width: 20vw;
   }
-  main section form fieldset {
+  #admin-layout main section form fieldset {
     border: 0;
   }
-  main section form fieldset label {
+  #admin-layout main section form fieldset label {
     font-size: 1.1em;
   }
-  main section form fieldset input {
+  #admin-layout main section form fieldset input {
     text-align: center;
   }
-  main section form fieldset figure img {
+  #admin-layout main section form fieldset figure img {
     width: 100%;
   }
-  main section form .submit {
+  #admin-layout main section form .submit {
     display: flex;
     justify-content: center;
   }
-  main section form .submit .btn-primary {
+  #admin-layout main section form .submit .btn-primary {
     width: 10vw;
     font-weight: 600;
     font-size: 1.1em;

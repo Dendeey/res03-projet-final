@@ -1,506 +1,505 @@
 @media (min-width: 425px) and (max-width: 767.99px) {
 
-
-    main {
-        height: 60vh;
-
-
-        .section-btn {
-
-            display: flex;
-            flex-direction: row;
-            align-self: center;
-
-            button {
-                margin: auto;
-                padding: auto;
-                border: 0;
-                background: none;
-
-                .btn-warning {
-                    width: 30vw;
-                    height: 5vh;
-                    font-weight: bold;
-                    font-size: 1.1em;
-                    color: rgb(33, 33, 170);
-                }
-            }
-        }
-
-
-        table {
-            grid-column: 2/3;
-
-            thead {
-                tr {
-                    th {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            tbody {
-                tr {
-                    td {
-                        text-align: center;
-                    }
-
-                    .actions {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1.5em;
-                        justify-content: center;
-
-                    }
-
-
-                }
-            }
-        }
-
-
-        section {
-            grid-column: 2/3;
-            align-content: center;
-            justify-self: center;
-
-            h1 {
-                margin-top: 3vh;
-                grid-column: 2/3;
-                justify-self: center;
-                text-align: center;
-            }
-
-            form {
-                justify-self: center;
-                grid-column: 2/3;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-                width: auto;
-
-                fieldset {
-
+    #admin-layout{
+        main {
+            height: 60vh;
+    
+    
+            .section-btn {
+    
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+    
+                button {
+                    margin: auto;
+                    padding: auto;
                     border: 0;
-
-                    label {
+                    background: none;
+    
+                    .btn-warning {
+                        width: 30vw;
+                        height: 5vh;
+                        font-weight: bold;
                         font-size: 1.1em;
+                        color: rgb(33, 33, 170);
                     }
-
-                    input {
-                        text-align: center;
-
-                    }
-
-                    figure {
-
-                        img {
-                            width: 100%;
+                }
+            }
+    
+    
+            table {
+                grid-column: 2/3;
+    
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            font-weight: 600;
                         }
                     }
-
                 }
-
-                .submit {
-                    display: flex;
-                    justify-content: center;
-
-                    .btn-primary {
-                        width: auto;
-                        font-weight: 600;
-                        font-size: 1.1em;
-
+    
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                        }
+    
+                        .actions {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+    
+                        }
+    
+    
                     }
                 }
-
             }
-
-
+    
+    
+            section {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+    
+                h1 {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+    
+                form {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    width: auto;
+    
+                    fieldset {
+    
+                        border: 0;
+    
+                        label {
+                            font-size: 1.1em;
+                        }
+    
+                        input {
+                            text-align: center;
+    
+                        }
+    
+                        figure {
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+    
+                    .submit {
+                        display: flex;
+                        justify-content: center;
+    
+                        .btn-primary {
+                            width: auto;
+                            font-weight: 600;
+                            font-size: 1.1em;
+    
+                        }
+                    }
+    
+                }
+    
+    
+            }
+    
         }
-
     }
-
 
 }
 
 @media (min-width: 768px) and (max-width: 1023.99px) {
 
-
-    main {
-        height: 60vh;
-
-
-        .section-btn {
-
-            display: flex;
-            flex-direction: row;
-            align-self: center;
-
-            button {
-                margin: auto;
-                padding: auto;
-                border: 0;
-                background: none;
-
-                .btn-warning {
-                    width: 15vw;
-                    height: 5vh;
-                    font-weight: bold;
-                    font-size: 1.1em;
-                    color: rgb(33, 33, 170);
-                }
-            }
-        }
-
-
-        table {
-            grid-column: 2/3;
-
-            thead {
-                tr {
-                    th {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            tbody {
-                tr {
-                    td {
-                        text-align: center;
-                    }
-
-                    .actions {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1.5em;
-                        justify-content: center;
-
-                    }
-
-
-                }
-            }
-        }
-
-
-        section {
-            grid-column: 2/3;
-            align-content: center;
-            justify-self: center;
-
-            h1 {
-                margin-top: 3vh;
-                grid-column: 2/3;
-                justify-self: center;
-                text-align: center;
-            }
-
-            form {
-                justify-self: center;
-                grid-column: 2/3;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-                width: auto;
-
-                fieldset {
-
+    #admin-layout{
+        main {
+            height: 60vh;
+    
+    
+            .section-btn {
+    
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+    
+                button {
+                    margin: auto;
+                    padding: auto;
                     border: 0;
-
-                    label {
+                    background: none;
+    
+                    .btn-warning {
+                        width: 15vw;
+                        height: 5vh;
+                        font-weight: bold;
                         font-size: 1.1em;
+                        color: rgb(33, 33, 170);
                     }
-
-                    input {
-                        text-align: center;
-
-                    }
-
-                    figure {
-
-                        img {
-                            width: 100%;
+                }
+            }
+    
+    
+            table {
+                grid-column: 2/3;
+    
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            font-weight: 600;
                         }
                     }
-
                 }
-
-                .submit {
-                    display: flex;
-                    justify-content: center;
-
-                    .btn-primary {
-                        width: 10vw;
-                        font-weight: 600;
-                        font-size: 1.1em;
-
+    
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                        }
+    
+                        .actions {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+    
+                        }
+    
+    
                     }
                 }
-
             }
-
-
+    
+    
+            section {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+    
+                h1 {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+    
+                form {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    width: auto;
+    
+                    fieldset {
+    
+                        border: 0;
+    
+                        label {
+                            font-size: 1.1em;
+                        }
+    
+                        input {
+                            text-align: center;
+    
+                        }
+    
+                        figure {
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+    
+                    .submit {
+                        display: flex;
+                        justify-content: center;
+    
+                        .btn-primary {
+                            width: 10vw;
+                            font-weight: 600;
+                            font-size: 1.1em;
+    
+                        }
+                    }
+    
+                }
+    
+    
+            }
+    
         }
-
+    
     }
-
 
 }
 
 @media (min-width: 1024px) and (max-width: 1439.99px) {
 
-
-
-    main {
-        height: 60vh;
-        display: grid;
-        grid-template-columns: 1fr 9fr;
-
-        .section-btn {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5em;
-            align-self: center;
-
-            button {
+    #admin-layout{
+        main {
+            height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+    
+            .section-btn {
                 grid-column: 1/2;
-                margin: auto;
-                padding: auto;
-                border: 0;
-                background: none;
-
-                .btn-warning {
-                    width: 16vw;
-                    height: 4vh;
-                    font-weight: bold;
-                    font-size: 1.1em;
-                    color: rgb(33, 33, 170);
-                }
-            }
-        }
-
-
-        table {
-            grid-column: 2/3;
-
-            thead {
-                tr {
-                    th {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            tbody {
-                tr {
-                    td {
-                        text-align: center;
-                    }
-
-                    .actions {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1.5em;
-                        justify-content: center;
-
-                    }
-
-
-                }
-            }
-        }
-
-
-        section {
-            grid-column: 2/3;
-            align-content: center;
-            justify-self: center;
-
-            h1 {
-                margin-top: 3vh;
-                grid-column: 2/3;
-                justify-self: center;
-                text-align: center;
-            }
-
-            form {
-                justify-self: center;
-                grid-column: 2/3;
-                margin-top: 3vh;
-                width: 20vw;
-
-                fieldset {
-
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                align-self: center;
+    
+                button {
+                    grid-column: 1/2;
+                    margin: auto;
+                    padding: auto;
                     border: 0;
-
-                    label {
+                    background: none;
+    
+                    .btn-warning {
+                        width: 16vw;
+                        height: 4vh;
+                        font-weight: bold;
                         font-size: 1.1em;
+                        color: rgb(33, 33, 170);
                     }
-
-                    input {
-                        text-align: center;
-
-                    }
-
-                    figure {
-
-                        img {
-                            width: 100%;
+                }
+            }
+    
+    
+            table {
+                grid-column: 2/3;
+    
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            font-weight: 600;
                         }
                     }
-
                 }
-
-                .submit {
-                    display: flex;
-                    justify-content: center;
-
-                    .btn-primary {
-                        width: 10vw;
-                        font-weight: 600;
-                        font-size: 1.1em;
-
+    
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                        }
+    
+                        .actions {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+    
+                        }
+    
+    
                     }
                 }
-
             }
-
-
+    
+    
+            section {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+    
+                h1 {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+    
+                form {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    width: 20vw;
+    
+                    fieldset {
+    
+                        border: 0;
+    
+                        label {
+                            font-size: 1.1em;
+                        }
+    
+                        input {
+                            text-align: center;
+    
+                        }
+    
+                        figure {
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+    
+                    .submit {
+                        display: flex;
+                        justify-content: center;
+    
+                        .btn-primary {
+                            width: 10vw;
+                            font-weight: 600;
+                            font-size: 1.1em;
+    
+                        }
+                    }
+    
+                }
+    
+    
+            }
+    
         }
-
     }
-
 }
 
 
 @media (min-width: 1440px) {
 
-    main {
-        height: 60vh;
-        display: grid;
-        grid-template-columns: 1fr 9fr;
-
-        .section-btn {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5em;
-            align-self: center;
-
-            button {
+    #admin-layout{
+        main {
+            height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+    
+            .section-btn {
                 grid-column: 1/2;
-                margin: auto;
-                padding: auto;
-                border: 0;
-                background: none;
-
-                .btn-warning {
-                    width: 12vw;
-                    height: 4vh;
-                    font-weight: bold;
-                    font-size: 1.1em;
-                    color: rgb(33, 33, 170);
-                }
-            }
-        }
-
-
-        table {
-            grid-column: 2/3;
-
-            thead {
-                tr {
-                    th {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            tbody {
-                tr {
-                    td {
-                        text-align: center;
-                    }
-
-                    .actions {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1.5em;
-                        justify-content: center;
-
-                    }
-
-
-                }
-            }
-        }
-
-
-        section {
-            grid-column: 2/3;
-            align-content: center;
-            justify-self: center;
-
-            h1 {
-                margin-top: 3vh;
-                grid-column: 2/3;
-                justify-self: center;
-                text-align: center;
-            }
-
-            form {
-                justify-self: center;
-                grid-column: 2/3;
-                margin-top: 3vh;
-                width: 20vw;
-
-                fieldset {
-
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                align-self: center;
+    
+                button {
+                    grid-column: 1/2;
+                    margin: auto;
+                    padding: auto;
                     border: 0;
-
-                    label {
+                    background: none;
+    
+                    .btn-warning {
+                        width: 12vw;
+                        height: 4vh;
+                        font-weight: bold;
                         font-size: 1.1em;
+                        color: rgb(33, 33, 170);
                     }
-
-                    input {
-                        text-align: center;
-
-                    }
-
-                    figure {
-
-                        img {
-                            width: 100%;
+                }
+            }
+    
+    
+            table {
+                grid-column: 2/3;
+    
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            font-weight: 600;
                         }
                     }
-
                 }
-
-                .submit {
-                    display: flex;
-                    justify-content: center;
-
-                    .btn-primary {
-                        width: 10vw;
-                        font-weight: 600;
-                        font-size: 1.1em;
-
+    
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                        }
+    
+                        .actions {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1.5em;
+                            justify-content: center;
+    
+                        }
+    
+    
                     }
                 }
-
             }
-
-
+    
+    
+            section {
+                grid-column: 2/3;
+                align-content: center;
+                justify-self: center;
+    
+                h1 {
+                    margin-top: 3vh;
+                    grid-column: 2/3;
+                    justify-self: center;
+                    text-align: center;
+                }
+    
+                form {
+                    justify-self: center;
+                    grid-column: 2/3;
+                    margin-top: 3vh;
+                    width: 20vw;
+    
+                    fieldset {
+    
+                        border: 0;
+    
+                        label {
+                            font-size: 1.1em;
+                        }
+    
+                        input {
+                            text-align: center;
+    
+                        }
+    
+                        figure {
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+    
+                    .submit {
+                        display: flex;
+                        justify-content: center;
+    
+                        .btn-primary {
+                            width: 10vw;
+                            font-weight: 600;
+                            font-size: 1.1em;
+    
+                        }
+                    }
+    
+                }
+    
+    
+            }
+    
         }
-
     }
-
-
-
 }
