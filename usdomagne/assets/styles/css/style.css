@@ -63,9 +63,6 @@ table {
     display: grid;
     grid-template-columns: 0.1fr 1fr;
   }
-  #client-header-mobile .sr-only {
-    display: none;
-  }
   #client-header-mobile nav {
     margin-top: 2.5em;
     padding-left: 1.5em;
@@ -415,7 +412,7 @@ table {
   }
   #public-layout > #homepage > section:first-of-type {
     display: grid;
-    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #F4F4F4;
   }
   #public-layout > #homepage > section:first-of-type h2 {
@@ -439,7 +436,7 @@ table {
   #public-layout > #homepage > section:nth-of-type(2) {
     margin-top: 6vh;
     display: grid;
-    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #F4F4F4;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
@@ -448,20 +445,62 @@ table {
     flex-direction: row;
     gap: 5em;
   }
-  #public-layout > #homepage > section:last-of-type {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 100%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) {
     margin-top: 6vh;
     display: grid;
-    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #F4F4F4;
   }
-  #public-layout > #homepage > section:last-of-type #homepage-actualites {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
     gap: 5em;
   }
-  #public-layout > #homepage > section:last-of-type #homepage-actualites aside {
-    width: 100%;
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites article {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside {
+    width: 50vw;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:last-of-type {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 0.15fr 0.7fr 0.15fr;
+    background-color: #F4F4F4;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -507,7 +546,7 @@ table {
     display: grid;
     grid-template-columns: 0.3fr 0.7fr;
     background-color: #034076;
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
     bottom: 0;
   }

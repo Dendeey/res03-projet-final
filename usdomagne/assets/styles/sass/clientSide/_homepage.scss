@@ -159,7 +159,7 @@
             & > section:first-of-type
             {
                 display: grid;
-                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
                 
 
@@ -190,7 +190,7 @@
             {
                 margin-top: 6vh;
                 display: grid;
-                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
 
                 #homepage-carousel{
@@ -211,11 +211,22 @@
     
                     aside 
                     {
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        width: 100%;
+
                         header 
                         {
+                            padding-bottom: 1em;
                             h2
                             {
-    
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
                             }
                         }
     
@@ -235,11 +246,11 @@
                 }
             }
 
-            & > section:last-of-type
+            & > section:nth-of-type(3)
             {
                 margin-top: 6vh;
                 display: grid;
-                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
 
                 #homepage-actualites{
@@ -249,12 +260,40 @@
                     gap: 5em;
                     
                     article{
-
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
                     }
 
                     aside{
-                        width: 100%;
+                        width: 50vw;
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
                     }
+                }
+            }
+
+            & > section:last-of-type
+            {
+                margin-top: 6vh;
+                display: grid;
+                grid-template-columns: 0.15fr 0.7fr 0.15fr;
+                background-color: #F4F4F4;
+                #partenaires{
+                    
                 }
             }
         }
