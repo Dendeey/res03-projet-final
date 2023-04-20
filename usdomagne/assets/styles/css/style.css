@@ -338,6 +338,7 @@ table {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
+    gap: 2em;
     background-color: white;
   }
   #client-header nav ul:first-of-type {
@@ -345,7 +346,7 @@ table {
     justify-self: right;
     display: flex;
     flex-direction: row;
-    column-gap: 10em;
+    column-gap: 6em;
   }
   #client-header nav ul:first-of-type li {
     display: inline-block;
@@ -410,8 +411,33 @@ table {
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
-  #client-header .sr-only {
-    display: none;
+  #client-header .sideMenu {
+    position: fixed;
+    left: 0;
+    margin-top: 16vh;
+    width: 18vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #client-header .sideMenu .sideMenu-CloseBtn {
+    text-decoration: none;
+    padding: 1em;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+  }
+  #client-header .sideMenu .sideMenu-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  #client-header .sideMenu .sideMenu-nav ul:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
   }
   #client-header section {
     align-items: center;
@@ -579,6 +605,10 @@ table {
     display: flex;
     flex-direction: column-reverse;
     gap: 5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+    display: flex;
+    justify-content: center;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
@@ -786,6 +816,10 @@ table {
     flex-direction: column-reverse;
     gap: 5em;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+    display: flex;
+    justify-content: center;
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
     background-color: white;
@@ -992,6 +1026,10 @@ table {
     flex-direction: column-reverse;
     gap: 5em;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+    display: flex;
+    justify-content: center;
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
     background-color: white;
@@ -1137,6 +1175,234 @@ table {
     border-radius: 0.5em;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #homepage {
+    background-color: #F4F4F4;
+    overflow: hidden;
+    margin-top: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #homepage > header {
+    display: flex;
+    justify-content: center;
+    background-color: #034076;
+  }
+  #public-layout > #homepage > header figure {
+    display: flex;
+    justify-content: center;
+  }
+  #public-layout > #homepage > header figure img {
+    width: 60%;
+    padding-top: 8em;
+  }
+  #public-layout > #homepage > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #homepage > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    grid-column: 2/3;
+    margin-top: 2em;
+    padding: 1em;
+    justify-self: center;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.5em;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:first-of-type article {
+    grid-column: 2/3;
+    padding-top: 2em;
+  }
+  #public-layout > #homepage > section:first-of-type article iframe {
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure {
+    width: 50vw;
+    height: 50vh;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+    width: 100%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 100%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    border-bottom: #F4F4F4 0.2em solid;
+    padding: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3em;
+    margin-top: 3vh;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside {
+    width: 50vw;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:last-of-type {
+    margin-top: 6vh;
+    padding: 2em 0 2em 0;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: white;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires {
+    grid-column: 2/3;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires header {
+    padding-bottom: 1em;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.5em solid;
+    color: #034076;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires > section {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+}
 @media (min-width: 1440px) {
   html {
     font-size: 14px;
@@ -1204,6 +1470,12 @@ table {
     display: flex;
     flex-direction: row;
     gap: 5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure {
+    width: 40vw;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+    width: 100%;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
@@ -1452,6 +1724,7 @@ table {
     background-color: #034076;
     height: 20vh;
     width: 100vw;
+    padding-left: 2em;
   }
   #footer-client figure {
     display: grid;
@@ -1490,6 +1763,7 @@ table {
     background-color: #034076;
     height: 20vh;
     width: 100vw;
+    padding-left: 3em;
   }
   #footer-client figure {
     display: grid;

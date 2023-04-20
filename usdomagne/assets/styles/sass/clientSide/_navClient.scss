@@ -79,10 +79,11 @@
                 display: flex;
                 flex-direction: row;
                 align-self: center;
-                
+
                 a {
                     display: flex;
                     justify-content: center;
+
                     img {
                         width: 40%;
                     }
@@ -101,7 +102,7 @@
 
 }
 
-@media (min-width: 427px) and (max-width: 767px){
+@media (min-width: 427px) and (max-width: 767px) {
     #client-header {
         display: none;
     }
@@ -403,6 +404,7 @@
             height: 100%;
             display: grid;
             grid-template-columns: 1fr 0.5fr 1fr;
+            gap: 2em;
             background-color: white;
 
             ul:first-of-type {
@@ -410,7 +412,7 @@
                 justify-self: right;
                 display: flex;
                 flex-direction: row;
-                column-gap: 10em;
+                column-gap: 6em;
 
                 li {
                     display: inline-block;
@@ -493,8 +495,39 @@
         transition: top 0.3s;
         border-bottom: 5px solid #FDCD11;
 
-        .sr-only {
-            display: none;
+        .sideMenu{
+            position: fixed;
+            left: 0;
+            margin-top: 16vh;
+            // border: red 0.3em dashed;
+            width: 18vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .sideMenu-CloseBtn{
+                text-decoration: none;
+                padding: 1em;
+                border: none;
+                background-color: white;
+                display: flex;
+                justify-content: end;
+
+                span{
+                    
+                }
+            }
+            .sideMenu-nav{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-content: center;
+
+                ul:first-of-type{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+                }
+            }
         }
 
         section {

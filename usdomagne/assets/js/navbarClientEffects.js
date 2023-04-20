@@ -26,8 +26,13 @@ function hideAndShowMenuOnScroll(){
  */
 function openAndCloseAsideMenu(){
 
+    let sideMenuBtn = document.getElementById('sideMenu-btn');
 
+    sideMenuBtn.addEventListener('click', function(){
+        
+    })
     
 }
 
 export { hideAndShowMenuOnScroll };
+export { openAndCloseAsideMenu };
