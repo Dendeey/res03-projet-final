@@ -1,36 +1,816 @@
-// @media (max-width: 426px)
-// {
-//     html
-//     {
-//         font-size: 14px;
-//         scroll-behavior: smooth;
-//     }
+@media (max-width: 426px)
+{
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
     
-//     #public-layout
-//     {
-//         min-height: 100vh;
-//         width: 100vw;
-//         overflow: hidden;
-        
-//     }
-// }
+    #public-layout
+    {
+        min-height: 100vh;
+        width: 100vw;
 
-// @media (min-width: 768px) and (max-width: 1023.99px)
-// {
-//     html
-//     {
-//         font-size: 14px;
-//         scroll-behavior: smooth;
-//     }
+        & > #homepage
+        {
+            background-color: #F4F4F4;
+            overflow: hidden;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+            & > header
+            {
+                display: flex;
+                justify-content: center;
+                background-color: #034076;
+
+
+                figure 
+                {
+                    display: flex;
+                    justify-content: center ;
+                    img 
+                    {
+                        width: 100%;
+                        padding-top: 2em;
+                    }
+                }
+            }
+
+            & > section:first-of-type
+            {
+                background-color: #F4F4F4;
+                justify-content: center;
+
+                h2 
+                {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                    padding: 1em;
+                    justify-self: center;
+                    text-align: center;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.5em;
+                    color: #034076;
+                    
+                }
+
+                article{
+                    grid-column: 2/3;
+                    padding-top: 2em;
+                    
+                    iframe{
+                        border-radius: 0.5em;
+                    }
+
+                }
+            }
+
+            & > section:nth-of-type(2)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-carousel{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 5em;
+                    article
+                    {
+                        figure 
+                        {
+                            img 
+                            {
     
-//     #public-layout
-//     {
-//         min-height: 100vh;
-//         width: 100vw;
-//         overflow-x: hidden;
-        
-//     }
-// }
+                            }
+                        }
+                    }
+    
+                    aside 
+                    {
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        width: 100%;
+
+                        header 
+                        {
+                            padding-bottom: 1em;
+                            h2
+                            {
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.8em;
+                            border-bottom: #F4F4F4 0.2em solid;
+                            padding: 1em;
+                            span 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                color: #034076;
+                            }
+    
+                            p 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:nth-of-type(3)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-actualites{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5em;
+
+                    & > section:first-of-type{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article{
+                            display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            gap: 3em;
+                            margin-top: 3vh;
+    
+                            figure{
+    
+                                img{
+                                    width: 100%;
+                                    border-radius: 0.5em;
+                                }
+                            }
+                            
+                            section{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2em;
+                                header{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1em;
+
+                                    a{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;                                        
+                                        background-color: #034076;
+                                        color: white;
+                                        border-radius: 1em;
+                                        text-decoration: none;
+                                        padding: 0.5em;
+                                    }
+                                    span{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;
+                                        align-self: center;
+                                    }
+                                }
+                                h3{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.5em;
+                                    font-weight: 800;
+                                    text-transform: uppercase;
+                                }
+                                p{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+
+                    aside{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:last-of-type
+            {
+                margin-top: 6vh;
+                padding: 1em;
+                background-color: white;
+                #partenaires{
+
+                    header{
+                        padding-bottom: 1em;
+                        h2{
+                            font-family: "Open Sans", sans-serif;
+                            font-size: 1.5em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            border-bottom: #FDCD11 0.5em solid;
+                            color: #034076;
+                        }
+                    }
+
+                    & > section{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5em;
+                        figure{
+                            img{
+                                width: 100%;
+                                border-radius: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 427px) and (max-width: 767px){
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+    
+    #public-layout
+    {
+        min-height: 100vh;
+        width: 100vw;
+
+        & > #homepage
+        {
+            background-color: #F4F4F4;
+            overflow: hidden;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+            & > header
+            {
+                display: flex;
+                justify-content: center;
+                background-color: #034076;
+
+
+                figure 
+                {
+                    display: flex;
+                    justify-content: center ;
+                    img 
+                    {
+                        width: 100%;
+                        padding-top: 2em;
+                    }
+                }
+            }
+
+            & > section:first-of-type
+            {
+                background-color: #F4F4F4;
+                justify-content: center;
+
+                h2 
+                {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                    padding: 1em;
+                    justify-self: center;
+                    text-align: center;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.5em;
+                    color: #034076;
+                    
+                }
+
+                article{
+                    grid-column: 2/3;
+                    padding-top: 2em;
+                    
+                    iframe{
+                        border-radius: 0.5em;
+                    }
+
+                }
+            }
+
+            & > section:nth-of-type(2)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-carousel{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 5em;
+                    article
+                    {
+                        figure 
+                        {
+                            img 
+                            {
+    
+                            }
+                        }
+                    }
+    
+                    aside 
+                    {
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        width: 100%;
+
+                        header 
+                        {
+                            padding-bottom: 1em;
+                            h2
+                            {
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.8em;
+                            border-bottom: #F4F4F4 0.2em solid;
+                            padding: 1em;
+                            span 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                color: #034076;
+                            }
+    
+                            p 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:nth-of-type(3)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-actualites{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5em;
+
+                    & > section:first-of-type{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article{
+                            display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            gap: 3em;
+                            margin-top: 3vh;
+    
+                            figure{
+    
+                                img{
+                                    width: 100%;
+                                    border-radius: 0.5em;
+                                }
+                            }
+                            
+                            section{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2em;
+                                header{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1em;
+
+                                    a{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;                                        
+                                        background-color: #034076;
+                                        color: white;
+                                        border-radius: 1em;
+                                        text-decoration: none;
+                                        padding: 0.5em;
+                                    }
+                                    span{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;
+                                        align-self: center;
+                                    }
+                                }
+                                h3{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.5em;
+                                    font-weight: 800;
+                                    text-transform: uppercase;
+                                }
+                                p{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+
+                    aside{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:last-of-type
+            {
+                margin-top: 6vh;
+                padding: 1em;
+                background-color: white;
+                #partenaires{
+
+                    header{
+                        padding-bottom: 1em;
+                        h2{
+                            font-family: "Open Sans", sans-serif;
+                            font-size: 1.5em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            border-bottom: #FDCD11 0.5em solid;
+                            color: #034076;
+                        }
+                    }
+
+                    & > section{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5em;
+                        figure{
+                            img{
+                                width: 100%;
+                                border-radius: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px){
+    html
+    {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+    
+    #public-layout
+    {
+        min-height: 100vh;
+        width: 100vw;
+
+        & > #homepage
+        {
+            background-color: #F4F4F4;
+            overflow: hidden;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+            & > header
+            {
+                display: flex;
+                justify-content: center;
+                background-color: #034076;
+
+
+                figure 
+                {
+                    display: flex;
+                    justify-content: center ;
+                    img 
+                    {
+                        width: 100%;
+                        padding-top: 2em;
+                    }
+                }
+            }
+
+            & > section:first-of-type
+            {
+                background-color: #F4F4F4;
+                justify-content: center;
+
+                h2 
+                {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                    padding: 1em;
+                    justify-self: center;
+                    text-align: center;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.5em;
+                    color: #034076;
+                    
+                }
+
+                article{
+                    grid-column: 2/3;
+                    padding-top: 2em;
+                    
+                    iframe{
+                        border-radius: 0.5em;
+                    }
+
+                }
+            }
+
+            & > section:nth-of-type(2)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-carousel{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 5em;
+                    article
+                    {
+                        figure 
+                        {
+                            img 
+                            {
+    
+                            }
+                        }
+                    }
+    
+                    aside 
+                    {
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        width: 100%;
+
+                        header 
+                        {
+                            padding-bottom: 1em;
+                            h2
+                            {
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.8em;
+                            border-bottom: #F4F4F4 0.2em solid;
+                            padding: 1em;
+                            span 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                color: #034076;
+                            }
+    
+                            p 
+                            {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2em;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:nth-of-type(3)
+            {
+                margin-top: 6vh;
+                background-color: #F4F4F4;
+
+                #homepage-actualites{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5em;
+
+                    & > section:first-of-type{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+    
+                        article{
+                            display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            gap: 3em;
+                            margin-top: 3vh;
+    
+                            figure{
+    
+                                img{
+                                    width: 100%;
+                                    border-radius: 0.5em;
+                                }
+                            }
+                            
+                            section{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2em;
+                                header{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 1em;
+
+                                    a{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;                                        
+                                        background-color: #034076;
+                                        color: white;
+                                        border-radius: 1em;
+                                        text-decoration: none;
+                                        padding: 0.5em;
+                                    }
+                                    span{
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 1em;
+                                        align-self: center;
+                                    }
+                                }
+                                h3{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.5em;
+                                    font-weight: 800;
+                                    text-transform: uppercase;
+                                }
+                                p{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+
+                    aside{
+                        padding: 1em;
+                        background-color: white;
+                        border-radius: 0.5em;
+
+                        header{
+                            padding-bottom: 1em;
+                            h2{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                border-bottom: #FDCD11 0.5em solid;
+                                color: #034076;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > section:last-of-type
+            {
+                margin-top: 6vh;
+                padding: 1em;
+                background-color: white;
+                #partenaires{
+
+                    header{
+                        padding-bottom: 1em;
+                        h2{
+                            font-family: "Open Sans", sans-serif;
+                            font-size: 1.5em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            border-bottom: #FDCD11 0.5em solid;
+                            color: #034076;
+                        }
+                    }
+
+                    & > section{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5em;
+                        figure{
+                            img{
+                                width: 100%;
+                                border-radius: 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // @media (min-width: 1024px) and (max-width: 1439.99px)
 // {
@@ -44,7 +824,7 @@
 //     {
 //         min-height: 100vh;
 //         width: 100vw;
-//         overflow-x: hidden;
+//         
         
 //         #homepage
 //         {

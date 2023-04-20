@@ -8,14 +8,14 @@
     #client-header-mobile {
 
         width: 100vw;
-        height: 12vh;
+        height: 7vh;
         background-color: #034076;
         display: grid;
         grid-template-columns: 0.1fr 1fr;
+        border-bottom: 5px solid #FDCD11;
 
         nav {
-            margin-top: 2.5em;
-            padding-left: 1.5em;
+            align-self: center;
             justify-self: center;
 
             section {
@@ -72,8 +72,109 @@
             display: flex;
             flex-direction: column;
             gap: 1em;
-            margin-top: 1.5em;
+            align-content: center;
+            justify-content: center;
 
+            figure {
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                
+                a {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 40%;
+                    }
+                }
+
+                h1 {
+                    align-self: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 427px) and (max-width: 767px){
+    #client-header {
+        display: none;
+    }
+
+    #client-header-mobile {
+
+        width: 100vw;
+        height: 10vh;
+        background-color: #034076;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        border-bottom: 5px solid #FDCD11;
+
+        nav {
+            align-self: center;
+            justify-self: center;
+
+            section {
+
+                grid-row: 2/3;
+
+
+                ul {
+
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 4em;
+                    justify-self: center;
+                    align-self: center;
+
+
+                    li {
+
+                        font-size: 1em;
+                        font-family: "Termina", Arial, sans-serif;
+
+                        .icon-facebook {
+                            color: #4267B2;
+                        }
+
+                        .icon-instagram {
+                            color: white;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            border-radius: 0.4em;
+                            padding: 0.225em;
+                        }
+
+                        .icon-twitter {
+                            color: #00acee;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+
+                            span {}
+
+
+                        }
+
+                        a:hover {}
+                    }
+                }
+            }
+
+        }
+
+        section:first-of-type {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-content: center;
+            justify-content: center;
 
             figure {
                 display: flex;
@@ -84,20 +185,20 @@
 
                 a {
                     img {
-                        width: 10vw;
+                        width: 60%;
                     }
                 }
 
-                p {
+                h1 {
                     align-self: center;
                     text-transform: uppercase;
                     font-weight: bold;
                     color: white;
+                    font-family: 'Open Sans', sans-serif;
                 }
             }
         }
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -105,6 +206,100 @@
 
     #client-header {
         display: none;
+    }
+
+    #client-header-mobile {
+
+        width: 100vw;
+        height: 12vh;
+        background-color: #034076;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        border-bottom: 5px solid #FDCD11;
+
+        nav {
+            align-self: center;
+            justify-self: center;
+
+            section {
+
+                grid-row: 2/3;
+
+
+                ul {
+
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 4em;
+                    justify-self: center;
+                    align-self: center;
+
+
+                    li {
+
+                        font-size: 1em;
+                        font-family: "Termina", Arial, sans-serif;
+
+                        .icon-facebook {
+                            color: #4267B2;
+                        }
+
+                        .icon-instagram {
+                            color: white;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            border-radius: 0.4em;
+                            padding: 0.225em;
+                        }
+
+                        .icon-twitter {
+                            color: #00acee;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+
+                            span {}
+
+
+                        }
+
+                        a:hover {}
+                    }
+                }
+            }
+
+        }
+
+        section:first-of-type {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-content: center;
+            justify-content: center;
+
+            figure {
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                gap: 1em;
+
+
+                a {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                h1 {
+                    align-self: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+        }
     }
 
 }

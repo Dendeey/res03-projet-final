@@ -1,6 +1,162 @@
-@media (max-width: 426px) {}
+@media (max-width: 426px) {
+    #footer-client {
+        display: grid;
+        grid-template-rows: 0.3fr 0.7fr;
+        gap: 2em;
+        background-color: #034076;
+        height: auto;
+        width: 100vw;
+        bottom: 0;
 
-@media (min-width: 768px) and (max-width: 1023.99px) {}
+        figure {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            img {
+                padding: 1em;
+                width: 15%;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding-bottom: 1em;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                align-self: center;
+
+                h1 {
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 427px) and (max-width: 767px){
+    #footer-client {
+        display: grid;
+        grid-template-rows: 0.3fr 0.7fr;
+        gap: 2em;
+        background-color: #034076;
+        height: auto;
+        width: 100vw;
+        bottom: 0;
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            img {
+                padding: 1em;
+                width: 15%;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding-bottom: 1em;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                align-self: center;
+
+                h1 {
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    #footer-client {
+        display: grid;
+        grid-template-columns: 0.1fr 0.9fr;
+        background-color: #034076;
+        height: 20vh;
+        width: 100vw;
+
+        figure {
+            display: grid;
+
+            img {
+                justify-self: center;
+                align-self: center;
+                width: auto;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            gap: 10em;
+            justify-content: center;
+            align-content: center;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-family: 'Open Sans', sans-serif;
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 1024px) and (max-width: 1439.99px) { 
 
