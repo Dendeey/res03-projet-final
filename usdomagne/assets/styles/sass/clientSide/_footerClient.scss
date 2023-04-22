@@ -115,11 +115,10 @@
         background-color: #034076;
         height: 20vh;
         width: 100vw;
-        padding-left: 2em;
 
         figure {
             display: grid;
-
+            padding-left: 2em;
             img {
                 justify-self: center;
                 align-self: center;
@@ -168,10 +167,11 @@
         background-color: #034076;
         height: 20vh;
         width: 100vw;
-        padding-left: 3em;
+        bottom: 0;
 
         figure {
             display: grid;
+            padding-left: 3em;
 
             img {
                 justify-self: center;

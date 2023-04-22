@@ -9,86 +9,77 @@
 
         width: 100vw;
         height: 7vh;
+        top: 0;
         background-color: #034076;
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
+        display: flex;
         border-bottom: 5px solid #FDCD11;
-
-        nav {
-            align-self: center;
-            justify-self: center;
-
-            section {
-
-                grid-row: 2/3;
-
-
-                ul {
-
-                    display: flex;
-                    flex-direction: row;
-                    column-gap: 4em;
-                    justify-self: center;
-                    align-self: center;
-
-
-                    li {
-
-                        font-size: 1em;
-                        font-family: "Termina", Arial, sans-serif;
-
-                        .icon-facebook {
-                            color: #4267B2;
-                        }
-
-                        .icon-instagram {
-                            color: white;
-                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            border-radius: 0.4em;
-                            padding: 0.225em;
-                        }
-
-                        .icon-twitter {
-                            color: #00acee;
-                        }
-
-                        a {
-                            text-decoration: none;
-                            color: black;
-
-                            span {}
-
-
-                        }
-
-                        a:hover {}
-                    }
-                }
-            }
-
-        }
+        position: fixed;
 
         section:first-of-type {
             display: flex;
             flex-direction: column;
             gap: 1em;
+            width: 100%;
             align-content: center;
             justify-content: center;
-
+    
+            .sideMenuMobile-btn {
+                position: fixed;
+                height: 3vh;
+                width: 6vw;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                left: 6vw;
+                background: transparent;
+    
+                .line {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.2em;
+                    background: white;
+                }
+    
+                .l1 {
+                    transform: translateY(-0.6em);
+                }
+    
+                .l3 {
+                    transform: translateY(0.6em);
+                }
+            }
+    
+            .sideMenuMobile-btn.active .l1 {
+                transform: translateY(0em) rotate(135deg);
+            }
+    
+            .sideMenuMobile-btn.active .l2 {
+                opacity: 0;
+            }
+    
+            .sideMenuMobile-btn.active .l3 {
+                transform: translateY(0em) rotate(-135deg);
+            }
+    
             figure {
                 display: flex;
                 flex-direction: row;
                 align-self: center;
-
+                justify-self: center;
+    
                 a {
                     display: flex;
                     justify-content: center;
-
+    
                     img {
                         width: 40%;
                     }
                 }
-
+    
                 h1 {
                     align-self: center;
                     text-transform: uppercase;
@@ -98,9 +89,84 @@
                 }
             }
         }
-    }
 
+        .sideMenuMobile.active{
+            transform: translateY(0);
+        }
+
+        .sideMenuMobile {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            height: 100vh;
+            transform: translateY(-110vh);
+            justify-content: start;
+            top: 7vh;
+            background-color: white;
+            border-top: 5px solid #FDCD11;
+
+            ul {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                justify-self: center;
+                align-self: center;
+                padding: 1em;
+                margin-top: 4vh;
+
+                li {
+
+                    font-size: 1em;
+                    font-family: "Termina", Arial, sans-serif;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: #034076;
+                        text-transform: uppercase;
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            section{
+
+                .socialIcons-SideMenuMobile{
+                    display: flex;
+                    flex-direction: row;
+                    height: 2.7vh;
+                    gap: 3em;
+                    .icon-facebook {
+                        color: #4267B2;
+                        align-self: center;
+                    }
+
+                    li:nth-of-type(2){
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        border-radius: 0.4em;
+                        .icon-instagram {
+                            color: white;
+                            padding: 0.2em;
+                            align-self: center;
+                        }
+                    }
+
+                    .icon-twitter {
+                        color: #00acee;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
+    }
 }
+
 
 @media (min-width: 427px) and (max-width: 767px) {
     #client-header {
@@ -110,86 +176,78 @@
     #client-header-mobile {
 
         width: 100vw;
-        height: 10vh;
+        height: 7vh;
+        top: 0;
         background-color: #034076;
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
+        display: flex;
         border-bottom: 5px solid #FDCD11;
-
-        nav {
-            align-self: center;
-            justify-self: center;
-
-            section {
-
-                grid-row: 2/3;
-
-
-                ul {
-
-                    display: flex;
-                    flex-direction: row;
-                    column-gap: 4em;
-                    justify-self: center;
-                    align-self: center;
-
-
-                    li {
-
-                        font-size: 1em;
-                        font-family: "Termina", Arial, sans-serif;
-
-                        .icon-facebook {
-                            color: #4267B2;
-                        }
-
-                        .icon-instagram {
-                            color: white;
-                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            border-radius: 0.4em;
-                            padding: 0.225em;
-                        }
-
-                        .icon-twitter {
-                            color: #00acee;
-                        }
-
-                        a {
-                            text-decoration: none;
-                            color: black;
-
-                            span {}
-
-
-                        }
-
-                        a:hover {}
-                    }
-                }
-            }
-
-        }
+        position: fixed;
 
         section:first-of-type {
             display: flex;
             flex-direction: column;
             gap: 1em;
+            width: 100%;
             align-content: center;
             justify-content: center;
-
+    
+            .sideMenuMobile-btn {
+                position: fixed;
+                height: 3vh;
+                width: 6vw;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                left: 6vw;
+                background: transparent;
+    
+                .line {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.2em;
+                    background: white;
+                }
+    
+                .l1 {
+                    transform: translateY(-0.6em);
+                }
+    
+                .l3 {
+                    transform: translateY(0.6em);
+                }
+            }
+    
+            .sideMenuMobile-btn.active .l1 {
+                transform: translateY(0em) rotate(135deg);
+            }
+    
+            .sideMenuMobile-btn.active .l2 {
+                opacity: 0;
+            }
+    
+            .sideMenuMobile-btn.active .l3 {
+                transform: translateY(0em) rotate(-135deg);
+            }
+    
             figure {
                 display: flex;
                 flex-direction: row;
                 align-self: center;
-                gap: 1em;
-
-
+                justify-self: center;
+    
                 a {
+                    display: flex;
+                    justify-content: center;
+    
                     img {
-                        width: 60%;
+                        width: 40%;
                     }
                 }
-
+    
                 h1 {
                     align-self: center;
                     text-transform: uppercase;
@@ -199,6 +257,81 @@
                 }
             }
         }
+
+        .sideMenuMobile.active{
+            transform: translateY(0);
+        }
+
+        .sideMenuMobile {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            height: 100vh;
+            transform: translateY(-110vh);
+            justify-content: start;
+            top: 7vh;
+            background-color: white;
+            border-top: 5px solid #FDCD11;
+
+            ul {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                justify-self: center;
+                align-self: center;
+                padding: 1em;
+                margin-top: 4vh;
+
+                li {
+
+                    font-size: 1em;
+                    font-family: "Termina", Arial, sans-serif;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: #034076;
+                        text-transform: uppercase;
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            section{
+
+                .socialIcons-SideMenuMobile{
+                    display: flex;
+                    flex-direction: row;
+                    height: 2.7vh;
+                    gap: 3em;
+                    .icon-facebook {
+                        color: #4267B2;
+                        align-self: center;
+                    }
+
+                    li:nth-of-type(2){
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        border-radius: 0.4em;
+                        .icon-instagram {
+                            color: white;
+                            padding: 0.2em;
+                            align-self: center;
+                        }
+                    }
+
+                    .icon-twitter {
+                        color: #00acee;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -212,86 +345,78 @@
     #client-header-mobile {
 
         width: 100vw;
-        height: 12vh;
+        height: 7vh;
+        top: 0;
         background-color: #034076;
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
+        display: flex;
         border-bottom: 5px solid #FDCD11;
-
-        nav {
-            align-self: center;
-            justify-self: center;
-
-            section {
-
-                grid-row: 2/3;
-
-
-                ul {
-
-                    display: flex;
-                    flex-direction: row;
-                    column-gap: 4em;
-                    justify-self: center;
-                    align-self: center;
-
-
-                    li {
-
-                        font-size: 1em;
-                        font-family: "Termina", Arial, sans-serif;
-
-                        .icon-facebook {
-                            color: #4267B2;
-                        }
-
-                        .icon-instagram {
-                            color: white;
-                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                            border-radius: 0.4em;
-                            padding: 0.225em;
-                        }
-
-                        .icon-twitter {
-                            color: #00acee;
-                        }
-
-                        a {
-                            text-decoration: none;
-                            color: black;
-
-                            span {}
-
-
-                        }
-
-                        a:hover {}
-                    }
-                }
-            }
-
-        }
+        position: fixed;
 
         section:first-of-type {
             display: flex;
             flex-direction: column;
             gap: 1em;
+            width: 100%;
             align-content: center;
             justify-content: center;
-
+    
+            .sideMenuMobile-btn {
+                position: fixed;
+                height: 3vh;
+                width: 6vw;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                left: 6vw;
+                background: transparent;
+    
+                .line {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.2em;
+                    background: white;
+                }
+    
+                .l1 {
+                    transform: translateY(-0.6em);
+                }
+    
+                .l3 {
+                    transform: translateY(0.6em);
+                }
+            }
+    
+            .sideMenuMobile-btn.active .l1 {
+                transform: translateY(0em) rotate(135deg);
+            }
+    
+            .sideMenuMobile-btn.active .l2 {
+                opacity: 0;
+            }
+    
+            .sideMenuMobile-btn.active .l3 {
+                transform: translateY(0em) rotate(-135deg);
+            }
+    
             figure {
                 display: flex;
                 flex-direction: row;
                 align-self: center;
-                gap: 1em;
-
-
+                justify-self: center;
+    
                 a {
+                    display: flex;
+                    justify-content: center;
+    
                     img {
-                        width: 80%;
+                        width: 40%;
                     }
                 }
-
+    
                 h1 {
                     align-self: center;
                     text-transform: uppercase;
@@ -301,6 +426,81 @@
                 }
             }
         }
+
+        .sideMenuMobile.active{
+            transform: translateY(0);
+        }
+
+        .sideMenuMobile {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            height: 100vh;
+            transform: translateY(-110vh);
+            justify-content: start;
+            top: 7vh;
+            background-color: white;
+            border-top: 5px solid #FDCD11;
+
+            ul {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                justify-self: center;
+                align-self: center;
+                padding: 1em;
+                margin-top: 4vh;
+
+                li {
+
+                    font-size: 1em;
+                    font-family: "Termina", Arial, sans-serif;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: #034076;
+                        text-transform: uppercase;
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            section{
+
+                .socialIcons-SideMenuMobile{
+                    display: flex;
+                    flex-direction: row;
+                    height: 2.7vh;
+                    gap: 3em;
+                    .icon-facebook {
+                        color: #4267B2;
+                        align-self: center;
+                    }
+
+                    li:nth-of-type(2){
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        border-radius: 0.4em;
+                        .icon-instagram {
+                            color: white;
+                            padding: 0.2em;
+                            align-self: center;
+                        }
+                    }
+
+                    .icon-twitter {
+                        color: #00acee;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
     }
 
 }
@@ -325,8 +525,36 @@
         transition: top 0.3s;
         border-bottom: 5px solid #FDCD11;
 
-        .sr-only {
-            display: none;
+        .sideMenu {
+            position: fixed;
+            left: 0;
+            margin-top: 16vh;
+            // border: red 0.3em dashed;
+            width: 18vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-19vw);
+            transition: transform 0.3s;
+            border-right: 5px solid #FDCD11;
+
+            .sideMenu-nav {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                ul:first-of-type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+                    align-self: start;
+                    margin-top: 6vh;
+                }
+            }
+        }
+
+        .sideMenu.active {
+            transform: translateX(0);
         }
 
         section {
@@ -407,18 +635,60 @@
             gap: 2em;
             background-color: white;
 
+            .sideMenu-btn {
+                position: fixed;
+                height: 3vh;
+                width: 2vw;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                left: 4vw;
+                background: transparent;
+
+                .line {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.2em;
+                    background: #034076;
+                }
+
+                .l1 {
+                    transform: translateY(-0.6em);
+                }
+
+                .l3 {
+                    transform: translateY(0.6em);
+                }
+            }
+
+            .sideMenu-btn.active .l1 {
+                transform: translateY(0em) rotate(135deg);
+            }
+
+            .sideMenu-btn.active .l2 {
+                opacity: 0;
+            }
+
+            .sideMenu-btn.active .l3 {
+                transform: translateY(0em) rotate(-135deg);
+            }
+
             ul:first-of-type {
                 align-self: center;
                 justify-self: right;
                 display: flex;
                 flex-direction: row;
-                column-gap: 6em;
+                column-gap: 4em;
 
                 li {
                     display: inline-block;
                     color: #034076;
                     text-transform: uppercase;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 600;
 
@@ -443,7 +713,7 @@
                 row-gap: 0.5em;
 
                 img {
-                    height: 10vh;
+                    height: 8vh;
                 }
             }
 
@@ -452,12 +722,12 @@
                 justify-self: left;
                 display: flex;
                 flex-direction: row;
-                column-gap: 10em;
+                column-gap: 4em;
 
                 li {
                     display: inline-block;
                     color: black;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     font-family: 'Open Sans', sans-serif;
 
                     a {
@@ -495,7 +765,7 @@
         transition: top 0.3s;
         border-bottom: 5px solid #FDCD11;
 
-        .sideMenu{
+        .sideMenu {
             position: fixed;
             left: 0;
             margin-top: 16vh;
@@ -504,30 +774,27 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            .sideMenu-CloseBtn{
-                text-decoration: none;
-                padding: 1em;
-                border: none;
-                background-color: white;
-                display: flex;
-                justify-content: end;
+            transform: translateX(-19vw);
+            transition: transform 0.3s;
+            border-right: 5px solid #FDCD11;
 
-                span{
-                    
-                }
-            }
-            .sideMenu-nav{
+            .sideMenu-nav {
                 display: flex;
                 width: 100%;
                 justify-content: center;
-                align-content: center;
 
-                ul:first-of-type{
+                ul:first-of-type {
                     display: flex;
                     flex-direction: column;
                     gap: 2em;
+                    align-self: start;
+                    margin-top: 6vh;
                 }
             }
+        }
+
+        .sideMenu.active {
+            transform: translateX(0);
         }
 
         section {
@@ -604,6 +871,48 @@
             grid-template-columns: 1fr 0.5fr 1fr;
             background-color: white;
 
+            .sideMenu-btn {
+                position: fixed;
+                height: 3vh;
+                width: 2vw;
+                cursor: pointer;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                left: 12vw;
+                background: transparent;
+
+                .line {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 0.2em;
+                    background: #034076;
+                }
+
+                .l1 {
+                    transform: translateY(-0.6em);
+                }
+
+                .l3 {
+                    transform: translateY(0.6em);
+                }
+            }
+
+            .sideMenu-btn.active .l1 {
+                transform: translateY(0em) rotate(135deg);
+            }
+
+            .sideMenu-btn.active .l2 {
+                opacity: 0;
+            }
+
+            .sideMenu-btn.active .l3 {
+                transform: translateY(0em) rotate(-135deg);
+            }
+
             ul:first-of-type {
                 align-self: center;
                 justify-self: right;
@@ -618,6 +927,7 @@
                     font-size: 1.3em;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 600;
+
 
                     a {
                         text-decoration: none;

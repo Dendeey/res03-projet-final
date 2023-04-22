@@ -59,56 +59,60 @@ table {
   #client-header-mobile {
     width: 100vw;
     height: 7vh;
+    top: 0;
     background-color: #034076;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    border-bottom: 5px solid #FDCD11;
-  }
-  #client-header-mobile nav {
-    align-self: center;
-    justify-self: center;
-  }
-  #client-header-mobile nav section {
-    grid-row: 2/3;
-  }
-  #client-header-mobile nav section ul {
     display: flex;
-    flex-direction: row;
-    column-gap: 4em;
-    justify-self: center;
-    align-self: center;
-  }
-  #client-header-mobile nav section ul li {
-    font-size: 1em;
-    font-family: "Termina", Arial, sans-serif;
-  }
-  #client-header-mobile nav section ul li .icon-facebook {
-    color: #4267B2;
-  }
-  #client-header-mobile nav section ul li .icon-instagram {
-    color: white;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    border-radius: 0.4em;
-    padding: 0.225em;
-  }
-  #client-header-mobile nav section ul li .icon-twitter {
-    color: #00acee;
-  }
-  #client-header-mobile nav section ul li a {
-    text-decoration: none;
-    color: black;
+    border-bottom: 5px solid #FDCD11;
+    position: fixed;
   }
   #client-header-mobile section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
     align-content: center;
     justify-content: center;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn {
+    position: fixed;
+    height: 3vh;
+    width: 6vw;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 6vw;
+    background: transparent;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: white;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l1 {
+    transform: translateY(-0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l3 {
+    transform: translateY(0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l1 {
+    transform: translateY(0em) rotate(135deg);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l2 {
+    opacity: 0;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l3 {
+    transform: translateY(0em) rotate(-135deg);
   }
   #client-header-mobile section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
+    justify-self: center;
   }
   #client-header-mobile section:first-of-type figure a {
     display: flex;
@@ -124,6 +128,67 @@ table {
     color: white;
     font-family: "Open Sans", sans-serif;
   }
+  #client-header-mobile .sideMenuMobile.active {
+    transform: translateY(0);
+  }
+  #client-header-mobile .sideMenuMobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-110vh);
+    justify-content: start;
+    top: 7vh;
+    background-color: white;
+    border-top: 5px solid #FDCD11;
+  }
+  #client-header-mobile .sideMenuMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-self: center;
+    align-self: center;
+    padding: 1em;
+    margin-top: 4vh;
+  }
+  #client-header-mobile .sideMenuMobile ul li {
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  #client-header-mobile .sideMenuMobile ul li a {
+    text-decoration: none;
+    color: #034076;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+    display: flex;
+    flex-direction: row;
+    height: 2.7vh;
+    gap: 3em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+    color: #4267B2;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    color: white;
+    padding: 0.2em;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
+    color: #00acee;
+    align-self: center;
+  }
 }
 @media (min-width: 427px) and (max-width: 767px) {
   #client-header {
@@ -131,61 +196,68 @@ table {
   }
   #client-header-mobile {
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
+    top: 0;
     background-color: #034076;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    border-bottom: 5px solid #FDCD11;
-  }
-  #client-header-mobile nav {
-    align-self: center;
-    justify-self: center;
-  }
-  #client-header-mobile nav section {
-    grid-row: 2/3;
-  }
-  #client-header-mobile nav section ul {
     display: flex;
-    flex-direction: row;
-    column-gap: 4em;
-    justify-self: center;
-    align-self: center;
-  }
-  #client-header-mobile nav section ul li {
-    font-size: 1em;
-    font-family: "Termina", Arial, sans-serif;
-  }
-  #client-header-mobile nav section ul li .icon-facebook {
-    color: #4267B2;
-  }
-  #client-header-mobile nav section ul li .icon-instagram {
-    color: white;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    border-radius: 0.4em;
-    padding: 0.225em;
-  }
-  #client-header-mobile nav section ul li .icon-twitter {
-    color: #00acee;
-  }
-  #client-header-mobile nav section ul li a {
-    text-decoration: none;
-    color: black;
+    border-bottom: 5px solid #FDCD11;
+    position: fixed;
   }
   #client-header-mobile section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
     align-content: center;
     justify-content: center;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn {
+    position: fixed;
+    height: 3vh;
+    width: 6vw;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 6vw;
+    background: transparent;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: white;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l1 {
+    transform: translateY(-0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l3 {
+    transform: translateY(0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l1 {
+    transform: translateY(0em) rotate(135deg);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l2 {
+    opacity: 0;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l3 {
+    transform: translateY(0em) rotate(-135deg);
   }
   #client-header-mobile section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
-    gap: 1em;
+    justify-self: center;
+  }
+  #client-header-mobile section:first-of-type figure a {
+    display: flex;
+    justify-content: center;
   }
   #client-header-mobile section:first-of-type figure a img {
-    width: 60%;
+    width: 40%;
   }
   #client-header-mobile section:first-of-type figure h1 {
     align-self: center;
@@ -193,6 +265,67 @@ table {
     font-weight: bold;
     color: white;
     font-family: "Open Sans", sans-serif;
+  }
+  #client-header-mobile .sideMenuMobile.active {
+    transform: translateY(0);
+  }
+  #client-header-mobile .sideMenuMobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-110vh);
+    justify-content: start;
+    top: 7vh;
+    background-color: white;
+    border-top: 5px solid #FDCD11;
+  }
+  #client-header-mobile .sideMenuMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-self: center;
+    align-self: center;
+    padding: 1em;
+    margin-top: 4vh;
+  }
+  #client-header-mobile .sideMenuMobile ul li {
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  #client-header-mobile .sideMenuMobile ul li a {
+    text-decoration: none;
+    color: #034076;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+    display: flex;
+    flex-direction: row;
+    height: 2.7vh;
+    gap: 3em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+    color: #4267B2;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    color: white;
+    padding: 0.2em;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
+    color: #00acee;
+    align-self: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -201,61 +334,68 @@ table {
   }
   #client-header-mobile {
     width: 100vw;
-    height: 12vh;
+    height: 7vh;
+    top: 0;
     background-color: #034076;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    border-bottom: 5px solid #FDCD11;
-  }
-  #client-header-mobile nav {
-    align-self: center;
-    justify-self: center;
-  }
-  #client-header-mobile nav section {
-    grid-row: 2/3;
-  }
-  #client-header-mobile nav section ul {
     display: flex;
-    flex-direction: row;
-    column-gap: 4em;
-    justify-self: center;
-    align-self: center;
-  }
-  #client-header-mobile nav section ul li {
-    font-size: 1em;
-    font-family: "Termina", Arial, sans-serif;
-  }
-  #client-header-mobile nav section ul li .icon-facebook {
-    color: #4267B2;
-  }
-  #client-header-mobile nav section ul li .icon-instagram {
-    color: white;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    border-radius: 0.4em;
-    padding: 0.225em;
-  }
-  #client-header-mobile nav section ul li .icon-twitter {
-    color: #00acee;
-  }
-  #client-header-mobile nav section ul li a {
-    text-decoration: none;
-    color: black;
+    border-bottom: 5px solid #FDCD11;
+    position: fixed;
   }
   #client-header-mobile section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
     align-content: center;
     justify-content: center;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn {
+    position: fixed;
+    height: 3vh;
+    width: 6vw;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 6vw;
+    background: transparent;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: white;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l1 {
+    transform: translateY(-0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l3 {
+    transform: translateY(0.6em);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l1 {
+    transform: translateY(0em) rotate(135deg);
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l2 {
+    opacity: 0;
+  }
+  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l3 {
+    transform: translateY(0em) rotate(-135deg);
   }
   #client-header-mobile section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
-    gap: 1em;
+    justify-self: center;
+  }
+  #client-header-mobile section:first-of-type figure a {
+    display: flex;
+    justify-content: center;
   }
   #client-header-mobile section:first-of-type figure a img {
-    width: 80%;
+    width: 40%;
   }
   #client-header-mobile section:first-of-type figure h1 {
     align-self: center;
@@ -263,6 +403,67 @@ table {
     font-weight: bold;
     color: white;
     font-family: "Open Sans", sans-serif;
+  }
+  #client-header-mobile .sideMenuMobile.active {
+    transform: translateY(0);
+  }
+  #client-header-mobile .sideMenuMobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-110vh);
+    justify-content: start;
+    top: 7vh;
+    background-color: white;
+    border-top: 5px solid #FDCD11;
+  }
+  #client-header-mobile .sideMenuMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-self: center;
+    align-self: center;
+    padding: 1em;
+    margin-top: 4vh;
+  }
+  #client-header-mobile .sideMenuMobile ul li {
+    font-size: 1em;
+    font-family: "Termina", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  #client-header-mobile .sideMenuMobile ul li a {
+    text-decoration: none;
+    color: #034076;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+    display: flex;
+    flex-direction: row;
+    height: 2.7vh;
+    gap: 3em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+    color: #4267B2;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4em;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    color: white;
+    padding: 0.2em;
+    align-self: center;
+  }
+  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
+    color: #00acee;
+    align-self: center;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -282,8 +483,32 @@ table {
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
-  #client-header .sr-only {
-    display: none;
+  #client-header .sideMenu {
+    position: fixed;
+    left: 0;
+    margin-top: 16vh;
+    width: 18vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-19vw);
+    transition: transform 0.3s;
+    border-right: 5px solid #FDCD11;
+  }
+  #client-header .sideMenu .sideMenu-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  #client-header .sideMenu .sideMenu-nav ul:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-self: start;
+    margin-top: 6vh;
+  }
+  #client-header .sideMenu.active {
+    transform: translateX(0);
   }
   #client-header section {
     align-items: center;
@@ -341,18 +566,53 @@ table {
     gap: 2em;
     background-color: white;
   }
+  #client-header nav .sideMenu-btn {
+    position: fixed;
+    height: 3vh;
+    width: 2vw;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 4vw;
+    background: transparent;
+  }
+  #client-header nav .sideMenu-btn .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: #034076;
+  }
+  #client-header nav .sideMenu-btn .l1 {
+    transform: translateY(-0.6em);
+  }
+  #client-header nav .sideMenu-btn .l3 {
+    transform: translateY(0.6em);
+  }
+  #client-header nav .sideMenu-btn.active .l1 {
+    transform: translateY(0em) rotate(135deg);
+  }
+  #client-header nav .sideMenu-btn.active .l2 {
+    opacity: 0;
+  }
+  #client-header nav .sideMenu-btn.active .l3 {
+    transform: translateY(0em) rotate(-135deg);
+  }
   #client-header nav ul:first-of-type {
     align-self: center;
     justify-self: right;
     display: flex;
     flex-direction: row;
-    column-gap: 6em;
+    column-gap: 4em;
   }
   #client-header nav ul:first-of-type li {
     display: inline-block;
     color: #034076;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
@@ -371,19 +631,19 @@ table {
     row-gap: 0.5em;
   }
   #client-header nav figure img {
-    height: 10vh;
+    height: 8vh;
   }
   #client-header nav ul:last-of-type {
     align-self: center;
     justify-self: left;
     display: flex;
     flex-direction: row;
-    column-gap: 10em;
+    column-gap: 4em;
   }
   #client-header nav ul:last-of-type li {
     display: inline-block;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Open Sans", sans-serif;
   }
   #client-header nav ul:last-of-type li a {
@@ -419,25 +679,24 @@ table {
     height: 100%;
     display: flex;
     flex-direction: column;
-  }
-  #client-header .sideMenu .sideMenu-CloseBtn {
-    text-decoration: none;
-    padding: 1em;
-    border: none;
-    background-color: white;
-    display: flex;
-    justify-content: end;
+    transform: translateX(-19vw);
+    transition: transform 0.3s;
+    border-right: 5px solid #FDCD11;
   }
   #client-header .sideMenu .sideMenu-nav {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-content: center;
   }
   #client-header .sideMenu .sideMenu-nav ul:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-self: start;
+    margin-top: 6vh;
+  }
+  #client-header .sideMenu.active {
+    transform: translateX(0);
   }
   #client-header section {
     align-items: center;
@@ -491,6 +750,41 @@ table {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     background-color: white;
+  }
+  #client-header nav .sideMenu-btn {
+    position: fixed;
+    height: 3vh;
+    width: 2vw;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 12vw;
+    background: transparent;
+  }
+  #client-header nav .sideMenu-btn .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: #034076;
+  }
+  #client-header nav .sideMenu-btn .l1 {
+    transform: translateY(-0.6em);
+  }
+  #client-header nav .sideMenu-btn .l3 {
+    transform: translateY(0.6em);
+  }
+  #client-header nav .sideMenu-btn.active .l1 {
+    transform: translateY(0em) rotate(135deg);
+  }
+  #client-header nav .sideMenu-btn.active .l2 {
+    opacity: 0;
+  }
+  #client-header nav .sideMenu-btn.active .l3 {
+    transform: translateY(0em) rotate(-135deg);
   }
   #client-header nav ul:first-of-type {
     align-self: center;
@@ -560,6 +854,7 @@ table {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-top: 7vh;
   }
   #public-layout > #homepage > header {
     display: flex;
@@ -770,6 +1065,7 @@ table {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-top: 7vh;
   }
   #public-layout > #homepage > header {
     display: flex;
@@ -980,6 +1276,7 @@ table {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-top: 7vh;
   }
   #public-layout > #homepage > header {
     display: flex;
@@ -1724,10 +2021,10 @@ table {
     background-color: #034076;
     height: 20vh;
     width: 100vw;
-    padding-left: 2em;
   }
   #footer-client figure {
     display: grid;
+    padding-left: 2em;
   }
   #footer-client figure img {
     justify-self: center;
@@ -1763,10 +2060,11 @@ table {
     background-color: #034076;
     height: 20vh;
     width: 100vw;
-    padding-left: 3em;
+    bottom: 0;
   }
   #footer-client figure {
     display: grid;
+    padding-left: 3em;
   }
   #footer-client figure img {
     justify-self: center;
