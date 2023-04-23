@@ -133,61 +133,89 @@ table {
   }
   #client-header-mobile .sideMenuMobile {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
+    display: grid;
+    gap: 4em;
+    width: 100vw;
     height: 100vh;
     transform: translateY(-110vh);
-    justify-content: start;
     top: 7vh;
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
-  #client-header-mobile .sideMenuMobile ul {
+  #client-header-mobile .sideMenuMobile > ul {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    justify-self: center;
-    align-self: center;
+    justify-self: start;
     padding: 1em;
     margin-top: 4vh;
   }
-  #client-header-mobile .sideMenuMobile ul li {
+  #client-header-mobile .sideMenuMobile > ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
     display: flex;
     justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile ul li a {
+  #client-header-mobile .sideMenuMobile > ul li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile {
+    display: none;
+    position: absolute;
+    border: 0.2em solid white;
+    left: 28vw;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile {
+    background-color: #034076;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile > a {
+    font-size: 1em;
+    color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover {
+    background-color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover > a {
+    color: #034076;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile:hover .submenu-headerMobile {
+    display: block;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile {
     display: flex;
     flex-direction: row;
     height: 2.7vh;
     gap: 3em;
+    justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li {
+    display: grid;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-facebook {
+    display: grid;
     color: #4267B2;
-    align-self: center;
+    align-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-twitter {
+    display: grid;
+    color: #00acee;
+    align-content: center;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    display: grid;
     color: white;
     padding: 0.2em;
-    align-self: center;
-  }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
-    color: #00acee;
-    align-self: center;
+    align-content: center;
   }
 }
 @media (min-width: 427px) and (max-width: 767px) {
@@ -203,7 +231,7 @@ table {
     border-bottom: 5px solid #FDCD11;
     position: fixed;
   }
-  #client-header-mobile section:first-of-type {
+  #client-header-mobile > section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -211,7 +239,7 @@ table {
     align-content: center;
     justify-content: center;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn {
     position: fixed;
     height: 3vh;
     width: 6vw;
@@ -224,42 +252,42 @@ table {
     left: 6vw;
     background: transparent;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .line {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .line {
     position: absolute;
     display: block;
     width: 100%;
     height: 0.2em;
     background: white;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l1 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .l1 {
     transform: translateY(-0.6em);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l3 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .l3 {
     transform: translateY(0.6em);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l1 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l1 {
     transform: translateY(0em) rotate(135deg);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l2 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l2 {
     opacity: 0;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l3 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l3 {
     transform: translateY(0em) rotate(-135deg);
   }
-  #client-header-mobile section:first-of-type figure {
+  #client-header-mobile > section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-self: center;
   }
-  #client-header-mobile section:first-of-type figure a {
+  #client-header-mobile > section:first-of-type figure a {
     display: flex;
     justify-content: center;
   }
-  #client-header-mobile section:first-of-type figure a img {
+  #client-header-mobile > section:first-of-type figure a img {
     width: 40%;
   }
-  #client-header-mobile section:first-of-type figure h1 {
+  #client-header-mobile > section:first-of-type figure h1 {
     align-self: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -271,61 +299,89 @@ table {
   }
   #client-header-mobile .sideMenuMobile {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
+    display: grid;
+    gap: 4em;
+    width: 100vw;
     height: 100vh;
     transform: translateY(-110vh);
-    justify-content: start;
     top: 7vh;
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
-  #client-header-mobile .sideMenuMobile ul {
+  #client-header-mobile .sideMenuMobile > ul {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    justify-self: center;
-    align-self: center;
+    justify-self: start;
     padding: 1em;
     margin-top: 4vh;
   }
-  #client-header-mobile .sideMenuMobile ul li {
+  #client-header-mobile .sideMenuMobile > ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
     display: flex;
     justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile ul li a {
+  #client-header-mobile .sideMenuMobile > ul li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile {
+    display: none;
+    position: absolute;
+    border: 0.2em solid white;
+    left: 25vw;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile {
+    background-color: #034076;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile > a {
+    font-size: 1em;
+    color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover {
+    background-color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover > a {
+    color: #034076;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile:hover .submenu-headerMobile {
+    display: block;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile {
     display: flex;
     flex-direction: row;
     height: 2.7vh;
     gap: 3em;
+    justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li {
+    display: grid;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-facebook {
+    display: grid;
     color: #4267B2;
-    align-self: center;
+    align-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-twitter {
+    display: grid;
+    color: #00acee;
+    align-content: center;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    display: grid;
     color: white;
     padding: 0.2em;
-    align-self: center;
-  }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
-    color: #00acee;
-    align-self: center;
+    align-content: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -341,7 +397,7 @@ table {
     border-bottom: 5px solid #FDCD11;
     position: fixed;
   }
-  #client-header-mobile section:first-of-type {
+  #client-header-mobile > section:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -349,7 +405,7 @@ table {
     align-content: center;
     justify-content: center;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn {
     position: fixed;
     height: 3vh;
     width: 6vw;
@@ -362,42 +418,42 @@ table {
     left: 6vw;
     background: transparent;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .line {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .line {
     position: absolute;
     display: block;
     width: 100%;
     height: 0.2em;
     background: white;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l1 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .l1 {
     transform: translateY(-0.6em);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn .l3 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn .l3 {
     transform: translateY(0.6em);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l1 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l1 {
     transform: translateY(0em) rotate(135deg);
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l2 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l2 {
     opacity: 0;
   }
-  #client-header-mobile section:first-of-type .sideMenuMobile-btn.active .l3 {
+  #client-header-mobile > section:first-of-type .sideMenuMobile-btn.active .l3 {
     transform: translateY(0em) rotate(-135deg);
   }
-  #client-header-mobile section:first-of-type figure {
+  #client-header-mobile > section:first-of-type figure {
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-self: center;
   }
-  #client-header-mobile section:first-of-type figure a {
+  #client-header-mobile > section:first-of-type figure a {
     display: flex;
     justify-content: center;
   }
-  #client-header-mobile section:first-of-type figure a img {
+  #client-header-mobile > section:first-of-type figure a img {
     width: 40%;
   }
-  #client-header-mobile section:first-of-type figure h1 {
+  #client-header-mobile > section:first-of-type figure h1 {
     align-self: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -411,8 +467,8 @@ table {
     position: fixed;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    width: 100%;
+    gap: 4em;
+    width: 100vw;
     height: 100vh;
     transform: translateY(-110vh);
     justify-content: start;
@@ -420,7 +476,7 @@ table {
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
-  #client-header-mobile .sideMenuMobile ul {
+  #client-header-mobile .sideMenuMobile > ul {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -429,41 +485,73 @@ table {
     padding: 1em;
     margin-top: 4vh;
   }
-  #client-header-mobile .sideMenuMobile ul li {
+  #client-header-mobile .sideMenuMobile > ul li {
     font-size: 1em;
     font-family: "Termina", Arial, sans-serif;
     display: flex;
+    gap: 0.5em;
     justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile ul li a {
+  #client-header-mobile .sideMenuMobile > ul li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile {
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile {
+    display: none;
+    position: absolute;
+    right: 20vw;
+    border: 0.2em solid white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile {
+    background-color: #034076;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile > a {
+    font-size: 1em;
+    color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover {
+    background-color: white;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile > .submenu-headerMobile .items-submenu-headerMobile:hover > a {
+    color: #034076;
+  }
+  #client-header-mobile .sideMenuMobile > ul .items-mobile:hover .submenu-headerMobile {
+    display: block;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile {
     display: flex;
     flex-direction: row;
     height: 2.7vh;
     gap: 3em;
+    justify-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-facebook {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li {
+    display: grid;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-facebook {
+    display: grid;
     color: #4267B2;
-    align-self: center;
+    align-content: center;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile > li .icon-twitter {
+    display: grid;
+    color: #00acee;
+    align-content: center;
+  }
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
   }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+  #client-header-mobile .sideMenuMobile > section .socialIcons-SideMenuMobile li:nth-of-type(2) .icon-instagram {
+    display: grid;
     color: white;
     padding: 0.2em;
-    align-self: center;
-  }
-  #client-header-mobile .sideMenuMobile section .socialIcons-SideMenuMobile .icon-twitter {
-    color: #00acee;
-    align-self: center;
+    align-content: center;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -479,7 +567,6 @@ table {
     grid-template-rows: 0.25fr 0.75fr;
     position: fixed;
     top: 0;
-    overflow-y: hidden;
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
@@ -608,20 +695,13 @@ table {
     flex-direction: row;
     column-gap: 4em;
   }
-  #client-header nav ul:first-of-type li {
-    display: inline-block;
-    color: #034076;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-  }
   #client-header nav ul:first-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    font-size: 1.2em;
   }
   #client-header nav figure {
     justify-self: center;
@@ -640,18 +720,37 @@ table {
     flex-direction: row;
     column-gap: 4em;
   }
-  #client-header nav ul:last-of-type li {
-    display: inline-block;
-    color: black;
-    font-size: 1.2em;
-    font-family: "Open Sans", sans-serif;
-  }
-  #client-header nav ul:last-of-type li a {
+  #client-header nav ul:last-of-type .items a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    font-size: 1.2em;
+  }
+  #client-header nav ul:last-of-type .items .submenu-headerLaptop {
+    display: none;
+    position: absolute;
+    top: 11vh;
+    border: 0.2em solid white;
+  }
+  #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop {
+    background-color: #034076;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop > a {
+    font-size: 1em;
+    color: white;
+  }
+  #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover {
+    background-color: white;
+  }
+  #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover > a {
+    color: #034076;
+  }
+  #client-header nav ul:last-of-type .items:hover .submenu-headerLaptop {
+    display: block;
   }
 }
 @media (min-width: 1440px) {
@@ -667,7 +766,6 @@ table {
     grid-template-rows: 0.25fr 0.75fr;
     position: fixed;
     top: 0;
-    overflow-y: hidden;
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
   }
@@ -733,7 +831,7 @@ table {
     color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 0.4em;
-    padding: 0.225em;
+    padding: 0.2em;
   }
   #client-header section ul li .icon-twitter {
     color: #00acee;
@@ -786,57 +884,69 @@ table {
   #client-header nav .sideMenu-btn.active .l3 {
     transform: translateY(0em) rotate(-135deg);
   }
-  #client-header nav ul:first-of-type {
+  #client-header nav > ul:first-of-type {
     align-self: center;
     justify-self: right;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  #client-header nav ul:first-of-type li {
-    display: inline-block;
-    color: #034076;
-    text-transform: uppercase;
-    font-size: 1.3em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-  }
-  #client-header nav ul:first-of-type li a {
+  #client-header nav > ul:first-of-type li a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    font-size: 1.2em;
   }
-  #client-header nav figure {
+  #client-header nav > figure {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
   }
-  #client-header nav figure img {
+  #client-header nav > figure img {
     height: 10vh;
   }
-  #client-header nav ul:last-of-type {
+  #client-header nav > ul:last-of-type {
     align-self: center;
     justify-self: left;
     display: flex;
     flex-direction: row;
     column-gap: 10em;
   }
-  #client-header nav ul:last-of-type li {
-    display: inline-block;
-    color: black;
-    font-size: 1.3em;
-    font-family: "Open Sans", sans-serif;
-  }
-  #client-header nav ul:last-of-type li a {
+  #client-header nav > ul:last-of-type .items a {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    font-size: 1.2em;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop {
+    display: none;
+    position: absolute;
+    top: 11vh;
+    border: 0.2em solid white;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop {
+    background-color: #034076;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop > a {
+    font-size: 1em;
+    color: white;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover {
+    background-color: white;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover > a {
+    color: #034076;
+  }
+  #client-header nav > ul:last-of-type .items:hover .submenu-headerLaptop {
+    display: block;
   }
 }
 @media (max-width: 426px) {
