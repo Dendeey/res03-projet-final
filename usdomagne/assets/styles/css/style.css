@@ -720,6 +720,10 @@ table {
     flex-direction: row;
     column-gap: 4em;
   }
+  #client-header nav ul:last-of-type .items {
+    display: flex;
+    gap: 0.5em;
+  }
   #client-header nav ul:last-of-type .items a {
     text-decoration: none;
     color: #034076;
@@ -727,6 +731,9 @@ table {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
+  }
+  #client-header nav ul:last-of-type .items span {
+    align-self: center;
   }
   #client-header nav ul:last-of-type .items .submenu-headerLaptop {
     display: none;
@@ -916,6 +923,10 @@ table {
     flex-direction: row;
     column-gap: 10em;
   }
+  #client-header nav > ul:last-of-type .items {
+    display: flex;
+    gap: 0.5em;
+  }
   #client-header nav > ul:last-of-type .items a {
     text-decoration: none;
     color: #034076;
@@ -923,6 +934,9 @@ table {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
+  }
+  #client-header nav > ul:last-of-type .items span {
+    align-self: center;
   }
   #client-header nav > ul:last-of-type .items .submenu-headerLaptop {
     display: none;

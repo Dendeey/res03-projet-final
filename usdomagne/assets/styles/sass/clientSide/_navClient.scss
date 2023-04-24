@@ -830,7 +830,8 @@
                 column-gap: 4em;
 
                 .items {
-                    
+                    display: flex;
+                    gap: 0.5em;
                     a {
                         text-decoration: none;
                         color: #034076;
@@ -838,6 +839,10 @@
                         font-family: 'Open Sans', sans-serif;
                         font-weight: 600;
                         font-size: 1.2em;
+                    }
+
+                    span{
+                        align-self: center;
                     }
 
                     .submenu-headerLaptop{
@@ -1080,7 +1085,8 @@
                 column-gap: 10em;
 
                 .items {
-                    
+                    display: flex;
+                    gap: 0.5em;
                     a {
                         text-decoration: none;
                         color: #034076;
@@ -1088,6 +1094,10 @@
                         font-family: 'Open Sans', sans-serif;
                         font-weight: 600;
                         font-size: 1.2em;
+                    }
+
+                    span{
+                        align-self: center;
                     }
 
                     .submenu-headerLaptop{
