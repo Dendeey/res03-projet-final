@@ -1,5 +1,4 @@
 <?php 
-
 class PostController extends AbstractController
 {
     
@@ -70,18 +69,18 @@ class PostController extends AbstractController
         }
     }
     
-    public function displayFormAddPost($post)
+    public function displayFormAddPost($txt)
     {
         
         // var_dump($post);
         
-        if (!empty($post['add-title']) && !empty($post['add-date']) && !empty($post['add-content']))
+        if (!empty($txt['add-title']) && !empty($txt['add-date']) && !empty($txt['add-content']))
         {
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
-            $Post = new Post($post["add-title"], $post["add-date"], $post["add-content"]);
-            $this->manager->insertPost($Post);
-            $newPostMedia = $this->manager->addPostMedia($Post->getId(), $media->getId());
+            $post = new Post($txt["add-title"], $txt["add-date"], $txt["add-content"]);
+            $this->manager->insertPost($post);
+            $newPostMedia = $this->manager->addPostMedia($post->getId(), $media->getId());
 
             header('Location: /res03-projet-final/usdomagne/admin/articles');
             
@@ -135,5 +134,4 @@ class PostController extends AbstractController
     }
     
 }
-
 ?>

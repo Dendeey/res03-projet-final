@@ -13,6 +13,7 @@ class Router
     private MediaController $mediaController;
     private OfficeController $officeController;
     private StaffController $staffController;
+    private PostController $postController;
     
     
 
@@ -28,7 +29,7 @@ class Router
         $this->mediaController = new MediaController();
         $this->officeController = new OfficeController();
         $this->staffController = new StaffController();
-        
+        $this->postController = new PostController();
              
     }
 
@@ -291,18 +292,18 @@ class Router
                         }
                     }
                     
-                    /*else if($route[1] === "articles")
+                    else if($route[1] === "articles")
                     {
                         if(!isset($route[2]))
                         {
-                            $this->staffController->displayStaffs();
+                            $this->postController->displayPosts();
                         }
                         
                         else if($route[2] === "voir")
                         {
                             if(isset($route[3]))
                             {
-                                $this->staffController->showStaff($route[3]);
+                                $this->postController->showPost($route[3]);
                             }
                         }
                         
@@ -311,7 +312,7 @@ class Router
                             
                             if(isset($route[3]))
                             {
-                                $this->staffController->displayFormEditStaff($post, $route[3]);
+                                $this->postController->displayFormEditPost($post, $route[3]);
                     
                                 
                             }
@@ -322,16 +323,16 @@ class Router
                         {
                             if(isset($route[3]))
                             {
-                                $this->staffController->displayDeleteStaffMedia($route[3]);
+                                $this->postController->displayDeletePostMedia($route[3]);
                             }
                             
                         }
                         
-                        else if($route[2] === "creer-un-staff")
+                        else if($route[2] === "creer-un-article")
                         {
-                            $this->staffController->displayFormAddStaff($post);
+                            $this->postController->displayFormAddPost($post);
                         }
-                    }*/
+                    }
                     
                     else if($route[1] === "media")
                     {

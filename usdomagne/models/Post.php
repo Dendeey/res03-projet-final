@@ -13,9 +13,9 @@ class Post {
     
     // Constructor
     
-    public function __construct(?int $id, string $title, string $date, string $content)
+    public function __construct(string $title, string $date, string $content)
     {
-        $this->id = $id;
+        $this->id = NULL;
         $this->title = $title;
         $this->date = $date;
         $this->content = $content;

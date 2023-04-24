@@ -8,11 +8,11 @@
             </fieldset>
             <fieldset class="form-floating mb-3">
                 <label for="show-date">Date</label>
-                <input type="text" class="form-control" name="show-date" value="<?= $data['posts']->getDate(); ?>" disabled="disabled">
+                <input type="date" class="form-control" name="show-date" value="<?= $data['posts']->getDate(); ?>" disabled="disabled">
             </fieldset>
             <fieldset class="form-floating mb-3">
-                <label for="show-content">Date</label>
-                <input type="text" class="form-control" name="show-content" value="<?= $data['posts']->getContent(); ?>" disabled="disabled">
+                <label for="show-content">Texte</label>
+                <textarea class="form-control" name="show-content" rows="10" cols="66" disabled="disabled"><?= $data['posts']->getContent(); ?></textarea>
             </fieldset>
             <fieldset class="form-floating mb-3">
                 <figure>

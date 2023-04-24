@@ -8,11 +8,11 @@
             </fieldset>
             <fieldset class="mb-3">
                 <label for="edit-date" class="form-label">Date</label>
-                <input type="text" class="form-control" name="edit-date" value="<?= $data['posts']->getDate(); ?>">
+                <input type="date" class="form-control" name="edit-date" value="<?= $data['posts']->getDate(); ?>">
             </fieldset>
             <fieldset class="mb-3">
                 <label for="edit-content" class="form-label">Texte</label>
-                <input type="text" class="form-control" name="edit-content" value="<?= $data['posts']->getContent(); ?>">
+                <textarea class="form-control" name="edit-content" rows="10" cols="66"><?= $data['posts']->getContent(); ?></textarea>
             </fieldset>
             <fieldset class="submit">
                 <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>

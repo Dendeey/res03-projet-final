@@ -4,24 +4,24 @@
         <form action="/res03-projet-final/usdomagne/admin/articles/creer-un-article" method="post" enctype="multipart/form-data" id="formAddReferee">
             <fieldset class="mb-3">
                 <label for="add-title" class="form-label">Titre</label>
-                <input type="text" class="form-control" name="add-title"/>
+                <input type="text" class="form-control" name="add-title" />
             </fieldset>
             <fieldset class="mb-3">
                 <label for="add-date" class="form-label">Date</label>
-                <input type="text" class="form-control" name="add-date"/>
+                <input type="date" class="form-control" name="add-date" />
             </fieldset>
             <fieldset class="mb-3">
                 <label for="add-content" class="form-label">Texte</label>
-                <input type="text" class="form-control" name="add-content"/>
+                <textarea class="form-control" name="add-content" rows="10" cols="66"></textarea>
             </fieldset>
             <fieldset class="mb-3">
                 <label for="add-image" class="form-label">Image</label>
-                <input type="file" class="form-control" name="add-image"/>
+                <input type="file" class="form-control" name="add-image" />
             </fieldset>
             <fieldset class="submit">
-                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary" />
             </fieldset>
-            <input type="hidden" name="formAddPost"/>
+            <input type="hidden" name="formAddPost" />
         </form>
     </section>
     <section class="section-btn">
