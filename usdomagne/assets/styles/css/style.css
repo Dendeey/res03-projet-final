@@ -663,7 +663,7 @@ table {
     justify-content: center;
     align-items: center;
     align-self: center;
-    left: 4vw;
+    left: 6vw;
     background: transparent;
   }
   #client-header nav .sideMenu-btn .line {
@@ -738,7 +738,7 @@ table {
   #client-header nav ul:last-of-type .items .submenu-headerLaptop {
     display: none;
     position: absolute;
-    top: 11vh;
+    top: 11.5vh;
     border: 0.2em solid white;
   }
   #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop {
@@ -1612,6 +1612,7 @@ table {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    gap: 4em;
   }
   #public-layout > #homepage > header {
     display: flex;
@@ -1635,7 +1636,6 @@ table {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     grid-column: 2/3;
-    margin-top: 2em;
     padding: 1em;
     justify-self: center;
     text-align: center;
@@ -1652,10 +1652,10 @@ table {
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(2) {
-    margin-top: 6vh;
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
+    height: 100vh;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
     grid-column: 2/3;
@@ -1664,8 +1664,7 @@ table {
     gap: 3em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure {
-    width: 50vw;
-    height: 50vh;
+    display: flex;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
     width: 100%;
@@ -1674,7 +1673,6 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
-    width: 100%;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header {
     padding-bottom: 1em;
@@ -1705,7 +1703,6 @@ table {
     text-transform: uppercase;
   }
   #public-layout > #homepage > section:nth-of-type(3) {
-    margin-top: 6vh;
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
@@ -1720,6 +1717,7 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
+    width: 50vw;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header {
     padding-bottom: 1em;
@@ -1777,7 +1775,6 @@ table {
     font-size: 1.2em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside {
-    width: 50vw;
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
@@ -1794,7 +1791,6 @@ table {
     color: #034076;
   }
   #public-layout > #homepage > section:last-of-type {
-    margin-top: 6vh;
     padding: 2em 0 2em 0;
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;

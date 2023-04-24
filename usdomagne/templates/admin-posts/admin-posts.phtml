@@ -1,0 +1,32 @@
+<main>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data['posts'] as $post){ ?>
+            
+            <tr>
+                <td><?php echo $post->getId(); ?></td>
+                <td><?php echo $post->getTitle(); ?></td>
+                <td><?php echo $post->getDate(); ?></td>
+                <td><?php echo $post->getContent(); ?></td>
+                <td class="actions">
+                    <a href="/res03-projet-final/usdomagne/admin/articles/voir/<?= $post->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/articles/modifier/<?= $post->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg" style="color: green;"></span></a>
+                    <a href="/res03-projet-final/usdomagne/admin/articles/supprimer/<?= $post->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <section class="section-btn" >
+        <button><a href="/res03-projet-final/usdomagne/admin/articles/creer-un-arbitre" class="btn btn-warning">Ajouter un article</a></button>
+        <button><a href="/res03-projet-final/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
+    </section>
+</main>

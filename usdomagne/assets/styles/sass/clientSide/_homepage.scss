@@ -841,6 +841,7 @@
             width: 100vw;
             display: flex;
             flex-direction: column;
+            gap: 4em;
 
             & > header
             {
@@ -873,7 +874,6 @@
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.5em;
                     grid-column: 2/3;
-                    margin-top: 2em;
                     padding: 1em;
                     justify-self: center;
                     text-align: center;
@@ -897,10 +897,10 @@
 
             & > section:nth-of-type(2)
             {
-                margin-top: 6vh;
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
+                height: 100vh;
 
                 #homepage-carousel{
                     grid-column: 2/3;
@@ -911,8 +911,8 @@
                     {
                         figure 
                         {
-                            width: 50vw;
-                            height: 50vh;
+                            display: flex;
+                            
                             img 
                             {
                                 width: 100%;
@@ -925,7 +925,6 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
-                        width: 100%;
 
                         header 
                         {
@@ -968,7 +967,6 @@
 
             & > section:nth-of-type(3)
             {
-                margin-top: 6vh;
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -983,6 +981,7 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
+                        width: 50vw;
 
                         header{
                             padding-bottom: 1em;
@@ -1000,7 +999,7 @@
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
-                            margin-top: 3vh;
+                            margin-top: 3vh;    
     
                             figure{
     
@@ -1049,7 +1048,6 @@
                     }
 
                     aside{
-                        width: 50vw;
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
@@ -1071,7 +1069,6 @@
 
             & > section:last-of-type
             {
-                margin-top: 6vh;
                 padding: 2em 0 2em 0;
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;

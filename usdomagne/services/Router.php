@@ -160,10 +160,10 @@ class Router
                     }
                     
                     
-                    else if($route[1] === "convocations")
+                    /*else if($route[1] === "convocations")
                     {
                         $this->playerController->displayConvocations();
-                    }
+                    }*/
                     
                     else if($route[1] === "arbitres")
                     {
@@ -290,6 +290,48 @@ class Router
                             $this->staffController->displayFormAddStaff($post);
                         }
                     }
+                    
+                    /*else if($route[1] === "articles")
+                    {
+                        if(!isset($route[2]))
+                        {
+                            $this->staffController->displayStaffs();
+                        }
+                        
+                        else if($route[2] === "voir")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->staffController->showStaff($route[3]);
+                            }
+                        }
+                        
+                        else if($route[2] === "modifier")
+                        {
+                            
+                            if(isset($route[3]))
+                            {
+                                $this->staffController->displayFormEditStaff($post, $route[3]);
+                    
+                                
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "supprimer")
+                        {
+                            if(isset($route[3]))
+                            {
+                                $this->staffController->displayDeleteStaffMedia($route[3]);
+                            }
+                            
+                        }
+                        
+                        else if($route[2] === "creer-un-staff")
+                        {
+                            $this->staffController->displayFormAddStaff($post);
+                        }
+                    }*/
                     
                     else if($route[1] === "media")
                     {

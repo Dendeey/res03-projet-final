@@ -1,23 +1,28 @@
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nom</th>
-            <th>Image</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach($data['media'] as $media){ ?>
-        
-        <tr>
-            <td><?php echo $media->getId(); ?></td>
-            <td><?php echo $media->getName(); ?></td>
-            <td><?php echo $media->getUrl(); ?></td>
-            <td>
-                <a href="/res03-projet-final/usdomagne/admin/media/supprimer/<?= $media->getId(); ?>">Supprimer</a>
-            </td>
-        </tr>
-        <?php } ?>
-    </tbody>
-</table>
-<button><a href="/res03-projet-final/usdomagne/admin">Retour au menu</a></button>
+<main>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data['media'] as $media){ ?>
+            
+            <tr>
+                <td><?php echo $media->getId(); ?></td>
+                <td><?php echo $media->getName(); ?></td>
+                <td><?php echo $media->getUrl(); ?></td>
+                <td class="actions">
+                    <a href="/res03-projet-final/usdomagne/admin/media/supprimer/<?= $media->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
+    </section>
+</main>
+

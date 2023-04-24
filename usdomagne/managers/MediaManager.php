@@ -166,6 +166,33 @@ class MediaManager extends AbstractManager
         return $mediasArray;
 
     }
+    
+    public function findMediaByPostId(int $id) : array
+    {
+        $query = $this->db->prepare('SELECT media.* FROM media JOIN posts_media ON media.id = posts_media.media_id JOIN posts ON posts.id = posts_media.posts_id WHERE posts.id = :id');
+
+        $parameters = [
+
+            'id' => $id
+        ];
+
+        $query->execute($parameters);
+
+        $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        $mediasArray = [];
+        foreach($medias as $media)
+        {
+            
+            $newMedia = new Media($media['name'], $media['url']);
+            $newMedia->setId($media['id']);
+            $mediasArray[] = $newMedia;
+            
+        }
+        
+        return $mediasArray;
+
+    }
 }
 
 ?>

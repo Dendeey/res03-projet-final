@@ -1,0 +1,26 @@
+<main>
+    <section>
+        <h1>Modifier cet article :</h1>
+        <form action="/res03-projet-final/usdomagne/admin/articles/modifier/<?php echo($data['posts']->getId()); ?>" method="post">
+            <fieldset class="mb-3">
+                <label for="edit-title" class="form-label">Titre</label>
+                <input type="text" class="form-control" name="edit-title" value="<?= $data['posts']->getTitle(); ?>">
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="edit-date" class="form-label">Date</label>
+                <input type="text" class="form-control" name="edit-date" value="<?= $data['posts']->getDate(); ?>">
+            </fieldset>
+            <fieldset class="mb-3">
+                <label for="edit-content" class="form-label">Texte</label>
+                <input type="text" class="form-control" name="edit-content" value="<?= $data['posts']->getContent(); ?>">
+            </fieldset>
+            <fieldset class="submit">
+                <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary"/>
+            </fieldset>
+            <input type="hidden" name="formEditPost"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/articles" class="btn btn-warning">Retour aux articles</a></button>
+    </section>
+</main>

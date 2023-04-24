@@ -1,0 +1,28 @@
+<main>
+    <section>
+        <h1>Voir cet article :</h1>
+        <form>
+            <fieldset class="form-floating mb-3">
+                <label for="show-title">Titre</label>
+                <input type="text" class="form-control" name="show-title"  value="<?= $data['posts']->getTitle(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <label for="show-date">Date</label>
+                <input type="text" class="form-control" name="show-date" value="<?= $data['posts']->getDate(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <label for="show-content">Date</label>
+                <input type="text" class="form-control" name="show-content" value="<?= $data['posts']->getContent(); ?>" disabled="disabled">
+            </fieldset>
+            <fieldset class="form-floating mb-3">
+                <figure>
+                    <img src="/res03-projet-final/usdomagne/<?= $data['posts']->getMedias()[0]->getUrl(); ?>">
+                </figure>
+            </fieldset>
+            <input type="hidden" name="formShowPost"/>
+        </form>
+    </section>
+    <section class="section-btn">
+        <button><a href="/res03-projet-final/usdomagne/admin/articles" class="btn btn-warning">Retour aux articles</a></button>
+    </section>
+</main>

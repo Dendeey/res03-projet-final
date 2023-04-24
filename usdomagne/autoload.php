@@ -8,6 +8,7 @@ require './models/Referee.php';
 require './models/Office.php';
 require './models/Staff.php';
 require './models/Media.php';
+require './models/Post.php';
 require './models/RandomStringGenerator.php';
 require './models/Uploader.php';
 
@@ -21,6 +22,7 @@ require './managers/RefereeManager.php';
 require './managers/MediaManager.php';
 require './managers/OfficeManager.php';
 require './managers/StaffManager.php';
+require './managers/PostManager.php';
 
 // Appeler les controllers
 
@@ -32,6 +34,7 @@ require './controllers/RefereeController.php';
 require './controllers/MediaController.php';
 require './controllers/OfficeController.php';
 require './controllers/StaffController.php';
+require './controllers/PostController.php';
 
 // Appeler le router
 
