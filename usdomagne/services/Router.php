@@ -41,8 +41,7 @@ class Router
         
         $post = $_POST;
         
-        
-        
+
         // Si la route n'existe pas, je veux afficher la page d'accueil
         
         if(!isset($_GET["path"]))

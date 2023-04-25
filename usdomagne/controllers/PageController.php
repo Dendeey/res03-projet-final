@@ -3,16 +3,17 @@
 
 class PageController extends AbstractController
 {
+    private PostManager $postManager;
     
     public function __construct()
     {
-        
+        $this->postManager = new PostManager();
     }
     
     public function accueil()
     {
         
-        $this->renderClient("accueil/accueil", []);
+        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->displayThreeLastPosts()]);
         
     }
     

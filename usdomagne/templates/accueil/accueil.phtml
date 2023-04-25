@@ -38,7 +38,7 @@
                 <header>
                     <h2>Actualités</h2>
                 </header>
-                <article>
+                <!--<article>
                     <figure>
                         <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/neon-blue-flash-sale-facebook-post-1-1__rsmv5y.png">
                     </figure>
@@ -50,21 +50,23 @@
                         <h3>Titre première actualité</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </section>
-                </article>
+                </article>-->
+                <?php foreach($data['homepagePosts'] as $post){ ?>
                 <article>
                     <figure>
-                        <img src="https://s1.static-footeo.com/750/uploads/us-domagnestdidier/news/soiree-tartiflette-3__rpoglo.png">
+                        <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/blue-minimalist-happy-new-year-greeting-instagram-post-2-1__ro48d4.png">
                     </figure>
                     <section>
                         <header>
                             <a href="#">Actualités</a> 
-                            <span>Il y a 1 jour</span>
+                            <span><?= $post->getDate(); ?></span>
                         </header>
-                        <h3>Titre deuxième actualité</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3><?= $post->getTitle(); ?></h3>
+                        <p><?= $post->getContent(); ?></p>
                     </section>
                 </article>
-                <article>
+                <?php } ?>
+                <!--<article>
                     <figure>
                         <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/blue-minimalist-happy-new-year-greeting-instagram-post-2-1__ro48d4.png">
                     </figure>
@@ -76,7 +78,7 @@
                         <h3>Titre troisième actualité</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </section>
-                </article>
+                </article>-->
             </section>
             <aside>
                 <header>

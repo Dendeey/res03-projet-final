@@ -114,6 +114,22 @@ class PostManager extends AbstractManager
 
         $query->execute($parameters);
     }
+    
+    //Fonction pour afficher les 3 derniers articles du côté client qui ont été créés côté admin
+    public function displayThreeLastPosts(): array
+    {
+        $query = $this->db->prepare("SELECT * FROM posts ORDER BY ID DESC LIMIT 3");
+        $query->execute();
+        $posts = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+        $lastPosts = [];
+        foreach($posts as $post){
+            $newPost = new Post($post["title"], $post["date"], $post["content"]);
+            array_push($lastPosts, $newPost);
+            $newPost->setId($post["id"]);
+        }
+        return $lastPosts;
+    }
 }
 
 ?>
