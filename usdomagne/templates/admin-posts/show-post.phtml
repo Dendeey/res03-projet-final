@@ -1,7 +1,8 @@
 <main>
     <section>
         <h1>Voir cet article :</h1>
-        <form>
+        <?= var_dump($data['posts']); ?>
+        <form> 
             <fieldset class="form-floating mb-3">
                 <label for="show-title">Titre</label>
                 <input type="text" class="form-control" name="show-title"  value="<?= $data['posts']->getTitle(); ?>" disabled="disabled">
