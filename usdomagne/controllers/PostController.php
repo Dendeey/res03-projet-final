@@ -44,7 +44,6 @@ class PostController extends AbstractController
         $this->renderAdmin("admin-posts/show-post", ["posts" => $post]);
     }
     
-    
     public function displayFormEditPost(array $post, int $id)
     {
         $displayPostToUpdate = $this->manager->getPostById($id);
@@ -72,7 +71,7 @@ class PostController extends AbstractController
     public function displayFormAddPost($txt)
     {
         
-        // var_dump($post);
+        // var_dump($txt);
         
         if (!empty($txt['add-title']) && !empty($txt['add-date']) && !empty($txt['add-content']))
         {
@@ -132,6 +131,5 @@ class PostController extends AbstractController
         
         header('Location: /res03-projet-final/usdomagne/admin/articles');
     }
-    
 }
 ?>

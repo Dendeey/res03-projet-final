@@ -1717,7 +1717,7 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
-    width: 50vw;
+    width: 55vw;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header {
     padding-bottom: 1em;
@@ -1938,12 +1938,13 @@ table {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 3em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
+    width: 50vw;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header {
     padding-bottom: 1em;
@@ -2001,7 +2002,6 @@ table {
     font-size: 1.2em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside {
-    width: 50vw;
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;

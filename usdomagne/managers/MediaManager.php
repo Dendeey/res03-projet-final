@@ -193,6 +193,7 @@ class MediaManager extends AbstractManager
         return $mediasArray;
 
     }
+
 }
 
 ?>

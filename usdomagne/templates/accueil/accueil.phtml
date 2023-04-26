@@ -38,23 +38,11 @@
                 <header>
                     <h2>Actualités</h2>
                 </header>
-                <!--<article>
-                    <figure>
-                        <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/neon-blue-flash-sale-facebook-post-1-1__rsmv5y.png">
-                    </figure>
-                    <section>
-                        <header>
-                            <a href="#">Actualités</a> 
-                            <span>Il y a 1 jour</span>
-                        </header>
-                        <h3>Titre première actualité</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </section>
-                </article>-->
-                <?php foreach($data['homepagePosts'] as $post){ ?>
+                <?php var_dump($data['homepagePosts']); foreach($data['homepagePosts'] as $post){;?>
                 <article>
                     <figure>
-                        <img src="#">
+                        <?php var_dump($data['homepageImg']); ?>
+                        <img src="/res03-projet-final/usdomagne/<?= $data['homepageImg']->getMedias()[0]->getUrl(); ?>">
                     </figure>
                     <section>
                         <header>
@@ -66,19 +54,6 @@
                     </section>
                 </article>
                 <?php } ?>
-                <!--<article>
-                    <figure>
-                        <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/blue-minimalist-happy-new-year-greeting-instagram-post-2-1__ro48d4.png">
-                    </figure>
-                    <section>
-                        <header>
-                            <a href="#">Actualités</a> 
-                            <span>Il y a 1 jour</span>
-                        </header>
-                        <h3>Titre troisième actualité</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </section>
-                </article>-->
             </section>
             <aside>
                 <header>

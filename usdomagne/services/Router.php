@@ -39,14 +39,13 @@ class Router
     public function checkRoute() : void
     {
         
-        $post = $_POST;
-        
+        $post = $_POST; 
 
         // Si la route n'existe pas, je veux afficher la page d'accueil
         
         if(!isset($_GET["path"]))
         {
-            $this->pageController->accueil(); 
+            $this->pageController->accueil();
         }
         
         // Sinon afficher les routes demandées

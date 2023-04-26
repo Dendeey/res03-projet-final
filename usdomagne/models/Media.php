@@ -5,14 +5,12 @@ class Media {
     private ?int $id;
     private string $name;
     private string $url;
-    /*private string $caption;*/
 
-    public function __construct(string $name, string $url/*, string $caption*/)
+    public function __construct(string $name, string $url)
     {
         $this->id = null;
         $this->name = $name;
         $this->url = $url;
-        /*$this->caption = null;*/
     }
     
     public function getId(): int
@@ -29,13 +27,7 @@ class Media {
     {
         return $this->url;
     }
-    
-    public function getCaption(): string
-    {
-        return $this->caption;
-    }
-    
-    
+
     public function setId(int $id): void
     {
         $this->id = $id;
@@ -50,11 +42,4 @@ class Media {
     {
         $this->url = $url;
     }
-    
-    public function setCaption(string $caption): void
-    {
-        $this->caption = $caption;
-    }
-    
-    
 }

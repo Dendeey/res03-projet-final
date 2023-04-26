@@ -981,7 +981,7 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
-                        width: 50vw;
+                        width: 55vw;
 
                         header{
                             padding-bottom: 1em;
@@ -1263,12 +1263,13 @@
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
-                    gap: 5em;
+                    gap: 3em;
 
                     & > section:first-of-type{
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
+                        width: 50vw;
 
                         header{
                             padding-bottom: 1em;
@@ -1335,7 +1336,7 @@
                     }
 
                     aside{
-                        width: 50vw;
+                        
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;

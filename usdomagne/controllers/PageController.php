@@ -12,9 +12,7 @@ class PageController extends AbstractController
     
     public function accueil()
     {
-        
-        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->displayThreeLastPosts()]);
-        
+        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->getThreeLastPosts(), "homepageImg"=>$this->postManager->getPostImg()]);
     }
     
     public function equipes()
@@ -68,5 +66,3 @@ class PageController extends AbstractController
 
     
 }
-
-?>

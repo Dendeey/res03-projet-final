@@ -42,7 +42,6 @@ class PostManager extends AbstractManager
 
     }
 
-
     public function insertPost(Post $post) : Post
     {
         
@@ -115,8 +114,8 @@ class PostManager extends AbstractManager
         $query->execute($parameters);
     }
     
-    //Fonction pour afficher les 3 derniers articles du côté client qui ont été créés côté admin
-    public function displayThreeLastPosts(): array
+    //Fonction pour récupérer les 3 derniers articles du côté client qui ont été créés côté admin
+    public function getThreeLastPosts() : array
     {
         $query = $this->db->prepare("SELECT * FROM posts ORDER BY ID DESC LIMIT 3");
         $query->execute();
@@ -128,8 +127,27 @@ class PostManager extends AbstractManager
             array_push($lastPosts, $newPost);
             $newPost->setId($post["id"]);
         }
+        
         return $lastPosts;
     }
+
+    public function getPostImg() : array
+    {
+        $query = $this->db->prepare("SELECT media.* FROM media");
+        $query->execute();
+        $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        $tabMedias = [];
+        foreach($medias as $media)
+        {
+            $newMedia = new Media($media['name'], $media['url']);
+            $newMedia->setId($media['id']);
+            $tabMedias[] = $newMedia;
+        }
+
+        return $tabMedias;
+    }
+
 }
 
 ?>
