@@ -1,0 +1,535 @@
+@media (max-width: 426px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#ecole-de-foot {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+    
+            &>header {
+                margin-top: 16vh;
+                padding: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+                        li {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            a {
+                                text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+                            span {
+
+                                font-family: 'Open Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section:first-of-type {
+                display: grid;
+                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                background-color: #F4F4F4;
+                padding-bottom: 4em;
+
+                &>section {
+                    grid-column: 2/3;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 2em;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1em;
+
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #034076;
+                                align-self: center;
+                            }
+                        }
+
+                        figure {
+
+                            img {
+                                width: 100%;
+                                border-radius: 0 0 0.5em 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 427px) and (max-width: 767px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#ecole-de-foot {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+    
+            &>header {
+                margin-top: 16vh;
+                padding: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+                        li {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            a {
+                                text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+                            span {
+
+                                font-family: 'Open Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section:first-of-type {
+                display: grid;
+                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                background-color: #F4F4F4;
+                padding-bottom: 4em;
+
+                &>section {
+                    grid-column: 2/3;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 2em;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1em;
+
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #034076;
+                                align-self: center;
+                            }
+                        }
+
+                        figure {
+
+                            img {
+                                width: 100%;
+                                border-radius: 0 0 0.5em 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#ecole-de-foot {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+    
+            &>header {
+                margin-top: 16vh;
+                padding: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+                        li {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            a {
+                                text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+                            span {
+
+                                font-family: 'Open Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section:first-of-type {
+                display: grid;
+                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                background-color: #F4F4F4;
+                padding-bottom: 4em;
+
+                &>section {
+                    grid-column: 2/3;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2em;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1em;
+
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #034076;
+                                align-self: center;
+                            }
+                        }
+
+                        figure {
+
+                            img {
+                                width: 100%;
+                                border-radius: 0 0 0.5em 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#ecole-de-foot {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+    
+            &>header {
+                margin-top: 16vh;
+                padding: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+                        li {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            a {
+                                text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+                            span {
+
+                                font-family: 'Open Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section:first-of-type {
+                display: grid;
+                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                background-color: #F4F4F4;
+                padding-bottom: 4em;
+
+                &>section {
+                    grid-column: 2/3;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 2em;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1em;
+
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #034076;
+                                align-self: center;
+                            }
+                        }
+
+                        figure {
+
+                            img {
+                                width: 100%;
+                                border-radius: 0 0 0.5em 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#ecole-de-foot {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+    
+            &>header {
+                margin-top: 16vh;
+                padding: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+                        li {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.1em;
+                            a {
+                                text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+                            span {
+
+                                font-family: 'Open Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section:first-of-type {
+                display: grid;
+                grid-template-columns: 0.1fr 0.8fr 0.1fr;
+                background-color: #F4F4F4;
+                padding-bottom: 4em;
+
+                &>section {
+                    grid-column: 2/3;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 2em;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            padding: 1em;
+
+                            h1{
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #034076;
+                                align-self: center;
+                            }
+                        }
+
+                        figure {
+
+                            img {
+                                width: 100%;
+                                border-radius: 0 0 0.5em 0.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -24,10 +24,10 @@ class PageController extends AbstractController
         
     }
     
-    public function equipes()
+    public function ecoleDeFoot()
     {
         
-        $this->renderClient("equipes/equipes", []);
+        $this->renderClient("ecole-de-foot/ecole-de-foot", []);
         
     }
     

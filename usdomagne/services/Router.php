@@ -67,9 +67,9 @@ class Router
                 $this->refereeController->arbitres();
             }
             
-            else if($route[0] === "equipes")
+            else if($route[0] === "ecole-de-foot")
             {
-                $this->pageController->equipes();
+                $this->pageController->ecoleDeFoot();
             }
             
             else if($route[0] === "boutique")
