@@ -58,7 +58,7 @@ table {
   }
   #client-header-mobile {
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
     top: 0;
     background-color: #034076;
     display: flex;
@@ -137,8 +137,8 @@ table {
     gap: 4em;
     width: 100vw;
     height: 100vh;
-    transform: translateY(-110vh);
-    top: 7vh;
+    transform: translateY(-120vh);
+    top: 10vh;
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
@@ -224,7 +224,7 @@ table {
   }
   #client-header-mobile {
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
     top: 0;
     background-color: #034076;
     display: flex;
@@ -303,8 +303,8 @@ table {
     gap: 4em;
     width: 100vw;
     height: 100vh;
-    transform: translateY(-110vh);
-    top: 7vh;
+    transform: translateY(-120vh);
+    top: 10vh;
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
@@ -390,7 +390,7 @@ table {
   }
   #client-header-mobile {
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
     top: 0;
     background-color: #034076;
     display: flex;
@@ -470,9 +470,9 @@ table {
     gap: 4em;
     width: 100vw;
     height: 100vh;
-    transform: translateY(-110vh);
+    transform: translateY(-120vh);
     justify-content: start;
-    top: 7vh;
+    top: 10vh;
     background-color: white;
     border-top: 5px solid #FDCD11;
   }
@@ -2251,6 +2251,516 @@ table {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     text-decoration: none;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actualites {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actualites > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actualites > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actualites > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actualites > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actualites > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actualites > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actualites > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #actualites > section:first-of-type > section article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actualites {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actualites > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actualites > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actualites > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actualites > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actualites > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actualites > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actualites > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #actualites > section:first-of-type > section article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actualites {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actualites > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actualites > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actualites > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actualites > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actualites > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actualites > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actualites > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #actualites > section:first-of-type > section article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actualites {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actualites > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actualites > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actualites > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actualites > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actualites > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actualites > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actualites > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #actualites > section:first-of-type > section article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actualites {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actualites > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actualites > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actualites > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actualites > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actualites > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actualites > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actualites > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #034076;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article header span {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    align-self: center;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  #public-layout > #actualites > section:first-of-type > section article p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
   }
 }
 @media (max-width: 426px) {

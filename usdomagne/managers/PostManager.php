@@ -148,17 +148,6 @@ class PostManager extends AbstractManager
     //     return $tabMedias;
     // }
 
-    public function getPostId() : int
-    {
-        $query = $this->db->prepare("SELECT id FROM posts");
-        $query->execute();
-        $arrayPostId = $query->fetch(PDO::FETCH_ASSOC);
-
-        $postId = extract($arrayPostId, EXTR_SKIP);
-        return $postId;
-        var_dump($postId);
-    }
-
 }
 
 ?>

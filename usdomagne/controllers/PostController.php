@@ -43,19 +43,6 @@ class PostController extends AbstractController
         }
         $this->renderAdmin("admin-posts/show-post", ["posts" => $post]);
     }
-
-    public function showPostMedia()
-    {
-        $postId = $this->manager->getPostId();
-        var_dump($postId);
-        $post = $this->manager->getPostById($postId);
-        $medias = $this->mediaManager->findMediaByPostId($postId);
-        foreach($medias as $media){
-
-            $post->addMedias($media);
-            
-        }
-    }
     
     public function displayFormEditPost(array $post, int $id)
     {

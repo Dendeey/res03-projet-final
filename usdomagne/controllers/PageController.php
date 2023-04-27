@@ -14,7 +14,14 @@ class PageController extends AbstractController
     
     public function accueil()
     {
-        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->getThreeLastPosts(), "homepageImg"=>$this->postController->showPostMedia()]);
+        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->getThreeLastPosts()]);
+    }
+    
+    public function actualites()
+    {
+        
+        $this->renderClient("actualites/actualites", ["pageActualites"=>$this->postManager->getAllPosts()]);
+        
     }
     
     public function equipes()

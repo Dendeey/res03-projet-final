@@ -57,6 +57,11 @@ class Router
         // Côté client
             // Afficher les pages visibles de l'utilisateur
             
+            if($route[0] === "actualites")
+            {
+                $this->pageController->actualites();
+            }
+            
             if($route[0] === "arbitres")
             {
                 $this->refereeController->arbitres();
