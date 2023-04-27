@@ -4,15 +4,17 @@
 class PageController extends AbstractController
 {
     private PostManager $postManager;
+    private PostController $postController;
     
     public function __construct()
     {
         $this->postManager = new PostManager();
+        $this->postController = new PostController();
     }
     
     public function accueil()
     {
-        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->getThreeLastPosts(), "homepageImg"=>$this->postManager->getPostImg()]);
+        $this->renderClient("accueil/accueil", ["homepagePosts"=>$this->postManager->getThreeLastPosts(), "homepageImg"=>$this->postController->showPostMedia()]);
     }
     
     public function equipes()

@@ -8,7 +8,22 @@
     <section>
         <h2>Prochains matchs de nos séniors :</h2>
         <article>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script><script>if(!window._rsz){window._rsz=function(){var i=iFrameResize({checkOrigin:false,interval:100});};if(document.readyState!="loading"){_rsz()}else{document.addEventListener("DOMContentLoaded",_rsz)}}</script><iframe id="643673b83712f009c955bca2" src="https://scorenco.com/widget/643673b83712f009c955bca2/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script>
+            <script>
+                if (!window._rsz) {
+                    window._rsz = function() {
+                        var i = iFrameResize({
+                            checkOrigin: false,
+                            interval: 100
+                        });
+                    };
+                    if (document.readyState != "loading") {
+                        _rsz()
+                    } else {
+                        document.addEventListener("DOMContentLoaded", _rsz)
+                    }
+                }
+            </script><iframe id="643673b83712f009c955bca2" src="https://scorenco.com/widget/643673b83712f009c955bca2/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
         </article>
     </section>
     <section>
@@ -38,28 +53,44 @@
                 <header>
                     <h2>Actualités</h2>
                 </header>
-                <?php var_dump($data['homepagePosts']); foreach($data['homepagePosts'] as $post){;?>
-                <article>
-                    <figure>
-                        <?php var_dump($data['homepageImg']); ?>
-                        <img src="/res03-projet-final/usdomagne/<?= $data['homepageImg']->getMedias()[0]->getUrl(); ?>">
-                    </figure>
-                    <section>
-                        <header>
-                            <a href="#">Actualités</a> 
-                            <span><?= $post->getDate(); ?></span>
-                        </header>
-                        <h3><?= $post->getTitle(); ?></h3>
-                        <p><?= $post->getContent(); ?></p>
-                    </section>
-                </article>
+                <?php var_dump($data['homepagePosts']);
+                foreach ($data['homepagePosts'] as $post) { ?>
+                    <article>
+                        <section>
+                            <figure>
+                                <?php var_dump($data['homepageImg']); ?>
+                                <img src="/res03-projet-final/usdomagne/<?= $data['homepageImg']->getMedias()->getUrl(); ?>">
+                            </figure>
+                            <header>
+                                <a href="#">Actualités</a>
+                                <span><?= $post->getDate(); ?></span>
+                            </header>
+                            <h3><?= $post->getTitle(); ?></h3>
+                            <p><?= $post->getContent(); ?></p>
+                        </section>
+                    </article>
                 <?php } ?>
             </section>
             <aside>
                 <header>
                     <h2>Classement</h2>
                 </header>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script><script>if(!window._rsz){window._rsz=function(){var i=iFrameResize({checkOrigin:false,interval:100});};if(document.readyState!="loading"){_rsz()}else{document.addEventListener("DOMContentLoaded",_rsz)}}</script><iframe id="643ea8e891d359679f19a24e" src="https://scorenco.com/widget/643ea8e891d359679f19a24e/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script>
+                <script>
+                    if (!window._rsz) {
+                        window._rsz = function() {
+                            var i = iFrameResize({
+                                checkOrigin: false,
+                                interval: 100
+                            });
+                        };
+                        if (document.readyState != "loading") {
+                            _rsz()
+                        } else {
+                            document.addEventListener("DOMContentLoaded", _rsz)
+                        }
+                    }
+                </script><iframe id="643ea8e891d359679f19a24e" src="https://scorenco.com/widget/643ea8e891d359679f19a24e/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
             </aside>
         </section>
     </section>
@@ -85,5 +116,3 @@
         </section>
     </section>
 </main>
-
-

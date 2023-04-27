@@ -131,21 +131,32 @@ class PostManager extends AbstractManager
         return $lastPosts;
     }
 
-    public function getPostImg() : array
+    // public function getPostImg() : array
+    // {
+    //     $query = $this->db->prepare("SELECT media.* FROM media");
+    //     $query->execute();
+    //     $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+
+    //     $tabMedias = [];
+    //     foreach($medias as $media)
+    //     {
+    //         $newMedia = new Media($media['name'], $media['url']);
+    //         $newMedia->setId($media['id']);
+    //         $tabMedias[] = $newMedia;
+    //     }
+
+    //     return $tabMedias;
+    // }
+
+    public function getPostId() : int
     {
-        $query = $this->db->prepare("SELECT media.* FROM media");
+        $query = $this->db->prepare("SELECT id FROM posts");
         $query->execute();
-        $medias = $query->fetchAll(PDO::FETCH_ASSOC);
+        $arrayPostId = $query->fetch(PDO::FETCH_ASSOC);
 
-        $tabMedias = [];
-        foreach($medias as $media)
-        {
-            $newMedia = new Media($media['name'], $media['url']);
-            $newMedia->setId($media['id']);
-            $tabMedias[] = $newMedia;
-        }
-
-        return $tabMedias;
+        $postId = extract($arrayPostId, EXTR_SKIP);
+        return $postId;
+        var_dump($postId);
     }
 
 }
