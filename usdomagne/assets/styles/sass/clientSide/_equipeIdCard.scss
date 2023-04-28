@@ -8,7 +8,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#ecole-de-foot {
+        &>#equipes {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -115,7 +115,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#ecole-de-foot {
+        &>#equipes {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -222,7 +222,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#ecole-de-foot {
+        &>#equipes {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -330,7 +330,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#ecole-de-foot {
+        &>#equipes {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -437,7 +437,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#ecole-de-foot {
+        &>#equipe-id-card {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -476,6 +476,8 @@
                             span {
 
                                 font-family: 'Open Sans', sans-serif;
+                                font-size: 1.1em;
+                                color: #034076;
                             }
                         }
                     }
@@ -488,44 +490,95 @@
                 background-color: #F4F4F4;
                 padding-bottom: 4em;
 
-                &>section {
+                &>#img-schedule {
                     grid-column: 2/3;
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 2em;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4em;
 
-                    a{
-                        text-decoration: none;
-                    }
-
-                    article {
+                    &>figure{
                         display: flex;
                         flex-direction: column;
-                        background-color: white;
-                        border-radius: 0.5em;
-                        cursor: pointer;
+                        width: 60%;
 
-                        header {
+                        img{
+                            width: 100%;
+                            border-radius: 0.5em 0.5em 0 0;
+                        }
+                        h2{
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 2em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            color: #034076;
+                            text-align: center;
+                            background-color: white;
+                            padding: 0.5em;
+                            border-radius: 0 0 0.5em 0.5em;
+                        }
+                    }
+
+                    &>article{
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+
+                        header{
                             display: flex;
-                            justify-content: center;
+                            flex-direction: row;
+                            gap: 0.4em;
+                            background-color: white;
                             padding: 1em;
-
-                            h1{
-                                font-family: "Open Sans", sans-serif;
-                                font-size: 1.5em;
+                            border-radius: 0.5em 0.5em 0 0;
+                            border-bottom: #FDCD11 0.3em solid;
+                            justify-content: center;
+                            align-content: center;
+                            
+                            h3{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.7em;
                                 font-weight: 600;
                                 text-transform: uppercase;
                                 color: #034076;
-                                align-self: center;
+                                text-align: center;
+                            }
+
+                            span{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.7em;
+                                color: #034076;
                             }
                         }
 
-                        figure {
+                        iframe{
+                            border-radius: 0 0 0.5em 0.5em;
+                        }
+                    }
+                }
 
-                            img {
-                                width: 100%;
-                                border-radius: 0 0 0.5em 0.5em;
-                            }
+                &>#next-game{
+                    padding-top: 4em;
+                    grid-column: 2/3;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+
+                    &>header{
+                        h3{
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.7em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            color: #034076;
+                            border-bottom: #FDCD11 0.2em solid; 
+                        }
+                    }
+
+                    &>article{
+                        width: 100%;
+
+                        iframe{
+                            border-radius: 0.5em;
                         }
                     }
                 }

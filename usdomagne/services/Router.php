@@ -62,45 +62,75 @@ class Router
                 $this->pageController->actualites();
             }
             
-            if($route[0] === "arbitres")
-            {
-                $this->refereeController->arbitres();
-            }
-            
             else if($route[0] === "ecole-de-foot")
             {
                 $this->pageController->ecoleDeFoot();
+            }
+
+            else if($route[0] === "groupement-jeunes")
+            {
+                $this->pageController->groupementJeunes();
+            }
+
+            else if($route[0] === "veterans")
+            {
+                $this->pageController->veterans();
+            }
+
+            else if($route[0] === "seniors")
+            {
+                if(!isset($route[1]))
+                {
+                    $this->pageController->seniors();
+                }
+                else if($route[1] === "a")
+                {
+                    $this->pageController->seniorA();
+                }
+                else if($route[2] === "b")
+                {
+                    $this->pageController->seniorB();
+                }
+                else if($route[3] === "c")
+                {
+                    $this->pageController->seniorC();
+                }
+                
             }
             
             else if($route[0] === "boutique")
             {
                 $this->pageController->boutique();
             }
-            
-            else if($route[0] === "club")
+
+            else if($route[0] === "histoire")
             {
-                if(!isset($route[1]))
-                {
-                    $this->pageController->club();
-                }
-                else if($route[1] === "histoire")
-                {
-                    
-                    $this->pageController->histoire();
-                    
-                }
-                else if($route[1] === "infrastructures")
-                {
-                    
-                    $this->pageController->infrastructures();
-                    
-                }
-                else if($route[1] === "partenaires")
-                {
-                    
-                    $this->pageController->partenaires();
-                    
-                }
+                $this->pageController->histoire();
+            }
+
+            else if($route[0] === "bureau")
+            {
+                $this->pageController->bureau();
+            }
+
+            else if($route[0] === "staff")
+            {
+                $this->pageController->staff();
+            }
+
+            else if($route[0] === "infrastructures")
+            {
+                $this->pageController->infrastructures();
+            }
+
+            else if($route[0] === "arbitres")
+            {
+                $this->refereeController->arbitres();
+            }
+
+            else if($route[0] === "partenaires")
+            {
+                $this->pageController->partenaires();
             }
             
             else if($route[0] === "contact")
@@ -374,5 +404,3 @@ class Router
     }
 
 }
-
-?>    
