@@ -3118,6 +3118,11 @@ table {
     width: 100%;
     border-radius: 0 0 0.5em 0.5em;
   }
+  #public-layout > #equipes > section:first-of-type > section article:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
 }
 @media (min-width: 1440px) {
   html {
@@ -3222,20 +3227,20 @@ table {
     min-height: 100vh;
     width: 100vw;
   }
-  #public-layout > #equipes {
+  #public-layout > #equipe-id-card {
     background-color: #F4F4F4;
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
-  #public-layout > #equipes > header {
+  #public-layout > #equipe-id-card > header {
     margin-top: 16vh;
     padding: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  #public-layout > #equipes > header h1 {
+  #public-layout > #equipe-id-card > header h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 3em;
     font-weight: 600;
@@ -3243,63 +3248,111 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
-  #public-layout > #equipes > header nav ul {
+  #public-layout > #equipe-id-card > header nav ul {
     display: flex;
     flex-direction: row;
     gap: 0.2em;
   }
-  #public-layout > #equipes > header nav ul li {
+  #public-layout > #equipe-id-card > header nav ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
   }
-  #public-layout > #equipes > header nav ul li a {
+  #public-layout > #equipe-id-card > header nav ul li a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
-  #public-layout > #equipes > header nav ul li span {
+  #public-layout > #equipe-id-card > header nav ul li span {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
   }
-  #public-layout > #equipes > section:first-of-type {
+  #public-layout > #equipe-id-card > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
     padding-bottom: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-  }
-  #public-layout > #equipes > section:first-of-type > section a {
-    text-decoration: none;
-  }
-  #public-layout > #equipes > section:first-of-type > section article {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    gap: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section article header {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure {
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    flex-direction: column;
+    width: 100%;
   }
-  #public-layout > #equipes > section:first-of-type > section article header h1 {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     color: #034076;
-    align-self: center;
-  }
-  #public-layout > #equipes > section:first-of-type > section article figure img {
-    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
     border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    border-bottom: #FDCD11 0.3em solid;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    color: #034076;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article iframe {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game {
+    padding-top: 4em;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    border-bottom: #FDCD11 0.2em solid;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article {
+    width: 100%;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article iframe {
+    border-radius: 0.5em;
   }
 }
 @media (min-width: 427px) and (max-width: 767px) {
@@ -3311,20 +3364,20 @@ table {
     min-height: 100vh;
     width: 100vw;
   }
-  #public-layout > #equipes {
+  #public-layout > #equipe-id-card {
     background-color: #F4F4F4;
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
-  #public-layout > #equipes > header {
+  #public-layout > #equipe-id-card > header {
     margin-top: 16vh;
     padding: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  #public-layout > #equipes > header h1 {
+  #public-layout > #equipe-id-card > header h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 3em;
     font-weight: 600;
@@ -3332,63 +3385,111 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
-  #public-layout > #equipes > header nav ul {
+  #public-layout > #equipe-id-card > header nav ul {
     display: flex;
     flex-direction: row;
     gap: 0.2em;
   }
-  #public-layout > #equipes > header nav ul li {
+  #public-layout > #equipe-id-card > header nav ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
   }
-  #public-layout > #equipes > header nav ul li a {
+  #public-layout > #equipe-id-card > header nav ul li a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
-  #public-layout > #equipes > header nav ul li span {
+  #public-layout > #equipe-id-card > header nav ul li span {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
   }
-  #public-layout > #equipes > section:first-of-type {
+  #public-layout > #equipe-id-card > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
     padding-bottom: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-  }
-  #public-layout > #equipes > section:first-of-type > section a {
-    text-decoration: none;
-  }
-  #public-layout > #equipes > section:first-of-type > section article {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    gap: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section article header {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure {
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    flex-direction: column;
+    width: 100%;
   }
-  #public-layout > #equipes > section:first-of-type > section article header h1 {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     color: #034076;
-    align-self: center;
-  }
-  #public-layout > #equipes > section:first-of-type > section article figure img {
-    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
     border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    border-bottom: #FDCD11 0.3em solid;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    color: #034076;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article iframe {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game {
+    padding-top: 4em;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    border-bottom: #FDCD11 0.2em solid;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article {
+    width: 100%;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article iframe {
+    border-radius: 0.5em;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -3400,20 +3501,20 @@ table {
     min-height: 100vh;
     width: 100vw;
   }
-  #public-layout > #equipes {
+  #public-layout > #equipe-id-card {
     background-color: #F4F4F4;
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
-  #public-layout > #equipes > header {
+  #public-layout > #equipe-id-card > header {
     margin-top: 16vh;
     padding: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  #public-layout > #equipes > header h1 {
+  #public-layout > #equipe-id-card > header h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 3em;
     font-weight: 600;
@@ -3421,63 +3522,111 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
-  #public-layout > #equipes > header nav ul {
+  #public-layout > #equipe-id-card > header nav ul {
     display: flex;
     flex-direction: row;
     gap: 0.2em;
   }
-  #public-layout > #equipes > header nav ul li {
+  #public-layout > #equipe-id-card > header nav ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
   }
-  #public-layout > #equipes > header nav ul li a {
+  #public-layout > #equipe-id-card > header nav ul li a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
-  #public-layout > #equipes > header nav ul li span {
+  #public-layout > #equipe-id-card > header nav ul li span {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
   }
-  #public-layout > #equipes > section:first-of-type {
+  #public-layout > #equipe-id-card > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
     padding-bottom: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-  }
-  #public-layout > #equipes > section:first-of-type > section a {
-    text-decoration: none;
-  }
-  #public-layout > #equipes > section:first-of-type > section article {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    gap: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section article header {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure {
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    flex-direction: column;
+    width: 100%;
   }
-  #public-layout > #equipes > section:first-of-type > section article header h1 {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     color: #034076;
-    align-self: center;
-  }
-  #public-layout > #equipes > section:first-of-type > section article figure img {
-    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
     border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    border-bottom: #FDCD11 0.3em solid;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    color: #034076;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article iframe {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game {
+    padding-top: 4em;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    border-bottom: #FDCD11 0.2em solid;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article {
+    width: 100%;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article iframe {
+    border-radius: 0.5em;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -3489,20 +3638,20 @@ table {
     min-height: 100vh;
     width: 100vw;
   }
-  #public-layout > #equipes {
+  #public-layout > #equipe-id-card {
     background-color: #F4F4F4;
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
-  #public-layout > #equipes > header {
+  #public-layout > #equipe-id-card > header {
     margin-top: 16vh;
     padding: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
-  #public-layout > #equipes > header h1 {
+  #public-layout > #equipe-id-card > header h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 3em;
     font-weight: 600;
@@ -3510,63 +3659,111 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
-  #public-layout > #equipes > header nav ul {
+  #public-layout > #equipe-id-card > header nav ul {
     display: flex;
     flex-direction: row;
     gap: 0.2em;
   }
-  #public-layout > #equipes > header nav ul li {
+  #public-layout > #equipe-id-card > header nav ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
   }
-  #public-layout > #equipes > header nav ul li a {
+  #public-layout > #equipe-id-card > header nav ul li a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
-  #public-layout > #equipes > header nav ul li span {
+  #public-layout > #equipe-id-card > header nav ul li span {
     font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
   }
-  #public-layout > #equipes > section:first-of-type {
+  #public-layout > #equipe-id-card > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
     padding-bottom: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
   }
-  #public-layout > #equipes > section:first-of-type > section a {
-    text-decoration: none;
-  }
-  #public-layout > #equipes > section:first-of-type > section article {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    width: 70%;
   }
-  #public-layout > #equipes > section:first-of-type > section article header {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
   }
-  #public-layout > #equipes > section:first-of-type > section article header h1 {
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > figure h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     color: #034076;
-    align-self: center;
-  }
-  #public-layout > #equipes > section:first-of-type > section article figure img {
-    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 0.5em;
     border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    border-bottom: #FDCD11 0.3em solid;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article header span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    color: #034076;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #img-schedule > article iframe {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game {
+    padding-top: 4em;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > header h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+    border-bottom: #FDCD11 0.2em solid;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article {
+    width: 100%;
+  }
+  #public-layout > #equipe-id-card > section:first-of-type > #next-game > article iframe {
+    border-radius: 0.5em;
   }
 }
 @media (min-width: 1440px) {

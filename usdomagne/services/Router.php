@@ -87,11 +87,11 @@ class Router
                 {
                     $this->pageController->seniorA();
                 }
-                else if($route[2] === "b")
+                else if($route[1] === "b")
                 {
                     $this->pageController->seniorB();
                 }
-                else if($route[3] === "c")
+                else if($route[1] === "c")
                 {
                     $this->pageController->seniorC();
                 }

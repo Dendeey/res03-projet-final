@@ -52,6 +52,18 @@ class PageController extends AbstractController
 
         $this->renderClient("seniors/seniorA", []);
     }
+    
+    public function seniorB()
+    {
+
+        $this->renderClient("seniors/seniorB", []);
+    }
+    
+    public function seniorC()
+    {
+
+        $this->renderClient("seniors/seniorC", []);
+    }
 
     public function boutique()
     {
