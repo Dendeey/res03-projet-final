@@ -100,4 +100,9 @@ class PageController extends AbstractController
 
         $this->renderClient("contact/contact", []);
     }
+
+    public function erreur()
+    {
+        $this->renderClient("erreur/erreur", []);
+    }
 }

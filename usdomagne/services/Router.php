@@ -103,10 +103,10 @@ class Router
                 $this->pageController->boutique();
             }
 
-            else if($route[0] === "histoire")
-            {
-                $this->pageController->histoire();
-            }
+            // else if($route[0] === "histoire")
+            // {
+            //     $this->pageController->histoire();
+            // }
 
             else if($route[0] === "bureau")
             {
@@ -397,6 +397,11 @@ class Router
             else if($route[0] === "logout")
             {
                 $this->userController->logout();
+            }
+
+            else
+            {
+                $this->pageController->erreur();
             }
             
         }
