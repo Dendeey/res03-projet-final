@@ -38,7 +38,6 @@ class PostController extends AbstractController
         $medias = $this->mediaManager->findMediaByPostId($id);
         // var_dump($post);
         // var_dump($medias);
-
         // die;
         foreach($medias as $media){
 

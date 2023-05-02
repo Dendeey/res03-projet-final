@@ -19,6 +19,7 @@ class PageController extends AbstractController
             $medias = $this->mediaManager->findMediaByPostId($post->getId());
             $post->addMedias($medias[0]);
         }
+        
         $this->renderClient("accueil/accueil", ["homepagePosts" => $posts]);
     }
 

@@ -28,22 +28,26 @@
     </section>
     <section>
         <section id="homepage-carousel">
+            <?php foreach($data['homepagePosts'] as $post){ ?>
             <article>
                 <figure>
-                    <img src="https://s3.static-footeo.com/750/uploads/us-domagnestdidier/news/neon-blue-flash-sale-facebook-post-1-1__rsmv5y.png">
+                    <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
                 </figure>
-                <!-- <footer>
-                    <h3>Destockage !!!</h3>
-                </footer> -->
+                <footer>
+                    <h3><span>"</span><?= $post->getTitle(); ?><span>"</span></h3>
+                </footer>
             </article>
+            <?php } ?>
             <aside>
                 <header>
                     <h2>Dernières minutes</h2>
                 </header>
+                <?php foreach($data['homepagePosts'] as $post){ ?>
                 <article>
-                    <span>Il y a 4 heures</span>
-                    <p>Chaussettes et shorts en réduction</p>
+                    <span><?= $post->getDate(); ?></span>
+                    <p><?= $post->getTitle(); ?></p>
                 </article>
+                <?php } ?>
             </aside>
         </section>
     </section>
@@ -53,13 +57,14 @@
                 <header>
                     <h2>Actualités</h2>
                 </header>
-                <?php var_dump($data['homepagePosts']);
+                <?php 
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
-                        <section>
+
                             <figure>
                                 <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>">
                             </figure>
+                        <section>
                             <header>
                                 <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
                                 <span><?= $post->getDate(); ?></span>

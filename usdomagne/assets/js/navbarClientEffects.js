@@ -17,7 +17,7 @@ function hideAndShowMenuOnScroll(){
         }
     
         prevScrollpos = currentScrollPos;
-    }
+    };
 }
 
 /**
@@ -32,12 +32,12 @@ function openAndCloseAsideMenu(){
     sideMenuBtn.addEventListener('click', function(){
         sideMenuBtn.classList.toggle('active');
         asideMenu.classList.toggle('active');
-    })
+    });
 
     sideMenuMobileBtn.addEventListener('click', function(){
         sideMenuMobileBtn.classList.toggle('active');
         asideMenuMobile.classList.toggle('active');
-    })
+    });
     
 }
 
