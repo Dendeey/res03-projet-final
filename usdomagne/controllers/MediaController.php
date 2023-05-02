@@ -29,33 +29,8 @@ class MediaController extends AbstractController
     {
         $this->renderAdmin("admin-media/admin-media", ["media"=>$this->manager->getAllMedias()]);
     }
-    
-    //Créer un fonction qui permet d'afficher un form et d'appeler la fonction du manager insérer un media
-    /*public function displayFormInsertMedia(array $post)
-    {
 
-        if (!empty($post['add-caption']))
-        {
-
-            $uploader = new Uploader();
-            $media = $uploader->upload($_FILES, "add-image");
-            $post["add-image"] = $media->getUrl();
-            $mediaToAdd = new Media($post["add-image"], $post["add-caption"]);
-            $this->manager->insertMedia($mediaToAdd);
-            header('Location: /res03-projet-final/usdomagne/admin/media');
-                
-        }
-    
-        else 
-        {
-            $this->renderAdmin('admin-media/add-media', ['error' => 'Merci de remplir tous les champs']);
-                
-        }
-        
-        var_dump($post);
-        var_dump($_FILES);
-    }*/
-
+    //Fonction qui permet de supprimer un media de la table medias
     public function displayDeleteMedia(int $id)
     {
         // delete the referee in the manager

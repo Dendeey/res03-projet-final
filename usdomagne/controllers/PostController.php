@@ -36,12 +36,28 @@ class PostController extends AbstractController
     {
         $post = $this->manager->getPostById($id);
         $medias = $this->mediaManager->findMediaByPostId($id);
+        // var_dump($post);
+        // var_dump($medias);
+
+        // die;
         foreach($medias as $media){
 
             $post->addMedias($media);
             
         }
         $this->renderAdmin("admin-posts/show-post", ["posts" => $post]);
+    }
+
+    public function showPostsHomepage()
+    {
+        // $post = $this->manager->getPostById();
+        // $medias = $this->mediaManager->findMediaByPostId();
+        $posts = $this->manager->getAllPosts();
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByPostId($post->getId());
+            $post->addMedias($medias);
+        }
+        var_dump($post);
     }
     
     public function displayFormEditPost(array $post, int $id)

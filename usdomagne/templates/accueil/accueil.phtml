@@ -58,8 +58,7 @@
                     <article>
                         <section>
                             <figure>
-                                <?php var_dump($data['homepageImg']); ?>
-                                <img src="/res03-projet-final/usdomagne/<?= $data['homepageImg']->getMedias()->getUrl(); ?>">
+                                <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>">
                             </figure>
                             <header>
                                 <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>

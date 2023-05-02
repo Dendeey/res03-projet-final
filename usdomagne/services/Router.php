@@ -220,9 +220,9 @@ class Router
                             if(isset($route[3]))
                             {
                                 $this->refereeController->displayFormEditReferee($post, $route[3]);
-                    
-                                
+
                             }
+                            
                             
                         }
                         
@@ -381,7 +381,6 @@ class Router
                             }
                         }
                     }
-                    
 
                 }
 

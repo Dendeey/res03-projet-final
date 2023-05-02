@@ -75,7 +75,6 @@ class MediaManager extends AbstractManager
     }
     
     //Créer un fonction qui delete un media par un id
-    
     public function deleteMediaWithId(int $id) : void
     {
         
@@ -85,7 +84,8 @@ class MediaManager extends AbstractManager
         ];
         $query->execute($parameters);
     }
-    
+
+    //Fonction qui récupère l'image correspondante à son arbitre en lui rentrant en paramètre l'id de l'arbitre    
     public function findMediaByRefereeId(int $id) : array
     {
         $query = $this->db->prepare('SELECT media.* FROM media JOIN referees_media ON media.id = referees_media.media_id JOIN referees ON referees.id = referees_media.referees_id WHERE referees.id = :id');
@@ -113,6 +113,7 @@ class MediaManager extends AbstractManager
 
     }
     
+    //Fonction qui récupère l'image correspondante à son bureau en lui rentrant en paramètre l'id du bureau  
     public function findMediaByOfficeId(int $id) : array
     {
         $query = $this->db->prepare('SELECT media.* FROM media JOIN office_media ON media.id = office_media.media_id JOIN office ON office.id = office_media.office_id WHERE office.id = :id');
@@ -140,6 +141,7 @@ class MediaManager extends AbstractManager
 
     }
     
+    //Fonction qui récupère l'image correspondante à son staff en lui rentrant en paramètre l'id du staff  
     public function findMediaByStaffId(int $id) : array
     {
         $query = $this->db->prepare('SELECT media.* FROM media JOIN staff_media ON media.id = staff_media.media_id JOIN staff ON staff.id = staff_media.staff_id WHERE staff.id = :id');
@@ -167,6 +169,7 @@ class MediaManager extends AbstractManager
 
     }
     
+    //Fonction qui récupère l'image correspondante à son article en lui rentrant en paramètre l'id de l'article 
     public function findMediaByPostId(int $id) : array
     {
         $query = $this->db->prepare('SELECT media.* FROM media JOIN posts_media ON media.id = posts_media.media_id JOIN posts ON posts.id = posts_media.posts_id WHERE posts.id = :id');

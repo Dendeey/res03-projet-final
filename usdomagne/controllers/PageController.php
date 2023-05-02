@@ -4,17 +4,22 @@
 class PageController extends AbstractController
 {
     private PostManager $postManager;
-    private PostController $postController;
+    private MediaManager $mediaManager;
 
     public function __construct()
     {
         $this->postManager = new PostManager();
-        $this->postController = new PostController();
+        $this->mediaManager = new MediaManager();
     }
 
     public function accueil()
     {
-        $this->renderClient("accueil/accueil", ["homepagePosts" => $this->postManager->getThreeLastPosts()]);
+        $posts = $this->postManager->getThreeLastPosts();
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByPostId($post->getId());
+            $post->addMedias($medias[0]);
+        }
+        $this->renderClient("accueil/accueil", ["homepagePosts" => $posts]);
     }
 
     public function actualites()
