@@ -1,1 +1,27 @@
-<h1>Le bureau</h1>
+<main id="bureau">
+    <header>
+        <h1>Bureau</h1>
+        <nav>
+            <ul>
+                <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
+                <li><span>/</span></li>
+                <li>Bureau</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section>
+            <?php foreach($data['pageBureau'] as $bureau){ ?> 
+            <article>
+                <figure>
+                    <img src="/res03-projet-final/usdomagne/<?= $bureau->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité">
+                </figure>
+                <section>
+                    <h2><?= $bureau->getFirstName(); ?><span> </span><?= $bureau->getlastName(); ?></h2>
+                    <h3><?= $bureau->getRole(); ?></h3>
+                </section>
+            </article>
+            <?php } ?>
+        </section>
+    </section>
+</main>

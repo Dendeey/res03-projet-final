@@ -1025,13 +1025,43 @@ table {
     flex-direction: column-reverse;
     gap: 5em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
+    display: flex;
     width: 100%;
+    height: 80%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+    display: grid;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
+    padding-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #034076;
+    cursor: pointer;
+    justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
+    display: none;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:last-of-type {
+    display: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
@@ -1100,6 +1130,7 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
@@ -1131,6 +1162,13 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+    color: #034076;
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Roboto", sans-serif;
@@ -1246,13 +1284,43 @@ table {
     flex-direction: column-reverse;
     gap: 5em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
+    display: flex;
     width: 100%;
+    height: 80%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+    display: grid;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
+    padding-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #034076;
+    cursor: pointer;
+    justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
+    display: none;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:last-of-type {
+    display: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
@@ -1321,6 +1389,7 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
@@ -1352,6 +1421,13 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+    color: #034076;
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Roboto", sans-serif;
@@ -1438,6 +1514,7 @@ table {
   #public-layout > #homepage > section:first-of-type {
     background-color: #F4F4F4;
     justify-content: center;
+    padding: 1em;
   }
   #public-layout > #homepage > section:first-of-type h2 {
     font-family: "Open Sans", sans-serif;
@@ -1461,19 +1538,50 @@ table {
   #public-layout > #homepage > section:nth-of-type(2) {
     margin-top: 6vh;
     background-color: #F4F4F4;
+    padding: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
     display: flex;
     flex-direction: column-reverse;
     gap: 5em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
+    display: flex;
     width: 100%;
+    height: 80%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+    display: grid;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
+    padding-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #034076;
+    cursor: pointer;
+    justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
+    display: none;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:last-of-type {
+    display: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
@@ -1512,6 +1620,7 @@ table {
   #public-layout > #homepage > section:nth-of-type(3) {
     margin-top: 6vh;
     background-color: #F4F4F4;
+    padding: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites {
     display: flex;
@@ -1542,6 +1651,7 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
@@ -1573,6 +1683,13 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+    color: #034076;
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Roboto", sans-serif;
@@ -1703,10 +1820,22 @@ table {
     height: 100%;
     border-radius: 0.5em;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+    display: grid;
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
     padding-top: 1em;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.8em;
+    font-weight: 600;
+    color: #034076;
+    cursor: pointer;
+    justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
     display: none;
@@ -1815,6 +1944,13 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+    color: #034076;
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Roboto", sans-serif;
@@ -1938,20 +2074,45 @@ table {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 3em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure {
-    width: 40vw;
-  }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel article figure img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
+    display: flex;
     width: 100%;
+    height: 80%;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+    display: grid;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
+    padding-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #034076;
+    cursor: pointer;
+    justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
+    display: none;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:last-of-type {
+    display: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
-    width: 100%;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header {
     padding-bottom: 1em;
@@ -2018,6 +2179,7 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
@@ -2049,6 +2211,13 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+    color: #034076;
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Roboto", sans-serif;
@@ -2787,6 +2956,8 @@ table {
     gap: 1em;
     padding: 1em;
     background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
@@ -2820,6 +2991,17 @@ table {
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  #public-layout > #actualites > section:first-of-type > section article:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
   }
 }
 @media (max-width: 426px) {
@@ -3963,6 +4145,521 @@ table {
   }
 }
 @media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #bureau {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #bureau > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #bureau > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #bureau > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #bureau > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #bureau > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #bureau > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #bureau > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #bureau {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #bureau > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #bureau > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #bureau > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #bureau > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #bureau > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #bureau > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #bureau > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #bureau {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #bureau > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #bureau > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #bureau > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #bureau > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #bureau > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #bureau > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #bureau > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #bureau {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #bureau > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #bureau > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #bureau > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #bureau > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #bureau > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #bureau > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #bureau > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #bureau {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #bureau > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #bureau > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #bureau > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #bureau > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #bureau > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #bureau > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #bureau > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #bureau > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (max-width: 426px) {
   #error-page {
     background-color: #F4F4F4;
     width: 100vw;
@@ -4150,6 +4847,1011 @@ table {
   #error-page > section:first-of-type > section h1 a:hover {
     color: white;
     transition: 0.3s;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #staff {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #staff > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #staff > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #staff > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #staff > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #staff > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #staff > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #staff > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #staff > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #staff > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #staff > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #staff {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #staff > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #staff > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #staff > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #staff > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #staff > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #staff > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #staff > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #staff > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #staff > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #staff > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #staff {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #staff > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #staff > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #staff > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #staff > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #staff > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #staff > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #staff > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #staff > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #staff > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #staff > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #staff {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #staff > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #staff > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #staff > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #staff > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #staff > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #staff > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #staff > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #staff > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #staff > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #staff > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #staff {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #staff > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #staff > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #staff > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #staff > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #staff > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #staff > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #staff > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #staff > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #staff > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #staff > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+  #public-layout > #staff > section:first-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #arbitres {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #arbitres > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #arbitres > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #arbitres > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #arbitres > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #arbitres > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #arbitres > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #arbitres > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #arbitres {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #arbitres > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #arbitres > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #arbitres > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #arbitres > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #arbitres > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #arbitres > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #arbitres > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #arbitres {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #arbitres > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #arbitres > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #arbitres > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #arbitres > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #arbitres > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #arbitres > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #arbitres > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #arbitres {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #arbitres > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #arbitres > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #arbitres > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #arbitres > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #arbitres > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #arbitres > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #arbitres > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #arbitres {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #arbitres > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #arbitres > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #arbitres > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #arbitres > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #arbitres > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #arbitres > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #arbitres > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 60%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
+    color: #034076;
+    transition: 0.5s;
   }
 }
 @media (max-width: 426px) {

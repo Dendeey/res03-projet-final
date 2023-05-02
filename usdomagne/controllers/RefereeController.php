@@ -27,13 +27,7 @@ class RefereeController extends AbstractController
     
 
     // METHODES
-    
-    public function arbitres()
-    {
-        $this->renderClient("arbitres/arbitres", ["referees"=>$this->manager->getAllReferees()]);
-    }
-    
-    
+
     public function displayReferees()
     {
         $this->renderAdmin("admin-referees/admin-referees", ["referees"=>$this->manager->getAllReferees()]);

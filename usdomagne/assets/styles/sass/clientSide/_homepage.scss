@@ -79,18 +79,50 @@
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    article
+                    &>article
                     {
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;   
+
                         figure 
                         {
+                            display: flex;
+                            width: 100%;
+                            height: 80%;
                             img 
                             {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
+
+                        footer{
+                            display: grid;
+                            h3{
+                                padding-top: 1em;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                color: #034076;
+                                cursor: pointer;
+                                justify-self: center;
+                            }
+                            h3:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                    
+                    &>article:nth-of-type(2){
+                        display: none;
+                    }
+                    
+                    &>article:last-of-type{
+                        display: none;
                     }
     
                     aside 
@@ -163,6 +195,7 @@
                                 text-transform: uppercase;
                                 border-bottom: #FDCD11 0.5em solid;
                                 color: #034076;
+                                
                             }
                         }
     
@@ -176,6 +209,7 @@
     
                                 img{
                                     width: 100%;
+                                    height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
@@ -209,6 +243,13 @@
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
+                                    cursor: pointer;
+                                }
+                                h3:hover{
+                                    color: #034076;
+                                    transform: scale(1.02);
+                                    transition: 0.5s;
+                                    z-index: 2;
                                 }
                                 p{
                                     font-family: 'Roboto', sans-serif;
@@ -360,18 +401,48 @@
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    article
+                    &>article
                     {
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         figure 
                         {
+                            display: flex;
+                            width: 100%;
+                            height: 80%;
                             img 
                             {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
+                        footer{
+                            display: grid;
+                            h3{
+                                padding-top: 1em;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.4em;
+                                font-weight: 600;
+                                color: #034076;
+                                cursor: pointer;
+                                justify-self: center;
+                            }
+                            h3:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                    
+                    &>article:nth-of-type(2){
+                        display: none;
+                    }
+                    
+                    &>article:last-of-type{
+                        display: none;
                     }
     
                     aside 
@@ -457,6 +528,7 @@
     
                                 img{
                                     width: 100%;
+                                    height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
@@ -490,6 +562,13 @@
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
+                                    cursor: pointer;
+                                }
+                                h3:hover{
+                                    color: #034076;
+                                    transform: scale(1.02);
+                                    transition: 0.5s;
+                                    z-index: 2;
                                 }
                                 p{
                                     font-family: 'Roboto', sans-serif;
@@ -605,6 +684,7 @@
             {
                 background-color: #F4F4F4;
                 justify-content: center;
+                padding: 1em;
 
                 h2 
                 {
@@ -636,23 +716,54 @@
             {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
+                padding: 1em;
 
                 #homepage-carousel{
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    article
+                    &>article
                     {
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         figure 
                         {
+                            display: flex;
+                            width: 100%;
+                            height: 80%;
                             img 
                             {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
+                        footer{
+                            display: grid;
+                            h3{
+                                padding-top: 1em;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.4em;
+                                font-weight: 600;
+                                color: #034076;
+                                cursor: pointer;
+                                justify-self: center;
+                            }
+                            h3:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                    
+                    &>article:nth-of-type(2){
+                        display: none;
+                    }
+                    
+                    &>article:last-of-type{
+                        display: none;
                     }
     
                     aside 
@@ -705,6 +816,7 @@
             {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
+                padding: 1em;
 
                 #homepage-actualites{
                     display: flex;
@@ -738,6 +850,7 @@
     
                                 img{
                                     width: 100%;
+                                    height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
@@ -771,7 +884,15 @@
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
+                                    cursor: pointer;
                                 }
+                                h3:hover{
+                                    color: #034076;
+                                    transform: scale(1.02);
+                                    transition: 0.5s;
+                                    z-index: 2;
+                                }
+
                                 p{
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2em;
@@ -944,10 +1065,21 @@
                         }
                         
                         footer{
+                            display: grid;
                             h3{
                                 padding-top: 1em;
-                                font-family: 'Roboto', sans-serif;
+                                font-family: 'Open Sans', sans-serif;
                                 font-size: 1.8em;
+                                font-weight: 600;
+                                color: #034076;
+                                cursor: pointer;
+                                justify-self: center;
+                            }
+                            h3:hover{
+                                
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
                             }
                         }
                     }
@@ -1040,7 +1172,7 @@
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
-                            margin-top: 6vh;    
+                            margin-top: 6vh;
     
                             figure{
     
@@ -1080,6 +1212,13 @@
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
+                                    cursor: pointer;
+                                }
+                                h3:hover{
+                                    color: #034076;
+                                    transform: scale(1.02);
+                                    transition: 0.5s;
+                                    z-index: 2;
                                 }
                                 p{
                                     font-family: 'Roboto', sans-serif;
@@ -1241,18 +1380,47 @@
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
-                    gap: 5em;
-                    article
+                    gap: 3em;
+                    &>article
                     {
                         figure 
                         {
-                            width: 40vw;
+                            display: flex;
+                            width: 100%;
+                            height: 80%;
                             img 
                             {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
+                        footer{
+                            display: grid;
+                            h3{
+                                padding-top: 1em;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.8em;
+                                font-weight: 600;
+                                color: #034076;
+                                cursor: pointer;
+                                justify-self: center;
+                            }
+                            h3:hover{
+                                
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
+                        }
+                    }
+
+                    &>article:nth-of-type(2){
+                        display: none;
+                    }
+                    
+                    &>article:last-of-type{
+                        display: none;
                     }
     
                     aside 
@@ -1260,7 +1428,6 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
-                        width: 100%;
 
                         header 
                         {
@@ -1342,6 +1509,7 @@
     
                                 img{
                                     width: 100%;
+                                    height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
@@ -1375,6 +1543,13 @@
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
+                                    cursor: pointer;
+                                }
+                                h3:hover{
+                                    color: #034076;
+                                    transform: scale(1.02);
+                                    transition: 0.5s;
+                                    z-index: 2;
                                 }
                                 p{
                                     font-family: 'Roboto', sans-serif;

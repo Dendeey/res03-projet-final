@@ -125,7 +125,7 @@ class Router
 
             else if($route[0] === "arbitres")
             {
-                $this->refereeController->arbitres();
+                $this->pageController->arbitres();
             }
 
             else if($route[0] === "partenaires")

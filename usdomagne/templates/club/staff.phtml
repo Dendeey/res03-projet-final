@@ -1,1 +1,27 @@
-<h1>Staff</h1>
+<main id="staff">
+    <header>
+        <h1>Staff</h1>
+        <nav>
+            <ul>
+                <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
+                <li><span>/</span></li>
+                <li>Staff</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section>
+            <?php foreach($data['pageStaff'] as $staff){ ?> 
+            <article>
+                <figure>
+                    <img src="/res03-projet-final/usdomagne/<?= $staff->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité">
+                </figure>
+                <section>
+                    <h2><?= $staff->getFirstName(); ?><span> </span><?= $staff->getlastName(); ?></h2>
+                    <h3><?= $staff->getRole(); ?></h3>
+                </section>
+            </article>
+            <?php } ?>
+        </section>
+    </section>
+</main>

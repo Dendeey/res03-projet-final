@@ -1,16 +1,26 @@
 <main id="arbitres">
     <header>
-        <h1>Arbitres</h1>
+        <h1>Arbitrage</h1>
+        <nav>
+            <ul>
+                <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
+                <li><span>/</span></li>
+                <li>Arbitrage</li>
+            </ul>
+        </nav>
     </header>
     <section>
-        <?php foreach($data["referees"] as $referee){ ?>
-        <article>
-            <figure>
-                <img src="#">
-            </figure>
-            <h2><?= $referee->getFirstName(); ?></h2>
-            <h3><?= $referee->getLastName(); ?></h3>
-        </article>
-        <?php } ?>
+        <section>
+            <?php foreach($data['pageArbitrage'] as $arbitre){ ?> 
+            <article>
+                <figure>
+                    <img src="/res03-projet-final/usdomagne/<?= $arbitre->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité">
+                </figure>
+                <section>
+                    <h2><?= $arbitre->getFirstName(); ?><span> </span><?= $arbitre->getlastName(); ?></h2>
+                </section>
+            </article>
+            <?php } ?>
+        </section>
     </section>
 </main>

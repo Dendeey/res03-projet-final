@@ -8,7 +8,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#actualites {
+        &>#arbitres {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -64,13 +64,17 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 2em;
+                    justify-items: center;
 
                     article {
                         display: flex;
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        width: 60%;
                         background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
 
                         figure {
 
@@ -78,39 +82,32 @@
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
+                            img:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
                         }
 
-                        header {
+                        section {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 1em;
 
-                            a {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                background-color: #034076;
-                                color: white;
-                                border-radius: 1em;
-                                text-decoration: none;
-                                padding: 0.5em;
+                            h2{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: black;
                             }
-                            span {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                align-self: center;
-                            }
-                        }
-                        h3 {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.5em;
-                            font-weight: 800;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.2em;
-                        }
 
+                            h2:hover{
+                                color: #034076;
+                                transition: 0.5s;
+                            }
+
+                        }
                     }
                 }
             }
@@ -128,7 +125,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#actualites {
+        &>#arbitres {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -184,13 +181,17 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 2em;
+                    justify-items: center;
 
                     article {
                         display: flex;
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        width: 60%;
                         background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
 
                         figure {
 
@@ -198,38 +199,35 @@
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
+                            img:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
                         }
 
-                        header {
+                        section {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 1em;
 
-                            a {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                background-color: #034076;
-                                color: white;
-                                border-radius: 1em;
-                                text-decoration: none;
-                                padding: 0.5em;
+                            h2{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: black;
                             }
-                            span {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                align-self: center;
+
+                            h2:hover{
+                                color: #034076;
+                                transition: 0.5s;
                             }
+
+                            
+
                         }
-                        h3 {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.5em;
-                            font-weight: 800;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.2em;
-                        }
+                        
 
                     }
                 }
@@ -248,7 +246,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#actualites {
+        &>#arbitres {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -304,13 +302,17 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     gap: 2em;
+                    justify-items: center;
 
                     article {
                         display: flex;
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        width: 60%;
                         background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
 
                         figure {
 
@@ -318,38 +320,35 @@
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
+                            img:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
                         }
 
-                        header {
+                        section {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 1em;
 
-                            a {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                background-color: #034076;
-                                color: white;
-                                border-radius: 1em;
-                                text-decoration: none;
-                                padding: 0.5em;
+                            h2{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: black;
                             }
-                            span {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                align-self: center;
+
+                            h2:hover{
+                                color: #034076;
+                                transition: 0.5s;
                             }
+
+                            
+
                         }
-                        h3 {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.5em;
-                            font-weight: 800;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.2em;
-                        }
+                        
 
                     }
                 }
@@ -369,7 +368,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#actualites {
+        &>#arbitres {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -425,13 +424,17 @@
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 2em;
+                    justify-items: center;
 
                     article {
                         display: flex;
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        width: 60%;
                         background-color: white;
+                        border-radius: 0.5em;
+                        cursor: pointer;
 
                         figure {
 
@@ -439,38 +442,35 @@
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
+                            img:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
                         }
 
-                        header {
+                        section {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 1em;
 
-                            a {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                background-color: #034076;
-                                color: white;
-                                border-radius: 1em;
-                                text-decoration: none;
-                                padding: 0.5em;
+                            h2{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: black;
                             }
-                            span {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                align-self: center;
+
+                            h2:hover{
+                                color: #034076;
+                                transition: 0.5s;
                             }
+
+                           
+
                         }
-                        h3 {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.5em;
-                            font-weight: 800;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.2em;
-                        }
+                        
 
                     }
                 }
@@ -489,7 +489,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#actualites {
+        &>#arbitres {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -543,14 +543,16 @@
                 &>section {
                     grid-column: 2/3;
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
                     gap: 2em;
+                    justify-items: center;
 
                     article {
                         display: flex;
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        width: 60%;
                         background-color: white;
                         border-radius: 0.5em;
                         cursor: pointer;
@@ -561,51 +563,35 @@
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
+                            img:hover{
+                                transform: scale(1.02);
+                                transition: 0.5s;
+                                z-index: 2;
+                            }
                         }
 
-                        header {
+                        section {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 1em;
 
-                            a {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                background-color: #034076;
-                                color: white;
-                                border-radius: 1em;
-                                text-decoration: none;
-                                padding: 0.5em;
+                            h2{
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: black;
                             }
-                            span {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 1em;
-                                align-self: center;
+
+                            h2:hover{
+                                color: #034076;
+                                transition: 0.5s;
                             }
-                        }
-                        h3 {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.5em;
-                            font-weight: 800;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.2em;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            display: -webkit-box;
-                                    -webkit-line-clamp: 2; /* number of lines to show */
-                                            line-clamp: 2;
-                                    -webkit-box-orient: vertical;
-                        }
 
-                    }
 
-                    article:hover{
-                        transform: scale(1.02);
-                        transition: 0.5s;
-                        z-index: 2;
+                        }
+                        
+
                     }
                 }
             }

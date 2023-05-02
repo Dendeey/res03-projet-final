@@ -5,11 +5,17 @@ class PageController extends AbstractController
 {
     private PostManager $postManager;
     private MediaManager $mediaManager;
+    private OfficeManager $officeManager;
+    private StaffManager $staffManager;
+    private RefereeManager $refereeManager;
 
     public function __construct()
     {
         $this->postManager = new PostManager();
         $this->mediaManager = new MediaManager();
+        $this->officeManager = new OfficeManager();
+        $this->staffManager = new StaffManager();
+        $this->refereeManager = new RefereeManager();
     }
 
     public function accueil()
@@ -25,8 +31,13 @@ class PageController extends AbstractController
 
     public function actualites()
     {
+        $posts = $this->postManager->getAllPosts();
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByPostId($post->getId());
+            $post->addMedias($medias[0]);
+        }
 
-        $this->renderClient("actualites/actualites", ["pageActualites" => $this->postManager->getAllPosts()]);
+        $this->renderClient("actualites/actualites", ["pageActualites" => $posts]);
     }
 
     public function ecoleDeFoot()
@@ -73,26 +84,65 @@ class PageController extends AbstractController
 
     public function boutique()
     {
-
         $this->renderClient("boutique/boutique", []);
     }
 
-    public function club()
-    {
+    // public function club()
+    // {
 
-        $this->renderClient("club/club", []);
-    }
+    //     $this->renderClient("club/club", []);
+    // }
 
     public function histoire()
     {
 
-        $this->renderClient("histoire/histoire", []);
+        $this->renderClient("club/histoire", []);
+    }
+
+    public function bureau()
+    {
+        $posts = $this->officeManager->getAllOffices();
+        
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByOfficeId($post->getId());
+            $post->addMedias($medias[0]);
+        }
+        // var_dump($posts);
+        // die;
+        $this->renderClient("club/bureau", ["pageBureau" => $posts]);
+    }
+
+    public function staff()
+    {
+        $posts = $this->staffManager->getAllStaffs();
+        
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByStaffId($post->getId());
+            $post->addMedias($medias[0]);
+        }
+        // var_dump($posts);
+        // die;
+        $this->renderClient("club/staff", ["pageStaff" => $posts]);
     }
 
     public function infrastructures()
     {
 
         $this->renderClient("infrastructures/infrastructures", []);
+    }
+
+    public function arbitres()
+    {
+        $posts = $this->refereeManager->getAllReferees();
+        
+        foreach($posts as $post){
+            $medias = $this->mediaManager->findMediaByRefereeId($post->getId());
+            $post->addMedias($medias[0]);
+        }
+        // var_dump($posts);
+        // die;
+        
+        $this->renderClient("arbitres/arbitres", ["pageArbitrage" => $posts]);
     }
 
     public function partenaires()
