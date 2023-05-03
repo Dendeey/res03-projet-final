@@ -1074,6 +1074,10 @@ table {
     cursor: pointer;
     justify-self: center;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+    color: #034076;
+    text-decoration: none;
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -1338,6 +1342,10 @@ table {
     color: #034076;
     cursor: pointer;
     justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+    color: #034076;
+    text-decoration: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
     transform: scale(1.02);
@@ -1606,6 +1614,10 @@ table {
     cursor: pointer;
     justify-self: center;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+    color: #034076;
+    text-decoration: none;
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -1871,6 +1883,10 @@ table {
     color: #034076;
     cursor: pointer;
     justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+    color: #034076;
+    text-decoration: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
     transform: scale(1.02);
@@ -2143,6 +2159,10 @@ table {
     color: #034076;
     cursor: pointer;
     justify-self: center;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+    color: #034076;
+    text-decoration: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
     transform: scale(1.02);

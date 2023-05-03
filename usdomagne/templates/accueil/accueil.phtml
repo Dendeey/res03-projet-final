@@ -34,7 +34,7 @@
                     <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
                 </figure>
                 <footer>
-                    <h3><span>"</span><?= $post->getTitle(); ?><span>"</span></h3>
+                    <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><span>"</span><?= $post->getTitle(); ?><span>"</span></a></h3>
                 </footer>
             </article>
             <?php } ?>
