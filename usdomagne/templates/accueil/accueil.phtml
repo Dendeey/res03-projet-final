@@ -23,13 +23,15 @@
                         document.addEventListener("DOMContentLoaded", _rsz)
                     }
                 }
-            </script><iframe id="643673b83712f009c955bca2" src="https://scorenco.com/widget/643673b83712f009c955bca2/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
+            </script><iframe id="643673b83712f009c955bca2" src="https://scorenco.com/widget/643673b83712f009c955bca2/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;"></iframe>
         </article>
     </section>
     <section>
         <section id="homepage-carousel">
+            <h2 class="sr-only">Section avec un caroussel des actualités</h2>
             <?php foreach($data['homepagePosts'] as $post){ ?>
             <article>
+                <h2 class="sr-only">Actualité du caroussel</h2>
                 <figure>
                     <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
                 </figure>
@@ -44,6 +46,7 @@
                 </header>
                 <?php foreach($data['homepagePosts'] as $post){ ?>
                 <article>
+                    <h2 class="sr-only">Article dans la section "Dernières minutes"</h2>
                     <span><?= $post->getDate(); ?></span>
                     <p><?= $post->getTitle(); ?></p>
                 </article>
@@ -53,17 +56,21 @@
     </section>
     <section>
         <section id="homepage-actualites">
+            <h2 class="sr-only">Section avec les trois dernières actualités</h2>
             <section>
+                <h2 class="sr-only">Section dans la section avec les trois dernières actualités"</h2>
                 <header>
                     <h2>Actualités</h2>
                 </header>
                 <?php 
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
+                        <h2 class="sr-only">Un des trois derniers articles</h2>
                             <figure>
                                 <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actu">
                             </figure>
                         <section>
+                            <h2 class="sr-only">Section de l'article</h2>
                             <header>
                                 <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
                                 <span><?= $post->getDate(); ?></span>
@@ -93,12 +100,14 @@
                             document.addEventListener("DOMContentLoaded", _rsz)
                         }
                     }
-                </script><iframe id="643ea8e891d359679f19a24e" src="https://scorenco.com/widget/643ea8e891d359679f19a24e/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe>
+                </script><iframe id="643ea8e891d359679f19a24e" src="https://scorenco.com/widget/643ea8e891d359679f19a24e/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;"></iframe>
             </aside>
         </section>
     </section>
     <section>
+        <h2 class="sr-only">Section partenaires</h2>
         <section id="partenaires">
+            <h2 class="sr-only">Section partenaires</h2>
             <header>
                 <h2>Nos partenaires</h2>
             </header>
