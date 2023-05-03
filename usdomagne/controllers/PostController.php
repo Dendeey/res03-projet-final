@@ -146,5 +146,22 @@ class PostController extends AbstractController
         
         header('Location: /res03-projet-final/usdomagne/admin/articles');
     }
+
+    public function actu(int $id){
+        //récupération de l'article
+        $actuToShow = $this->manager->getPostById($id);
+        $imgActuToShow = $this->mediaManager->findMediaByPostId($id);
+        
+        $actuToShow->addMedias($imgActuToShow[0]);
+        // var_dump($actuToShow);
+        // die;
+        
+        // stockage de l'article dans un tableau
+        $tab = [];
+        $tab[] = $actuToShow;
+
+        // affichage de la page avec l'article
+        $this->renderClient("actualites/actu", ["actus" => $tab]);
+    }
 }
 ?>

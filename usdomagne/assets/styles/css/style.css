@@ -1186,8 +1186,14 @@ table {
     text-transform: uppercase;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
     color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
@@ -1445,8 +1451,14 @@ table {
     text-transform: uppercase;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
     color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
@@ -1707,8 +1719,14 @@ table {
     text-transform: uppercase;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
     color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
@@ -1968,8 +1986,14 @@ table {
     text-transform: uppercase;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
     color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
@@ -2235,8 +2259,14 @@ table {
     text-transform: uppercase;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
     color: #034076;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
@@ -3112,6 +3142,13 @@ table {
     overflow: hidden;
     padding-bottom: 0.15em;
   }
+  #public-layout > #actualites > section:first-of-type > section article h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
+    color: #034076;
+  }
   #public-layout > #actualites > section:first-of-type > section article h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -3121,7 +3158,7 @@ table {
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.5em;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
@@ -7236,6 +7273,476 @@ table {
     font-size: 1.8em;
     text-align: center;
     color: #034076;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actu {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actu > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actu > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actu > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actu > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actu > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section figure {
+    width: 80%;
+    justify-self: center;
+  }
+  #public-layout > #actu > section:first-of-type > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actu > section:first-of-type > section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section header {
+    justify-items: center;
+  }
+  #public-layout > #actu > section:first-of-type > section section header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > section:first-of-type > section section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actu {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actu > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actu > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actu > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actu > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actu > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section figure {
+    width: 80%;
+    justify-self: center;
+  }
+  #public-layout > #actu > section:first-of-type > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actu > section:first-of-type > section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section header {
+    justify-items: center;
+  }
+  #public-layout > #actu > section:first-of-type > section section header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > section:first-of-type > section section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actu {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actu > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actu > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actu > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actu > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actu > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section figure {
+    width: 80%;
+    justify-self: center;
+  }
+  #public-layout > #actu > section:first-of-type > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actu > section:first-of-type > section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section header {
+    justify-items: center;
+  }
+  #public-layout > #actu > section:first-of-type > section section header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > section:first-of-type > section section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actu {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actu > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actu > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actu > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actu > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actu > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section figure {
+    width: 80%;
+    justify-self: center;
+  }
+  #public-layout > #actu > section:first-of-type > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actu > section:first-of-type > section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section header {
+    justify-items: center;
+  }
+  #public-layout > #actu > section:first-of-type > section section header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > section:first-of-type > section section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #actu {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #actu > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #actu > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #actu > header nav ul li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > header nav ul li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #actu > header nav ul li span {
+    font-family: "Open Sans", sans-serif;
+  }
+  #public-layout > #actu > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2em;
+  }
+  #public-layout > #actu > section:first-of-type > section figure {
+    width: 80%;
+    justify-self: center;
+  }
+  #public-layout > #actu > section:first-of-type > section figure img {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actu > section:first-of-type > section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section header {
+    justify-items: center;
+  }
+  #public-layout > #actu > section:first-of-type > section section header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #actu > section:first-of-type > section section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #actu > section:first-of-type > section section span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
   }
 }
 @media (max-width: 426px) {

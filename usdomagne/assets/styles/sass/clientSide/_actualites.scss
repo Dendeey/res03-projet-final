@@ -631,6 +631,7 @@
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 2em;
+                    
 
                     article {
                         display: flex;
@@ -681,6 +682,14 @@
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             padding-bottom: 0.15em;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            a:hover{
+                                color: #034076;
+                            }
                         }
                         
                         h3:hover{
@@ -692,7 +701,7 @@
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
-                            padding-bottom: 0.6em;
+                            padding-bottom: 0.5em;
                             display: -webkit-box;
                             -webkit-line-clamp: 2; /* number of lines to show */
                             -webkit-box-orient: vertical;

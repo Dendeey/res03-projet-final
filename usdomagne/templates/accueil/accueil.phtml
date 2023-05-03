@@ -60,7 +60,6 @@
                 <?php 
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
-
                             <figure>
                                 <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actu">
                             </figure>
@@ -69,7 +68,7 @@
                                 <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
                                 <span><?= $post->getDate(); ?></span>
                             </header>
-                            <h3><?= $post->getTitle(); ?></h3>
+                            <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
                             <p><?= $post->getContent(); ?></p>
                         </section>
                     </article>

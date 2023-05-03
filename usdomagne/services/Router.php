@@ -59,7 +59,15 @@ class Router
             
             if($route[0] === "actualites")
             {
-                $this->pageController->actualites();
+                if(!isset($route[1])){
+                    $this->pageController->actualites();
+                }
+                else if($route[1] === "actu"){
+                    if(isset($route[2])){
+                        $this->postController->actu($route[2]);
+                    }
+                }
+                
             }
             
             else if($route[0] === "ecole-de-foot")

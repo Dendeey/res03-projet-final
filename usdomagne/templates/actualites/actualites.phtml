@@ -20,7 +20,7 @@
                     <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
                     <span><?= $actu->getDate(); ?></span>
                 </header>
-                <h3><?= $actu->getTitle(); ?></h3>
+                <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $actu->getId(); ?>"><?= $actu->getTitle(); ?></a></h3>
                 <p><?= $actu->getContent(); ?></p>
             </article>
             <?php } ?>

@@ -244,9 +244,16 @@
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+
+                                    a:hover{
+                                        color: #034076;
+                                    }
                                 }
                                 h3:hover{
-                                    color: #034076;
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
@@ -563,9 +570,16 @@
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+
+                                    a:hover{
+                                        color: #034076;
+                                    }
                                 }
                                 h3:hover{
-                                    color: #034076;
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
@@ -885,9 +899,16 @@
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+
+                                    a:hover{
+                                        color: #034076;
+                                    }
                                 }
                                 h3:hover{
-                                    color: #034076;
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
@@ -1213,9 +1234,16 @@
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+
+                                    a:hover{
+                                        color: #034076;
+                                    }
                                 }
                                 h3:hover{
-                                    color: #034076;
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
@@ -1544,9 +1572,17 @@
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
+
+                                    a{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+
+                                    a:hover{
+                                        color: #034076;
+                                    }
                                 }
                                 h3:hover{
-                                    color: #034076;
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
