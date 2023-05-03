@@ -128,7 +128,7 @@ class PageController extends AbstractController
     public function infrastructures()
     {
 
-        $this->renderClient("infrastructures/infrastructures", []);
+        $this->renderClient("club/infrastructures", []);
     }
 
     public function arbitres()

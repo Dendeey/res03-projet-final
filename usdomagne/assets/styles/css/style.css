@@ -569,6 +569,7 @@ table {
     top: 0;
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
+    z-index: 100;
   }
   #client-header .sideMenu {
     position: fixed;
@@ -703,6 +704,10 @@ table {
     font-weight: 600;
     font-size: 1.2em;
   }
+  #client-header nav ul:first-of-type li > a:hover {
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
+  }
   #client-header nav figure {
     justify-self: center;
     align-self: center;
@@ -732,6 +737,10 @@ table {
     font-weight: 600;
     font-size: 1.2em;
   }
+  #client-header nav ul:last-of-type .items > a:hover {
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
+  }
   #client-header nav ul:last-of-type .items span {
     align-self: center;
   }
@@ -755,6 +764,8 @@ table {
   }
   #client-header nav ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover > a {
     color: #034076;
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
   }
   #client-header nav ul:last-of-type .items:hover .submenu-headerLaptop {
     display: block;
@@ -775,6 +786,7 @@ table {
     top: 0;
     transition: top 0.3s;
     border-bottom: 5px solid #FDCD11;
+    z-index: 100;
   }
   #client-header .sideMenu {
     position: fixed;
@@ -2558,9 +2570,15 @@ table {
     gap: 1em;
     padding: 1em;
     background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header {
@@ -2587,10 +2605,27 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.25em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
+    padding-bottom: 0.8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 @media (min-width: 427px) and (max-width: 767px) {
@@ -2660,9 +2695,15 @@ table {
     gap: 1em;
     padding: 1em;
     background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header {
@@ -2689,10 +2730,27 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.15em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
+    padding-bottom: 0.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
@@ -2762,9 +2820,15 @@ table {
     gap: 1em;
     padding: 1em;
     background-color: white;
+    border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header {
@@ -2791,10 +2855,27 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.15em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
+    padding-bottom: 0.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439.99px) {
@@ -2863,10 +2944,16 @@ table {
     flex-direction: column;
     gap: 1em;
     padding: 1em;
+    border-radius: 0.5em;
     background-color: white;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header {
@@ -2893,10 +2980,27 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.15em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
+    padding-bottom: 0.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {
@@ -2967,10 +3071,14 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
-    cursor: pointer;
+  }
+  #public-layout > #actualites > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #actualites > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header {
@@ -2997,21 +3105,27 @@ table {
     font-size: 1.5em;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.15em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding-bottom: 0.6em;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
-    line-clamp: 2;
     -webkit-box-orient: vertical;
-  }
-  #public-layout > #actualites > section:first-of-type > section article:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    z-index: 2;
+    overflow: hidden;
   }
 }
 @media (max-width: 426px) {
@@ -4220,14 +4334,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #bureau > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #bureau > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #bureau > section:first-of-type > section article figure img:hover {
@@ -4323,11 +4442,15 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
+  }
+  #public-layout > #bureau > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
   }
   #public-layout > #bureau > section:first-of-type > section article figure img {
     width: 100%;
@@ -4426,14 +4549,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #bureau > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #bureau > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #bureau > section:first-of-type > section article figure img:hover {
@@ -4529,14 +4657,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #bureau > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #bureau > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #bureau > section:first-of-type > section article figure img:hover {
@@ -4632,14 +4765,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #bureau > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #bureau > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #bureau > section:first-of-type > section article figure img:hover {
@@ -4925,14 +5063,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #staff > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #staff > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #staff > section:first-of-type > section article figure img:hover {
@@ -5028,14 +5171,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #staff > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #staff > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #staff > section:first-of-type > section article figure img:hover {
@@ -5131,14 +5279,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #staff > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #staff > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #staff > section:first-of-type > section article figure img:hover {
@@ -5234,14 +5387,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #staff > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #staff > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #staff > section:first-of-type > section article figure img:hover {
@@ -5337,14 +5495,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #staff > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #staff > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #staff > section:first-of-type > section article figure img:hover {
@@ -5440,14 +5603,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #arbitres > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #arbitres > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
@@ -5538,14 +5706,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #arbitres > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #arbitres > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
@@ -5636,14 +5809,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #arbitres > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #arbitres > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
@@ -5734,14 +5912,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #arbitres > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #arbitres > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
@@ -5832,14 +6015,19 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em;
-    width: 60%;
+    padding: 0.5em;
+    width: 80%;
     background-color: white;
     border-radius: 0.5em;
     cursor: pointer;
   }
+  #public-layout > #arbitres > section:first-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
   #public-layout > #arbitres > section:first-of-type > section article figure img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
   #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
@@ -6592,6 +6780,462 @@ table {
   #public-layout > #contact > section:first-of-type > section section ul li span {
     justify-self: center;
     align-self: center;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #infrastructures {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #infrastructures > header {
+    margin-top: 16vh;
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #infrastructures > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    text-align: center;
+    color: #034076;
+  }
+  #public-layout > #infrastructures > section:first-of-type {
+    padding-bottom: 3em;
+  }
+  #public-layout > #infrastructures > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    width: 80%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #034076;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #infrastructures {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #infrastructures > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #infrastructures > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #infrastructures > section:first-of-type {
+    padding-bottom: 3em;
+  }
+  #public-layout > #infrastructures > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    width: 80%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #034076;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #infrastructures {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #infrastructures > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #infrastructures > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #infrastructures > section:first-of-type {
+    padding-bottom: 3em;
+  }
+  #public-layout > #infrastructures > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    width: 80%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #034076;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #infrastructures {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #infrastructures > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #infrastructures > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #infrastructures > section:first-of-type {
+    padding-bottom: 3em;
+  }
+  #public-layout > #infrastructures > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    width: 80%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #034076;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #infrastructures {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #infrastructures > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #infrastructures > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #infrastructures > section:first-of-type {
+    padding-bottom: 3em;
+  }
+  #public-layout > #infrastructures > section:first-of-type h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 2em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    width: 80%;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure {
+    width: 100%;
+    height: 100%;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article figure img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 2;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #infrastructures > section:last-of-type > section article section h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #034076;
   }
 }
 @media (max-width: 426px) {

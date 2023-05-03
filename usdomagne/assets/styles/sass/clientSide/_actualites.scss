@@ -71,11 +71,14 @@
                         gap: 1em;
                         padding: 1em;
                         background-color: white;
+                        border-radius: 0.5em;
 
                         figure {
-
+                            width: 100%;
+                            height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
@@ -105,10 +108,28 @@
                             font-size: 1.5em;
                             font-weight: 800;
                             text-transform: uppercase;
+                            cursor: pointer;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            padding-bottom: 0.25em;
+                        }
+                        
+                        h3:hover{
+                        transform: scale(1.02);
+                        transition: 0.5s;
+                        z-index: 2;
+                        color: #034076;
                         }
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
+                            padding-bottom: 0.8em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
 
                     }
@@ -191,11 +212,14 @@
                         gap: 1em;
                         padding: 1em;
                         background-color: white;
+                        border-radius: 0.5em;
 
                         figure {
-
+                            width: 100%;
+                            height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
@@ -225,10 +249,28 @@
                             font-size: 1.5em;
                             font-weight: 800;
                             text-transform: uppercase;
+                            cursor: pointer;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            padding-bottom: 0.15em;
+                        }
+                        
+                        h3:hover{
+                        transform: scale(1.02);
+                        transition: 0.5s;
+                        z-index: 2;
+                        color: #034076;
                         }
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
+                            padding-bottom: 0.6em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
 
                     }
@@ -311,11 +353,14 @@
                         gap: 1em;
                         padding: 1em;
                         background-color: white;
+                        border-radius: 0.5em;
 
                         figure {
-
+                            width: 100%;
+                            height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
@@ -345,10 +390,28 @@
                             font-size: 1.5em;
                             font-weight: 800;
                             text-transform: uppercase;
+                            cursor: pointer;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            padding-bottom: 0.15em;
+                        }
+                        
+                        h3:hover{
+                        transform: scale(1.02);
+                        transition: 0.5s;
+                        z-index: 2;
+                        color: #034076;
                         }
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
+                            padding-bottom: 0.6em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
 
                     }
@@ -358,7 +421,8 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439.99px) {
+@media (min-width: 1024px) and (max-width: 1439.99px)
+{
 
     html {
         font-size: 14px;
@@ -431,12 +495,15 @@
                         flex-direction: column;
                         gap: 1em;
                         padding: 1em;
+                        border-radius: 0.5em;
                         background-color: white;
 
                         figure {
-
+                            width: 100%;
+                            height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
@@ -466,10 +533,29 @@
                             font-size: 1.5em;
                             font-weight: 800;
                             text-transform: uppercase;
+                            cursor: pointer;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            padding-bottom: 0.15em;
+                
+                        }
+                        
+                        h3:hover{
+                        transform: scale(1.02);
+                        transition: 0.5s;
+                        z-index: 2;
+                        color: #034076;
                         }
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
+                            padding-bottom: 0.6em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
 
                     }
@@ -553,12 +639,13 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
-                        cursor: pointer;
 
                         figure {
-
+                                width: 100%;
+                                height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
@@ -588,24 +675,30 @@
                             font-size: 1.5em;
                             font-weight: 800;
                             text-transform: uppercase;
+                            cursor: pointer;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            padding-bottom: 0.15em;
+                        }
+                        
+                        h3:hover{
+                        transform: scale(1.02);
+                        transition: 0.5s;
+                        z-index: 2;
+                        color: #034076;
                         }
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
+                            padding-bottom: 0.6em;
                             display: -webkit-box;
-                                    -webkit-line-clamp: 2; /* number of lines to show */
-                                            line-clamp: 2;
-                                    -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
 
-                    }
-
-                    article:hover{
-                        transform: scale(1.02);
-                        transition: 0.5s;
-                        z-index: 2;
                     }
                 }
             }

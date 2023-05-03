@@ -8,7 +8,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#bureau {
+        &>#infrastructures {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -16,44 +16,37 @@
 
             &>header {
                 margin-top: 16vh;
-                padding: 4em;
+                padding: 2em 0 2em 0;
                 display: flex;
                 flex-direction: column;
                 gap: 2em;
 
                 h1 {
                     font-family: 'Open Sans', sans-serif;
-                    font-size: 3em;
+                    font-size: 2em;
                     font-weight: 600;
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.1em;
+                    text-align: center;
                     color: #034076;
                 }
-                nav {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.2em;
-                        li {
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 1.1em;
-                            a {
-                                text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
-                                color: #034076;
-                                border-bottom: 0.1em solid #034076;
-                            }
-                            span {
-
-                                font-family: 'Open Sans', sans-serif;
-                            }
-                        }
-                    }
+            }
+            
+            &>section:first-of-type{
+                padding-bottom: 3em;
+                    
+                h2{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.6em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076; 
+                    text-align: center;
                 }
             }
 
-            &>section:first-of-type {
+            &>section:last-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -96,28 +89,14 @@
                             flex-direction: column;
                             gap: 1em;
 
-                            h2{
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.2em;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                color: black;
-                            }
-
-                            h2:hover{
-                                color: #034076;
-                                transition: 0.5s;
-                            }
-
                             h3{
                                 font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
+                                font-size: 1.8em;
+                                text-align: center;
                                 color: #034076;
                             }
 
                         }
-                        
-
                     }
                 }
             }
@@ -135,7 +114,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#bureau {
+        &>#infrastructures {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -156,31 +135,23 @@
                     text-decoration: underline #FDCD11 0.1em;
                     color: #034076;
                 }
-                nav {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.2em;
-                        li {
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 1.1em;
-                            a {
-                                text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
-                                color: #034076;
-                                border-bottom: 0.1em solid #034076;
-                            }
-                            span {
-
-                                font-family: 'Open Sans', sans-serif;
-                            }
-                        }
-                    }
+            }
+            
+            &>section:first-of-type{
+                padding-bottom: 3em;
+                    
+                h2{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.8em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076; 
+                    text-align: center;
                 }
             }
 
-            &>section:first-of-type {
+            &>section:last-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -208,6 +179,7 @@
                                 height: 100%;
                             img {
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                             img:hover{
@@ -222,28 +194,14 @@
                             flex-direction: column;
                             gap: 1em;
 
-                            h2{
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.2em;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                color: black;
-                            }
-
-                            h2:hover{
-                                color: #034076;
-                                transition: 0.5s;
-                            }
-
                             h3{
                                 font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
+                                font-size: 1.8em;
+                                text-align: center;
                                 color: #034076;
                             }
 
                         }
-                        
-
                     }
                 }
             }
@@ -261,7 +219,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#bureau {
+        &>#infrastructures {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -282,31 +240,23 @@
                     text-decoration: underline #FDCD11 0.1em;
                     color: #034076;
                 }
-                nav {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.2em;
-                        li {
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 1.1em;
-                            a {
-                                text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
-                                color: #034076;
-                                border-bottom: 0.1em solid #034076;
-                            }
-                            span {
-
-                                font-family: 'Open Sans', sans-serif;
-                            }
-                        }
-                    }
+            }
+            
+            &>section:first-of-type{
+                padding-bottom: 3em;
+                    
+                h2{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.8em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076; 
+                    text-align: center;
                 }
             }
 
-            &>section:first-of-type {
+            &>section:last-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -315,7 +265,7 @@
                 &>section {
                     grid-column: 2/3;
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: 1fr;
                     gap: 2em;
                     justify-items: center;
 
@@ -349,28 +299,14 @@
                             flex-direction: column;
                             gap: 1em;
 
-                            h2{
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.2em;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                color: black;
-                            }
-
-                            h2:hover{
-                                color: #034076;
-                                transition: 0.5s;
-                            }
-
                             h3{
                                 font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
+                                font-size: 1.8em;
+                                text-align: center;
                                 color: #034076;
                             }
 
                         }
-                        
-
                     }
                 }
             }
@@ -389,7 +325,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#bureau {
+        &>#infrastructures {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -410,31 +346,23 @@
                     text-decoration: underline #FDCD11 0.1em;
                     color: #034076;
                 }
-                nav {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.2em;
-                        li {
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 1.1em;
-                            a {
-                                text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
-                                color: #034076;
-                                border-bottom: 0.1em solid #034076;
-                            }
-                            span {
-
-                                font-family: 'Open Sans', sans-serif;
-                            }
-                        }
-                    }
+            }
+            
+            &>section:first-of-type{
+                padding-bottom: 3em;
+                    
+                h2{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.8em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076; 
+                    text-align: center;
                 }
             }
 
-            &>section:first-of-type {
+            &>section:last-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -443,7 +371,7 @@
                 &>section {
                     grid-column: 2/3;
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: 1fr;
                     gap: 2em;
                     justify-items: center;
 
@@ -477,28 +405,14 @@
                             flex-direction: column;
                             gap: 1em;
 
-                            h2{
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.2em;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                color: black;
-                            }
-
-                            h2:hover{
-                                color: #034076;
-                                transition: 0.5s;
-                            }
-
                             h3{
                                 font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
+                                font-size: 1.8em;
+                                text-align: center;
                                 color: #034076;
                             }
 
                         }
-                        
-
                     }
                 }
             }
@@ -516,7 +430,7 @@
         min-height: 100vh;
         width: 100vw;
 
-        &>#bureau {
+        &>#infrastructures {
             background-color: #F4F4F4;
             width: 100vw;
             display: flex;
@@ -537,31 +451,23 @@
                     text-decoration: underline #FDCD11 0.1em;
                     color: #034076;
                 }
-                nav {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.2em;
-                        li {
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 1.1em;
-                            a {
-                                text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
-                                color: #034076;
-                                border-bottom: 0.1em solid #034076;
-                            }
-                            span {
-
-                                font-family: 'Open Sans', sans-serif;
-                            }
-                        }
-                    }
+            }
+            
+            &>section:first-of-type{
+                padding-bottom: 3em;
+                    
+                h2{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.8em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076; 
+                    text-align: center;
                 }
             }
 
-            &>section:first-of-type {
+            &>section:last-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
@@ -570,7 +476,7 @@
                 &>section {
                     grid-column: 2/3;
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: 1fr;
                     gap: 2em;
                     justify-items: center;
 
@@ -604,28 +510,14 @@
                             flex-direction: column;
                             gap: 1em;
 
-                            h2{
-                                font-family: 'Open Sans', sans-serif;
-                                font-size: 1.2em;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                                color: black;
-                            }
-
-                            h2:hover{
-                                color: #034076;
-                                transition: 0.5s;
-                            }
-
                             h3{
                                 font-family: 'Open Sans', sans-serif;
-                                font-size: 1.1em;
+                                font-size: 1.8em;
+                                text-align: center;
                                 color: #034076;
                             }
 
                         }
-                        
-
                     }
                 }
             }

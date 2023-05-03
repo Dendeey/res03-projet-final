@@ -635,6 +635,7 @@
         top: 0;
         transition: top 0.3s;
         border-bottom: 5px solid #FDCD11;
+        z-index: 100;
 
         .sideMenu {
             position: fixed;
@@ -805,6 +806,11 @@
                         font-size: 1.2em;
 
                     }
+                    
+                    &>a:hover{
+                        text-decoration: underline #034076 solid 0.1em;
+                        text-underline-offset: 0.4em;
+                    }
                 }
             }
 
@@ -838,6 +844,11 @@
                         font-weight: 600;
                         font-size: 1.2em;
                     }
+                    
+                    &>a:hover{
+                        text-decoration: underline #034076 solid 0.1em;
+                        text-underline-offset: 0.4em;
+                    }
 
                     span{
                         align-self: center;
@@ -864,6 +875,8 @@
                              background-color: white;
                              & > a{
                                 color: #034076;
+                                text-decoration: underline #034076 solid 0.1em;
+                                text-underline-offset: 0.4em;
                              }
                         }
                     }
@@ -895,6 +908,7 @@
         top: 0;
         transition: top 0.3s;
         border-bottom: 5px solid #FDCD11;
+        z-index: 100;
 
         .sideMenu {
             position: fixed;
