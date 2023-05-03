@@ -114,6 +114,14 @@
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             padding-bottom: 0.25em;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            a:hover{
+                                color: #034076;
+                            }
                         }
                         
                         h3:hover{
@@ -255,6 +263,14 @@
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             padding-bottom: 0.15em;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            a:hover{
+                                color: #034076;
+                            }
                         }
                         
                         h3:hover{
@@ -395,7 +411,15 @@
                             -webkit-line-clamp: 1; /* number of lines to show */
                             -webkit-box-orient: vertical;
                             overflow: hidden;
-                            padding-bottom: 0.15em;
+                            padding-bottom: 0.3em;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            a:hover{
+                                color: #034076;
+                            }
                         }
                         
                         h3:hover{
@@ -407,7 +431,7 @@
                         p {
                             font-family: 'Roboto', sans-serif;
                             font-size: 1.2em;
-                            padding-bottom: 0.6em;
+                            padding-bottom: 0.8em;
                             display: -webkit-box;
                             -webkit-line-clamp: 2; /* number of lines to show */
                             -webkit-box-orient: vertical;
@@ -538,7 +562,15 @@
                             -webkit-line-clamp: 1; /* number of lines to show */
                             -webkit-box-orient: vertical;
                             overflow: hidden;
-                            padding-bottom: 0.15em;
+                            padding-bottom: 0.3em;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            a:hover{
+                                color: #034076;
+                            }
                 
                         }
                         

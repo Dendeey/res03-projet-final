@@ -2662,6 +2662,13 @@ table {
     overflow: hidden;
     padding-bottom: 0.25em;
   }
+  #public-layout > #actualites > section:first-of-type > section article h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
+    color: #034076;
+  }
   #public-layout > #actualites > section:first-of-type > section article h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -2787,6 +2794,13 @@ table {
     overflow: hidden;
     padding-bottom: 0.15em;
   }
+  #public-layout > #actualites > section:first-of-type > section article h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
+    color: #034076;
+  }
   #public-layout > #actualites > section:first-of-type > section article h3:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -2910,7 +2924,14 @@ table {
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
-    padding-bottom: 0.15em;
+    padding-bottom: 0.3em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article h3:hover {
     transform: scale(1.02);
@@ -2921,7 +2942,7 @@ table {
   #public-layout > #actualites > section:first-of-type > section article p {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.8em;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
@@ -3035,7 +3056,14 @@ table {
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
-    padding-bottom: 0.15em;
+    padding-bottom: 0.3em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
+    color: #034076;
   }
   #public-layout > #actualites > section:first-of-type > section article h3:hover {
     transform: scale(1.02);
