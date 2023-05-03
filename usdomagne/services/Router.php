@@ -98,10 +98,10 @@ class Router
                 
             }
             
-            else if($route[0] === "boutique")
-            {
-                $this->pageController->boutique();
-            }
+            // else if($route[0] === "boutique")
+            // {
+            //     $this->pageController->boutique();
+            // }
 
             // else if($route[0] === "histoire")
             // {
@@ -128,10 +128,10 @@ class Router
                 $this->pageController->arbitres();
             }
 
-            else if($route[0] === "partenaires")
-            {
-                $this->pageController->partenaires();
-            }
+            // else if($route[0] === "partenaires")
+            // {
+            //     $this->pageController->partenaires();
+            // }
             
             else if($route[0] === "contact")
             {

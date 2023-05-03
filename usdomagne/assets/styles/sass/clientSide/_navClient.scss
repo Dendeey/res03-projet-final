@@ -1060,6 +1060,11 @@
                         font-size: 1.2em;
 
                     }
+
+                    a:hover{
+                        text-decoration: underline #034076 solid 0.1em;
+                        text-underline-offset: 0.4em;
+                    }
                 }
             }
 
@@ -1094,6 +1099,11 @@
                         font-size: 1.2em;
                     }
 
+                    &>a:hover{
+                        text-decoration: underline #034076 solid 0.1em;
+                        text-underline-offset: 0.4em;
+                    }
+
                     span{
                         align-self: center;
                     }
@@ -1113,12 +1123,15 @@
                                 font-size: 1em;
                                 color: white;
                             }
+
                         }
 
                         .items-submenu-headerLaptop:hover{
                              background-color: white;
                              & > a{
                                 color: #034076;
+                                text-decoration: underline #034076 solid 0.1em;
+                                text-underline-offset: 0.4em;
                              }
                         }
                     }

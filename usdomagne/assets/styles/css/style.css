@@ -906,6 +906,10 @@ table {
     font-weight: 600;
     font-size: 1.2em;
   }
+  #client-header nav > ul:first-of-type li a:hover {
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
+  }
   #client-header nav > figure {
     justify-self: center;
     align-self: center;
@@ -935,6 +939,10 @@ table {
     font-weight: 600;
     font-size: 1.2em;
   }
+  #client-header nav > ul:last-of-type .items > a:hover {
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
+  }
   #client-header nav > ul:last-of-type .items span {
     align-self: center;
   }
@@ -958,6 +966,8 @@ table {
   }
   #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover > a {
     color: #034076;
+    text-decoration: underline #034076 solid 0.1em;
+    text-underline-offset: 0.4em;
   }
   #client-header nav > ul:last-of-type .items:hover .submenu-headerLaptop {
     display: block;
@@ -5852,6 +5862,736 @@ table {
   #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
     color: #034076;
     transition: 0.5s;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #contact {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #contact > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #contact > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #contact > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 5em;
+  }
+  #public-layout > #contact > section:first-of-type > section {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section form h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type input {
+    border-radius: 0.5em;
+    height: 4vh;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset {
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input {
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+    height: 4vh;
+    width: 100%;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset .contact-submit {
+    background-color: #034076;
+    color: #FDCD11;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section {
+    padding: 1em;
+    background-color: #034076;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: white;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-self: center;
+    align-self: start;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li span {
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media (min-width: 427px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #contact {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #contact > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #contact > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #contact > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 5em;
+  }
+  #public-layout > #contact > section:first-of-type > section {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section form h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type input {
+    border-radius: 0.5em;
+    height: 4vh;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset {
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input {
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+    height: 4vh;
+    width: 100%;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset .contact-submit {
+    background-color: #034076;
+    color: #FDCD11;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section {
+    padding: 1em;
+    background-color: #034076;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: white;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-self: center;
+    align-self: start;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li span {
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #contact {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #contact > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #contact > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #contact > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 5em;
+  }
+  #public-layout > #contact > section:first-of-type > section {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section form h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type input {
+    border-radius: 0.5em;
+    height: 4vh;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset {
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input {
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+    height: 4vh;
+    width: 100%;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset .contact-submit {
+    background-color: #034076;
+    color: #FDCD11;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section {
+    padding: 1em;
+    background-color: #034076;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: white;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-self: center;
+    align-self: start;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li span {
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #contact {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #contact > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #contact > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #contact > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 5em;
+  }
+  #public-layout > #contact > section:first-of-type > section {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section form h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type input {
+    border-radius: 0.5em;
+    height: 4vh;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset {
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input {
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+    height: 4vh;
+    width: 100%;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset .contact-submit {
+    background-color: #034076;
+    color: #FDCD11;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section {
+    padding: 1em;
+    background-color: #034076;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: white;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-self: center;
+    align-self: start;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li span {
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #contact {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #contact > header {
+    margin-top: 16vh;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #contact > header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #contact > section:first-of-type {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    background-color: #F4F4F4;
+    padding-bottom: 5em;
+  }
+  #public-layout > #contact > section:first-of-type > section {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section form h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset:first-of-type input {
+    border-radius: 0.5em;
+    height: 4vh;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset {
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset label {
+    display: none;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input {
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+    height: 4vh;
+    width: 100%;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset .contact-submit {
+    background-color: #034076;
+    color: #FDCD11;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea {
+    width: 100%;
+    border-radius: 0.5em;
+    border: #034076 solid 0.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section form fieldset textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section {
+    padding: 1em;
+    background-color: #034076;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    gap: 2em;
+  }
+  #public-layout > #contact > section:first-of-type > section section h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: white;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-self: center;
+    align-self: start;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li {
+    color: white;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #public-layout > #contact > section:first-of-type > section section ul li span {
+    justify-self: center;
+    align-self: center;
   }
 }
 @media (max-width: 426px) {
