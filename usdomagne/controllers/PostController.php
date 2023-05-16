@@ -41,7 +41,7 @@ class PostController extends AbstractController
         // die;
         foreach($medias as $media){
 
-            $post->addMedias($media);
+            $post->addMedias($media);  
             
         }
         $this->renderAdmin("admin-posts/show-post", ["posts" => $post]);
@@ -74,9 +74,9 @@ class PostController extends AbstractController
             if(isset($post['edit-title']) && isset($post['edit-date']) && isset($post['edit-content']) && !empty($post['edit-title']) && !empty($post['edit-date']) && !empty($post['edit-content']))
             {
                 $postToUpdate = $this->manager->getPostById($id);
-                $postToUpdate->setTitle($post['edit-title']);
-                $postToUpdate->setDate($post['edit-date']);
-                $postToUpdate->setContent($post['edit-content']);
+                $postToUpdate->setTitle($this->clean($post['edit-title']));
+                $postToUpdate->setDate($this->clean($post['edit-date']));
+                $postToUpdate->setContent($this->clean($post['edit-content']));
                 $this->manager->editPost($postToUpdate);
                 header("Location: /res03-projet-final/usdomagne/admin/articles");
             }
@@ -92,7 +92,7 @@ class PostController extends AbstractController
         {
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
-            $post = new Post($txt["add-title"], $txt["add-date"], $txt["add-content"]);
+            $post = new Post($this->clean($txt["add-title"]), $this->clean($txt["add-date"]), $this->clean($txt["add-content"]));
             $this->manager->insertPost($post);
             $newPostMedia = $this->manager->addPostMedia($post->getId(), $media->getId());
 

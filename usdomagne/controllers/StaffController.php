@@ -64,10 +64,10 @@ class StaffController extends AbstractController
             if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && isset($post['edit-phonenumber']) && isset($post['edit-role']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']) && !empty($post['edit-phonenumber']) && !empty($post['edit-role']))
             {
                 $staffToUpdate = $this->manager->getStaffById($id);
-                $staffToUpdate->setFirstName($post['edit-firstname']);
-                $staffToUpdate->setLastName($post['edit-lastname']);
-                $staffToUpdate->setPhoneNumber($post['edit-phonenumber']);
-                $staffToUpdate->setRole($post['edit-role']);
+                $staffToUpdate->setFirstName($this->clean($post['edit-firstname']));
+                $staffToUpdate->setLastName($this->clean($post['edit-lastname']));
+                $staffToUpdate->setPhoneNumber($this->clean($post['edit-phonenumber']));
+                $staffToUpdate->setRole($this->clean($post['edit-role']));
                 $this->manager->editStaff($staffToUpdate);
                 header("Location: /res03-projet-final/usdomagne/admin/staff");
             }
@@ -83,7 +83,7 @@ class StaffController extends AbstractController
         {
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
-            $staff = new staff($post["add-firstname"], $post["add-lastname"], $post["add-phonenumber"], $post["add-role"]);
+            $staff = new staff($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]), $this->clean($post["add-phonenumber"]), $this->clean($post["add-role"]));
             $this->manager->insertStaff($staff);
             $newstaffMedia = $this->manager->addStaffMedia($staff->getId(), $media->getId());
 

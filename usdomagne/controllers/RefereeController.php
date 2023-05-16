@@ -61,8 +61,8 @@ class RefereeController extends AbstractController
             if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']))
             {
                 $refereeToUpdate = $this->manager->getRefereeById($id);
-                $refereeToUpdate->setFirstName($post['edit-firstname']);
-                $refereeToUpdate->setLastName($post['edit-lastname']);
+                $refereeToUpdate->setFirstName($this->clean($post['edit-firstname']));
+                $refereeToUpdate->setLastName($this->clean($post['edit-lastname']));
                 $this->manager->editReferee($refereeToUpdate);
                 header("Location: /res03-projet-final/usdomagne/admin/arbitres");
             }
@@ -81,7 +81,7 @@ class RefereeController extends AbstractController
             header('Location: /res03-projet-final/usdomagne/admin/arbitres');*/
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
-            $referee = new Referee($post["add-firstname"], $post["add-lastname"]);
+            $referee = new Referee($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]));
             $this->manager->insertReferee($referee);
             $newRefereeMedia = $this->manager->addRefereeMedia($referee->getId(), $media->getId());
 

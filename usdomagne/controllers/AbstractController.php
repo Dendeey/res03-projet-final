@@ -21,6 +21,11 @@ abstract class AbstractController
         require 'templates/layout_admin.phtml';
         
     }
+    
+    protected function clean(string $unsafe) : string
+    {
+        return htmlspecialchars($unsafe);
+    }
 
 }
 

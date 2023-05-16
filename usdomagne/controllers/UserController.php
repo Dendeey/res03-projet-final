@@ -44,8 +44,8 @@ class UserController extends AbstractController
             {
                 if($this->manager->getUserByEmail($post['admin-email']) === null) 
                 {
-                    $hashedPass = password_hash($post['admin-password'], PASSWORD_DEFAULT);
-                    $userToAdd = new User($post["admin-firstname"], $post["admin-lastname"], $post["admin-email"], $hashedPass);
+                    $hashedPass = password_hash($this->clean($post['admin-password']), PASSWORD_DEFAULT);
+                    $userToAdd = new User($this->clean($post["admin-firstname"]), $this->clean($post["admin-lastname"]), $this->clean($post["admin-email"]), $hashedPass);
                     $this->manager->insertUser($userToAdd);
                     $this->renderAdmin('admin-login/admin-login', []);
                 }
@@ -79,8 +79,8 @@ class UserController extends AbstractController
 
         if (!empty($post['email']) && !empty($post['password'])) 
         {
-            $logEmail = $post['email'];
-            $passToCheck = $post['password'];
+            $logEmail = $this->clean($post['email']);
+            $passToCheck = $this->clean($post['password']);
 
 
             $userToCheck = $this->manager->getUserByEmail($logEmail);
@@ -100,21 +100,18 @@ class UserController extends AbstractController
                 else 
                 {
                     $this->renderAdmin('admin-login/admin-login', ['error' => 'Identifiants de connexion incorrects 1']);
-                    
                 }
             }
             
             else 
             {
                 $this->renderAdmin('admin-login/admin-login', ['error' => 'Identifiants de connexion incorrects 2']);
-                
             }
         }
 
         else 
         {
             $this->renderAdmin('admin-login/admin-login', ['error' => 'Merci de remplir tous les champs de connexion']);
-            
         }
 
     }

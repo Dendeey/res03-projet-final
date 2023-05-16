@@ -64,10 +64,10 @@ class OfficeController extends AbstractController
             if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && isset($post['edit-phonenumber']) && isset($post['edit-role']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']) && !empty($post['edit-phonenumber']) && !empty($post['edit-role']))
             {
                 $officeToUpdate = $this->manager->getOfficeById($id);
-                $officeToUpdate->setFirstName($post['edit-firstname']);
-                $officeToUpdate->setLastName($post['edit-lastname']);
-                $officeToUpdate->setPhoneNumber($post['edit-phonenumber']);
-                $officeToUpdate->setRole($post['edit-role']);
+                $officeToUpdate->setFirstName($this->clean($post['edit-firstname']));
+                $officeToUpdate->setLastName($this->clean($post['edit-lastname']));
+                $officeToUpdate->setPhoneNumber($this->clean($post['edit-phonenumber']));
+                $officeToUpdate->setRole($this->clean($post['edit-role']));
                 $this->manager->editOffice($officeToUpdate);
                 header("Location: /res03-projet-final/usdomagne/admin/bureau");
             }
@@ -83,7 +83,7 @@ class OfficeController extends AbstractController
         {
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
-            $office = new Office($post["add-firstname"], $post["add-lastname"], $post["add-phonenumber"], $post["add-role"]);
+            $office = new Office($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]), $this->clean($post["add-phonenumber"]), $this->clean($post["add-role"]));
             $this->manager->insertOffice($office);
             $newOfficeMedia = $this->manager->addOfficeMedia($office->getId(), $media->getId());
 

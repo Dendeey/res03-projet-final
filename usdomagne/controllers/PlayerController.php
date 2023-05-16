@@ -51,8 +51,8 @@ class PlayerController extends AbstractController
             if(isset($post['edit-firstname']) && isset($post['edit-lastname']) && !empty($post['edit-firstname']) && !empty($post['edit-lastname']))
             {
                 $playerToUpdate = $this->manager->getPlayerById($id);
-                $playerToUpdate->setFirstName($post['edit-firstname']);
-                $playerToUpdate->setLastName($post['edit-lastname']);
+                $playerToUpdate->setFirstName($this->clean($post['edit-firstname']));
+                $playerToUpdate->setLastName($this->clean($post['edit-lastname']));
                 $this->manager->editPlayer($playerToUpdate);
                 header("Location: /res03-projet-final/usdomagne/admin/joueurs");
             }
@@ -76,7 +76,7 @@ class PlayerController extends AbstractController
         if (!empty($post['add-firstname']) && !empty($post['add-lastname']))
         {
             
-            $playerToAdd = new Player($post["add-firstname"], $post["add-lastname"]);
+            $playerToAdd = new Player($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]));
             $this->manager->insertPlayer($playerToAdd);
             header('Location: /res03-projet-final/usdomagne/admin/joueurs');
             
