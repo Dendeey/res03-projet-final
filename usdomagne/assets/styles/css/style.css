@@ -2134,6 +2134,7 @@ table {
     display: grid;
     grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #F4F4F4;
+    height: 60vh;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
     grid-column: 2/3;
@@ -2341,13 +2342,23 @@ table {
     border-bottom: #FDCD11 0.5em solid;
     color: #034076;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > section {
+  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content {
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 3em;
+    height: 50%;
+    padding-top: 6vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > section figure img {
+  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item {
+    height: 100%;
+    min-width: 30%;
+    scroll-behavior: smooth;
+  }
+  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item img {
     width: 100%;
+    height: 100%;
     border-radius: 0.5em;
   }
 }
