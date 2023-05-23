@@ -1310,6 +1310,7 @@
                 background-color: white;
                 #partenaires{
                     grid-column: 2/3;
+                    
 
                     header{
                         padding-bottom: 1em;
@@ -1322,14 +1323,25 @@
                             color: #034076;
                         }
                     }
+                    
+                    & > .slider_section_btn{
+                        
+                        .slider_btn{
+                            
+                        }
+                    }
 
-                    & > section{
+                    & > .slider_content{
                         display: flex;
                         flex-direction: row;
-                        gap: 5em;
-                        figure{
+                        gap: 3em;
+                        height: 50%;
+                        padding-top: 6vh;
+                        
+                        .slider_content_item{
                             img{
                                 width: 100%;
+                                height: 100%;
                                 border-radius: 0.5em;
                             }
                         }

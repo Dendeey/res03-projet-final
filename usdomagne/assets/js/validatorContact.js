@@ -1,4 +1,5 @@
 import Contact from "./models/contact.js";
+import AdminLogin from ".models/adminContact.js";
 
 function validatorContact(){
     
@@ -34,15 +35,15 @@ function validatorAdminLogin(){
 
     form.addEventListener("submit", function(event){
 
-       let contact = new Contact();
+       let adminLogin = new AdminLogin();
 
-       contact.firstName = document.getElementById("firstname").value;
-       contact.lastName = document.getElementById("lastname").value;
-       contact.email = document.getElementById("email").value;
-       contact.request = document.getElementById("request").value;
-       contact.message= document.getElementById("message").value;
+       adminLogin.firstName = document.getElementById("firstname").value;
+       adminLogin.lastName = document.getElementById("lastname").value;
+       adminLogin.email = document.getElementById("email").value;
+       adminLogin.request = document.getElementById("request").value;
+       adminLogin.message= document.getElementById("message").value;
 
-       if(!contact.validate())
+       if(!adminLogin.validate())
        {
            event.preventDefault(); // empecher la soumission
            // afficher une erreur sur le formulaire
@@ -57,5 +58,6 @@ function validatorAdminLogin(){
 }
 
 export { validatorContact };
+export { validatorAdminLogin };
     
 
