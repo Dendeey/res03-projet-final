@@ -2155,6 +2155,24 @@ table {
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
     display: grid;
   }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn {
+    position: relative;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn {
+    position: absolute;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn_prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(100%);
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn_next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(100%);
+  }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
     padding-top: 1em;
     font-family: "Open Sans", sans-serif;

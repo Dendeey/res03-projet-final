@@ -1459,6 +1459,31 @@
                         }
                         footer{
                             display: grid;
+                            
+                            .mainSlider_section_btn{
+                                position: relative;
+                                
+                                .mainSlider_btn{
+                                    position: absolute;
+                                     
+                                }
+                                
+                                .mainSlider_btn_prev{
+                                    position: absolute;
+                                    left: 20px;
+                                    top: 50%;
+                                    transform: translateY(100%);
+                                    
+                                }
+                                
+                                .mainSlider_btn_next{
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    transform: translateY(100%);
+                                }
+                            }
+                            
                             h3{
                                 padding-top: 1em;
                                 font-family: 'Open Sans', sans-serif;
