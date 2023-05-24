@@ -1,8 +1,9 @@
 import { hideAndShowMenuOnScroll } from './navbarClientEffects.js';
 import { openAndCloseAsideMenu } from './navbarClientEffects.js';
 import { partenairesSlider } from './carousel.js';
-import { mainSlider } from './carousel.js';
-// import { validatorContact } from './validatorContact.js';
+// import { mainSlider } from './carousel.js';
+import { validatorClientContact } from './validatorContact.js';
+// import { validatorAdminLogin } from './validatorContact.js';
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -10,7 +11,8 @@ window.addEventListener('DOMContentLoaded', function() {
     hideAndShowMenuOnScroll();
     openAndCloseAsideMenu();
     partenairesSlider();
-    mainSlider();
-    // validatorContact();
+    // mainSlider();
+    validatorClientContact();
+    // validatorAdminLogin();
 
 });

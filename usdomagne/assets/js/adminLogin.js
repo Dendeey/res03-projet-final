@@ -1,9 +1,9 @@
-export class AdminLogin {
+export default class AdminLogin {
     
     email;
     password;
 
-    constructor(email = "", password="") {
+    constructor(email = "", password ="") {
         
         this.email = email;
         this.password = password;
@@ -31,10 +31,12 @@ export class AdminLogin {
         this.checkEmail() === true && 
         this.checkPassword() === true)
         {
+            console.log('Login correct!');
             return true;
         }
         else
         {
+            console.log('Login pas bon.');
             return false;
         }
     }
@@ -55,7 +57,12 @@ export class AdminLogin {
     }
     
     checkPassword() {
-    
+        if(this.password > 0){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }

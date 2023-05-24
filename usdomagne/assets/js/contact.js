@@ -1,4 +1,4 @@
-export class Contact {
+export default class Contact {
     
     lastName;
     firstName;
@@ -61,17 +61,21 @@ export class Contact {
         this.checkRequest() === true && 
         this.checkMessage() === true)
         {
+            console.log('Bon !');
             return true;
+            
         }
         else
         {
+            console.log('Pas bon !');
             return false;
+            
         }
     }
 
 
     checkFirstName() {
-        if(this.firstName < 25){
+        if(this.firstName > 0){
             return true;
         }
         else{
@@ -81,7 +85,7 @@ export class Contact {
     }
 
     checkLastName() {
-        if(this.lastName < 25){
+        if(this.lastName > 0){
             return true;
         }
         else{
@@ -106,7 +110,7 @@ export class Contact {
     }
     
     checkRequest() {
-        if(this.request < 40){
+        if(this.request > 0){
             return true;
         }
         else{
@@ -116,7 +120,7 @@ export class Contact {
     }
     
     checkMessage() {
-        if(this.message < 1024){
+        if(this.message > 0){
             return true;
         }
         else{

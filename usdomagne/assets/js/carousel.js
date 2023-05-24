@@ -19,11 +19,6 @@ function partenairesSlider() {
 }
 
 // Slider pour la section "homepage-carousel" sur la page d'accueil
-function mainSlider(){
-    
-    
-    
-}
+
 
 export { partenairesSlider };
-export { mainSlider };
