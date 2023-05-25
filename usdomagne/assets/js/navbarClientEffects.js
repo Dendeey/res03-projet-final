@@ -29,15 +29,20 @@ function openAndCloseAsideMenu(){
     let sideMenuMobileBtn = document.querySelector('.sideMenuMobile-btn');
     let asideMenuMobile = document.querySelector('.sideMenuMobile');
 
-    sideMenuBtn.addEventListener('click', function(){
-        sideMenuBtn.classList.toggle('active');
-        asideMenu.classList.toggle('active');
-    });
-
-    sideMenuMobileBtn.addEventListener('click', function(){
-        sideMenuMobileBtn.classList.toggle('active');
-        asideMenuMobile.classList.toggle('active');
-    });
+    if (sideMenuBtn) {
+        sideMenuBtn.addEventListener('click', function() {
+            sideMenuBtn.classList.toggle('active');
+            asideMenu.classList.toggle('active');
+        });
+    }
+    
+    if (sideMenuMobileBtn) {
+        sideMenuMobileBtn.addEventListener('click', function() {
+            sideMenuMobileBtn.classList.toggle('active');
+            asideMenuMobile.classList.toggle('active');
+        });
+    }
+    
     
 }
 

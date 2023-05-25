@@ -53,6 +53,7 @@ export default class Contact {
     set message (message) {
         this.message = message;
     }
+    
 
     validate() {
         if(this.checkFirstName() === true &&
@@ -61,13 +62,11 @@ export default class Contact {
         this.checkRequest() === true && 
         this.checkMessage() === true)
         {
-            console.log('Bon !');
             return true;
             
         }
         else
         {
-            console.log('Pas bon !');
             return false;
             
         }
@@ -75,57 +74,39 @@ export default class Contact {
 
 
     checkFirstName() {
-        if(this.firstName > 0){
+        if(this.firstName.length > 0){
             return true;
-        }
-        else{
-            
-            return false;
         }
     }
 
     checkLastName() {
-        if(this.lastName > 0){
+        if(this.lastName.length > 0){
             return true;
-        }
-        else{
-            
-            return false;
         }
     }
 
     checkEmail() {
     
         // Expression regex
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
         // Vérifier si l'email est valide
         if (emailRegex.test(this.email)) {
             return true; // L'email est valide
         }
-        else {
-            return false; // L'email est invalide
-        }
     
     }
     
     checkRequest() {
-        if(this.request > 0){
+        if(this.request.length > 0){
             return true;
-        }
-        else{
-            
-            return false;
         }
     }
     
     checkMessage() {
-        if(this.message > 0){
+        if(this.message.length > 0){
             return true;
         }
-        else{
-            
-            return false;
-        }
     }
+    
 }

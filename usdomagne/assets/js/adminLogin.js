@@ -26,43 +26,36 @@ export default class AdminLogin {
         this.password = password;
     }
 
-    validate() {
-        if(
-        this.checkEmail() === true && 
-        this.checkPassword() === true)
-        {
-            console.log('Login correct!');
-            return true;
-        }
-        else
-        {
-            console.log('Login pas bon.');
-            return false;
-        }
-    }
+    // validate() {
+    //     if(
+    //     this.checkEmail() === true && 
+    //     this.checkPassword() === true)
+    //     {
+    //         return true;
+    //     }
+    //     else
+    //     {
+    //         return false;
+    //     }
+    // }
 
-    checkEmail() {
+    // checkEmail() {
     
-        // Expression regex
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    //     // Expression regex
+    //     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
-        // Vérifier si l'email est valide
-        if (emailRegex.test(this.email)) {
-            return true; // L'email est valide
-        }
-        else {
-            return false; // L'email est invalide
-        }
+    //     // Vérifier si l'email est valide
+    //     if (emailRegex.test(this.email)) {
+    //         return true; // L'email est valide
+    //     }
     
-    }
+    // }
     
-    checkPassword() {
-        if(this.password > 0){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+    // checkPassword() {
+    //     if(this.password.length > 0){
+    //         return true;
+    //     }
+    // }
+    
 
 }

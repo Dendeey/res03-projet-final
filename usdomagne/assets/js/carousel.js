@@ -3,18 +3,24 @@ function partenairesSlider() {
     
     // Ajouter un évènement au click sur les bouttons précédent et suivant 
     let previousBtn = document.querySelector('.slider_btn_prev');
-    previousBtn.addEventListener('click', function() {
-        
-        // Récupérer la largeur de l'élément pour ensuite l'ajouter au moment du click
-        let figureWitdh = document.querySelector('.slider_content_item').offsetWidth;
-        document.querySelector('.slider_content').scrollLeft -= figureWitdh;
-    });
+    if (previousBtn) {
+        previousBtn.addEventListener('click', function() {
+    
+            // Récupérer la largeur de l'élément pour ensuite l'ajouter au moment du click
+            let figureWitdh = document.querySelector('.slider_content_item').offsetWidth;
+            document.querySelector('.slider_content').scrollLeft -= figureWitdh;
+        });
+    }
+    
 
     let nextBtn = document.querySelector('.slider_btn_next');
-    nextBtn.addEventListener('click', function() {
-        let figureWitdh = document.querySelector('.slider_content_item').offsetWidth;
-        document.querySelector('.slider_content').scrollLeft += figureWitdh;
-    });
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            let figureWitdh = document.querySelector('.slider_content_item').offsetWidth;
+            document.querySelector('.slider_content').scrollLeft += figureWitdh;
+        });
+    }
+    
 
 }
 
