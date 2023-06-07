@@ -103,6 +103,10 @@ class Router
                 {
                     $this->pageController->seniorC();
                 }
+                else if($route[1] === "test")
+                {
+                    $this->pageController->testSeniors();
+                }
                 
             }
             

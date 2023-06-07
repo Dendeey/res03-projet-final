@@ -63,6 +63,14 @@ class PageController extends AbstractController
 
         $this->renderClient("equipes/seniors", []);
     }
+    
+    //*** TEST PAGE SENIORS ***//
+    
+    public function testSeniors()
+    {
+
+        $this->renderClient("seniors/test_seniors", []);
+    }
 
     public function seniorA()
     {
