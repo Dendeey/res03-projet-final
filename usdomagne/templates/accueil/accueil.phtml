@@ -70,9 +70,11 @@
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
                         <h2 class="sr-only">Un des trois derniers articles</h2>
+                        <a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>">
                             <figure>
                                 <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actu">
                             </figure>
+                        </a>
                         <section>
                             <h2 class="sr-only">Section de l'article</h2>
                             <header>
@@ -89,22 +91,7 @@
                 <header>
                     <h2>Classement</h2>
                 </header>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script>
-                <script>
-                    if (!window._rsz) {
-                        window._rsz = function() {
-                            var i = iFrameResize({
-                                checkOrigin: false,
-                                interval: 100
-                            });
-                        };
-                        if (document.readyState != "loading") {
-                            _rsz()
-                        } else {
-                            document.addEventListener("DOMContentLoaded", _rsz)
-                        }
-                    }
-                </script><iframe id="643ea8e891d359679f19a24e" src="https://scorenco.com/widget/643ea8e891d359679f19a24e/?auto_height=true" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;"></iframe>
+                <iframe id="643ea8e891d359679f19a24e" height="300" src="https://v1.scorenco.com/widget/643ea8e891d359679f19a24e/" style="display: block; width: 100%; overflow: auto; margin: auto; border-width: 0px;"></iframe>
             </aside>
         </section>
     </section>

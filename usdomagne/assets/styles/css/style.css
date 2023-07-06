@@ -824,7 +824,7 @@ table {
   #client-header section h1 {
     padding-left: 3em;
     font-size: 1em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #client-header section h1 a {
     text-decoration: none;
@@ -841,7 +841,7 @@ table {
   }
   #client-header section ul li {
     font-size: 1em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #client-header section ul li .icon-facebook {
     color: #4267B2;
@@ -914,7 +914,7 @@ table {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
   }
@@ -947,7 +947,7 @@ table {
     text-decoration: none;
     color: #034076;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
   }
@@ -2109,18 +2109,16 @@ table {
     background-color: #F4F4F4;
   }
   #public-layout > #homepage > section:first-of-type h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-bottom: #FDCD11 0.4em solid;
+    color: #034076;
     grid-column: 2/3;
     margin-top: 2em;
-    padding: 1em;
     width: 40vw;
     justify-self: center;
     text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: underline #FDCD11 0.5em;
-    color: #034076;
   }
   #public-layout > #homepage > section:first-of-type article {
     grid-column: 2/3;
@@ -2140,7 +2138,7 @@ table {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 2em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
     display: flex;
@@ -2175,21 +2173,20 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
     padding-top: 1em;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8em;
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
     color: #034076;
     cursor: pointer;
     justify-self: center;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
-    color: #034076;
+    color: #000;
     text-decoration: none;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3:hover {
-    transform: scale(1.02);
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a:hover {
     transition: 0.5s;
-    z-index: 2;
+    color: #034076;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
     display: none;
@@ -2206,11 +2203,10 @@ table {
     padding-bottom: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
     text-transform: uppercase;
-    border-bottom: #FDCD11 0.5em solid;
+    border-bottom: #FDCD11 0.4em solid;
     color: #034076;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article {
@@ -2221,12 +2217,12 @@ table {
     padding: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     color: #034076;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside article p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
   }
@@ -2240,35 +2236,42 @@ table {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 2em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
-    width: 50vw;
+    width: 65%;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header {
     padding-bottom: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type header h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
     text-transform: uppercase;
-    border-bottom: #FDCD11 0.5em solid;
+    border-bottom: #FDCD11 0.4em solid;
     color: #034076;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3em;
-    margin-top: 3vh;
+    gap: 2.5em;
+    margin-top: 2vh;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article figure img {
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article a figure {
+    height: 18em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article a figure img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article a figure img:hover {
+    transform: scale(0.99);
+    transition: 0.5s;
+    filter: brightness(0.8);
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section {
     display: flex;
@@ -2281,7 +2284,7 @@ table {
     gap: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1em;
     background-color: #034076;
     color: white;
@@ -2289,15 +2292,18 @@ table {
     text-decoration: none;
     padding: 0.5em;
   }
+  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header a:hover {
+    transition: 0.5s;
+    background-color: #000;
+  }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1em;
     align-self: center;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -2306,16 +2312,12 @@ table {
     color: black;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
+    transition: 0.5s;
     color: #034076;
   }
-  #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    z-index: 2;
-  }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -2327,24 +2329,24 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
+    width: 35%;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header {
     padding-bottom: 1em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites aside header h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
     text-transform: uppercase;
-    border-bottom: #FDCD11 0.5em solid;
+    border-bottom: #FDCD11 0.4em solid;
     color: #034076;
   }
   #public-layout > #homepage > section:last-of-type {
     margin-top: 6vh;
-    padding: 2em 0 2em 0;
+    padding: 2em 0 0 0;
     display: grid;
     grid-template-columns: 0.15fr 0.7fr 0.15fr;
-    background-color: white;
+    background-color: #034076;
   }
   #public-layout > #homepage > section:last-of-type #partenaires {
     grid-column: 2/3;
@@ -2353,12 +2355,11 @@ table {
     padding-bottom: 1em;
   }
   #public-layout > #homepage > section:last-of-type #partenaires header h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
     text-transform: uppercase;
-    border-bottom: #FDCD11 0.5em solid;
-    color: #034076;
+    border-bottom: #FDCD11 0.4em solid;
+    color: #fff;
   }
   #public-layout > #homepage > section:last-of-type #partenaires > .slider_content {
     display: flex;
@@ -2553,6 +2554,7 @@ table {
     height: 15vh;
     width: 100vw;
     bottom: 0;
+    padding-bottom: 2em;
   }
   #footer-client figure {
     display: grid;
@@ -2576,11 +2578,11 @@ table {
   }
   #footer-client section section h1 {
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #footer-client section section ul li a {
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     text-decoration: none;
   }
