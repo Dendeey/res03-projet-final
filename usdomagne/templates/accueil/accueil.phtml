@@ -37,10 +37,10 @@
                 </figure>
                 <footer>
                     <section class="mainSlider_section_btn">
-                        <button class="mainSlider_btn mainSlider_btn_prev">Précédent</button>
-                        <button class="mainSlider_btn mainSlider_btn_next">Suivant</button>
+                        <span class="mainSlider_btn mainSlider_btn_prev"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></span>
+                        <span class="mainSlider_btn mainSlider_btn_next"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></span>
                     </section>
-                    <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><span>"</span><?= $post->getTitle(); ?><span>"</span></a></h3>
+                    <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
                 </footer>
             </article>
             <?php } ?>

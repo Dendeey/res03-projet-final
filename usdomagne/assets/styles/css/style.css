@@ -837,23 +837,34 @@ table {
     flex-direction: row;
     column-gap: 4em;
     justify-content: right;
-    padding-right: 5em;
+    height: 100%;
+    padding-right: 3em;
   }
   #client-header section ul li {
     font-size: 1em;
     font-family: "Poppins", sans-serif;
+    align-self: center;
   }
   #client-header section ul li .icon-facebook {
-    color: #4267B2;
+    color: #FDCD11;
+  }
+  #client-header section ul li .icon-facebook:hover {
+    color: #034076;
+    transition: 0.2s;
   }
   #client-header section ul li .icon-instagram {
-    color: white;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    border-radius: 0.4em;
-    padding: 0.2em;
+    color: #FDCD11;
+  }
+  #client-header section ul li .icon-instagram:hover {
+    color: #034076;
+    transition: 0.2s;
   }
   #client-header section ul li .icon-twitter {
-    color: #00acee;
+    color: #FDCD11;
+  }
+  #client-header section ul li .icon-twitter:hover {
+    color: #034076;
+    transition: 0.2s;
   }
   #client-header section ul li a {
     text-decoration: none;
@@ -887,6 +898,7 @@ table {
     width: 100%;
     height: 0.2em;
     background: #034076;
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
   }
   #client-header nav .sideMenu-btn .l1 {
     transform: translateY(-0.6em);
@@ -2132,7 +2144,7 @@ table {
     display: grid;
     grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #F4F4F4;
-    height: 60vh;
+    height: 50em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel {
     grid-column: 2/3;
@@ -2142,12 +2154,10 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
     display: flex;
-    width: 100%;
-    height: 80%;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
-    width: 100%;
-    height: 100%;
+    width: 60em;
+    height: 45em;
     border-radius: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
@@ -2155,9 +2165,14 @@ table {
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn {
     position: relative;
+    bottom: 23em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn {
     position: absolute;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn i {
+    color: #fff;
+    cursor: pointer;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn_prev {
     position: absolute;
@@ -2172,21 +2187,21 @@ table {
     transform: translateY(100%);
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
-    padding-top: 1em;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-transform: uppercase;
-    color: #034076;
     cursor: pointer;
-    justify-self: center;
+    position: relative;
+    padding-left: 0.5em;
+    bottom: 2em;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a:hover {
-    transition: 0.5s;
-    color: #034076;
+    transition: 0.2s;
+    color: #FDCD11;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
     display: none;
@@ -2198,6 +2213,7 @@ table {
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
+    width: 100%;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside header {
     padding-bottom: 1em;
@@ -2293,7 +2309,7 @@ table {
     padding: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header a:hover {
-    transition: 0.5s;
+    transition: 0.2s;
     background-color: #000;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header span {
@@ -2312,8 +2328,8 @@ table {
     color: black;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
-    transition: 0.5s;
-    color: #034076;
+    transition: 0.2s;
+    color: #FDCD11;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
     font-family: "Poppins", sans-serif;

@@ -1434,7 +1434,7 @@
                 display: grid;
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
-                height: 60vh;
+                height: 50em;
 
                 #homepage-carousel{
                     grid-column: 2/3;
@@ -1444,15 +1444,15 @@
                     
                     &>article
                     {
+    
                         figure 
                         {
                             display: flex;
-                            width: 100%;
-                            height: 80%;
+
                             img 
                             {
-                                width: 100%;
-                                height: 100%;
+                                width: 60em;
+                                height: 45em;
                                 border-radius: 0.5em;
                             }
                         }
@@ -1461,10 +1461,16 @@
                             
                             .mainSlider_section_btn{
                                 position: relative;
+                                bottom: 23em;
                                 
                                 .mainSlider_btn{
                                     position: absolute;
-                                     
+
+                                    i{
+                                        color: #fff;
+                                        cursor: pointer;
+                                    }
+                                    
                                 }
                                 
                                 .mainSlider_btn_prev{
@@ -1484,23 +1490,24 @@
                             }
                             
                             h3{
-                                padding-top: 1em;
+                                
                                 font-family: 'Bebas Neue', sans-serif;
-                                font-size: 2.5em;
+                                font-size: 3.5em;
                                 text-transform: uppercase;
-                                color: #034076;
                                 cursor: pointer;
-                                justify-self: center;
+                                position: relative;
+                                padding-left: 0.5em;
+                                bottom: 2em;
 
                                 a{
-                                    color: #000;
+                                    color: #fff;
                                     text-decoration: none;
                                 }
 
                                 a:hover{
                                 
-                                    transition: 0.5s;
-                                    color: #034076;
+                                    transition: 0.2s;
+                                    color: #FDCD11;
                                 }
                             }
                             
@@ -1520,6 +1527,7 @@
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
+                        width: 100%;
 
                         header 
                         {
@@ -1636,7 +1644,7 @@
                                     }
 
                                     a:hover{
-                                        transition: 0.5s;
+                                        transition: 0.2s;
                                         background-color: #000;
                                     }
                                     span{
@@ -1657,8 +1665,8 @@
                                     }
 
                                     a:hover{
-                                        transition: 0.5s;
-                                        color: #034076;
+                                        transition: 0.2s;
+                                        color: #FDCD11;
                                     }
                                 }
                                 
