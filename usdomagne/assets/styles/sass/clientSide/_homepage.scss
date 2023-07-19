@@ -1441,86 +1441,95 @@
                     display: flex;
                     flex-direction: row;
                     gap: 2em;
-                    
-                    &>article
-                    {
-    
-                        figure 
+
+                    .mainSlider{
+
+                        display: flex;
+                        flex-direction: row;
+
+                        &>article
                         {
-                            display: flex;
-
-                            img 
+        
+                            figure 
                             {
-                                width: 60em;
-                                height: 45em;
-                                border-radius: 0.5em;
+                                display: flex;
+    
+                                img 
+                                {
+                                    width: 60em;
+                                    height: 45em;
+                                    border-radius: 0.5em;
+                                }
                             }
-                        }
-                        footer{
-                            display: grid;
-                            
-                            .mainSlider_section_btn{
-                                position: relative;
-                                bottom: 23em;
+                            footer{
+                                display: grid;
                                 
-                                .mainSlider_btn{
-                                    position: absolute;
-
-                                    i{
-                                        color: #fff;
-                                        cursor: pointer;
+                                .mainSlider_section_btn{
+                                    position: relative;
+                                    bottom: 23em;
+                                    
+                                    .mainSlider_btn{
+                                        position: absolute;
+    
+                                        i{
+                                            color: #fff;
+                                            cursor: pointer;
+                                        }
+                                        
                                     }
                                     
-                                }
-                                
-                                .mainSlider_btn_prev{
-                                    position: absolute;
-                                    left: 20px;
-                                    top: 50%;
-                                    transform: translateY(100%);
+                                    .mainSlider_btn_prev{
+                                        position: absolute;
+                                        left: 20px;
+                                        top: 50%;
+                                        transform: translateY(100%);
+                                        
+                                    }
                                     
+                                    .mainSlider_btn_next{
+                                        position: absolute;
+                                        right: 20px;
+                                        top: 50%;
+                                        transform: translateY(100%);
+                                    }
                                 }
                                 
-                                .mainSlider_btn_next{
-                                    position: absolute;
-                                    right: 20px;
-                                    top: 50%;
-                                    transform: translateY(100%);
+                                h3{
+                                    
+                                    font-family: 'Bebas Neue', sans-serif;
+                                    font-size: 3.5em;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+                                    position: relative;
+                                    padding-left: 0.5em;
+                                    bottom: 2em;
+    
+    
+                                    a{
+                                        color: #fff;
+                                        text-decoration: none;
+                                    }
+    
+                                    a:hover{
+                                    
+                                        transition: 0.2s;
+                                        color: #FDCD11;
+                                    }
                                 }
+                                
                             }
-                            
-                            h3{
-                                
-                                font-family: 'Bebas Neue', sans-serif;
-                                font-size: 3.5em;
-                                text-transform: uppercase;
-                                cursor: pointer;
-                                position: relative;
-                                padding-left: 0.5em;
-                                bottom: 2em;
-
-                                a{
-                                    color: #fff;
-                                    text-decoration: none;
-                                }
-
-                                a:hover{
-                                
-                                    transition: 0.2s;
-                                    color: #FDCD11;
-                                }
-                            }
-                            
                         }
+
+                        // &>article:nth-of-type(2){
+                        //     display: none;
+                        // }
+                        
+                        // &>article:last-of-type{
+                        //     display: none;
+                        // }
                     }
 
-                    &>article:nth-of-type(2){
-                        display: none;
-                    }
                     
-                    &>article:last-of-type{
-                        display: none;
-                    }
     
                     aside 
                     {

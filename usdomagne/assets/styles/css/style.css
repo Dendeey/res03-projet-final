@@ -2152,41 +2152,45 @@ table {
     flex-direction: row;
     gap: 2em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider {
+    display: flex;
+    flex-direction: row;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article figure {
     display: flex;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article figure img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article figure img {
     width: 60em;
     height: 45em;
     border-radius: 0.5em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer {
     display: grid;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer .mainSlider_section_btn {
     position: relative;
     bottom: 23em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer .mainSlider_section_btn .mainSlider_btn {
     position: absolute;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn i {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer .mainSlider_section_btn .mainSlider_btn i {
     color: #fff;
     cursor: pointer;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn_prev {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer .mainSlider_section_btn .mainSlider_btn_prev {
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(100%);
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer .mainSlider_section_btn .mainSlider_btn_next {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer .mainSlider_section_btn .mainSlider_btn_next {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(100%);
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3.5em;
     text-transform: uppercase;
@@ -2195,19 +2199,13 @@ table {
     padding-left: 0.5em;
     bottom: 2em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer h3 a {
     color: #fff;
     text-decoration: none;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article footer h3 a:hover {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider > article footer h3 a:hover {
     transition: 0.2s;
     color: #FDCD11;
-  }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:nth-of-type(2) {
-    display: none;
-  }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel > article:last-of-type {
-    display: none;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel aside {
     padding: 1em;
