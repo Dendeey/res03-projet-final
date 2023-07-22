@@ -34,7 +34,7 @@
                 <article class="slider1">
                     <h2 class="sr-only">Actualité du caroussel</h2>
                     <figure>
-                        <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
+                        <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" class="imgMainSlider" alt="Image de l'actualité principale de la page d'accueil">
                     </figure>
                     <footer>
                         <section class="mainSlider_section_btn">
@@ -105,8 +105,8 @@
                 <h2>Nos partenaires</h2>
             </header>
             <section class="slider_section_btn">
-                <button class="slider_btn slider_btn_prev">Précédent</button>
-                <button class="slider_btn slider_btn_next">Suivant</button>
+                <button class="slider_btn slider_btn_prev" class="fa-solid fa-circle-chevron-left fa-2xl">Précédent</button>
+                <button class="slider_btn slider_btn_next" class="fa-solid fa-circle-chevron-right fa-2xl">Suivant</button>
             </section>
             <section class="slider_content">
                 <figure class="slider_content_item">

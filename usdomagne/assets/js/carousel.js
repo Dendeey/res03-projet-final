@@ -25,6 +25,20 @@ function partenairesSlider() {
 }
 
 // Slider pour la section "homepage-carousel" sur la page d'accueil
+function mainSlider(){
 
+    // Ajouter un évènement au click sur les bouttons précédent et suivant
+    let previousBtn = document.querySelector('.mainSlider_btn_prev');
+    let nextBtn = document.querySelector('.mainSlider_btn_next');
+
+    if(previousBtn){
+        previousBtn.addEventListener('click', function(){
+
+            // Récupérer la largeur de l'élément pour l'ajouter ou la soustraire au moment du click
+            let sliderWidth = document.querySelector('.imgMainSlider').offsetWidth;
+            document.querySelector('.')
+        })
+    }
+}
 
 export { partenairesSlider };
