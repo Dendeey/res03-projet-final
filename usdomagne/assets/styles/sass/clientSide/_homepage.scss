@@ -1,18 +1,14 @@
-@media (max-width: 426px)
-{
-    html
-    {
+@media (max-width: 426px) {
+    html {
         font-size: 14px;
         scroll-behavior: smooth;
     }
-    
-    #public-layout
-    {
+
+    #public-layout {
         min-height: 100vh;
         width: 100vw;
 
-        & > #homepage
-        {
+        &>#homepage {
             background-color: #F4F4F4;
             overflow: hidden;
             width: 100vw;
@@ -20,32 +16,28 @@
             flex-direction: column;
             margin-top: 7vh;
 
-            & > header
-            {
+            &>header {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
 
 
-                figure 
-                {
+                figure {
                     display: flex;
-                    justify-content: center ;
-                    img 
-                    {
+                    justify-content: center;
+
+                    img {
                         width: 100%;
                         padding-top: 2em;
                     }
                 }
             }
 
-            & > section:first-of-type
-            {
+            &>section:first-of-type {
                 background-color: #F4F4F4;
                 justify-content: center;
 
-                h2 
-                {
+                h2 {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.1em;
                     margin-top: 2em;
@@ -56,51 +48,50 @@
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.5em;
                     color: #034076;
-                    
+
                 }
 
-                article{
+                article {
                     grid-column: 2/3;
                     padding-top: 2em;
-                    
-                    iframe{
+
+                    iframe {
                         border-radius: 0.5em;
                     }
 
                 }
             }
 
-            & > section:nth-of-type(2)
-            {
+            &>section:nth-of-type(2) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
 
-                #homepage-carousel{
+                #homepage-carousel {
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    &>article
-                    {
+
+                    &>article {
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;   
+                        justify-content: center;
 
-                        figure 
-                        {
+                        figure {
                             display: flex;
                             width: 100%;
                             height: 80%;
-                            img 
-                            {
+
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
 
-                        footer{
+                        footer {
                             display: grid;
-                            h3{
+
+                            h3 {
                                 padding-top: 1em;
                                 font-family: 'Open Sans', sans-serif;
                                 font-size: 1.2em;
@@ -109,39 +100,38 @@
                                 cursor: pointer;
                                 justify-self: center;
 
-                                a{
+                                a {
                                     color: #034076;
                                     text-decoration: none;
                                 }
                             }
-                            h3:hover{
+
+                            h3:hover {
                                 transform: scale(1.02);
                                 transition: 0.5s;
                                 z-index: 2;
                             }
                         }
                     }
-                    
-                    &>article:nth-of-type(2){
+
+                    &>article:nth-of-type(2) {
                         display: none;
                     }
-                    
-                    &>article:last-of-type{
+
+                    &>article:last-of-type {
                         display: none;
                     }
-    
-                    aside 
-                    {
+
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 100%;
 
-                        header 
-                        {
+                        header {
                             padding-bottom: 1em;
-                            h2
-                            {
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -150,23 +140,21 @@
                                 color: #034076;
                             }
                         }
-    
-                        article
-                        {
+
+                        article {
                             display: flex;
                             flex-direction: column;
                             gap: 0.8em;
                             border-bottom: #F4F4F4 0.2em solid;
                             padding: 1em;
-                            span 
-                            {
+
+                            span {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 color: #034076;
                             }
-    
-                            p 
-                            {
+
+                            p {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 text-transform: uppercase;
@@ -176,115 +164,123 @@
                 }
             }
 
-            & > section:nth-of-type(3)
-            {
+            &>section:nth-of-type(3) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
 
-                #homepage-actualites{
+                #homepage-actualites {
                     display: flex;
                     flex-direction: column;
                     gap: 5em;
 
-                    & > section:first-of-type{
+                    &>section:first-of-type {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
                                 text-transform: uppercase;
                                 border-bottom: #FDCD11 0.5em solid;
                                 color: #034076;
-                                
+
                             }
                         }
-    
-                        article{
+
+                        article {
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
                             margin-top: 3vh;
-    
-                            figure{
-    
-                                img{
+
+                            figure {
+
+                                img {
                                     width: 100%;
                                     height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
-                            
-                            section{
+
+                            section {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 2em;
-                                header{
+
+                                header {
                                     display: flex;
                                     flex-direction: row;
                                     gap: 1em;
 
-                                    a{
+                                    a {
                                         font-family: 'Roboto', sans-serif;
-                                        font-size: 1em;                                        
+                                        font-size: 1em;
                                         background-color: #034076;
                                         color: white;
                                         border-radius: 1em;
                                         text-decoration: none;
                                         padding: 0.5em;
                                     }
-                                    span{
+
+                                    span {
                                         font-family: 'Roboto', sans-serif;
                                         font-size: 1em;
                                         align-self: center;
                                     }
                                 }
-                                h3{
+
+                                h3 {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: black;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         color: #034076;
                                     }
                                 }
-                                h3:hover{
+
+                                h3:hover {
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
                                 }
-                                p{
+
+                                p {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2em;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     display: -webkit-box;
-                                       -webkit-line-clamp: 2; /* number of lines to show */
-                                               line-clamp: 2;
-                                       -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    /* number of lines to show */
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
                                 }
                             }
                         }
                     }
 
-                    aside{
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -297,16 +293,17 @@
                 }
             }
 
-            & > section:last-of-type
-            {
+            &>section:last-of-type {
                 margin-top: 6vh;
                 padding: 1em;
                 background-color: white;
-                #partenaires{
 
-                    header{
+                #partenaires {
+
+                    header {
                         padding-bottom: 1em;
-                        h2{
+
+                        h2 {
                             font-family: "Open Sans", sans-serif;
                             font-size: 1.5em;
                             font-weight: 600;
@@ -316,12 +313,13 @@
                         }
                     }
 
-                    & > section{
+                    &>section {
                         display: flex;
                         flex-direction: row;
                         gap: 5em;
-                        figure{
-                            img{
+
+                        figure {
+                            img {
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
@@ -333,20 +331,17 @@
     }
 }
 
-@media (min-width: 427px) and (max-width: 767px){
-    html
-    {
+@media (min-width: 427px) and (max-width: 767px) {
+    html {
         font-size: 14px;
         scroll-behavior: smooth;
     }
-    
-    #public-layout
-    {
+
+    #public-layout {
         min-height: 100vh;
         width: 100vw;
 
-        & > #homepage
-        {
+        &>#homepage {
             background-color: #F4F4F4;
             overflow: hidden;
             width: 100vw;
@@ -354,32 +349,28 @@
             flex-direction: column;
             margin-top: 7vh;
 
-            & > header
-            {
+            &>header {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
 
 
-                figure 
-                {
+                figure {
                     display: flex;
-                    justify-content: center ;
-                    img 
-                    {
+                    justify-content: center;
+
+                    img {
                         width: 100%;
                         padding-top: 2em;
                     }
                 }
             }
 
-            & > section:first-of-type
-            {
+            &>section:first-of-type {
                 background-color: #F4F4F4;
                 justify-content: center;
 
-                h2 
-                {
+                h2 {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.3em;
                     margin-top: 2em;
@@ -390,49 +381,50 @@
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.5em;
                     color: #034076;
-                    
+
                 }
 
-                article{
+                article {
                     grid-column: 2/3;
                     padding-top: 2em;
-                    
-                    iframe{
+
+                    iframe {
                         border-radius: 0.5em;
                     }
 
                 }
             }
 
-            & > section:nth-of-type(2)
-            {
+            &>section:nth-of-type(2) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
 
-                #homepage-carousel{
+                #homepage-carousel {
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    &>article
-                    {
+
+                    &>article {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        figure 
-                        {
+
+                        figure {
                             display: flex;
                             width: 100%;
                             height: 80%;
-                            img 
-                            {
+
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
-                        footer{
+
+                        footer {
                             display: grid;
-                            h3{
+
+                            h3 {
                                 padding-top: 1em;
                                 font-family: 'Open Sans', sans-serif;
                                 font-size: 1.4em;
@@ -441,39 +433,38 @@
                                 cursor: pointer;
                                 justify-self: center;
 
-                                a{
+                                a {
                                     color: #034076;
                                     text-decoration: none;
                                 }
                             }
-                            h3:hover{
+
+                            h3:hover {
                                 transform: scale(1.02);
                                 transition: 0.5s;
                                 z-index: 2;
                             }
                         }
                     }
-                    
-                    &>article:nth-of-type(2){
+
+                    &>article:nth-of-type(2) {
                         display: none;
                     }
-                    
-                    &>article:last-of-type{
+
+                    &>article:last-of-type {
                         display: none;
                     }
-    
-                    aside 
-                    {
+
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 100%;
 
-                        header 
-                        {
+                        header {
                             padding-bottom: 1em;
-                            h2
-                            {
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -482,23 +473,21 @@
                                 color: #034076;
                             }
                         }
-    
-                        article
-                        {
+
+                        article {
                             display: flex;
                             flex-direction: column;
                             gap: 0.8em;
                             border-bottom: #F4F4F4 0.2em solid;
                             padding: 1em;
-                            span 
-                            {
+
+                            span {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 color: #034076;
                             }
-    
-                            p 
-                            {
+
+                            p {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 text-transform: uppercase;
@@ -508,24 +497,24 @@
                 }
             }
 
-            & > section:nth-of-type(3)
-            {
+            &>section:nth-of-type(3) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
 
-                #homepage-actualites{
+                #homepage-actualites {
                     display: flex;
                     flex-direction: column;
                     gap: 5em;
 
-                    & > section:first-of-type{
+                    &>section:first-of-type {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -534,88 +523,96 @@
                                 color: #034076;
                             }
                         }
-    
-                        article{
+
+                        article {
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
                             margin-top: 3vh;
-    
-                            figure{
-    
-                                img{
+
+                            figure {
+
+                                img {
                                     width: 100%;
                                     height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
-                            
-                            section{
+
+                            section {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 2em;
-                                header{
+
+                                header {
                                     display: flex;
                                     flex-direction: row;
                                     gap: 1em;
 
-                                    a{
+                                    a {
                                         font-family: 'Roboto', sans-serif;
-                                        font-size: 1em;                                        
+                                        font-size: 1em;
                                         background-color: #034076;
                                         color: white;
                                         border-radius: 1em;
                                         text-decoration: none;
                                         padding: 0.5em;
                                     }
-                                    span{
+
+                                    span {
                                         font-family: 'Roboto', sans-serif;
                                         font-size: 1em;
                                         align-self: center;
                                     }
                                 }
-                                h3{
+
+                                h3 {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: black;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         color: #034076;
                                     }
                                 }
-                                h3:hover{
+
+                                h3:hover {
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
                                 }
-                                p{
+
+                                p {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2em;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     display: -webkit-box;
-                                       -webkit-line-clamp: 2; /* number of lines to show */
-                                               line-clamp: 2;
-                                       -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    /* number of lines to show */
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
                                 }
                             }
                         }
                     }
 
-                    aside{
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -628,16 +625,17 @@
                 }
             }
 
-            & > section:last-of-type
-            {
+            &>section:last-of-type {
                 margin-top: 6vh;
                 padding: 1em;
                 background-color: white;
-                #partenaires{
 
-                    header{
+                #partenaires {
+
+                    header {
                         padding-bottom: 1em;
-                        h2{
+
+                        h2 {
                             font-family: "Open Sans", sans-serif;
                             font-size: 1.5em;
                             font-weight: 600;
@@ -647,12 +645,13 @@
                         }
                     }
 
-                    & > section{
+                    &>section {
                         display: flex;
                         flex-direction: row;
                         gap: 5em;
-                        figure{
-                            img{
+
+                        figure {
+                            img {
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
@@ -664,20 +663,17 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023.99px){
-    html
-    {
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    html {
         font-size: 14px;
         scroll-behavior: smooth;
     }
-    
-    #public-layout
-    {
+
+    #public-layout {
         min-height: 100vh;
         width: 100vw;
 
-        & > #homepage
-        {
+        &>#homepage {
             background-color: #F4F4F4;
             overflow: hidden;
             width: 100vw;
@@ -685,33 +681,29 @@
             flex-direction: column;
             margin-top: 7vh;
 
-            & > header
-            {
+            &>header {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
 
 
-                figure 
-                {
+                figure {
                     display: flex;
-                    justify-content: center ;
-                    img 
-                    {
+                    justify-content: center;
+
+                    img {
                         width: 100%;
                         padding-top: 2em;
                     }
                 }
             }
 
-            & > section:first-of-type
-            {
+            &>section:first-of-type {
                 background-color: #F4F4F4;
                 justify-content: center;
                 padding: 1em;
 
-                h2 
-                {
+                h2 {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.3em;
                     margin-top: 2em;
@@ -722,50 +714,51 @@
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.5em;
                     color: #034076;
-                    
+
                 }
 
-                article{
+                article {
                     grid-column: 2/3;
                     padding-top: 2em;
-                    
-                    iframe{
+
+                    iframe {
                         border-radius: 0.5em;
                     }
 
                 }
             }
 
-            & > section:nth-of-type(2)
-            {
+            &>section:nth-of-type(2) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
                 padding: 1em;
 
-                #homepage-carousel{
+                #homepage-carousel {
                     display: flex;
                     flex-direction: column-reverse;
                     gap: 5em;
-                    &>article
-                    {
+
+                    &>article {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        figure 
-                        {
+
+                        figure {
                             display: flex;
                             width: 100%;
                             height: 80%;
-                            img 
-                            {
+
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
-                        footer{
+
+                        footer {
                             display: grid;
-                            h3{
+
+                            h3 {
                                 padding-top: 1em;
                                 font-family: 'Open Sans', sans-serif;
                                 font-size: 1.4em;
@@ -774,39 +767,38 @@
                                 cursor: pointer;
                                 justify-self: center;
 
-                                a{
+                                a {
                                     color: #034076;
                                     text-decoration: none;
                                 }
                             }
-                            h3:hover{
+
+                            h3:hover {
                                 transform: scale(1.02);
                                 transition: 0.5s;
                                 z-index: 2;
                             }
                         }
                     }
-                    
-                    &>article:nth-of-type(2){
+
+                    &>article:nth-of-type(2) {
                         display: none;
                     }
-                    
-                    &>article:last-of-type{
+
+                    &>article:last-of-type {
                         display: none;
                     }
-    
-                    aside 
-                    {
+
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 100%;
 
-                        header 
-                        {
+                        header {
                             padding-bottom: 1em;
-                            h2
-                            {
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -815,23 +807,21 @@
                                 color: #034076;
                             }
                         }
-    
-                        article
-                        {
+
+                        article {
                             display: flex;
                             flex-direction: column;
                             gap: 0.8em;
                             border-bottom: #F4F4F4 0.2em solid;
                             padding: 1em;
-                            span 
-                            {
+
+                            span {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 color: #034076;
                             }
-    
-                            p 
-                            {
+
+                            p {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 text-transform: uppercase;
@@ -841,25 +831,25 @@
                 }
             }
 
-            & > section:nth-of-type(3)
-            {
+            &>section:nth-of-type(3) {
                 margin-top: 6vh;
                 background-color: #F4F4F4;
                 padding: 1em;
 
-                #homepage-actualites{
+                #homepage-actualites {
                     display: flex;
                     flex-direction: column;
                     gap: 5em;
 
-                    & > section:first-of-type{
+                    &>section:first-of-type {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -868,89 +858,96 @@
                                 color: #034076;
                             }
                         }
-    
-                        article{
+
+                        article {
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
                             margin-top: 4vh;
-    
-                            figure{
-    
-                                img{
+
+                            figure {
+
+                                img {
                                     width: 100%;
                                     height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
-                            
-                            section{
+
+                            section {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 1em;
-                                header{
+
+                                header {
                                     display: flex;
                                     flex-direction: row;
                                     gap: 1em;
 
-                                    a{
+                                    a {
                                         font-family: 'Roboto', sans-serif;
-                                        font-size: 1em;                                        
+                                        font-size: 1em;
                                         background-color: #034076;
                                         color: white;
                                         border-radius: 1em;
                                         text-decoration: none;
                                         padding: 0.5em;
                                     }
-                                    span{
+
+                                    span {
                                         font-family: 'Roboto', sans-serif;
                                         font-size: 1em;
                                         align-self: center;
                                     }
                                 }
-                                h3{
+
+                                h3 {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: black;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         color: #034076;
                                     }
                                 }
-                                h3:hover{
+
+                                h3:hover {
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
                                 }
 
-                                p{
+                                p {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2em;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     display: -webkit-box;
-                                       -webkit-line-clamp: 2; /* number of lines to show */
-                                               line-clamp: 2;
-                                       -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    /* number of lines to show */
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
                                 }
                             }
                         }
                     }
 
-                    aside{
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -963,16 +960,17 @@
                 }
             }
 
-            & > section:last-of-type
-            {
+            &>section:last-of-type {
                 margin-top: 6vh;
                 padding: 1em;
                 background-color: white;
-                #partenaires{
 
-                    header{
+                #partenaires {
+
+                    header {
                         padding-bottom: 1em;
-                        h2{
+
+                        h2 {
                             font-family: "Open Sans", sans-serif;
                             font-size: 1.5em;
                             font-weight: 600;
@@ -982,12 +980,13 @@
                         }
                     }
 
-                    & > section{
+                    &>section {
                         display: flex;
                         flex-direction: row;
                         gap: 5em;
-                        figure{
-                            img{
+
+                        figure {
+                            img {
                                 width: 100%;
                                 border-radius: 0.5em;
                             }
@@ -999,20 +998,17 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439.99px){
-    html
-    {
+@media (min-width: 1024px) and (max-width: 1439.99px) {
+    html {
         font-size: 14px;
         scroll-behavior: smooth;
     }
-    
-    #public-layout
-    {
+
+    #public-layout {
         min-height: 100vh;
         width: 100vw;
 
-        & > #homepage
-        {
+        &>#homepage {
             background-color: #F4F4F4;
             overflow: hidden;
             margin-top: 10vh;
@@ -1021,34 +1017,30 @@
             flex-direction: column;
             gap: 4em;
 
-            & > header
-            {
+            &>header {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
 
 
-                figure 
-                {
+                figure {
                     display: flex;
-                    justify-content: center ;
-                    img 
-                    {
+                    justify-content: center;
+
+                    img {
                         width: 60%;
                         padding-top: 8em;
                     }
                 }
             }
 
-            & > section:first-of-type
-            {
+            &>section:first-of-type {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
-                
 
-                h2 
-                {
+
+                h2 {
                     font-family: 'Open Sans', sans-serif;
                     font-size: 1.5em;
                     grid-column: 2/3;
@@ -1059,50 +1051,49 @@
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.5em;
                     color: #034076;
-                    
+
                 }
 
-                article{
+                article {
                     grid-column: 2/3;
                     padding-top: 2em;
-                    
-                    iframe{
+
+                    iframe {
                         border-radius: 0.5em;
                     }
 
                 }
             }
 
-            & > section:nth-of-type(2)
-            {
+            &>section:nth-of-type(2) {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
                 height: 100vh;
 
-                #homepage-carousel{
+                #homepage-carousel {
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
                     gap: 2em;
-                    &>article
-                    {
-                        figure 
-                        {
+
+                    &>article {
+                        figure {
                             display: flex;
                             width: 100%;
                             height: 80%;
-                            img 
-                            {
+
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
                             }
                         }
-                        
-                        footer{
+
+                        footer {
                             display: grid;
-                            h3{
+
+                            h3 {
                                 padding-top: 1em;
                                 font-family: 'Open Sans', sans-serif;
                                 font-size: 1.8em;
@@ -1111,40 +1102,39 @@
                                 cursor: pointer;
                                 justify-self: center;
 
-                                a{
+                                a {
                                     color: #034076;
                                     text-decoration: none;
                                 }
                             }
-                            h3:hover{
-                                
+
+                            h3:hover {
+
                                 transform: scale(1.02);
                                 transition: 0.5s;
                                 z-index: 2;
                             }
                         }
                     }
-                    
-                    &>article:nth-of-type(2){
+
+                    &>article:nth-of-type(2) {
                         display: none;
                     }
-                    
-                    &>article:last-of-type{
+
+                    &>article:last-of-type {
                         display: none;
                     }
-    
-                    aside 
-                    {
+
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         // width: 45vw;
 
-                        header 
-                        {
+                        header {
                             padding-bottom: 1em;
-                            h2
-                            {
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -1153,23 +1143,21 @@
                                 color: #034076;
                             }
                         }
-    
-                        article
-                        {
+
+                        article {
                             display: flex;
                             flex-direction: column;
                             gap: 0.8em;
                             border-bottom: #F4F4F4 0.2em solid;
                             padding: 1em;
-                            span 
-                            {
+
+                            span {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 color: #034076;
                             }
-    
-                            p 
-                            {
+
+                            p {
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 1.2em;
                                 text-transform: uppercase;
@@ -1179,27 +1167,27 @@
                 }
             }
 
-            & > section:nth-of-type(3)
-            {
+            &>section:nth-of-type(3) {
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: #F4F4F4;
 
-                #homepage-actualites{
+                #homepage-actualites {
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
                     gap: 2em;
 
-                    & > section:first-of-type{
+                    &>section:first-of-type {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 55vw;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -1208,88 +1196,96 @@
                                 color: #034076;
                             }
                         }
-    
-                        article{
+
+                        article {
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 3em;
                             margin-top: 6vh;
-    
-                            figure{
-    
-                                img{
+
+                            figure {
+
+                                img {
                                     width: 100%;
                                     height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
-                            
-                            section{
+
+                            section {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 1em;
-                                header{
+
+                                header {
                                     display: flex;
                                     flex-direction: row;
                                     gap: 1em;
 
-                                    a{
+                                    a {
                                         font-family: 'Roboto', sans-serif;
-                                        font-size: 1em;                                        
+                                        font-size: 1em;
                                         background-color: #034076;
                                         color: white;
                                         border-radius: 1em;
                                         text-decoration: none;
                                         padding: 0.5em;
                                     }
-                                    span{
+
+                                    span {
                                         font-family: 'Roboto', sans-serif;
                                         font-size: 1em;
                                         align-self: center;
                                     }
                                 }
-                                h3{
+
+                                h3 {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.5em;
                                     font-weight: 800;
                                     text-transform: uppercase;
                                     cursor: pointer;
-                                    a{
+
+                                    a {
                                         text-decoration: none;
                                         color: black;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         color: #034076;
                                     }
                                 }
-                                h3:hover{
+
+                                h3:hover {
                                     transform: scale(1.02);
                                     transition: 0.5s;
                                     z-index: 2;
                                 }
-                                p{
+
+                                p {
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2em;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     display: -webkit-box;
-                                       -webkit-line-clamp: 2; /* number of lines to show */
-                                               line-clamp: 2;
-                                       -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    /* number of lines to show */
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
                                 }
                             }
                         }
                     }
 
-                    aside{
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: "Open Sans", sans-serif;
                                 font-size: 1.5em;
                                 font-weight: 600;
@@ -1302,19 +1298,20 @@
                 }
             }
 
-            & > section:last-of-type
-            {
+            &>section:last-of-type {
                 padding: 2em 0 2em 0;
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 background-color: white;
-                #partenaires{
-                    grid-column: 2/3;
-                    
 
-                    header{
+                #partenaires {
+                    grid-column: 2/3;
+
+
+                    header {
                         padding-bottom: 1em;
-                        h2{
+
+                        h2 {
                             font-family: "Open Sans", sans-serif;
                             font-size: 1.5em;
                             font-weight: 600;
@@ -1323,23 +1320,21 @@
                             color: #034076;
                         }
                     }
-                    
-                    & > .slider_section_btn{
-                        
-                        .slider_btn{
-                            
-                        }
+
+                    &>.slider_section_btn {
+
+                        .slider_btn {}
                     }
 
-                    & > .slider_content{
+                    &>.slider_content {
                         display: flex;
                         flex-direction: row;
                         gap: 3em;
                         height: 50%;
                         padding-top: 6vh;
-                        
-                        .slider_content_item{
-                            img{
+
+                        .slider_content_item {
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
@@ -1352,22 +1347,18 @@
     }
 }
 
-@media (min-width: 1440px)
-{
-    
-    html
-    {
+@media (min-width: 1440px) {
+
+    html {
         font-size: 14px;
         scroll-behavior: smooth;
     }
-    
-    #public-layout
-    {
+
+    #public-layout {
         min-height: 100vh;
         width: 100vw;
 
-        & > #homepage
-        {
+        &>#homepage {
             background-color: #F4F4F4;
             overflow: hidden;
             margin-top: 10vh;
@@ -1375,34 +1366,30 @@
             display: flex;
             flex-direction: column;
 
-            & > header
-            {
+            &>header {
                 display: flex;
                 justify-content: center;
                 background-color: #034076;
 
 
-                figure 
-                {
+                figure {
                     display: flex;
-                    justify-content: center ;
-                    img 
-                    {
+                    justify-content: center;
+
+                    img {
                         width: 60%;
                         padding-top: 8em;
                     }
                 }
             }
 
-            & > section:first-of-type
-            {
+            &>section:first-of-type {
                 display: grid;
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
-                
 
-                h2 
-                {
+
+                h2 {
                     font-family: 'Bebas Neue', sans-serif;
                     font-size: 2.5em;
                     text-transform: uppercase;
@@ -1413,89 +1400,105 @@
                     width: 40vw;
                     justify-self: center;
                     text-align: center;
-                    
-                    
+
+
                 }
 
-                article{
+                article {
                     grid-column: 2/3;
                     padding-top: 2em;
-                    
-                    iframe{
+
+                    iframe {
                         border-radius: 0.5em;
                     }
 
                 }
             }
 
-            & > section:nth-of-type(2)
-            {
+            &>section:nth-of-type(2) {
                 margin-top: 6vh;
                 display: grid;
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
                 height: 50em;
 
-                #homepage-carousel{
+                #homepage-carousel {
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
                     gap: 2em;
+                    overflow: hidden;
 
-                    .mainSlider{
 
+                    .mainSlider_nav {
+                        margin-top: 22em;
+                        width: 870px;
+                        position: absolute;
                         display: flex;
-                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 10;
 
-                        &>article
-                        {
-        
-                            figure 
-                            {
-                                display: flex;
-    
-                                img 
-                                {
-                                    width: 60em;
-                                    height: 45em;
+                        &>ul {
+                            display: flex;
+
+                            .mainSlider_btn {
+                                position: absolute;
+
+                                i {
+                                    color: #fff;
+                                    cursor: pointer;
+                                }
+
+                            }
+
+                            .mainSlider_btn:hover {
+                                transform: scale(1.1);
+                                transition: 0.1s all ease-in-out;
+                            }
+
+                            .mainSlider_btn_prev {
+                                left: 2.5em;
+                            }
+
+                            .mainSlider_btn_next {
+                                right: 2.5em;
+
+                            }
+                        }
+
+                    }
+
+                    .mainSlider {
+
+                        height: 45em;
+                        width: 200em;
+                        position: relative;
+                        overflow: hidden;
+                        display: flex;
+                        scroll-behavior: smooth;
+
+                        .mainSlider_content {
+                            height: 100%;
+                            min-width: 100%;
+                            scroll-behavior: smooth;
+
+                            .mainSlider_content_item {
+                                height: 100%;
+                                width: 100%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
                                     border-radius: 0.5em;
                                 }
                             }
-                            footer{
+
+                            footer {
                                 display: grid;
-                                
-                                .mainSlider_section_btn{
-                                    position: relative;
-                                    bottom: 23em;
-                                    
-                                    .mainSlider_btn{
-                                        position: absolute;
-    
-                                        i{
-                                            color: #fff;
-                                            cursor: pointer;
-                                        }
-                                        
-                                    }
-                                    
-                                    .mainSlider_btn_prev{
-                                        position: absolute;
-                                        left: 20px;
-                                        top: 50%;
-                                        transform: translateY(100%);
-                                        
-                                    }
-                                    
-                                    .mainSlider_btn_next{
-                                        position: absolute;
-                                        right: 20px;
-                                        top: 50%;
-                                        transform: translateY(100%);
-                                    }
-                                }
-                                
-                                h3{
-                                    
+
+                                h3 {
+
                                     font-family: 'Bebas Neue', sans-serif;
                                     font-size: 3.5em;
                                     text-transform: uppercase;
@@ -1503,46 +1506,34 @@
                                     position: relative;
                                     padding-left: 0.5em;
                                     bottom: 2em;
-    
-    
-                                    a{
+
+
+                                    a {
                                         color: #fff;
                                         text-decoration: none;
                                     }
-    
-                                    a:hover{
-                                    
+
+                                    a:hover {
+
                                         transition: 0.2s;
                                         color: #FDCD11;
                                     }
                                 }
-                                
+
                             }
                         }
-
-                        // &>article:nth-of-type(2){
-                        //     display: none;
-                        // }
-                        
-                        // &>article:last-of-type{
-                        //     display: none;
-                        // }
                     }
 
-                    
-    
-                    aside 
-                    {
+                    aside {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 100%;
 
-                        header 
-                        {
+                        header {
                             padding-bottom: 1em;
-                            h2
-                            {
+
+                            h2 {
                                 font-family: 'Bebas Neue', sans-serif;
                                 font-size: 2.5em;
                                 text-transform: uppercase;
@@ -1550,23 +1541,21 @@
                                 color: #034076;
                             }
                         }
-    
-                        article
-                        {
+
+                        article {
                             display: flex;
                             flex-direction: column;
                             gap: 0.8em;
                             border-bottom: #F4F4F4 0.2em solid;
                             padding: 1em;
-                            span 
-                            {
+
+                            span {
                                 font-family: 'Poppins', sans-serif;
                                 font-size: 1.2em;
                                 color: #034076;
                             }
-    
-                            p 
-                            {
+
+                            p {
                                 font-family: 'Poppins', sans-serif;
                                 font-size: 1.2em;
                                 text-transform: uppercase;
@@ -1576,28 +1565,28 @@
                 }
             }
 
-            & > section:nth-of-type(3)
-            {
+            &>section:nth-of-type(3) {
                 margin-top: 6vh;
                 display: grid;
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #F4F4F4;
 
-                #homepage-actualites{
+                #homepage-actualites {
                     grid-column: 2/3;
                     display: flex;
                     flex-direction: row;
                     gap: 2em;
 
-                    & > section:first-of-type{
+                    &>section:first-of-type {
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 65%;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: 'Bebas Neue', sans-serif;
                                 font-size: 2.5em;
                                 text-transform: uppercase;
@@ -1605,46 +1594,46 @@
                                 color: #034076;
                             }
                         }
-    
-                        article{
+
+                        article {
                             display: grid;
                             grid-template-columns: 1fr 2fr;
                             gap: 2.5em;
                             margin-top: 2vh;
 
-                            a{
-                                figure{
+                            a {
+                                figure {
                                     height: 18em;
-    
-                                    img{
+
+                                    img {
                                         width: 100%;
                                         height: 100%;
                                         border-radius: 0.5em;
                                     }
 
-                                    img:hover{
+                                    img:hover {
                                         transform: scale(0.99);
                                         transition: 0.5s;
                                         filter: brightness(0.8);
                                     }
                                 }
                             }
-    
-                            
-                            
-                            section{
+
+
+
+                            section {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 2em;
 
-                                header{
+                                header {
                                     display: flex;
                                     flex-direction: row;
                                     gap: 1em;
 
-                                    a{
+                                    a {
                                         font-family: 'Poppins', sans-serif;
-                                        font-size: 1em;                                        
+                                        font-size: 1em;
                                         background-color: #034076;
                                         color: white;
                                         border-radius: 1em;
@@ -1652,58 +1641,62 @@
                                         padding: 0.5em;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         transition: 0.2s;
                                         background-color: #000;
                                     }
-                                    span{
+
+                                    span {
                                         font-family: 'Poppins', sans-serif;
                                         font-size: 1em;
                                         align-self: center;
                                     }
                                 }
-                                h3{
+
+                                h3 {
                                     font-family: 'Bebas Neue', sans-serif;
                                     font-size: 2em;
                                     text-transform: uppercase;
                                     cursor: pointer;
 
-                                    a{
+                                    a {
                                         text-decoration: none;
                                         color: black;
                                     }
 
-                                    a:hover{
+                                    a:hover {
                                         transition: 0.2s;
                                         color: #FDCD11;
                                     }
                                 }
-                                
-                                p{
+
+                                p {
                                     font-family: 'Poppins', sans-serif;
                                     font-size: 1em;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     display: -webkit-box;
-                                       -webkit-line-clamp: 2; /* number of lines to show */
-                                               line-clamp: 2;
-                                       -webkit-box-orient: vertical;
-                                       
+                                    -webkit-line-clamp: 2;
+                                    /* number of lines to show */
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+
                                 }
                             }
                         }
                     }
 
-                    aside{
-                        
+                    aside {
+
                         padding: 1em;
                         background-color: white;
                         border-radius: 0.5em;
                         width: 35%;
 
-                        header{
+                        header {
                             padding-bottom: 1em;
-                            h2{
+
+                            h2 {
                                 font-family: 'Bebas Neue', sans-serif;
                                 font-size: 2.5em;
                                 text-transform: uppercase;
@@ -1715,35 +1708,34 @@
                 }
             }
 
-            & > section:last-of-type
-            {
+            &>section:last-of-type {
                 margin-top: 6vh;
                 padding: 2em 0 0 0;
                 display: grid;
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #034076;
-                #partenaires{
+
+                #partenaires {
                     grid-column: 2/3;
 
-                    header{
+                    header {
                         padding-bottom: 1em;
-                        h2{
+
+                        h2 {
                             font-family: 'Bebas Neue', sans-serif;
-                                font-size: 2.5em;
-                                text-transform: uppercase;
-                                border-bottom: #FDCD11 0.4em solid;
-                                color: #fff;
+                            font-size: 2.5em;
+                            text-transform: uppercase;
+                            border-bottom: #FDCD11 0.4em solid;
+                            color: #fff;
                         }
                     }
 
-                    & > .slider_section_btn{
-                        
-                        .slider_btn{
-                            
-                        }
+                    &>.slider_section_btn {
+
+                        .slider_btn {}
                     }
 
-                    & > .slider_content{
+                    &>.slider_content {
                         display: flex;
                         flex-direction: row;
                         gap: 3em;
@@ -1751,13 +1743,13 @@
                         padding-top: 6vh;
                         overflow: hidden;
                         scroll-behavior: smooth;
-                        
-                        .slider_content_item{
+
+                        .slider_content_item {
                             height: 100%;
                             min-width: 30%;
                             scroll-behavior: smooth;
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;

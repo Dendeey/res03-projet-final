@@ -29,33 +29,35 @@
     <section>
         <section id="homepage-carousel">
             <h2 class="sr-only">Section avec un caroussel des actualités</h2>
+            <section class="mainSlider_nav">
+                <ul>
+                    <li class="mainSlider_btn mainSlider_btn_prev"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></li>
+                    <li class="mainSlider_btn mainSlider_btn_next"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></li>
+                </ul>
+            </section>
             <section class="mainSlider">
-                <?php foreach($data['homepagePosts'] as $post){ ?>
-                <article class="slider1">
-                    <h2 class="sr-only">Actualité du caroussel</h2>
-                    <figure>
-                        <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" class="imgMainSlider" alt="Image de l'actualité principale de la page d'accueil">
-                    </figure>
-                    <footer>
-                        <section class="mainSlider_section_btn">
-                            <span class="mainSlider_btn mainSlider_btn_prev"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></span>
-                            <span class="mainSlider_btn mainSlider_btn_next"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></span>
-                        </section>
-                        <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
-                    </footer>
-                </article>
+                <?php foreach ($data['homepagePosts'] as $post) { ?>
+                    <article class="mainSlider_content">
+                        <h2 class="sr-only">Actualité du caroussel</h2>
+                        <figure class="mainSlider_content_item">
+                            <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
+                        </figure>
+                        <footer>
+                            <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
+                        </footer>
+                    </article>
                 <?php } ?>
             </section>
             <aside>
                 <header>
                     <h2>Dernières minutes</h2>
                 </header>
-                <?php foreach($data['homepagePosts'] as $post){ ?>
-                <article>
-                    <h2 class="sr-only">Article dans la section "Dernières minutes"</h2>
-                    <span><?= $post->getDate(); ?></span>
-                    <p><?= $post->getTitle(); ?></p>
-                </article>
+                <?php foreach ($data['homepagePosts'] as $post) { ?>
+                    <article>
+                        <h2 class="sr-only">Article dans la section "Dernières minutes"</h2>
+                        <span><?= $post->getDate(); ?></span>
+                        <p><?= $post->getTitle(); ?></p>
+                    </article>
                 <?php } ?>
             </aside>
         </section>
@@ -68,7 +70,7 @@
                 <header>
                     <h2>Actualités</h2>
                 </header>
-                <?php 
+                <?php
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
                         <h2 class="sr-only">Un des trois derniers articles</h2>

@@ -34,11 +34,27 @@ function mainSlider(){
     if(previousBtn){
         previousBtn.addEventListener('click', function(){
 
+            console.log("Previous");
+
             // Récupérer la largeur de l'élément pour l'ajouter ou la soustraire au moment du click
-            let sliderWidth = document.querySelector('.imgMainSlider').offsetWidth;
-            document.querySelector('.')
+            let sliderWidth = document.querySelector('.mainSlider').offsetWidth;
+            document.querySelector('.mainSlider').scrollLeft -= sliderWidth;
+            
+        })
+    }
+
+    if(nextBtn){
+        nextBtn.addEventListener('click', function(){
+
+            console.log("Next");
+
+            // Récupérer la largeur de l'élément pour l'ajouter ou la soustraire au moment du click
+            let sliderWidth = document.querySelector('.mainSlider').offsetWidth;
+            document.querySelector('.mainSlider').scrollLeft += sliderWidth;
+            
         })
     }
 }
 
 export { partenairesSlider };
+export { mainSlider };
