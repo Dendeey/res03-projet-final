@@ -27,33 +27,34 @@ function partenairesSlider() {
 // Slider pour la section "homepage-carousel" sur la page d'accueil
 function mainSlider(){
 
-    // Ajouter un évènement au click sur les bouttons précédent et suivant
-    let previousBtn = document.querySelector('.mainSlider_btn_prev');
-    let nextBtn = document.querySelector('.mainSlider_btn_next');
+    // Récupération des éléments du slider
+    const slider = document.querySelector(".mainSlider");
+    const sliderItems = slider.querySelectorAll(".mainSlider_content");
+    const sliderNavPrev = document.querySelector(".mainSlider_btn_prev");
+    const sliderNavNext = document.querySelector(".mainSlider_btn_next");
+    let currentIndex = 0;
 
-    if(previousBtn){
-        previousBtn.addEventListener('click', function(){
+    // Fonction pour afficher le slide suivant
+    function showNextSlide() {
 
-            console.log("Previous");
-
-            // Récupérer la largeur de l'élément pour l'ajouter ou la soustraire au moment du click
-            let sliderWidth = document.querySelector('.mainSlider').offsetWidth;
-            document.querySelector('.mainSlider').scrollLeft -= sliderWidth;
-            
-        })
+        sliderItems[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % sliderItems.length;
+        sliderItems[currentIndex].classList.add("active");
     }
 
-    if(nextBtn){
-        nextBtn.addEventListener('click', function(){
-
-            console.log("Next");
-
-            // Récupérer la largeur de l'élément pour l'ajouter ou la soustraire au moment du click
-            let sliderWidth = document.querySelector('.mainSlider').offsetWidth;
-            document.querySelector('.mainSlider').scrollLeft += sliderWidth;
-            
-        })
+    // Fonction pour afficher le slide précédent
+    function showPrevSlide() {
+        sliderItems[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+        sliderItems[currentIndex].classList.add("active");
     }
+
+    // Écouteurs d'événements pour les boutons de navigation
+    sliderNavPrev.addEventListener("click", showPrevSlide);
+    sliderNavNext.addEventListener("click", showNextSlide);
+
+    // Affichage du premier slide au démarrage
+    sliderItems[currentIndex].classList.add("active");
 }
 
 export { partenairesSlider };

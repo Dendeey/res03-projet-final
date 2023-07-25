@@ -2192,26 +2192,28 @@ table {
     position: relative;
     overflow: hidden;
     display: flex;
-    scroll-behavior: smooth;
   }
   #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content {
+    display: none;
+  }
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active {
+    display: block;
     height: 100%;
     min-width: 100%;
-    scroll-behavior: smooth;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content .mainSlider_content_item {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active .mainSlider_content_item {
     height: 100%;
     width: 100%;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content .mainSlider_content_item img {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active .mainSlider_content_item img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content footer {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active footer {
     display: grid;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content footer h3 {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active footer h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3.5em;
     text-transform: uppercase;
@@ -2220,11 +2222,11 @@ table {
     padding-left: 0.5em;
     bottom: 2em;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content footer h3 a {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active footer h3 a {
     color: #fff;
     text-decoration: none;
   }
-  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content footer h3 a:hover {
+  #public-layout > #homepage > section:nth-of-type(2) #homepage-carousel .mainSlider .mainSlider_content.active footer h3 a:hover {
     transition: 0.2s;
     color: #FDCD11;
   }
