@@ -1476,18 +1476,19 @@
                         position: relative;
                         overflow: hidden;
                         display: flex;
-                        
+                        transition: transform 0.5s ease-in-out;
 
                         .mainSlider_content {
                             display: none;
-                            
+                            height: 100%;
+                            min-width: 100%;
+
                         }
 
                         .mainSlider_content.active {
                             display: block;
                             height: 100%;
                             min-width: 100%;
-                            
 
                             .mainSlider_content_item {
                                 height: 100%;
