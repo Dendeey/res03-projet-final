@@ -1724,8 +1724,11 @@
 
                 #partenaires {
                     grid-column: 2/3;
+                    width: 100%; /* Ajustez la largeur selon vos besoins */
+                    overflow: hidden;
+                    position: relative;
 
-                    header {
+                    &>header {
                         padding-bottom: 1em;
 
                         h2 {
@@ -1737,23 +1740,17 @@
                         }
                     }
 
-                    &>.slider_section_btn {
-
-                        .slider_btn {}
-                    }
-
                     &>.slider_content {
                         display: flex;
                         flex-direction: row;
                         gap: 3em;
-                        height: 50%;
-                        padding-top: 6vh;
                         overflow: hidden;
+                        transition: transform 0.3s ease-in-out;
                         scroll-behavior: smooth;
 
                         .slider_content_item {
-                            height: 100%;
-                            min-width: 30%;
+                            height: 14em;
+                            width: 18em;
                             scroll-behavior: smooth;
 
                             img {

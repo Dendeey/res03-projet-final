@@ -2391,11 +2391,14 @@ table {
   }
   #public-layout > #homepage > section:last-of-type #partenaires {
     grid-column: 2/3;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    overflow: hidden;
+    position: relative;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires header {
+  #public-layout > #homepage > section:last-of-type #partenaires > header {
     padding-bottom: 1em;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires header h2 {
+  #public-layout > #homepage > section:last-of-type #partenaires > header h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -2406,14 +2409,13 @@ table {
     display: flex;
     flex-direction: row;
     gap: 3em;
-    height: 50%;
-    padding-top: 6vh;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
     scroll-behavior: smooth;
   }
   #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item {
-    height: 100%;
-    min-width: 30%;
+    height: 14em;
+    width: 18em;
     scroll-behavior: smooth;
   }
   #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item img {
