@@ -1,26 +1,14 @@
 // Slider pour la section "partenaires" sur la page d'accueil
 function partenairesSlider() {
 
-    const carouselTrack = document.querySelector('.slider_content');
-    const images = carouselTrack.querySelectorAll('.slider_content_item');
-    const imageWidth = images[0].getBoundingClientRect().width;
-    const numVisibleImages = 3;
-    let currentIndex = 0;
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % images.length;
-        moveCarousel();
-    }
-
-    function moveCarousel() {
-        carouselTrack.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-    }
-
-    function initCarousel() {
-        setInterval(nextSlide, 3000); // Changer d'image toutes les 3 secondes (ajustez selon vos préférences)
-    }
-
-    window.addEventListener('load', initCarousel);
+    $(document).ready(function () {
+        $('.slider_sponsors_content').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
 
 }
 
@@ -28,10 +16,10 @@ function partenairesSlider() {
 function mainSlider() {
 
     // Récupération des éléments du slider
-    const slider = document.querySelector(".mainSlider");
-    const sliderItems = slider.querySelectorAll(".mainSlider_content");
-    const sliderNavPrev = document.querySelector(".mainSlider_btn_prev");
-    const sliderNavNext = document.querySelector(".mainSlider_btn_next");
+    let slider = document.querySelector(".mainSlider");
+    let sliderItems = slider.querySelectorAll(".mainSlider_content");
+    let sliderNavPrev = document.querySelector(".mainSlider_btn_prev");
+    let sliderNavNext = document.querySelector(".mainSlider_btn_next");
     let currentIndex = 0;
 
     // Fonction pour afficher le slide suivant

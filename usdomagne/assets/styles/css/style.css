@@ -2389,39 +2389,38 @@ table {
     grid-template-columns: 0.15fr 0.7fr 0.15fr;
     background-color: #034076;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires {
+  #public-layout > #homepage > section:last-of-type #slider_sponsors {
     grid-column: 2/3;
-    width: 100%; /* Ajustez la largeur selon vos besoins */
     overflow: hidden;
-    position: relative;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > header {
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > header {
     padding-bottom: 1em;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > header h2 {
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > header h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.5em;
     text-transform: uppercase;
     border-bottom: #FDCD11 0.4em solid;
     color: #fff;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content {
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content {
     display: flex;
-    flex-direction: row;
-    gap: 3em;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    scroll-behavior: smooth;
+    margin-left: 5em;
+    margin-right: 5em;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item {
-    height: 14em;
-    width: 18em;
-    scroll-behavior: smooth;
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content .slider_sponsors_content_item {
+    padding: 2em;
+    height: 15em;
+    transition: transform 0.5s;
+    cursor: pointer;
   }
-  #public-layout > #homepage > section:last-of-type #partenaires > .slider_content .slider_content_item img {
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content .slider_sponsors_content_item img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content .slider_sponsors_content_item:hover {
+    transform: scale(1.05);
   }
 }
 @media (max-width: 426px) {

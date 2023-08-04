@@ -1722,11 +1722,9 @@
                 grid-template-columns: 0.15fr 0.7fr 0.15fr;
                 background-color: #034076;
 
-                #partenaires {
+                #slider_sponsors {
                     grid-column: 2/3;
-                    width: 100%; /* Ajustez la largeur selon vos besoins */
                     overflow: hidden;
-                    position: relative;
 
                     &>header {
                         padding-bottom: 1em;
@@ -1740,24 +1738,26 @@
                         }
                     }
 
-                    &>.slider_content {
+                    &>.slider_sponsors_content{
                         display: flex;
-                        flex-direction: row;
-                        gap: 3em;
-                        overflow: hidden;
-                        transition: transform 0.3s ease-in-out;
-                        scroll-behavior: smooth;
+                        margin-left: 5em;
+                        margin-right: 5em;
 
-                        .slider_content_item {
-                            height: 14em;
-                            width: 18em;
-                            scroll-behavior: smooth;
+                        .slider_sponsors_content_item{
+                            padding: 2em;
+                            height: 15em;
+                            transition: transform 0.5s;
+                            cursor: pointer;
 
-                            img {
+                            img{
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 0.5em;
                             }
+                        }
+
+                        .slider_sponsors_content_item:hover{
+                            transform: scale(1.05);
                         }
                     }
                 }
