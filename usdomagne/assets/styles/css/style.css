@@ -2590,43 +2590,79 @@ table {
 }
 @media (min-width: 1440px) {
   #footer-client {
-    display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
+    display: flex;
+    gap: 22em;
     background-color: #034076;
     height: 15vh;
     width: 100vw;
-    bottom: 0;
     padding-bottom: 2em;
+    padding-top: 2em;
   }
-  #footer-client figure {
+  #footer-client > figure {
     display: grid;
+    padding-left: 8em;
   }
-  #footer-client figure img {
+  #footer-client > figure img {
     justify-self: center;
     align-self: center;
     width: auto;
   }
-  #footer-client section {
+  #footer-client > section {
     display: flex;
     flex-direction: row;
-    gap: 10em;
-    padding-left: 5em;
+    gap: 22em;
+    justify-content: center;
+    align-content: center;
   }
-  #footer-client section section {
+  #footer-client > section section {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1.5em;
     align-self: center;
   }
-  #footer-client section section h1 {
+  #footer-client > section section h1 {
+    font-size: 1.1em;
+    font-weight: bold;
     color: white;
     font-family: "Poppins", sans-serif;
   }
-  #footer-client section section ul li a {
+  #footer-client > section section ul li {
+    padding-top: 0.5em;
+  }
+  #footer-client > section section ul li a {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     text-decoration: none;
+  }
+  #footer-client > section section:last-of-type h1 {
+    text-align: center;
+  }
+  #footer-client > section section:last-of-type ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  #footer-client > section section:last-of-type ul li .icon-facebook {
+    color: #FDCD11;
+  }
+  #footer-client > section section:last-of-type ul li .icon-facebook:hover {
+    color: #034076;
+    transition: 0.2s;
+  }
+  #footer-client > section section:last-of-type ul li .icon-instagram {
+    color: #FDCD11;
+  }
+  #footer-client > section section:last-of-type ul li .icon-instagram:hover {
+    color: #034076;
+    transition: 0.2s;
+  }
+  #footer-client > section section:last-of-type ul li .icon-twitter {
+    color: #FDCD11;
+  }
+  #footer-client > section section:last-of-type ul li .icon-twitter:hover {
+    color: #034076;
+    transition: 0.2s;
   }
 }
 @media (max-width: 426px) {
