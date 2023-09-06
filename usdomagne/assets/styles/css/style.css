@@ -2769,7 +2769,8 @@ table {
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-bottom: 0.25em;
@@ -2792,7 +2793,8 @@ table {
     font-size: 1.2em;
     padding-bottom: 0.8em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -2901,7 +2903,8 @@ table {
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-bottom: 0.15em;
@@ -2924,7 +2927,8 @@ table {
     font-size: 1.2em;
     padding-bottom: 0.6em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -3033,7 +3037,8 @@ table {
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-bottom: 0.3em;
@@ -3056,7 +3061,8 @@ table {
     font-size: 1.2em;
     padding-bottom: 0.8em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -3165,7 +3171,8 @@ table {
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-bottom: 0.3em;
@@ -3188,7 +3195,8 @@ table {
     font-size: 1.2em;
     padding-bottom: 0.6em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -3216,7 +3224,7 @@ table {
     gap: 2em;
   }
   #public-layout > #actualites > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
@@ -3229,18 +3237,18 @@ table {
     gap: 0.2em;
   }
   #public-layout > #actualites > header nav ul li {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
   }
   #public-layout > #actualites > header nav ul li a {
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
   #public-layout > #actualites > header nav ul li span {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #actualites > section:first-of-type {
     display: grid;
@@ -3262,14 +3270,18 @@ table {
     background-color: white;
     border-radius: 0.5em;
   }
-  #public-layout > #actualites > section:first-of-type > section article figure {
-    width: 100%;
-    height: 100%;
+  #public-layout > #actualites > section:first-of-type > section article a figure {
+    height: 20em;
   }
-  #public-layout > #actualites > section:first-of-type > section article figure img {
+  #public-layout > #actualites > section:first-of-type > section article a figure img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #actualites > section:first-of-type > section article a figure img:hover {
+    transform: scale(0.99);
+    transition: 0.5s;
+    filter: brightness(0.8);
   }
   #public-layout > #actualites > section:first-of-type > section article header {
     display: flex;
@@ -3277,7 +3289,7 @@ table {
     gap: 1em;
   }
   #public-layout > #actualites > section:first-of-type > section article header a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1em;
     background-color: #034076;
     color: white;
@@ -3286,41 +3298,35 @@ table {
     padding: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1em;
     align-self: center;
   }
   #public-layout > #actualites > section:first-of-type > section article h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
-    padding-bottom: 0.15em;
   }
   #public-layout > #actualites > section:first-of-type > section article h3 a {
     text-decoration: none;
     color: black;
   }
   #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
-    color: #034076;
-  }
-  #public-layout > #actualites > section:first-of-type > section article h3:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    z-index: 2;
-    color: #034076;
+    transition: 0.2s;
+    color: #FDCD11;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
-    padding-bottom: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

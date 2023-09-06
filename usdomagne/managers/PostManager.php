@@ -147,6 +147,23 @@ class PostManager extends AbstractManager
         
         return $lastPosts;
     }
+
+    //Fonction pour récupérer tous articles et les afficher du plus récent au plus vieux côté client 
+    public function getNewestPosts() : array
+    {
+        $query = $this->db->prepare("SELECT * FROM posts ORDER BY ID DESC");
+        $query->execute();
+        $posts = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+        $lastPosts = [];
+        foreach($posts as $post){
+            $newPost = new Post($post["title"], $post["date"], $post["content"]);
+            array_push($lastPosts, $newPost);
+            $newPost->setId($post["id"]);
+        }
+        
+        return $lastPosts;
+    }
 }
 
 ?>

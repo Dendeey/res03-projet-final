@@ -31,7 +31,7 @@ class PageController extends AbstractController
 
     public function actualites()
     {
-        $posts = $this->postManager->getAllPosts();
+        $posts = $this->postManager->getNewestPosts();
         foreach($posts as $post){
             $medias = $this->mediaManager->findMediaByPostId($post->getId());
             $post->addMedias($medias[0]);
