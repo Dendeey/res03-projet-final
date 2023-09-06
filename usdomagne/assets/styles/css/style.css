@@ -976,22 +976,22 @@ table {
     top: 11vh;
     border: 0.2em solid white;
   }
-  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop {
-    background-color: #034076;
-    padding: 1em;
-    cursor: pointer;
-  }
-  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop > a {
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop a {
     font-size: 1em;
     color: white;
+    cursor: pointer;
   }
-  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover {
-    background-color: white;
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop a .items-submenu-headerLaptop {
+    background-color: #034076;
+    padding: 1em;
   }
-  #client-header nav > ul:last-of-type .items .submenu-headerLaptop .items-submenu-headerLaptop:hover > a {
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop a:hover {
     color: #034076;
     text-decoration: underline #034076 solid 0.1em;
     text-underline-offset: 0.4em;
+  }
+  #client-header nav > ul:last-of-type .items .submenu-headerLaptop a:hover .items-submenu-headerLaptop:hover {
+    background-color: white;
   }
   #client-header nav > ul:last-of-type .items:hover .submenu-headerLaptop {
     display: block;
@@ -2405,12 +2405,12 @@ table {
   }
   #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content {
     display: flex;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
   }
   #public-layout > #homepage > section:last-of-type #slider_sponsors > .slider_sponsors_content .slider_sponsors_content_item {
-    padding: 2em;
-    height: 15em;
+    padding: 4em;
+    height: 12em;
     transition: transform 0.5s;
     cursor: pointer;
   }
@@ -3297,6 +3297,10 @@ table {
     text-decoration: none;
     padding: 0.5em;
   }
+  #public-layout > #actualites > section:first-of-type > section article header a:hover {
+    transition: 0.2s;
+    background-color: #000;
+  }
   #public-layout > #actualites > section:first-of-type > section article header span {
     font-family: "Poppins", sans-serif;
     font-size: 1em;
@@ -3304,7 +3308,7 @@ table {
   }
   #public-layout > #actualites > section:first-of-type > section article h3 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
     cursor: pointer;
     display: -webkit-box;
@@ -7909,6 +7913,82 @@ table {
   #public-layout > #actu > section:first-of-type > section section span {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #boutique {
+    background-color: #F4F4F4;
+    width: 100vw;
+  }
+  #public-layout > #boutique > header {
+    margin-top: 16vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #boutique > header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #boutique > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10em;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5em;
+  }
+  #public-layout > #boutique > section figure {
+    height: 40em;
+  }
+  #public-layout > #boutique > section figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #boutique > section section {
+    display: grid;
+    align-content: center;
+  }
+  #public-layout > #boutique > section section a {
+    text-decoration: none;
+  }
+  #public-layout > #boutique > section section a section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #boutique > section section a section h2 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    color: #034076;
+  }
+  #public-layout > #boutique > section section a section h3 {
+    color: #034076;
+    text-align: center;
+  }
+  #public-layout > #boutique > section section a section:hover {
+    transition: 0.5s;
+    color: #FDCD11;
+    transform: scale(1.1);
   }
 }
 @media (max-width: 426px) {

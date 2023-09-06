@@ -1,0 +1,91 @@
+@media (min-width: 1440px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        height: 100vh;
+        width: 100vw;
+
+        &>#boutique {
+            background-color: #F4F4F4;
+            width: 100vw;
+
+            &>header {
+
+                margin-top: 16vh;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: $benas;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+            }
+
+            &>section {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10em;
+                justify-content: center;
+                align-content: center;
+                padding-bottom: 5em;
+
+                figure {
+                    height: 40em;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 0.5em;
+                    }
+                }
+
+                section {
+                    display: grid;
+                    align-content: center;
+                    a {
+
+                        text-decoration: none;
+
+                        section {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            gap: 1em;
+                            justify-content: center;
+                            align-content: center;
+
+                            h2 {
+                                font-size: 3em;
+                                font-weight: bold;
+                                font-family: $benas;
+                                color: #034076;
+    
+                            }
+    
+                            h3{
+                                color: $blue;
+                                text-align: center;
+                            }
+                        }
+
+                        section:hover {
+                            transition: 0.5s;
+                            color: $yellow;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
