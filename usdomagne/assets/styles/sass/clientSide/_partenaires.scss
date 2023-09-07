@@ -1,0 +1,55 @@
+@media (min-width: 1440px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        height: 100vh;
+        width: 100vw;
+        background-color: $grey;
+
+        &>#partenaires {
+            background-color: #F4F4F4;
+            width: 100vw;
+
+            &>header {
+
+                margin-top: 16vh;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: $benas;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+            }
+
+            &>section {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 5em;
+                justify-content: center;
+                align-content: center;
+                padding: 5em 15em 15em 15em;
+
+                figure {
+                    height: 10em;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        height: 100%;
+                        border-radius: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}

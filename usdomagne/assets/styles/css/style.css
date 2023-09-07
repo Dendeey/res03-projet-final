@@ -2333,7 +2333,7 @@ table {
     padding: 0.5em;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header a:hover {
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: #000;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section header span {
@@ -2352,7 +2352,7 @@ table {
     color: black;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section h3 a:hover {
-    transition: 0.2s;
+    transition: 0.5s;
     color: #FDCD11;
   }
   #public-layout > #homepage > section:nth-of-type(3) #homepage-actualites > section:first-of-type article section p {
@@ -3298,7 +3298,7 @@ table {
     padding: 0.5em;
   }
   #public-layout > #actualites > section:first-of-type > section article header a:hover {
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: #000;
   }
   #public-layout > #actualites > section:first-of-type > section article header span {
@@ -3322,7 +3322,7 @@ table {
     color: black;
   }
   #public-layout > #actualites > section:first-of-type > section article h3 a:hover {
-    transition: 0.2s;
+    transition: 0.5s;
     color: #FDCD11;
   }
   #public-layout > #actualites > section:first-of-type > section article p {
@@ -7989,6 +7989,53 @@ table {
     transition: 0.5s;
     color: #FDCD11;
     transform: scale(1.1);
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F4F4F4;
+  }
+  #public-layout > #partenaires {
+    background-color: #F4F4F4;
+    width: 100vw;
+  }
+  #public-layout > #partenaires > header {
+    margin-top: 16vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #partenaires > header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #partenaires > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    justify-content: center;
+    align-content: center;
+    padding: 5em 15em 15em 15em;
+  }
+  #public-layout > #partenaires > section figure {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+  }
+  #public-layout > #partenaires > section figure img {
+    height: 100%;
+    border-radius: 0.5em;
   }
 }
 @media (max-width: 426px) {

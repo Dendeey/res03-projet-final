@@ -3,10 +3,10 @@
  */
 function hideAndShowMenuOnScroll(){
     
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.scrollY;
 
     window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
+        let currentScrollPos = window.scrollY;
         if (prevScrollpos > currentScrollPos) 
         {
             document.getElementById("client-header").style.top = "0";
