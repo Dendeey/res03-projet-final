@@ -16,7 +16,8 @@
             &>header {
 
                 margin-top: 16vh;
-                padding: 2em;
+                padding-top: 4em;
+                padding-left: 4em;
                 display: flex;
                 flex-direction: column;
                 gap: 2em;
@@ -28,6 +29,32 @@
                     text-transform: uppercase;
                     text-decoration: underline #FDCD11 0.1em;
                     color: #034076;
+                }
+
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+
+                        li {
+                            font-family: $poppins;
+                            font-size: 1.1em;
+
+                            a {
+                                text-decoration: none;
+                                font-family: $poppins;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+
+                            span {
+
+                                font-family: $poppins;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -47,6 +74,12 @@
                     img {
                         height: 100%;
                         border-radius: 0.5em;
+                    }
+
+                    img:hover {
+                        transform: scale(0.99);
+                        transition: 0.5s;
+                        filter: brightness(0.8);
                     }
                 }
             }

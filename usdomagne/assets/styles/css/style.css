@@ -6179,7 +6179,7 @@ table {
     gap: 2em;
   }
   #public-layout > #arbitres > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
@@ -6192,18 +6192,18 @@ table {
     gap: 0.2em;
   }
   #public-layout > #arbitres > header nav ul li {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
   }
   #public-layout > #arbitres > header nav ul li a {
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
   #public-layout > #arbitres > header nav ul li span {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #arbitres > section:first-of-type {
     display: grid;
@@ -6866,12 +6866,31 @@ table {
     gap: 2em;
   }
   #public-layout > #contact > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
+  }
+  #public-layout > #contact > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #contact > header nav ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #contact > header nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #contact > header nav ul li span {
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #contact > section:first-of-type {
     display: grid;
@@ -7377,12 +7396,31 @@ table {
     gap: 2em;
   }
   #public-layout > #infrastructures > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
+  }
+  #public-layout > #infrastructures > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #infrastructures > header nav ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #infrastructures > header nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #infrastructures > header nav ul li span {
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #infrastructures > section:first-of-type {
     padding-bottom: 3em;
@@ -7930,7 +7968,8 @@ table {
   }
   #public-layout > #boutique > header {
     margin-top: 16vh;
-    padding: 2em;
+    padding-top: 4em;
+    padding-left: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -7943,6 +7982,25 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
+  #public-layout > #boutique > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #boutique > header nav ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #boutique > header nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #boutique > header nav ul li span {
+    font-family: "Poppins", sans-serif;
+  }
   #public-layout > #boutique > section {
     display: flex;
     flex-direction: row;
@@ -7950,7 +8008,7 @@ table {
     gap: 10em;
     justify-content: center;
     align-content: center;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
   }
   #public-layout > #boutique > section figure {
     height: 40em;
@@ -8007,7 +8065,8 @@ table {
   }
   #public-layout > #partenaires > header {
     margin-top: 16vh;
-    padding: 2em;
+    padding-top: 4em;
+    padding-left: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -8019,6 +8078,25 @@ table {
     text-transform: uppercase;
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
+  }
+  #public-layout > #partenaires > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #partenaires > header nav ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #partenaires > header nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #partenaires > header nav ul li span {
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #partenaires > section {
     display: grid;
@@ -8036,6 +8114,11 @@ table {
   #public-layout > #partenaires > section figure img {
     height: 100%;
     border-radius: 0.5em;
+  }
+  #public-layout > #partenaires > section figure img:hover {
+    transform: scale(0.99);
+    transition: 0.5s;
+    filter: brightness(0.8);
   }
 }
 @media (max-width: 426px) {

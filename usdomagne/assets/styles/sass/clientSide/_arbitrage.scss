@@ -512,7 +512,7 @@
                 gap: 2em;
 
                 h1 {
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: $benas;
                     font-size: 3em;
                     font-weight: 600;
                     text-transform: uppercase;
@@ -525,18 +525,18 @@
                         flex-direction: row;
                         gap: 0.2em;
                         li {
-                            font-family: 'Open Sans', sans-serif;
+                            font-family: $poppins;
                             font-size: 1.1em;
                             a {
                                 text-decoration: none;
-                                font-family: 'Open Sans', sans-serif;
+                                font-family: $poppins;
                                 font-size: 1.1em;
                                 color: #034076;
                                 border-bottom: 0.1em solid #034076;
                             }
                             span {
 
-                                font-family: 'Open Sans', sans-serif;
+                                font-family: $poppins;
                             }
                         }
                     }
