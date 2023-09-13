@@ -1,9 +1,5 @@
 ![image](https://s3.static-footeo.com/100/uploads/us-domagnestdidier/logo__75nixo4eg.png)
 
-## res03-projet-final
-
-Projet final pour la soutenance de fin de formation.
-
 # Futur site officiel de football de l'US Domagné
 
 Vous pourrez y voir l'actualité, le bureau, les infrastructures, les équipes, le classement, les résultats, la boutique du club ainsi qu'un album photo.
