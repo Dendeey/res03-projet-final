@@ -4999,9 +4999,13 @@ table {
     grid-column: 2/3;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-content: center;
   }
   #public-layout > #bureau > section:first-of-type > section:last-of-type figure {
-    height: 20em;
+    height: 25em;
   }
   #public-layout > #bureau > section:first-of-type > section:last-of-type figure img {
     width: 100%;
