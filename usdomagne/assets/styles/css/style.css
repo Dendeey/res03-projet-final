@@ -4923,13 +4923,14 @@ table {
   }
   #public-layout > #bureau > header {
     margin-top: 16vh;
-    padding: 4em;
+    padding-top: 4em;
+    padding-left: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
   #public-layout > #bureau > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
@@ -4942,74 +4943,94 @@ table {
     gap: 0.2em;
   }
   #public-layout > #bureau > header nav ul li {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
   }
   #public-layout > #bureau > header nav ul li a {
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
   #public-layout > #bureau > header nav ul li span {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #bureau > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    gap: 4em;
+    padding-bottom: 4em;
     background-color: #F4F4F4;
-    padding-bottom: 2em;
   }
-  #public-layout > #bureau > section:first-of-type > section {
+  #public-layout > #bureau > section:first-of-type > section:first-of-type {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    justify-items: center;
-  }
-  #public-layout > #bureau > section:first-of-type > section article {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0.5em;
-    width: 80%;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    flex-direction: row;
+    gap: 6em;
+    justify-content: center;
+    align-content: center;
   }
-  #public-layout > #bureau > section:first-of-type > section article figure {
-    width: 100%;
-    height: 100%;
+  #public-layout > #bureau > section:first-of-type > section:first-of-type figure {
+    height: 55em;
   }
-  #public-layout > #bureau > section:first-of-type > section article figure img {
-    width: 100%;
+  #public-layout > #bureau > section:first-of-type > section:first-of-type figure img {
     height: 100%;
+    width: 100%;
     border-radius: 0.5em;
   }
-  #public-layout > #bureau > section:first-of-type > section article figure img:hover {
-    transform: scale(1.02);
+  #public-layout > #bureau > section:first-of-type > section:nth-of-type(2) {
+    grid-column: 2/3;
+  }
+  #public-layout > #bureau > section:first-of-type > section:nth-of-type(2) header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  #public-layout > #bureau > section:first-of-type > section:nth-of-type(2) header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #bureau > section:first-of-type > section:last-of-type {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+  }
+  #public-layout > #bureau > section:first-of-type > section:last-of-type figure {
+    height: 20em;
+  }
+  #public-layout > #bureau > section:first-of-type > section:last-of-type figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+  }
+  #public-layout > #bureau > section:first-of-type > section:last-of-type figure img:hover {
+    transform: scale(0.99);
     transition: 0.5s;
-    z-index: 2;
+    filter: brightness(0.8);
   }
-  #public-layout > #bureau > section:first-of-type > section article section {
+  #public-layout > #bureau > section:first-of-type > section:last-of-type section {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
-  #public-layout > #bureau > section:first-of-type > section article section h2 {
-    font-family: "Open Sans", sans-serif;
+  #public-layout > #bureau > section:first-of-type > section:last-of-type section h2 {
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
     color: black;
   }
-  #public-layout > #bureau > section:first-of-type > section article section h2:hover {
+  #public-layout > #bureau > section:first-of-type > section:last-of-type section h2:hover {
     color: #034076;
     transition: 0.5s;
   }
-  #public-layout > #bureau > section:first-of-type > section article section h3 {
-    font-family: "Open Sans", sans-serif;
+  #public-layout > #bureau > section:first-of-type > section:last-of-type section h3 {
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     color: #034076;
   }

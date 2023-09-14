@@ -1,26 +1,36 @@
 <main id="bureau">
     <header>
-        <h1>Bureau</h1>
+        <h1>Bureau & Commission</h1>
         <nav>
             <ul>
                 <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
                 <li><span>/</span></li>
-                <li>Bureau</li>
+                <li>Bureau & Commission</li>
             </ul>
         </nav>
     </header>
     <section>
+        <section> <!-- Section avec visuels canva "Organnigramme" et "Commissions" -->
+            <figure>
+                <img src="assets/images/Organigramme" alt="organigramme">
+            </figure>
+            <figure>
+                <img src="assets/images/Commission" alt="commission">
+            </figure>
+        </section>
         <section>
-            <?php foreach($data['pageBureau'] as $bureau){ ?> 
-            <article>
+            <header>
+                <h2>Les membres</h2>
+            </header>
+        </section>
+        <section> <!-- Section avec photos des membres du bureau et de la commission -->
+
+            <?php foreach ($data['pageBureau'] as $bureau) { ?>
+
                 <figure>
                     <img src="/res03-projet-final/usdomagne/<?= $bureau->getMedias()[0]->getUrl(); ?>" alt="Image du bureau">
                 </figure>
-                <section>
-                    <h2><?= $bureau->getFirstName(); ?><span> </span><?= $bureau->getlastName(); ?></h2>
-                    <h3><?= $bureau->getRole(); ?></h3>
-                </section>
-            </article>
+
             <?php } ?>
         </section>
     </section>
