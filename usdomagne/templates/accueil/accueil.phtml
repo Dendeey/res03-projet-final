@@ -40,10 +40,10 @@
                     <article class="mainSlider_content active">
                         <h2 class="sr-only">Actualité du caroussel</h2>
                         <figure class="mainSlider_content_item">
-                            <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
+                            <img src="/usdomagne/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité principale de la page d'accueil">
                         </figure>
                         <footer>
-                            <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
+                            <h3><a href="/usdomagne/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
                         </footer>
                     </article>
                 <?php } ?>
@@ -74,18 +74,18 @@
                 foreach ($data['homepagePosts'] as $post) { ?>
                     <article>
                         <h2 class="sr-only">Un des trois derniers articles</h2>
-                        <a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>">
+                        <a href="/usdomagne/usdomagne/actualites/actu/<?= $post->getId(); ?>">
                             <figure>
-                                <img src="/res03-projet-final/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actu">
+                                <img src="/usdomagne/usdomagne/<?= $post->getMedias()[0]->getUrl(); ?>" alt="Image de l'actu">
                             </figure>
                         </a>
                         <section>
                             <h2 class="sr-only">Section de l'article</h2>
                             <header>
-                                <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
+                                <a href="/usdomagne/usdomagne/actualites">Actualités</a>
                                 <span><?= $post->getDate(); ?></span>
                             </header>
-                            <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
+                            <h3><a href="/usdomagne/usdomagne/actualites/actu/<?= $post->getId(); ?>"><?= $post->getTitle(); ?></a></h3>
                             <p><?= $post->getContent(); ?></p>
                         </section>
                     </article>

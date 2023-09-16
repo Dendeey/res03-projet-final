@@ -69,7 +69,7 @@ class OfficeController extends AbstractController
                 $officeToUpdate->setPhoneNumber($this->clean($post['edit-phonenumber']));
                 $officeToUpdate->setRole($this->clean($post['edit-role']));
                 $this->manager->editOffice($officeToUpdate);
-                header("Location: /res03-projet-final/usdomagne/admin/bureau");
+                header("Location: /usdomagne/usdomagne/admin/bureau");
             }
         }
     }
@@ -87,7 +87,7 @@ class OfficeController extends AbstractController
             $this->manager->insertOffice($office);
             $newOfficeMedia = $this->manager->addOfficeMedia($office->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/bureau');
+            header('Location: /usdomagne/usdomagne/admin/bureau');
             
         }
 
@@ -105,7 +105,7 @@ class OfficeController extends AbstractController
         $this->manager->deleteOffice($id);
 
         // render the list of all office
-        header("Location: /res03-projet-final/usdomagne/admin/bureau");
+        header("Location: /usdomagne/usdomagne/admin/bureau");
     }
     
     
@@ -119,7 +119,7 @@ class OfficeController extends AbstractController
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
             $newofficeMedia = $this->manager->addOfficeMedia($office->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/bureau/voir/'.$id.'');
+            header('Location: /usdomagne/usdomagne/admin/bureau/voir/'.$id.'');
         }
     }
     
@@ -135,7 +135,7 @@ class OfficeController extends AbstractController
             $this->mediaManager->deleteMedia($media);
         }
         
-        header('Location: /res03-projet-final/usdomagne/admin/bureau');
+        header('Location: /usdomagne/usdomagne/admin/bureau');
     }
     
 }

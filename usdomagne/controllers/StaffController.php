@@ -69,7 +69,7 @@ class StaffController extends AbstractController
                 $staffToUpdate->setPhoneNumber($this->clean($post['edit-phonenumber']));
                 $staffToUpdate->setRole($this->clean($post['edit-role']));
                 $this->manager->editStaff($staffToUpdate);
-                header("Location: /res03-projet-final/usdomagne/admin/staff");
+                header("Location: /usdomagne/usdomagne/admin/staff");
             }
         }
     }
@@ -87,7 +87,7 @@ class StaffController extends AbstractController
             $this->manager->insertStaff($staff);
             $newstaffMedia = $this->manager->addStaffMedia($staff->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/staff');
+            header('Location: /usdomagne/usdomagne/admin/staff');
             
         }
 
@@ -105,7 +105,7 @@ class StaffController extends AbstractController
         $this->manager->deleteStaff($id);
 
         // render the list of all staff
-        header("Location: /res03-projet-final/usdomagne/admin/staff");
+        header("Location: /usdomagne/usdomagne/admin/staff");
     }
     
     
@@ -119,7 +119,7 @@ class StaffController extends AbstractController
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
             $newStaffMedia = $this->manager->addStaffMedia($staff->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/staff/voir/'.$id.'');
+            header('Location: /usdomagne/usdomagne/admin/staff/voir/'.$id.'');
         }
     }
     
@@ -135,7 +135,7 @@ class StaffController extends AbstractController
             $this->mediaManager->deleteMedia($media);
         }
         
-        header('Location: /res03-projet-final/usdomagne/admin/staff');
+        header('Location: /usdomagne/usdomagne/admin/staff');
     }
     
 }

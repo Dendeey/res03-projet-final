@@ -54,7 +54,7 @@ class PlayerController extends AbstractController
                 $playerToUpdate->setFirstName($this->clean($post['edit-firstname']));
                 $playerToUpdate->setLastName($this->clean($post['edit-lastname']));
                 $this->manager->editPlayer($playerToUpdate);
-                header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+                header("Location: /usdomagne/usdomagne/admin/joueurs");
             }
         }
     }
@@ -65,7 +65,7 @@ class PlayerController extends AbstractController
         $this->manager->deletePlayer($id);
 
         // render the list of all users
-        header("Location: /res03-projet-final/usdomagne/admin/joueurs");
+        header("Location: /usdomagne/usdomagne/admin/joueurs");
     }
     
     public function displayFormAddPlayer(array $post) : void
@@ -78,7 +78,7 @@ class PlayerController extends AbstractController
             
             $playerToAdd = new Player($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]));
             $this->manager->insertPlayer($playerToAdd);
-            header('Location: /res03-projet-final/usdomagne/admin/joueurs');
+            header('Location: /usdomagne/usdomagne/admin/joueurs');
             
         }
 

@@ -37,7 +37,7 @@ class MediaController extends AbstractController
         $this->manager->deleteMediaWithId($id);
 
         // render the list of all referees
-        header("Location: /res03-projet-final/usdomagne/admin/media");
+        header("Location: /usdomagne/usdomagne/admin/media");
     }
 }
 

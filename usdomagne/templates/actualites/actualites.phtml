@@ -3,7 +3,7 @@
         <h1>Actualités</h1>
         <nav>
             <ul>
-                <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
+                <li><a href="/usdomagne/usdomagne">Accueil</a></li>
                 <li><span>/</span></li>
                 <li>Actualités</li>
             </ul>
@@ -13,16 +13,16 @@
         <section>
             <?php foreach ($data['pageActualites'] as $actu) { ?>
                 <article>
-                    <a href="/res03-projet-final/usdomagne/actualites/actu/<?= $actu->getId(); ?>">
+                    <a href="/usdomagne/usdomagne/actualites/actu/<?= $actu->getId(); ?>">
                         <figure>
-                            <img src="/res03-projet-final/usdomagne/<?= $actu->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité">
+                            <img src="/usdomagne/usdomagne/<?= $actu->getMedias()[0]->getUrl(); ?>" alt="Image de l'actualité">
                         </figure>
                     </a>
                     <header>
-                        <a href="/res03-projet-final/usdomagne/actualites">Actualités</a>
+                        <a href="/usdomagne/usdomagne/actualites">Actualités</a>
                         <span><?= $actu->getDate(); ?></span>
                     </header>
-                    <h3><a href="/res03-projet-final/usdomagne/actualites/actu/<?= $actu->getId(); ?>"><?= $actu->getTitle(); ?></a></h3>
+                    <h3><a href="/usdomagne/usdomagne/actualites/actu/<?= $actu->getId(); ?>"><?= $actu->getTitle(); ?></a></h3>
                     <p><?= $actu->getContent(); ?></p>
                 </article>
             <?php } ?>

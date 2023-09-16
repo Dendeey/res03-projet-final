@@ -3,7 +3,7 @@
         <h1>Staff</h1>
         <nav>
             <ul>
-                <li><a href="/res03-projet-final/usdomagne">Accueil</a></li>
+                <li><a href="/usdomagne/usdomagne">Accueil</a></li>
                 <li><span>/</span></li>
                 <li>Staff</li>
             </ul>
@@ -14,7 +14,7 @@
             <?php foreach($data['pageStaff'] as $staff){ ?> 
             <article>
                 <figure>
-                    <img src="/res03-projet-final/usdomagne/<?= $staff->getMedias()[0]->getUrl(); ?>" alt="Image du staff">
+                    <img src="/usdomagne/usdomagne/<?= $staff->getMedias()[0]->getUrl(); ?>" alt="Image du staff">
                 </figure>
                 <section>
                     <h2><?= $staff->getFirstName(); ?><span> </span><?= $staff->getlastName(); ?></h2>

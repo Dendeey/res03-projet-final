@@ -1,7 +1,7 @@
 <main>
     <section>
         <h1>Modifier cet arbitre :</h1>
-        <form action="/res03-projet-final/usdomagne/admin/arbitres/modifier/<?php echo($data['referees']->getId()); ?>" method="post">
+        <form action="/usdomagne/usdomagne/admin/arbitres/modifier/<?php echo($data['referees']->getId()); ?>" method="post">
             <fieldset class="mb-3">
                 <label for="edit-firstname" class="form-label">Prénom</label>
                 <input type="text" class="form-control" name="edit-firstname" value="<?= $data['referees']->getFirstName(); ?>">
@@ -17,6 +17,6 @@
         </form>
     </section>
     <section class="section-btn">
-        <button><a href="/res03-projet-final/usdomagne/admin/arbitres" class="btn btn-warning">Retour aux arbitres</a></button>
+        <button><a href="/usdomagne/usdomagne/admin/arbitres" class="btn btn-warning">Retour aux arbitres</a></button>
     </section>
 </main>

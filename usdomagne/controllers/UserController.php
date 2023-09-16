@@ -121,7 +121,7 @@ class UserController extends AbstractController
         
         session_destroy();
         
-        header('Location: /res03-projet-final/usdomagne');
+        header('Location: /usdomagne/usdomagne');
         
     }
     

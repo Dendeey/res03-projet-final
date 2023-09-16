@@ -78,7 +78,7 @@ class PostController extends AbstractController
                 $postToUpdate->setDate($this->clean($post['edit-date']));
                 $postToUpdate->setContent($this->clean($post['edit-content']));
                 $this->manager->editPost($postToUpdate);
-                header("Location: /res03-projet-final/usdomagne/admin/articles");
+                header("Location: /usdomagne/usdomagne/admin/articles");
             }
         }
     }
@@ -96,7 +96,7 @@ class PostController extends AbstractController
             $this->manager->insertPost($post);
             $newPostMedia = $this->manager->addPostMedia($post->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/articles');
+            header('Location: /usdomagne/usdomagne/admin/articles');
             
         }
 
@@ -114,7 +114,7 @@ class PostController extends AbstractController
         $this->manager->deletePost($id);
 
         // render the list of all post
-        header("Location: /res03-projet-final/usdomagne/admin/articles");
+        header("Location: /usdomagne/usdomagne/admin/articles");
     }
     
     
@@ -128,7 +128,7 @@ class PostController extends AbstractController
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
             $newPostMedia = $this->manager->addPostMedia($Post->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/articles/voir/'.$id.'');
+            header('Location: /usdomagne/usdomagne/admin/articles/voir/'.$id.'');
         }
     }
     
@@ -144,7 +144,7 @@ class PostController extends AbstractController
             $this->mediaManager->deleteMedia($media);
         }
         
-        header('Location: /res03-projet-final/usdomagne/admin/articles');
+        header('Location: /usdomagne/usdomagne/admin/articles');
     }
 
     public function actu(int $id){

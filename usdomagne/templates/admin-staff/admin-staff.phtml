@@ -20,16 +20,16 @@
                 <td><?php echo $office->getPhoneNumber(); ?></td>
                 <td><?php echo $office->getRole(); ?></td>
                 <td class="actions">
-                    <a href="/res03-projet-final/usdomagne/admin/staff/voir/<?= $office->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
-                    <a href="/res03-projet-final/usdomagne/admin/staff/modifier/<?= $office->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg" style="color: green;"></span></a>
-                    <a href="/res03-projet-final/usdomagne/admin/staff/supprimer/<?= $office->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
+                    <a href="/usdomagne/usdomagne/admin/staff/voir/<?= $office->getId(); ?>"><span class="fa-solid fa-eye fa-lg"></span></a>
+                    <a href="/usdomagne/usdomagne/admin/staff/modifier/<?= $office->getId(); ?>"><span class="fa-solid fa-pen-to-square fa-lg" style="color: green;"></span></a>
+                    <a href="/usdomagne/usdomagne/admin/staff/supprimer/<?= $office->getId(); ?>"><span class="fa-solid fa-trash fa-lg" style="color: red;"></span></a>
                 </td>
             </tr>
             <?php } ?>
         </tbody>
     </table>
     <section class="section-btn" >
-        <button><a href="/res03-projet-final/usdomagne/admin/staff/creer-un-staff" class="btn btn-warning">Ajouter un staff</a></button>
-        <button><a href="/res03-projet-final/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
+        <button><a href="/usdomagne/usdomagne/admin/staff/creer-un-staff" class="btn btn-warning">Ajouter un staff</a></button>
+        <button><a href="/usdomagne/usdomagne/admin" class="btn btn-warning">Retour au menu</a></button>
     </section>
 </main>

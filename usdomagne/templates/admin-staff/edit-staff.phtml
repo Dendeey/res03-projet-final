@@ -1,7 +1,7 @@
 <main>
     <section>
         <h1>Modifier ce staff :</h1>
-        <form action="/res03-projet-final/usdomagne/admin/staff/modifier/<?php echo($data['staff']->getId()); ?>" method="post">
+        <form action="/usdomagne/usdomagne/admin/staff/modifier/<?php echo($data['staff']->getId()); ?>" method="post">
             <fieldset class="mb-3">
                 <label for="edit-firstname">Prénom</label>
                 <input type="text" class="form-control" name="edit-firstname" value="<?= $data['staff']->getFirstName(); ?>">
@@ -25,6 +25,6 @@
         </form>
     </section>
     <section class="section-btn">
-        <button><a href="/res03-projet-final/usdomagne/admin/staff" class="btn btn-warning">Retour au staff</a></button>
+        <button><a href="/usdomagne/usdomagne/admin/staff" class="btn btn-warning">Retour au staff</a></button>
     </section>
 </main>

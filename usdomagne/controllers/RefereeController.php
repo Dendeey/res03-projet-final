@@ -64,7 +64,7 @@ class RefereeController extends AbstractController
                 $refereeToUpdate->setFirstName($this->clean($post['edit-firstname']));
                 $refereeToUpdate->setLastName($this->clean($post['edit-lastname']));
                 $this->manager->editReferee($refereeToUpdate);
-                header("Location: /res03-projet-final/usdomagne/admin/arbitres");
+                header("Location: /usdomagne/usdomagne/admin/arbitres");
             }
         }
     }
@@ -78,14 +78,14 @@ class RefereeController extends AbstractController
         {
             /*$refereeToAdd = new Referee($post["add-firstname"], $post["add-lastname"]);
             $this->manager->insertReferee($refereeToAdd);
-            header('Location: /res03-projet-final/usdomagne/admin/arbitres');*/
+            header('Location: /usdomagne/usdomagne/admin/arbitres');*/
             
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
             $referee = new Referee($this->clean($post["add-firstname"]), $this->clean($post["add-lastname"]));
             $this->manager->insertReferee($referee);
             $newRefereeMedia = $this->manager->addRefereeMedia($referee->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/arbitres');
+            header('Location: /usdomagne/usdomagne/admin/arbitres');
             
         }
 
@@ -103,7 +103,7 @@ class RefereeController extends AbstractController
         $this->manager->deleteReferee($id);
 
         // render the list of all referees
-        header("Location: /res03-projet-final/usdomagne/admin/arbitres");
+        header("Location: /usdomagne/usdomagne/admin/arbitres");
     }
     
     
@@ -117,7 +117,7 @@ class RefereeController extends AbstractController
             $media = $this->mediaManager->insertMedia($this->uploader->upload($_FILES, 'add-image'));
             $newRefereeMedia = $this->manager->addRefereeMedia($referee->getId(), $media->getId());
 
-            header('Location: /res03-projet-final/usdomagne/admin/arbitres/voir/'.$id.'');
+            header('Location: /usdomagne/usdomagne/admin/arbitres/voir/'.$id.'');
         }
     }
     
@@ -133,7 +133,7 @@ class RefereeController extends AbstractController
             $this->mediaManager->deleteMedia($media);
         }
         
-        header('Location: /res03-projet-final/usdomagne/admin/arbitres');
+        header('Location: /usdomagne/usdomagne/admin/arbitres');
     }
     
 }
