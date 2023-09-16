@@ -4995,48 +4995,27 @@ table {
     text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type {
-    grid-column: 2/3;
+  #public-layout > #bureau > section:last-of-type {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3em;
+    padding: 4em;
     justify-content: center;
     align-content: center;
   }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type figure {
+  #public-layout > #bureau > section:last-of-type figure {
     height: 25em;
   }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type figure img {
+  #public-layout > #bureau > section:last-of-type figure img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
   }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type figure img:hover {
+  #public-layout > #bureau > section:last-of-type figure img:hover {
     transform: scale(0.99);
     transition: 0.5s;
     filter: brightness(0.8);
-  }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type section {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type section h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: black;
-  }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type section h2:hover {
-    color: #034076;
-    transition: 0.5s;
-  }
-  #public-layout > #bureau > section:first-of-type > section:last-of-type section h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1em;
-    color: #034076;
   }
 }
 @media (max-width: 426px) {

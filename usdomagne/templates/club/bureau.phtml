@@ -21,17 +21,17 @@
         <section>
             <header>
                 <h2>Les membres</h2>
-            </header>   
+            </header>
         </section>
-        <section> <!-- Section avec photos des membres du bureau et de la commission -->
+    </section>
+    <section> <!-- Section avec photos des membres du bureau et de la commission -->
 
-            <?php foreach ($data['pageBureau'] as $bureau) { ?>
+        <?php foreach ($data['pageBureau'] as $bureau) { ?>
 
-                <figure>
-                    <img src="/usdomagne/usdomagne/<?= $bureau->getMedias()[0]->getUrl(); ?>" alt="Image du bureau">
-                </figure>
+            <figure>
+                <img src="/usdomagne/usdomagne/<?= $bureau->getMedias()[0]->getUrl(); ?>" alt="Image du bureau">
+            </figure>
 
-            <?php } ?>
-        </section>
+        <?php } ?>
     </section>
 </main>
