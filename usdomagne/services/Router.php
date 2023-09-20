@@ -140,6 +140,11 @@ class Router
                 $this->pageController->arbitres();
             }
 
+            else if($route[0] === "convocations")
+            {
+                $this->pageController->convocations();
+            }
+
             else if($route[0] === "partenaires")
             {
                 $this->pageController->partenaires();

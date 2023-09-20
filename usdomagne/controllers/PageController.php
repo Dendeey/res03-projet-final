@@ -153,6 +153,12 @@ class PageController extends AbstractController
         $this->renderClient("arbitres/arbitres", ["pageArbitrage" => $posts]);
     }
 
+    public function convocations()
+    {
+
+        $this->renderClient("convocations/convocations", []);
+    }
+
     public function partenaires()
     {
 

@@ -800,17 +800,70 @@ table {
     transition: transform 0.3s;
     border-right: 5px solid #FDCD11;
   }
-  #client-header .sideMenu .sideMenu-nav {
+  #client-header .sideMenu > .sideMenu-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #034076;
+    padding: 1.5em;
+    gap: 2em;
+    border-top: 5px solid #FDCD11;
+  }
+  #client-header .sideMenu > .sideMenu-section figure img {
+    width: 5em;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav {
+    display: flex;
+    width: 100%;
+    background-color: #034076;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    padding: 0;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-facebook {
+    color: #FDCD11;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-facebook:hover {
+    color: white;
+    transition: 0.2s;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-instagram {
+    color: #FDCD11;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-instagram:hover {
+    color: white;
+    transition: 0.2s;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-twitter {
+    color: #FDCD11;
+  }
+  #client-header .sideMenu > .sideMenu-section > .sideMenu-firstNav > ul .icon-twitter:hover {
+    color: white;
+    transition: 0.2s;
+  }
+  #client-header .sideMenu > .sideMenu-secondNav {
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: #034076;
   }
-  #client-header .sideMenu .sideMenu-nav ul:first-of-type {
+  #client-header .sideMenu > .sideMenu-secondNav > ul {
     display: flex;
     flex-direction: column;
     gap: 2em;
     align-self: start;
     margin-top: 6vh;
+  }
+  #client-header .sideMenu > .sideMenu-secondNav > ul > li > a {
+    color: white;
+  }
+  #client-header .sideMenu > .sideMenu-secondNav > ul > li > a:hover {
+    text-decoration: underline white solid 0.1em;
+    text-underline-offset: 0.4em;
   }
   #client-header .sideMenu.active {
     transform: translateX(0);
@@ -2647,21 +2700,21 @@ table {
     color: #FDCD11;
   }
   #footer-client > section section:last-of-type ul li .icon-facebook:hover {
-    color: #034076;
+    color: #fff;
     transition: 0.2s;
   }
   #footer-client > section section:last-of-type ul li .icon-instagram {
     color: #FDCD11;
   }
   #footer-client > section section:last-of-type ul li .icon-instagram:hover {
-    color: #034076;
+    color: #fff;
     transition: 0.2s;
   }
   #footer-client > section section:last-of-type ul li .icon-twitter {
     color: #FDCD11;
   }
   #footer-client > section section:last-of-type ul li .icon-twitter:hover {
-    color: #034076;
+    color: #fff;
     transition: 0.2s;
   }
 }
@@ -4960,7 +5013,6 @@ table {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     gap: 4em;
-    padding-bottom: 4em;
     background-color: #F4F4F4;
   }
   #public-layout > #bureau > section:first-of-type > section:first-of-type {
@@ -4986,10 +5038,11 @@ table {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-top: 2em;
   }
   #public-layout > #bureau > section:first-of-type > section:nth-of-type(2) header h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline #FDCD11 0.1em;
@@ -8123,6 +8176,107 @@ table {
     transform: scale(0.99);
     transition: 0.5s;
     filter: brightness(0.8);
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #public-layout {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  #public-layout > #convocations {
+    background-color: #F4F4F4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #public-layout > #convocations > header {
+    margin-top: 16vh;
+    padding-top: 4em;
+    padding-left: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  #public-layout > #convocations > header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline #FDCD11 0.1em;
+    color: #034076;
+  }
+  #public-layout > #convocations > header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+  #public-layout > #convocations > header nav ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+  }
+  #public-layout > #convocations > header nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #034076;
+    border-bottom: 0.1em solid #034076;
+  }
+  #public-layout > #convocations > header nav ul li span {
+    font-family: "Poppins", sans-serif;
+  }
+  #public-layout > #convocations > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    padding: 3em;
+  }
+  #public-layout > #convocations > section section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+  #public-layout > #convocations > section section h2 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #034076;
+  }
+  #public-layout > #convocations > section section nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+  }
+  #public-layout > #convocations > section section nav ul a {
+    text-decoration: none;
+    background-color: #FDCD11;
+    padding: 1em;
+    border-radius: 0.5em;
+  }
+  #public-layout > #convocations > section section nav ul a li {
+    color: #034076;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #public-layout > #convocations > section section nav ul a:hover {
+    background-color: #034076;
+    transition: 0.2s;
+  }
+  #public-layout > #convocations > section section nav ul a:hover li:hover {
+    color: #FDCD11;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.2s;
   }
 }
 @media (max-width: 426px) {

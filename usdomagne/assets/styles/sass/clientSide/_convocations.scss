@@ -1,0 +1,122 @@
+@media (min-width: 1440px) {
+    html {
+        font-size: 14px;
+        scroll-behavior: smooth;
+    }
+
+    #public-layout {
+        min-height: 100vh;
+        width: 100vw;
+
+        &>#convocations {
+            background-color: #F4F4F4;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+            &>header {
+                margin-top: 16vh;
+                padding-top: 4em;
+                padding-left: 4em;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                h1 {
+                    font-family: $benas;
+                    font-size: 3em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: underline #FDCD11 0.1em;
+                    color: #034076;
+                }
+
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.2em;
+
+                        li {
+                            font-family: $poppins;
+                            font-size: 1.1em;
+
+                            a {
+                                text-decoration: none;
+                                font-family: $poppins;
+                                font-size: 1.1em;
+                                color: #034076;
+                                border-bottom: 0.1em solid #034076;
+                            }
+
+                            span {
+
+                                font-family: $poppins;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &>section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3em;
+                padding: 3em;
+
+                section {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 1em;
+
+                    h2 {
+                        text-align: center;
+                        font-family: $benas;
+                        font-size: 2.5em;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: #034076;
+                    }
+
+                    nav {
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 3em;
+                            justify-content: center;
+
+                            a {
+                                text-decoration: none;
+                                background-color: $yellow;
+                                padding: 1em;
+                                border-radius: 0.5em;
+
+                                li {
+                                    color: $blue;
+                                    font-family: $poppins;
+                                    font-size: 1.2em;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            a:hover {
+                                background-color: $blue;
+                                transition: 0.2s;
+
+                                li:hover {
+                                    color: $yellow;
+                                    font-family: $poppins;
+                                    font-size: 1.2em;
+                                    font-weight: bold;
+                                    transition: 0.2s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

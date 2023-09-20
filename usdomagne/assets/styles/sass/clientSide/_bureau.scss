@@ -594,7 +594,6 @@
                 display: grid;
                 grid-template-columns: 0.1fr 0.8fr 0.1fr;
                 gap: 4em;
-                padding-bottom: 4em;
                 background-color: #F4F4F4;
 
                 &>section:first-of-type {
@@ -622,10 +621,11 @@
                         display: flex;
                         justify-content: center;
                         align-content: center;
+                        padding-top: 2em;
 
                         h2 {
                             font-family: $benas;
-                            font-size: 3em;
+                            font-size: 2.5em;
                             font-weight: 600;
                             text-transform: uppercase;
                             text-decoration: underline #FDCD11 0.1em;
