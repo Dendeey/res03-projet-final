@@ -11,15 +11,15 @@
     </header>
     <section>
         <section>
-            <?php foreach($data['pageArbitrage'] as $arbitre){ ?> 
-            <article>
+            <?php foreach ($data['pageArbitrage'] as $arbitre) { ?>
+
                 <figure>
                     <img src="/usdomagne/usdomagne/<?= $arbitre->getMedias()[0]->getUrl(); ?>" alt="Image de l'arbitre">
                 </figure>
-                <section>
+                <!-- <section>
                     <h2><?= $arbitre->getFirstName(); ?><span> </span><?= $arbitre->getlastName(); ?></h2>
-                </section>
-            </article>
+                </section> -->
+
             <?php } ?>
         </section>
     </section>

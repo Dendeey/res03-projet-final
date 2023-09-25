@@ -798,7 +798,6 @@ table {
     flex-direction: column;
     transform: translateX(-19vw);
     transition: transform 0.3s;
-    border-right: 5px solid #FDCD11;
   }
   #client-header .sideMenu > .sideMenu-section {
     display: flex;
@@ -2644,16 +2643,15 @@ table {
 @media (min-width: 1440px) {
   #footer-client {
     display: flex;
-    gap: 22em;
+    flex-direction: column;
+    gap: 4em;
     background-color: #034076;
-    height: 15vh;
     width: 100vw;
     padding-bottom: 2em;
     padding-top: 2em;
   }
   #footer-client > figure {
     display: grid;
-    padding-left: 8em;
   }
   #footer-client > figure img {
     justify-self: center;
@@ -5045,7 +5043,6 @@ table {
     font-size: 2.5em;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline #FDCD11 0.1em;
     color: #034076;
   }
   #public-layout > #bureau > section:last-of-type {
@@ -5710,13 +5707,14 @@ table {
   }
   #public-layout > #staff > header {
     margin-top: 16vh;
-    padding: 4em;
+    padding-top: 4em;
+    padding-left: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
   #public-layout > #staff > header h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
@@ -5729,73 +5727,65 @@ table {
     gap: 0.2em;
   }
   #public-layout > #staff > header nav ul li {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
   }
   #public-layout > #staff > header nav ul li a {
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1em;
     color: #034076;
     border-bottom: 0.1em solid #034076;
   }
   #public-layout > #staff > header nav ul li span {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   #public-layout > #staff > section:first-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     background-color: #F4F4F4;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
+    padding-top: 4em;
   }
   #public-layout > #staff > section:first-of-type > section {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    justify-items: center;
-  }
-  #public-layout > #staff > section:first-of-type > section article {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0.5em;
-    width: 80%;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-content: center;
   }
-  #public-layout > #staff > section:first-of-type > section article figure {
-    width: 100%;
-    height: 100%;
+  #public-layout > #staff > section:first-of-type > section figure {
+    height: 25em;
   }
-  #public-layout > #staff > section:first-of-type > section article figure img {
+  #public-layout > #staff > section:first-of-type > section figure img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
   }
-  #public-layout > #staff > section:first-of-type > section article figure img:hover {
+  #public-layout > #staff > section:first-of-type > section figure img:hover {
     transform: scale(1.02);
     transition: 0.5s;
     z-index: 2;
   }
-  #public-layout > #staff > section:first-of-type > section article section {
+  #public-layout > #staff > section:first-of-type > section section {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
-  #public-layout > #staff > section:first-of-type > section article section h2 {
+  #public-layout > #staff > section:first-of-type > section section h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
     color: black;
   }
-  #public-layout > #staff > section:first-of-type > section article section h2:hover {
+  #public-layout > #staff > section:first-of-type > section section h2:hover {
     color: #034076;
     transition: 0.5s;
   }
-  #public-layout > #staff > section:first-of-type > section article section h3 {
+  #public-layout > #staff > section:first-of-type > section section h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
     color: #034076;
@@ -6230,7 +6220,8 @@ table {
   }
   #public-layout > #arbitres > header {
     margin-top: 16vh;
-    padding: 4em;
+    padding-top: 4em;
+    padding-left: 4em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -6270,50 +6261,25 @@ table {
   }
   #public-layout > #arbitres > section:first-of-type > section {
     grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    justify-items: center;
-  }
-  #public-layout > #arbitres > section:first-of-type > section article {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0.5em;
-    width: 80%;
-    background-color: white;
-    border-radius: 0.5em;
-    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6em;
+    justify-content: center;
+    align-content: center;
   }
-  #public-layout > #arbitres > section:first-of-type > section article figure {
-    width: 100%;
-    height: 100%;
+  #public-layout > #arbitres > section:first-of-type > section figure {
+    height: 25em;
   }
-  #public-layout > #arbitres > section:first-of-type > section article figure img {
+  #public-layout > #arbitres > section:first-of-type > section figure img {
     width: 100%;
     height: 100%;
     border-radius: 0.5em;
   }
-  #public-layout > #arbitres > section:first-of-type > section article figure img:hover {
-    transform: scale(1.02);
+  #public-layout > #arbitres > section:first-of-type > section figure img:hover {
+    transform: scale(0.99);
     transition: 0.5s;
-    z-index: 2;
-  }
-  #public-layout > #arbitres > section:first-of-type > section article section {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  #public-layout > #arbitres > section:first-of-type > section article section h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: black;
-  }
-  #public-layout > #arbitres > section:first-of-type > section article section h2:hover {
-    color: #034076;
-    transition: 0.5s;
+    filter: brightness(0.8);
   }
 }
 @media (max-width: 426px) {

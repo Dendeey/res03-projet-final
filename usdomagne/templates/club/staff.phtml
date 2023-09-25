@@ -11,16 +11,13 @@
     </header>
     <section>
         <section>
-            <?php foreach($data['pageStaff'] as $staff){ ?> 
-            <article>
+            <?php foreach ($data['pageStaff'] as $staff) { ?>
+
                 <figure>
                     <img src="/usdomagne/usdomagne/<?= $staff->getMedias()[0]->getUrl(); ?>" alt="Image du staff">
                 </figure>
-                <section>
-                    <h2><?= $staff->getFirstName(); ?><span> </span><?= $staff->getlastName(); ?></h2>
-                    <h3><?= $staff->getRole(); ?></h3>
-                </section>
-            </article>
+
+
             <?php } ?>
         </section>
     </section>

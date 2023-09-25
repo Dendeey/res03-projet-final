@@ -53,7 +53,7 @@
     }
 }
 
-@media (min-width: 427px) and (max-width: 767px){
+@media (min-width: 427px) and (max-width: 767px) {
     #footer-client {
         display: grid;
         grid-template-rows: 0.3fr 0.7fr;
@@ -119,6 +119,7 @@
         figure {
             display: grid;
             padding-left: 2em;
+
             img {
                 justify-self: center;
                 align-self: center;
@@ -158,7 +159,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439.99px) { 
+@media (min-width: 1024px) and (max-width: 1439.99px) {
 
 
     #footer-client {
@@ -218,16 +219,16 @@
 
     #footer-client {
         display: flex;
-        gap: 22em;
+        flex-direction: column;
+        gap: 4em;
         background-color: #034076;
-        height: 15vh;
         width: 100vw;
         padding-bottom: 2em;
         padding-top: 2em;
 
         &>figure {
-            display: grid;
-            padding-left: 8em;
+            display: grid;  
+
             img {
                 justify-self: center;
                 align-self: center;
@@ -258,6 +259,7 @@
                 ul {
                     li {
                         padding-top: 0.5em;
+
                         a {
                             color: white;
                             font-family: 'Poppins', sans-serif;
@@ -269,41 +271,41 @@
                 }
             }
 
-            section:last-of-type{
+            section:last-of-type {
 
-                h1{
+                h1 {
                     text-align: center;
                 }
 
-                ul{
+                ul {
                     display: flex;
                     flex-direction: row;
                     gap: 1em;
 
-                    li{
+                    li {
                         .icon-facebook {
                             color: #FDCD11;
                         }
-    
-                        .icon-facebook:hover{
+
+                        .icon-facebook:hover {
                             color: #fff;
                             transition: 0.2s;
                         }
-    
+
                         .icon-instagram {
-                            color: #FDCD11; 
+                            color: #FDCD11;
                         }
-    
-                        .icon-instagram:hover{
+
+                        .icon-instagram:hover {
                             color: #fff;
                             transition: 0.2s;
                         }
-    
+
                         .icon-twitter {
                             color: #FDCD11;
                         }
-    
-                        .icon-twitter:hover{
+
+                        .icon-twitter:hover {
                             color: #fff;
                             transition: 0.2s;
                         }
