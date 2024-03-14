@@ -1,5 +1,3 @@
-![image](https://github.com/Dendeey/res03-projet-final/assets/103638209/ee17c519-4b91-4790-9cb1-23f56531d766)
-
 # Projet de fin de formation
 
 Ce projet est une application web conçue pour une association sportive qui souhaite avoir un site de type blog pour partager son actualité et la vie du club.
